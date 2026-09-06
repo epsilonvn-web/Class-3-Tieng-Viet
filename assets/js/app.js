@@ -1187,7 +1187,7 @@ function loadQuestion() {
         `;
         q.options.forEach(opt => {
             html += `
-                <button data-opt="${escapeHtml(opt)}" onclick="checkAnswer('${opt.replace(/'/g, "\\'")}')" class="option-btn min-w-[140px] px-6 py-3 bg-white hover:bg-emerald-50 border-2 border-emerald-400 rounded-full font-black text-emerald-700 text-base md:text-lg transition-all pastel-btn shadow-xs">
+                <button data-opt="${escapeHtml(opt)}" onclick="checkAnswer(${safeJsAttr(opt)})" class="option-btn min-w-[140px] px-6 py-3 bg-white hover:bg-emerald-50 border-2 border-emerald-400 rounded-full font-black text-emerald-700 text-base md:text-lg transition-all pastel-btn shadow-xs">
                     ${escapeHtml(opt)}
                 </button>`;
         });
@@ -1219,7 +1219,7 @@ function loadQuestion() {
 
         if (activeExamContext) {
             html += `
-                <button data-opt="${escapeHtml(opt)}" onclick="checkAnswer('${opt.replace(/'/g, "\\'")}')" class="option-btn w-full p-2.5 md:p-3 bg-white hover:bg-amber-50/50 border border-amber-200 rounded-2xl font-extrabold text-gray-800 text-left transition-all flex items-center justify-between text-sm md:text-base shadow-xs">
+                <button data-opt="${escapeHtml(opt)}" onclick="checkAnswer(${safeJsAttr(opt)})" class="option-btn w-full p-2.5 md:p-3 bg-white hover:bg-amber-50/50 border border-amber-200 rounded-2xl font-extrabold text-gray-800 text-left transition-all flex items-center justify-between text-sm md:text-base shadow-xs">
                     <div class="flex items-center space-x-2.5">
                         <span class="opt-badge w-7 h-7 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-black text-sm shrink-0">${letter}</span>
                         <span class="opt-text">${escapeHtml(formattedOpt)}</span>
@@ -1228,7 +1228,7 @@ function loadQuestion() {
                 </button>`;
         } else {
             html += `
-                <button data-opt="${escapeHtml(opt)}" onclick="checkAnswer('${opt.replace(/'/g, "\\'")}')" class="option-btn w-full p-3 md:p-3.5 bg-amber-50/40 hover:bg-amber-100/70 border-2 border-amber-200 rounded-2xl font-extrabold text-gray-800 text-left transition-all flex items-center justify-between text-sm md:text-base shadow-xs pastel-btn">
+                <button data-opt="${escapeHtml(opt)}" onclick="checkAnswer(${safeJsAttr(opt)})" class="option-btn w-full p-3 md:p-3.5 bg-amber-50/40 hover:bg-amber-100/70 border-2 border-amber-200 rounded-2xl font-extrabold text-gray-800 text-left transition-all flex items-center justify-between text-sm md:text-base shadow-xs pastel-btn">
                     <span><strong class="text-amber-600 mr-2 text-base md:text-lg">${letter}.</strong> ${escapeHtml(formattedOpt)}</span>
                     <span class="option-icon text-amber-500 text-base md:text-lg"></span>
                 </button>`;
@@ -2371,6 +2371,15 @@ function formatDuration(ms) {
 
 function escapeHtml(str) {
     return String(str).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+// Escape an toàn 1 chuỗi để nhúng làm THAM SỐ trong onclick="..." (thuộc tính HTML dùng dấu nháy kép).
+// Dùng JSON.stringify để tự escape đúng chuẩn nháy đơn/nháy kép/backslash thành 1 chuỗi JS hợp lệ,
+// sau đó encode nốt dấu nháy kép còn lại thành &quot; để không phá vỡ cặp nháy kép bao ngoài của onclick.
+// Bắt buộc dùng hàm này (không dùng escapeHtml/opt.replace thủ công) cho MỌI đáp án chèn vào onclick,
+// vì có những đáp án chính là dấu câu như dấu ngoặc kép ("), nếu escape thiếu sẽ làm nút bấm bị hỏng.
+function safeJsAttr(str) {
+    return JSON.stringify(String(str)).replace(/"/g, '&quot;');
 }
 
 function showLoadingOverlay(msg) {
