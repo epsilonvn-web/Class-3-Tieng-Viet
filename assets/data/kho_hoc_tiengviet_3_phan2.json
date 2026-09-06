@@ -1,0 +1,4096 @@
+{
+  "topics": [
+    {
+      "id": 6,
+      "name": "Phép thuật Dấu câu",
+      "desc": "Học cách điều khiển các dấu câu phép thuật: Dấu hai chấm, Dấu gạch ngang, Dấu ngoặc kép, Dấu hỏi, Dấu chấm than!",
+      "qs": [
+        {
+          "id": 6000,
+          "sub": "Dấu hai chấm (:)",
+          "q": "Bé hãy chọn dấu câu thích hợp điền vào chỗ trống (...) trong câu sau: 'Mẹ âu yếm dặn dò em ... / - Đi học ngoan ngoãn nghe con!'",
+          "o": [
+            "-",
+            ":",
+            "\"",
+            "?"
+          ],
+          "a": ":",
+          "h": "Dấu hai chấm dùng để báo hiệu bộ phận đứng sau là lời nói trực tiếp của nhân vật.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 6001,
+          "sub": "Dấu hai chấm (:)",
+          "q": "Bé hãy chọn dấu câu thích hợp điền vào chỗ trống (...) trong câu sau: 'Trong giỏ của mẹ có rất nhiều thứ quả ngon ... quả cam, quả táo, quả quýt.'",
+          "o": [
+            ",",
+            ";",
+            ":",
+            "."
+          ],
+          "a": ":",
+          "h": "Dấu hai chấm dùng để báo hiệu phần liệt kê các loại quả ngon phía sau đấy bé.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 6002,
+          "sub": "Dấu hai chấm (:)",
+          "q": "Bé hãy chọn dấu câu thích hợp điền vào chỗ trống (...) trong câu sau: 'Sân trường rực rỡ sắc màu ... màu đỏ của hoa phượng, màu tím của bằng lăng.'",
+          "o": [
+            ".",
+            ":",
+            ",",
+            "!"
+          ],
+          "a": ":",
+          "h": "Dấu hai chấm báo hiệu bộ phận đứng sau để liệt kê chi tiết các màu sắc phượng và bằng lăng.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 6003,
+          "sub": "Dấu hai chấm (:)",
+          "q": "Bé hãy chọn dấu câu thích hợp điền vào chỗ trống (...) trong câu sau: 'Cô giáo mỉm cười hỏi cả lớp ... / - Các em đã làm bài tập chưa?'",
+          "o": [
+            "?",
+            ":",
+            "-",
+            "."
+          ],
+          "a": ":",
+          "h": "Dấu hai chấm đứng trước lời thoại đối thoại trực tiếp của cô giáo.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 6004,
+          "sub": "Dấu hai chấm (:)",
+          "q": "Bé hãy chọn dấu câu thích hợp điền vào chỗ trống (...) trong câu sau: 'Cảnh vật mùa xuân thật đẹp ... trăm hoa đua nở, bướm ong bay lượn rộn ràng.'",
+          "o": [
+            ";",
+            ",",
+            ":",
+            "?"
+          ],
+          "a": ":",
+          "h": "Dấu hai chấm ở đây dùng để báo hiệu phần giải thích chi tiết cho ý 'cảnh vật mùa xuân thật đẹp'.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 6005,
+          "sub": "Dấu hai chấm (:)",
+          "q": "Bé hãy chọn dấu câu thích hợp điền vào chỗ trống (...) trong câu sau: 'Thỏ con vui sướng reo lên ... / - Ôi, củ cải đỏ to quá!'",
+          "o": [
+            "!",
+            ":",
+            "-",
+            "\""
+          ],
+          "a": ":",
+          "h": "Báo hiệu lời reo vui trực tiếp của Thỏ con nên dùng dấu hai chấm.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 6006,
+          "sub": "Dấu hai chấm (:)",
+          "q": "Bé hãy chọn dấu câu thích hợp điền vào chỗ trống (...) trong câu sau: 'Em chuẩn bị đầy đủ đồ dùng học tập ... bút chì, thước kẻ, sách giáo khoa.'",
+          "o": [
+            ",",
+            ":",
+            "-",
+            "."
+          ],
+          "a": ":",
+          "h": "Dấu hai chấm dùng để bắt đầu phần liệt kê đồ dùng học tập.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 6007,
+          "sub": "Dấu hai chấm (:)",
+          "q": "Bé hãy chọn dấu câu thích hợp điền vào chỗ trống (...) trong câu sau: 'Hộp bút của Nam chứa nhiều báu vật ... một chiếc tẩy hình gấu, chiếc gọt bút hình xe.'",
+          "o": [
+            "-",
+            ";",
+            ":",
+            ","
+          ],
+          "a": ":",
+          "h": "Dấu hai chấm báo hiệu phần liệt kê báu vật trong hộp bút.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 6008,
+          "sub": "Dấu hai chấm (:)",
+          "q": "Bé hãy chọn dấu câu thích hợp điền vào chỗ trống (...) trong câu sau: 'Bà ngoại kể chuyện cổ tích cho em nghe ... chuyện Tấm Cám, Thạch Sanh, Sọ Dừa.'",
+          "o": [
+            ",",
+            ":",
+            "!",
+            "."
+          ],
+          "a": ":",
+          "h": "Dấu hai chấm bắt đầu phần liệt kê những truyện cổ tích bà kể.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 6009,
+          "sub": "Dấu hai chấm (:)",
+          "q": "Bé hãy chọn dấu câu thích hợp điền vào chỗ trống (...) trong câu sau: 'Bé Lan chỉ tay lên bầu trời đêm ... / - Ông trăng tròn như mắt cá kìa!'",
+          "o": [
+            "?",
+            "-",
+            ":",
+            "."
+          ],
+          "a": ":",
+          "h": "Dấu hai chấm dẫn lời nói trực tiếp của bé Lan.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 6010,
+          "sub": "Dấu hai chấm (:)",
+          "q": "Bé hãy chọn dấu câu thích hợp điền vào chỗ trống (...) trong câu sau: 'Quê hương em có nhiều cảnh đẹp kì vĩ ... vịnh Hạ Long, động Phong Nha, bãi biển Mỹ Khê.'",
+          "o": [
+            ",",
+            ":",
+            ";",
+            "."
+          ],
+          "a": ":",
+          "h": "Dấu hai chấm báo hiệu phần liệt kê các danh lam thắng cảnh kì vĩ.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 6011,
+          "sub": "Dấu hai chấm (:)",
+          "q": "Bé hãy chọn dấu câu thích hợp điền vào chỗ trống (...) trong câu sau: 'Gia đình em gồm có bốn người ... bố, mẹ, anh trai và em.'",
+          "o": [
+            "-",
+            ",",
+            ":",
+            "."
+          ],
+          "a": ":",
+          "h": "Dấu hai chấm bắt đầu phần liệt kê các thành viên trong gia đình.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 6012,
+          "sub": "Dấu hai chấm (:)",
+          "q": "Bé hãy chọn dấu câu thích hợp điền vào chỗ trống (...) trong câu sau: 'Mùa hè mang theo những âm thanh đặc trưng ... tiếng ve râm ran, tiếng sáo diều vi vu.'",
+          "o": [
+            ":",
+            ",",
+            ";",
+            "!"
+          ],
+          "a": ":",
+          "h": "Báo hiệu phần giải thích/liệt kê âm thanh đặc trưng của mùa hè.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 6013,
+          "sub": "Dấu hai chấm (:)",
+          "q": "Bé hãy chọn dấu câu thích hợp điền vào chỗ trống (...) trong câu sau: 'Khỉ con vội vàng giải thích với các bạn ... / - Tớ không cố ý làm hỏng đồ chơi đâu!'",
+          "o": [
+            "?",
+            ":",
+            "-",
+            "\""
+          ],
+          "a": ":",
+          "h": "Dấu hai chấm đứng trước lời đối thoại giải thích trực tiếp của Khỉ con.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 6014,
+          "sub": "Dấu hai chấm (:)",
+          "q": "Bé hãy chọn dấu câu thích hợp điền vào chỗ trống (...) trong câu sau: 'Đồng cỏ xanh rờn rực rỡ loài hoa ... hoa cúc dại, hoa sim tím, bồ công anh.'",
+          "o": [
+            ",",
+            ":",
+            "-",
+            "."
+          ],
+          "a": ":",
+          "h": "Dấu hai chấm dẫn đầu phần liệt kê các loại hoa dại trên đồng cỏ.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 6015,
+          "sub": "Dấu gạch ngang (-)",
+          "q": "Điền dấu câu thích hợp vào chỗ trống (...) trong đoạn đối thoại hoặc liệt kê sau: 'Bé hỏi ông nội: / ... Ông ơi, ông có mệt không ạ?'",
+          "o": [
+            ":",
+            "-",
+            "\"",
+            "?"
+          ],
+          "a": "-",
+          "h": "Dấu gạch ngang dùng để đánh dấu lời nói trực tiếp (đầu dòng hội thoại) của bé.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 6016,
+          "sub": "Dấu gạch ngang (-)",
+          "q": "Điền dấu câu thích hợp vào chỗ trống (...) trong đoạn đối thoại hoặc liệt kê sau: 'Mẹ khuyên em: / ... Con hãy luôn thật thà trong học tập nhé!'",
+          "o": [
+            "\"",
+            "-",
+            ":",
+            "!"
+          ],
+          "a": "-",
+          "h": "Dấu gạch ngang đầu dòng hội thoại thể hiện lời dặn dò trực tiếp của mẹ.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 6017,
+          "sub": "Dấu gạch ngang (-)",
+          "q": "Điền dấu câu thích hợp vào chỗ trống (...) trong đoạn đối thoại hoặc liệt kê sau: 'Bác bảo vệ nhắc nhở: / ... Học sinh không chạy nhảy trên hành lang!'",
+          "o": [
+            "?",
+            ":",
+            "-",
+            "\""
+          ],
+          "a": "-",
+          "h": "Dấu gạch ngang đánh dấu lời nhắc nhở trực tiếp của bác bảo vệ.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 6018,
+          "sub": "Dấu gạch ngang (-)",
+          "q": "Điền dấu câu thích hợp vào chỗ trống (...) trong đoạn đối thoại hoặc liệt kê sau: 'Để bảo vệ môi trường, chúng ta cần làm tốt các việc sau: / ... Trồng cây xanh. / ... Gom rác thải.'",
+          "o": [
+            ",",
+            "...",
+            "-",
+            ":"
+          ],
+          "a": "-",
+          "h": "Dấu gạch ngang dùng ở đầu dòng để đánh dấu các ý trong danh sách liệt kê.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 6019,
+          "sub": "Dấu gạch ngang (-)",
+          "q": "Điền dấu câu thích hợp vào chỗ trống (...) trong đoạn đối thoại hoặc liệt kê sau: 'Quy trình rửa tay gồm các bước: / ... Bước 1: Làm ướt tay. / ... Bước 2: Thoa xà phòng.'",
+          "o": [
+            ".",
+            "-",
+            "!",
+            ","
+          ],
+          "a": "-",
+          "h": "Dấu gạch ngang dùng để liệt kê các bước trong quy trình rửa tay.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 6020,
+          "sub": "Dấu gạch ngang (-)",
+          "q": "Điền dấu câu thích hợp vào chỗ trống (...) trong đoạn đối thoại hoặc liệt kê sau: 'Bạn Nam trả lời cô giáo: / ... Thưa cô, em đã hoàn thành bài vẽ rồi ạ!'",
+          "o": [
+            "\"",
+            ":",
+            "-",
+            "?"
+          ],
+          "a": "-",
+          "h": "Dấu gạch ngang đánh dấu lời đối thoại trực tiếp của bạn Nam.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 6021,
+          "sub": "Dấu gạch ngang (-)",
+          "q": "Điền dấu câu thích hợp vào chỗ trống (...) trong đoạn đối thoại hoặc liệt kê sau: 'Thầy giáo dặn: / ... Về nhà các em nhớ đọc trước bài mới nhé!'",
+          "o": [
+            "-",
+            "\"",
+            ":",
+            "."
+          ],
+          "a": "-",
+          "h": "Dấu gạch ngang đứng đầu câu đối thoại dặn dò của thầy giáo.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 6022,
+          "sub": "Dấu gạch ngang (-)",
+          "q": "Điền dấu câu thích hợp vào chỗ trống (...) trong đoạn đối thoại hoặc liệt kê sau: 'Nhiệm vụ của đội viên gồm: / ... Thực hiện tốt Năm điều Bác Hồ dạy. / ... Kính trọng thầy cô.'",
+          "o": [
+            ":",
+            ",",
+            "-",
+            "."
+          ],
+          "a": "-",
+          "h": "Dấu gạch ngang dùng để gạch đầu dòng liệt kê các nhiệm vụ của đội viên.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 6023,
+          "sub": "Dấu gạch ngang (-)",
+          "q": "Điền dấu câu thích hợp vào chỗ trống (...) trong đoạn đối thoại hoặc liệt kê sau: 'Châu chấu run rẩy cầu xin Kiến: / ... Bạn Kiến ơi, xin cho tôi một chút thức ăn!'",
+          "o": [
+            "\"",
+            "-",
+            "?",
+            ":"
+          ],
+          "a": "-",
+          "h": "Dấu gạch ngang đánh dấu lời cầu xin đối thoại của Châu chấu.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 6024,
+          "sub": "Dấu gạch ngang (-)",
+          "q": "Điền dấu câu thích hợp vào chỗ trống (...) trong đoạn đối thoại hoặc liệt kê sau: 'Bác sĩ khuyên bệnh nhi nhỏ: / ... Cháu ngoan lắm, chỉ cần uống thuốc đúng giờ là khỏe ngay!'",
+          "o": [
+            ":",
+            "\"",
+            "-",
+            "!"
+          ],
+          "a": "-",
+          "h": "Dấu gạch ngang dùng để bắt đầu lời nói vỗ về của bác sĩ.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 6025,
+          "sub": "Dấu gạch ngang (-)",
+          "q": "Điền dấu câu thích hợp vào chỗ trống (...) trong đoạn đối thoại hoặc liệt kê sau: 'Gió Đông Bắc rầm rập hỏi hoa hồng: / ... Sao bạn hoa hồng không mặc áo ấm vào?'",
+          "o": [
+            "?",
+            "-",
+            "\"",
+            ":"
+          ],
+          "a": "-",
+          "h": "Dấu gạch ngang bắt đầu câu hỏi nhân hóa trực tiếp của Gió Đông Bắc.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 6026,
+          "sub": "Dấu gạch ngang (-)",
+          "q": "Điền dấu câu thích hợp vào chỗ trống (...) trong đoạn đối thoại hoặc liệt kê sau: 'Lợi ích của việc đọc sách: / ... Mở rộng kiến thức. / ... Rèn luyện tư duy.'",
+          "o": [
+            ",",
+            "-",
+            "...",
+            "."
+          ],
+          "a": "-",
+          "h": "Dấu gạch ngang đánh dấu liệt kê các lợi ích của việc đọc sách.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 6027,
+          "sub": "Dấu gạch ngang (-)",
+          "q": "Điền dấu câu thích hợp vào chỗ trống (...) trong đoạn đối thoại hoặc liệt kê sau: 'Bố đi làm về hồ hởi gọi cả nhà: / ... Có quà cho hai con đây!'",
+          "o": [
+            ":",
+            "\"",
+            "-",
+            "!"
+          ],
+          "a": "-",
+          "h": "Dấu gạch ngang đánh dấu lời nói trực tiếp đầy vui vẻ của bố.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 6028,
+          "sub": "Dấu gạch ngang (-)",
+          "q": "Điền dấu câu thích hợp vào chỗ trống (...) trong đoạn đối thoại hoặc liệt kê sau: 'Nội quy lớp học quy định: / ... Đi học đúng giờ. / ... Giữ trật tự trong lớp.'",
+          "o": [
+            "-",
+            ",",
+            ";",
+            "."
+          ],
+          "a": "-",
+          "h": "Dấu gạch ngang dùng đầu dòng để liệt kê các điều khoản nội quy.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 6029,
+          "sub": "Dấu gạch ngang (-)",
+          "q": "Điền dấu câu thích hợp vào chỗ trống (...) trong đoạn đối thoại hoặc liệt kê sau: 'Sư tử dõng dạc nói với Chuột nhỏ: / ... Ngươi thật gan dạ, ta sẽ tha mạng cho ngươi!'",
+          "o": [
+            "\"",
+            ":",
+            "-",
+            "!"
+          ],
+          "a": "-",
+          "h": "Dấu gạch ngang đánh dấu lời nói trực tiếp oai phong của Sư tử.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 6030,
+          "sub": "Dấu ngoặc kép (\"\")",
+          "q": "Hãy điền cặp dấu thích hợp nhất vào chỗ trống (...) trong câu văn dưới đây: 'Bố dặn: ...Con nhớ giữ lời hứa nhé!... và xoa đầu em đầy trìu mến.'",
+          "o": [
+            "-",
+            "\"",
+            ":",
+            ","
+          ],
+          "a": "\"",
+          "h": "Dấu ngoặc kép dùng để đánh dấu lời nói trực tiếp của bố được đặt trực tiếp trong câu văn.",
+          "img": "",
+          "w": 13
+        },
+        {
+          "id": 6031,
+          "sub": "Dấu ngoặc kép (\"\")",
+          "q": "Hãy điền cặp dấu thích hợp nhất vào chỗ trống (...) trong câu văn dưới đây: 'Em rất thích đọc bài thơ ...Ngưỡng cửa... của nhà thơ Vũ Quần Phương.'",
+          "o": [
+            "\"",
+            "-",
+            "...",
+            "'"
+          ],
+          "a": "\"",
+          "h": "Dấu ngoặc kép được dùng để đánh dấu tên một tác phẩm, bài thơ đấy bé.",
+          "img": "",
+          "w": 13
+        },
+        {
+          "id": 6032,
+          "sub": "Dấu ngoặc kép (\"\")",
+          "q": "Hãy điền cặp dấu thích hợp nhất vào chỗ trống (...) trong câu văn dưới đây: 'Mỗi tối, hai ông cháu cùng nhau đọc tác phẩm ...Truyện cổ tích Việt Nam...'",
+          "o": [
+            "-",
+            "...",
+            "\"",
+            ","
+          ],
+          "a": "\"",
+          "h": "Dấu ngoặc kép dùng để đánh dấu tên tác phẩm sách cổ tích.",
+          "img": "",
+          "w": 13
+        },
+        {
+          "id": 6033,
+          "sub": "Dấu ngoặc kép (\"\")",
+          "q": "Hãy điền cặp dấu thích hợp nhất vào chỗ trống (...) trong câu văn dưới đây: 'Cô giáo khen Nam là một ...Hiệp sĩ xanh... vì bạn luôn dọn sạch rác sân trường.'",
+          "o": [
+            "-",
+            "'",
+            "\"",
+            ","
+          ],
+          "a": "\"",
+          "h": "Dấu ngoặc kép dùng để đánh dấu cụm từ được dùng với ý nghĩa đặc biệt (biệt danh danh hiệu).",
+          "img": "",
+          "w": 13
+        },
+        {
+          "id": 6034,
+          "sub": "Dấu ngoặc kép (\"\")",
+          "q": "Hãy điền cặp dấu thích hợp nhất vào chỗ trống (...) trong câu văn dưới đây: 'Nhà trường phát động phong trào ...Vở sạch chữ đẹp... nhân ngày Nhà giáo Việt Nam.'",
+          "o": [
+            ",",
+            "\"",
+            "-",
+            "."
+          ],
+          "a": "\"",
+          "h": "Dấu ngoặc kép đánh dấu tên phong trào thi đua học đường.",
+          "img": "",
+          "w": 13
+        },
+        {
+          "id": 6035,
+          "sub": "Dấu ngoặc kép (\"\")",
+          "q": "Hãy điền cặp dấu thích hợp nhất vào chỗ trống (...) trong câu văn dưới đây: 'Bác bảo vệ khuyên: ...Đi học là phải chăm ngoan nghe cháu!... rồi cười thật tươi.'",
+          "o": [
+            ":",
+            "\"",
+            "-",
+            "."
+          ],
+          "a": "\"",
+          "h": "Dấu ngoặc kép ôm lấy lời khuyên nói trực tiếp lồng trong câu văn.",
+          "img": "",
+          "w": 13
+        },
+        {
+          "id": 6036,
+          "sub": "Dấu ngoặc kép (\"\")",
+          "q": "Hãy điền cặp dấu thích hợp nhất vào chỗ trống (...) trong câu văn dưới đây: 'Bài thơ ...Mùa thu của em... tả cảnh sắc bầu trời rất thơ mộng.'",
+          "o": [
+            "-",
+            "\"",
+            "...",
+            ","
+          ],
+          "a": "\"",
+          "h": "Dấu ngoặc kép dùng để đánh dấu tên tác phẩm bài thơ.",
+          "img": "",
+          "w": 13
+        },
+        {
+          "id": 6037,
+          "sub": "Dấu ngoặc kép (\"\")",
+          "q": "Hãy điền cặp dấu thích hợp nhất vào chỗ trống (...) trong câu văn dưới đây: 'Câu chuyện ...Sư tử và Chuột nhỏ... khuyên chúng ta không nên coi thường kẻ khác.'",
+          "o": [
+            "-",
+            "...",
+            "\"",
+            "'"
+          ],
+          "a": "\"",
+          "h": "Dấu ngoặc kép đánh dấu tên câu chuyện cổ ngụ ngôn.",
+          "img": "",
+          "w": 13
+        },
+        {
+          "id": 6038,
+          "sub": "Dấu ngoặc kép (\"\")",
+          "q": "Hãy điền cặp dấu thích hợp nhất vào chỗ trống (...) trong câu văn dưới đây: 'Mẹ khen bé Lan là một ...bác sĩ nhí... tài giỏi sau khi bé giúp ông băng vết thương.'",
+          "o": [
+            "-",
+            "\"",
+            "'",
+            ","
+          ],
+          "a": "\"",
+          "h": "Dấu ngoặc kép đánh dấu biệt hiệu tự hào đáng yêu của bé Lan.",
+          "img": "",
+          "w": 13
+        },
+        {
+          "id": 6039,
+          "sub": "Dấu ngoặc kép (\"\")",
+          "q": "Hãy điền cặp dấu thích hợp nhất vào chỗ trống (...) trong câu văn dưới đây: 'Văn bản ...Đơn xin vào Đội... cần được viết thật trang trọng và nắn nót.'",
+          "o": [
+            ",",
+            "-",
+            "\"",
+            "."
+          ],
+          "a": "\"",
+          "h": "Dấu ngoặc kép đánh dấu tên tiêu đề của lá đơn hành chính.",
+          "img": "",
+          "w": 13
+        },
+        {
+          "id": 6040,
+          "sub": "Dấu ngoặc kép (\"\")",
+          "q": "Hãy điền cặp dấu thích hợp nhất vào chỗ trống (...) trong câu văn dưới đây: 'Cánh chim Hải Âu được mệnh danh là ...sứ giả của biển khơi... bao la.'",
+          "o": [
+            "'",
+            "-",
+            "\"",
+            ","
+          ],
+          "a": "\"",
+          "h": "Dấu ngoặc kép đánh dấu tên gọi biểu tượng giàu ý nghĩa đặc biệt.",
+          "img": "",
+          "w": 13
+        },
+        {
+          "id": 6041,
+          "sub": "Dấu ngoặc kép (\"\")",
+          "q": "Hãy điền cặp dấu thích hợp nhất vào chỗ trống (...) trong câu văn dưới đây: 'Em đang đọc cuốn sách ...Hành trình của hạt mầm... đầy thú vị.'",
+          "o": [
+            ",",
+            "\"",
+            "...",
+            "-"
+          ],
+          "a": "\"",
+          "h": "Dấu ngoặc kép đánh dấu tên tác phẩm cuốn sách.",
+          "img": "",
+          "w": 13
+        },
+        {
+          "id": 6042,
+          "sub": "Dấu ngoặc kép (\"\")",
+          "q": "Hãy điền cặp dấu thích hợp nhất vào chỗ trống (...) trong câu văn dưới đây: 'Mascot Thỏ Hồng mỉm cười bảo: ...Bé ngoan lắm, hãy tiếp tục cố gắng nhé!... đầy khích lệ.'",
+          "o": [
+            "-",
+            "\"",
+            ":",
+            ","
+          ],
+          "a": "\"",
+          "h": "Dấu ngoặc kép bao quanh câu nói động viên trực tiếp của Thỏ Hồng.",
+          "img": "",
+          "w": 13
+        },
+        {
+          "id": 6043,
+          "sub": "Dấu ngoặc kép (\"\")",
+          "q": "Hãy điền cặp dấu thích hợp nhất vào chỗ trống (...) trong câu văn dưới đây: 'Chiến dịch ...Trái đất xanh... được toàn trường hưởng ứng vô cùng mạnh mẽ.'",
+          "o": [
+            ";",
+            "-",
+            "\"",
+            ","
+          ],
+          "a": "\"",
+          "h": "Dấu ngoặc kép dùng để đánh dấu tên chiến dịch hành động đặc biệt.",
+          "img": "",
+          "w": 13
+        },
+        {
+          "id": 6044,
+          "sub": "Dấu ngoặc kép (\"\")",
+          "q": "Hãy điền cặp dấu thích hợp nhất vào chỗ trống (...) trong câu văn dưới đây: 'Dưới chân núi là ngôi trường mang tên ...Tiểu học Kim Đồng... khang trang sạch đẹp.'",
+          "o": [
+            "'",
+            "-",
+            "\"",
+            ","
+          ],
+          "a": "\"",
+          "h": "Dấu ngoặc kép dùng để đánh dấu tên riêng ngôi trường thân thuộc.",
+          "img": "",
+          "w": 13
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Kỹ sư Đặt câu & Kiểu câu",
+      "desc": "Luyện tập đặt câu hỏi cho các bộ phận câu và làm chủ 4 kiểu câu kể, hỏi, cảm, khiến nhé!",
+      "qs": [
+        {
+          "id": 7000,
+          "sub": "Đặt câu hỏi: Khi nào?",
+          "q": "Bộ phận in đậm trong câu: 'Mẹ em thường thức dậy **vào buổi sáng sớm** để chuẩn bị bữa ăn nóng hổi.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Khi nào?",
+            "Ở đâu?",
+            "Vì sao?",
+            "Như thế nào?"
+          ],
+          "a": "Khi nào?",
+          "h": "Bộ phận in đậm chỉ thời gian, do đó câu hỏi phù hợp là 'Khi nào?'.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7001,
+          "sub": "Đặt câu hỏi: Khi nào?",
+          "q": "Bộ phận in đậm trong câu: 'Chúng em cùng nhau phá cỗ trung thu **vào đêm trăng rằm tháng Tám** náo nhiệt.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Ở đâu?",
+            "Để làm gì?",
+            "Khi nào?",
+            "Bằng gì?"
+          ],
+          "a": "Khi nào?",
+          "h": "Đêm trăng rằm chỉ thời điểm thời gian diễn ra hoạt động, hỏi bằng 'Khi nào?'.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7002,
+          "sub": "Đặt câu hỏi: Khi nào?",
+          "q": "Bộ phận in đậm trong câu: 'Học sinh xếp hàng ngay ngắn vào lớp **khi tiếng trống trường ngân vang giã**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Khi nào?",
+            "Như thế nào?",
+            "Vì sao?",
+            "Để làm gì?"
+          ],
+          "a": "Khi nào?",
+          "h": "Hỏi về thời điểm xếp hàng vào lớp.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7003,
+          "sub": "Đặt câu hỏi: Khi nào?",
+          "q": "Bộ phận in đậm trong câu: 'Bố hứa dắt em đi bơi rèn luyện sức khỏe **vào cuối tuần này**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Khi nào?",
+            "Ở đâu?",
+            "Bằng gì?",
+            "Để làm gì?"
+          ],
+          "a": "Khi nào?",
+          "h": "Cuối tuần này chỉ thời gian.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7004,
+          "sub": "Đặt câu hỏi: Khi nào?",
+          "q": "Bộ phận in đậm trong câu: 'Đàn bướm ong đua nhau bay lượn hút mật **mỗi khi mùa xuân xinh tươi về**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Như thế nào?",
+            "Khi nào?",
+            "Để làm gì?",
+            "Vì sao?"
+          ],
+          "a": "Khi nào?",
+          "h": "Thời điểm ong bướm hút mật là khi xuân về.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7005,
+          "sub": "Đặt câu hỏi: Khi nào?",
+          "q": "Bộ phận in đậm trong câu: 'Đồng lúa chín vàng trĩu hạt được gặt hái mang về **vào mùa gặt tháng Mười**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Ở đâu?",
+            "Như thế nào?",
+            "Khi nào?",
+            "Bằng gì?"
+          ],
+          "a": "Khi nào?",
+          "h": "Thời điểm gặt lúa chín.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7006,
+          "sub": "Đặt câu hỏi: Khi nào?",
+          "q": "Bộ phận in đậm trong câu: 'Chú ve sầu cất tiếng ca râm ran reo vang **suốt những tháng ngày hè oi ả**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Khi nào?",
+            "Để làm gì?",
+            "Vì sao?",
+            "Như thế nào?"
+          ],
+          "a": "Khi nào?",
+          "h": "Hỏi về thời gian ve sầu ca hát.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7007,
+          "sub": "Đặt câu hỏi: Ở đâu?",
+          "q": "Bộ phận in đậm trong câu: 'Đàn chim sẻ nhỏ ríu rít chuyền cành hát ca **trên tán lá bàng già rộng lớn**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Ở đâu?",
+            "Khi nào?",
+            "Bằng gì?",
+            "Vì sao?"
+          ],
+          "a": "Ở đâu?",
+          "h": "Nơi chốn đàn chim sáo bay nhảy là tán bàng già.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7008,
+          "sub": "Đặt câu hỏi: Ở đâu?",
+          "q": "Bộ phận in đậm trong câu: 'Các bạn học sinh vui vẻ chơi nhảy dây, lò cò **dưới bóng râm mát sân trường**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Như thế nào?",
+            "Ở đâu?",
+            "Khi nào?",
+            "Để làm gì?"
+          ],
+          "a": "Ở đâu?",
+          "h": "Sân trường mát mẻ chỉ nơi chốn hoạt động nhảy dây.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7009,
+          "sub": "Đặt câu hỏi: Ở đâu?",
+          "q": "Bộ phận in đậm trong câu: 'Mẹ em cẩn thận cất giữ chiếc hộp bút mực cũ **trong ngăn kéo bàn học tập**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Khi nào?",
+            "Vì sao?",
+            "Ở đâu?",
+            "Bằng gì?"
+          ],
+          "a": "Ở đâu?",
+          "h": "Ngăn kéo chỉ vị trí nơi chốn cất hộp bút.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7010,
+          "sub": "Đặt câu hỏi: Ở đâu?",
+          "q": "Bộ phận in đậm trong câu: 'Người dân Tây Nguyên hào hứng tụ họp đông đủ **tại ngôi nhà rông dựng ngược**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Ở đâu?",
+            "Để làm gì?",
+            "Khi nào?",
+            "Như thế nào?"
+          ],
+          "a": "Ở đâu?",
+          "h": "Nhà rông chỉ vị trí tụ họp trò chuyện công việc.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7011,
+          "sub": "Đặt câu hỏi: Ở đâu?",
+          "q": "Bộ phận in đậm trong câu: 'Những bông hoa dại khoe sắc thắm rực rỡ **bên bờ suối nhỏ trong vắt**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Vì sao?",
+            "Bằng gì?",
+            "Ở đâu?",
+            "Khi nào?"
+          ],
+          "a": "Ở đâu?",
+          "h": "Bờ suối trong vắt chỉ nơi chốn hoa nở.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7012,
+          "sub": "Đặt câu hỏi: Ở đâu?",
+          "q": "Bộ phận in đậm trong câu: 'Bé thỏ trắng nhỏ bị lạc thỏ mẹ và khóc nức nở **trong khu rừng già sương mù**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Ở đâu?",
+            "Khi nào?",
+            "Như thế nào?",
+            "Bằng gì?"
+          ],
+          "a": "Ở đâu?",
+          "h": "Nơi thỏ trắng bị lạc là khu rừng già sương mù.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7013,
+          "sub": "Đặt câu hỏi: Ở đâu?",
+          "q": "Bộ phận in đậm trong câu: 'Bố thong thả dắt em đi bộ tập thể dục **xung quanh bờ hồ lộng gió**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Khi nào?",
+            "Ở đâu?",
+            "Để làm gì?",
+            "Vì sao?"
+          ],
+          "a": "Ở đâu?",
+          "h": "Bờ hồ là vị trí không gian nơi chốn đi bộ.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7014,
+          "sub": "Đặt câu hỏi: Vì sao?",
+          "q": "Bộ phận in đậm trong câu: 'Bạn Nam đạt điểm mười đỏ chói môn Tiếng Việt **nhờ đức tính chăm chỉ rèn luyện**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Vì sao?",
+            "Ở đâu?",
+            "Khi nào?",
+            "Để làm gì?"
+          ],
+          "a": "Vì sao?",
+          "h": "Hỏi về lý do, nguyên nhân đạt điểm mười.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7015,
+          "sub": "Đặt câu hỏi: Vì sao?",
+          "q": "Bộ phận in đậm trong câu: 'Đàn cá nhỏ hoảng sợ bơi lội trốn chạy khắp nơi **vì bóng đen con cò rình rập**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Như thế nào?",
+            "Khi nào?",
+            "Vì sao?",
+            "Bằng gì?"
+          ],
+          "a": "Vì sao?",
+          "h": "Hỏi về lý do đàn cá hoảng sợ bơi lội.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7016,
+          "sub": "Đặt câu hỏi: Vì sao?",
+          "q": "Bộ phận in đậm trong câu: 'Con đường làng trơn trượt lầy lội đầy vũng nước **do trận mưa rào đêm qua**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Ở đâu?",
+            "Vì sao?",
+            "Như thế nào?",
+            "Để làm gì?"
+          ],
+          "a": "Vì sao?",
+          "h": "Nguyên nhân đường trơn trượt trơn bóng.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7017,
+          "sub": "Đặt câu hỏi: Vì sao?",
+          "q": "Bộ phận in đậm trong câu: 'Bé Thỏ trắng bị thỏ mẹ phê bình nghiêm khắc **vì không chịu vâng lời dặn dò**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Khi nào?",
+            "Bằng gì?",
+            "Vì sao?",
+            "Như thế nào?"
+          ],
+          "a": "Vì sao?",
+          "h": "Lý do thỏ trắng bị thỏ mẹ phê bình.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7018,
+          "sub": "Đặt câu hỏi: Vì sao?",
+          "q": "Bộ phận in đậm trong câu: 'Học sinh lớp 3 hào hứng vỗ tay reo hò **vì buổi biểu diễn xiếc quá vui vẻ**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Vì sao?",
+            "Ở đâu?",
+            "Để làm gì?",
+            "Như thế nào?"
+          ],
+          "a": "Vì sao?",
+          "h": "Lý do học sinh reo hò vỗ tay.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7019,
+          "sub": "Đặt câu hỏi: Vì sao?",
+          "q": "Bộ phận in đậm trong câu: 'Những bông hoa héo rũ cúi đầu xuống đất **bởi vì trời nắng gắt kéo dài**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Như thế nào?",
+            "Ở đâu?",
+            "Vì sao?",
+            "Khi nào?"
+          ],
+          "a": "Vì sao?",
+          "h": "Nguyên nhân hoa héo rũ là nắng gắt.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7020,
+          "sub": "Đặt câu hỏi: Vì sao?",
+          "q": "Bộ phận in đậm trong câu: 'Chú mèo mướp nhảy tót lên nóc tủ nằm im **vì chú vô cùng sợ hãi cún con**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Bằng gì?",
+            "Vì sao?",
+            "Khi nào?",
+            "Để làm gì?"
+          ],
+          "a": "Vì sao?",
+          "h": "Nguyên nhân chú mèo nhảy lên nóc tủ nằm im.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7021,
+          "sub": "Đặt câu hỏi: Để làm gì?",
+          "q": "Bộ phận in đậm trong câu: 'Chúng em tích cực trồng thêm nhiều cây xanh **để bảo vệ bầu không khí trong lành**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Để làm gì?",
+            "Như thế nào?",
+            "Khi nào?",
+            "Vì sao?"
+          ],
+          "a": "Để làm gì?",
+          "h": "Mục đích trồng cây xanh là bảo vệ bầu không khí.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7022,
+          "sub": "Đặt câu hỏi: Để làm gì?",
+          "q": "Bộ phận in đậm trong câu: 'Sáng nào bố cũng chạy bộ thể thao **để nâng cao sức khỏe dẻo dai**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Khi nào?",
+            "Ở đâu?",
+            "Để làm gì?",
+            "Bằng gì?"
+          ],
+          "a": "Để làm gì?",
+          "h": "Mục đích chạy bộ thể thao của bố.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7023,
+          "sub": "Đặt câu hỏi: Để làm gì?",
+          "q": "Bộ phận in đậm trong câu: 'Lan mượn bạn Nam chiếc bút chì mới **để hoàn thành bức vẽ phong cảnh**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Như thế nào?",
+            "Để làm gì?",
+            "Vì sao?",
+            "Khi nào?"
+          ],
+          "a": "Để làm gì?",
+          "h": "Mục đích mượn chiếc bút chì.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7024,
+          "sub": "Đặt câu hỏi: Để làm gì?",
+          "q": "Bộ phận in đậm trong câu: 'Mẹ gieo trồng các luống rau cải dền đỏ **để gia đình luôn có rau sạch ăn**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Ở đâu?",
+            "Để làm gì?",
+            "Như thế nào?",
+            "Bằng gì?"
+          ],
+          "a": "Để làm gì?",
+          "h": "Mục đích gieo trồng cải dền đỏ.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7025,
+          "sub": "Đặt câu hỏi: Để làm gì?",
+          "q": "Bộ phận in đậm trong câu: 'Nam nỗ lực chăm ngoan học tập giỏi giang **để ông bà bố mẹ tự hào vui lòng**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Vì sao?",
+            "Như thế nào?",
+            "Để làm gì?",
+            "Khi nào?"
+          ],
+          "a": "Để làm gì?",
+          "h": "Mục đích nỗ lực học tập của Nam.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7026,
+          "sub": "Đặt câu hỏi: Để làm gì?",
+          "q": "Bộ phận in đậm trong câu: 'Hai chị em thu dọn bàn học tập ngay ngắn **để chuẩn bị bước vào năm học mới**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Ở đâu?",
+            "Khi nào?",
+            "Để làm gì?",
+            "Như thế nào?"
+          ],
+          "a": "Để làm gì?",
+          "h": "Mục đích dọn bàn học gọn gàng.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7027,
+          "sub": "Đặt câu hỏi: Để làm gì?",
+          "q": "Bộ phận in đậm trong câu: 'Chúng em gom góp sách báo cũ hằng ngày **để ủng hộ các bạn nhỏ vùng cao**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Bằng gì?",
+            "Để làm gì?",
+            "Vì sao?",
+            "Ở đâu?"
+          ],
+          "a": "Để làm gì?",
+          "h": "Mục đích gom sách báo cũ ủng hộ.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7028,
+          "sub": "Đặt câu hỏi: Như thế nào?",
+          "q": "Bộ phận in đậm trong câu: 'Cơn gió heo may nhè nhẹ thổi qua kẽ lá bàng **rất êm dịu và mát mẻ**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Như thế nào?",
+            "Khi nào?",
+            "Vì sao?",
+            "Bằng gì?"
+          ],
+          "a": "Như thế nào?",
+          "h": "Hỏi về đặc điểm, tính chất của cơn gió heo may.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7029,
+          "sub": "Đặt câu hỏi: Như thế nào?",
+          "q": "Bộ phận in đậm trong câu: 'Họa sĩ nhí say sưa vẽ bức tranh phong cảnh quê hương **một cách chăm chú tỉ mỉ**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Như thế nào?",
+            "Ở đâu?",
+            "Để làm gì?",
+            "Vì sao?"
+          ],
+          "a": "Như thế nào?",
+          "h": "Cách thức, đặc điểm họa sĩ vẽ tranh.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7030,
+          "sub": "Đặt câu hỏi: Như thế nào?",
+          "q": "Bộ phận in đậm trong câu: 'Dòng nước suối rừng róc rách chảy qua khe đá **rất hiền hòa và trong vắt**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Khi nào?",
+            "Như thế nào?",
+            "Bằng gì?",
+            "Ở đâu?"
+          ],
+          "a": "Như thế nào?",
+          "h": "Đặc điểm dòng nước suối chảy.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7031,
+          "sub": "Đặt câu hỏi: Như thế nào?",
+          "q": "Bộ phận in đậm trong câu: 'Mascot Thỏ Hồng nói chuyện cùng các bạn nhỏ lớp 3 **vô cùng ngọt ngào trìu mến**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Vì sao?",
+            "Để làm gì?",
+            "Như thế nào?",
+            "Khi nào?"
+          ],
+          "a": "Như thế nào?",
+          "h": "Cách thức, thái độ Mascot Thỏ Hồng nói chuyện.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7032,
+          "sub": "Đặt câu hỏi: Như thế nào?",
+          "q": "Bộ phận in đậm trong câu: 'Tiếng trống trường khai giảng giòn giã ngân vang khắp không gian **thật oai hùng**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Bằng gì?",
+            "Như thế nào?",
+            "Ở đâu?",
+            "Vì sao?"
+          ],
+          "a": "Như thế nào?",
+          "h": "Đặc điểm âm thanh tiếng trống trường vang dã.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7033,
+          "sub": "Đặt câu hỏi: Như thế nào?",
+          "q": "Bộ phận in đậm trong câu: 'Bạn Nam xếp dọn sách vở bút mực gọn gàng ngăn nắp **rất nhanh nhẹn tháo vát**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Như thế nào?",
+            "Khi nào?",
+            "Để làm gì?",
+            "Ở đâu?"
+          ],
+          "a": "Như thế nào?",
+          "h": "Đặc điểm hoạt động xếp dọn sách vở của Nam.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7034,
+          "sub": "Đặt câu hỏi: Như thế nào?",
+          "q": "Bộ phận in đậm trong câu: 'Những giọt sương ban mai đọng trên cánh hoa hồng **long lanh như hạt ngọc**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Ở đâu?",
+            "Như thế nào?",
+            "Vì sao?",
+            "Bằng gì?"
+          ],
+          "a": "Như thế nào?",
+          "h": "Đặc điểm long lanh óng ánh của giọt sương mai.",
+          "img": "",
+          "w": 14
+        },
+        {
+          "id": 7035,
+          "sub": "Đặt câu hỏi: Bằng gì?",
+          "q": "Bộ phận in đậm trong câu: 'Người thợ gốm nặn chiếc bình hoa cổ tinh xảo **bằng đôi bàn tay khéo léo**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Bằng gì?",
+            "Để làm gì?",
+            "Như thế nào?",
+            "Vì sao?"
+          ],
+          "a": "Bằng gì?",
+          "h": "Đôi bàn tay khéo léo là phương tiện, công cụ thực hiện nặn bình gốm.",
+          "img": "",
+          "w": 15
+        },
+        {
+          "id": 7036,
+          "sub": "Đặt câu hỏi: Bằng gì?",
+          "q": "Bộ phận in đậm trong câu: 'Bé tập viết những chữ cái tròn trịa đầu tiên **bằng chiếc bút mực rực rỡ**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Ở đâu?",
+            "Bằng gì?",
+            "Khi nào?",
+            "Như thế nào?"
+          ],
+          "a": "Bằng gì?",
+          "h": "Bút mực rực rỡ chỉ công cụ bé tập viết chữ.",
+          "img": "",
+          "w": 15
+        },
+        {
+          "id": 7037,
+          "sub": "Đặt câu hỏi: Bằng gì?",
+          "q": "Bộ phận in đậm trong câu: 'Hai chú chim sẻ nhỏ nhanh nhẹn tha rác khô về làm tổ **bằng chiếc mỏ nhỏ nhắn**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Vì sao?",
+            "Bằng gì?",
+            "Để làm gì?",
+            "Như thế nào?"
+          ],
+          "a": "Bằng gì?",
+          "h": "Mỏ nhỏ nhắn chỉ phương tiện chim sẻ tha rác khô về tổ.",
+          "img": "",
+          "w": 15
+        },
+        {
+          "id": 7038,
+          "sub": "Đặt câu hỏi: Bằng gì?",
+          "q": "Bộ phận in đậm trong câu: 'Chúng em quét dọn sạch sẽ bụi bẩn sân trường **bằng chiếc chổi tre mộc mạc**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Khi nào?",
+            "Ở đâu?",
+            "Bằng gì?",
+            "Vì sao?"
+          ],
+          "a": "Bằng gì?",
+          "h": "Chổi tre mộc mạc chỉ công cụ dọn dẹp quét rác.",
+          "img": "",
+          "w": 15
+        },
+        {
+          "id": 7039,
+          "sub": "Đặt câu hỏi: Bằng gì?",
+          "q": "Bộ phận in đậm trong câu: 'Em gửi gắm tấm lòng kính trọng tới cô giáo **bằng tấm bưu thiếp tự làm đầy sắc màu**.' trả lời cho câu hỏi nào?",
+          "o": [
+            "Bằng gì?",
+            "Để làm gì?",
+            "Như thế nào?",
+            "Vì sao?"
+          ],
+          "a": "Bằng gì?",
+          "h": "Tấm bưu thiếp tự làm là phương tiện truyền tải tấm lòng kính trọng.",
+          "img": "",
+          "w": 15
+        },
+        {
+          "id": 7040,
+          "sub": "Làm chủ Kiểu câu",
+          "q": "Câu văn sau: 'Ôi, bông hoa hồng nhung nở rộ dưới sương mai đẹp quá!' thuộc kiểu câu nào dưới đây?",
+          "o": [
+            "Câu kể",
+            "Câu cảm",
+            "Câu khiến",
+            "Câu hỏi"
+          ],
+          "a": "Câu cảm",
+          "h": "Câu bộc lộ cảm xúc khen ngợi bông hoa hồng nhung nở rực rỡ, kết thúc bằng dấu chấm than.",
+          "img": "",
+          "w": 15
+        },
+        {
+          "id": 7041,
+          "sub": "Làm chủ Kiểu câu",
+          "q": "Câu văn sau: 'Con hãy đi rửa tay sạch sẽ trước khi vào ăn cơm chiều nhé!' thuộc kiểu câu nào dưới đây?",
+          "o": [
+            "Câu kể",
+            "Câu cảm",
+            "Câu khiến",
+            "Câu hỏi"
+          ],
+          "a": "Câu khiến",
+          "h": "Câu đưa ra yêu cầu, lời dặn dò mong muốn của người mẹ đối với con.",
+          "img": "",
+          "w": 15
+        },
+        {
+          "id": 7042,
+          "sub": "Làm chủ Kiểu câu",
+          "q": "Câu văn sau: 'Em đã làm bài tập đơn xin gia nhập sinh hoạt Câu lạc bộ chưa?' thuộc kiểu câu nào dưới đây?",
+          "o": [
+            "Câu kể",
+            "Câu cảm",
+            "Câu khiến",
+            "Câu hỏi"
+          ],
+          "a": "Câu hỏi",
+          "h": "Câu dùng để hỏi về việc đã hoàn thành đơn chưa, kết thúc bằng dấu hỏi.",
+          "img": "",
+          "w": 15
+        },
+        {
+          "id": 7043,
+          "sub": "Làm chủ Kiểu câu",
+          "q": "Câu văn sau: 'Mái trường Tiểu học thân thương là ngôi nhà thứ hai ấm áp của em.' thuộc kiểu câu nào dưới đây?",
+          "o": [
+            "Câu kể",
+            "Câu cảm",
+            "Câu khiến",
+            "Câu hỏi"
+          ],
+          "a": "Câu kể",
+          "h": "Câu giới thiệu, miêu tả về ngôi trường tiểu học, kết thúc bằng dấu chấm.",
+          "img": "",
+          "w": 15
+        },
+        {
+          "id": 7044,
+          "sub": "Làm chủ Kiểu câu",
+          "q": "Câu văn sau: 'Các em học sinh hãy giữ trật tự chung trong thư viện trường!' thuộc kiểu câu nào dưới đây?",
+          "o": [
+            "Câu kể",
+            "Câu cảm",
+            "Câu khiến",
+            "Câu hỏi"
+          ],
+          "a": "Câu khiến",
+          "h": "Câu yêu cầu, đề nghị giữ trật tự chung khi ở trong thư viện đọc sách.",
+          "img": "",
+          "w": 15
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Giao tiếp & Văn bản thực tế",
+      "desc": "Hoàn thiện nghi thức giao tiếp lễ phép và số hóa tương tác điền khuyết Đơn từ học trò mộc mạc!",
+      "qs": [
+        {
+          "id": 8000,
+          "sub": "Nghi thức Giao tiếp xã hội",
+          "q": "Khi vô tình làm rách một trang sách toán của bạn học Nam bên cạnh, em cần nói lời xin lỗi thế nào?",
+          "o": [
+            "Chạy đi chỗ khác coi như không biết việc này.",
+            "Xin lỗi chân thành và đề nghị dán lại trang sách giúp bạn.",
+            "Bảo Nam là sách cũ rách thì có sao đâu.",
+            "Mắng Nam vì để sách ở chỗ dễ làm rách."
+          ],
+          "a": "Xin lỗi chân thành và đề nghị dán lại trang sách giúp bạn.",
+          "h": "Nghi thức xin lỗi lịch sự, văn minh tiểu học là nhận lỗi chân thành và có giải pháp sửa đổi khắc phục lỗi sai.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8001,
+          "sub": "Nghi thức Giao tiếp xã hội",
+          "q": "Khi muốn mượn thước kẻ vẽ của bạn Lan trong lớp, em nên nói câu nào lịch sự nhất?",
+          "o": [
+            "Lan ơi, đưa tớ mượn thước kẻ nhanh lên!",
+            "Cậu cho tớ mượn thước vẽ một lát nhé, vẽ xong tớ sẽ trả cậu ngay.",
+            "Cướp thước trên bàn Lan vẽ rồi trả sau.",
+            "Này, thước kẻ của cậu đâu đưa tớ dùng tí."
+          ],
+          "a": "Cậu cho tớ mượn thước vẽ một lát nhé, vẽ xong tớ sẽ trả cậu ngay.",
+          "h": "Lời mượn đồ lịch sự cần hỏi nhã nhặn, nêu lý do và có lời hứa hẹn trả lại đồ đúng hạn.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8002,
+          "sub": "Nghi thức Giao tiếp xã hội",
+          "q": "Khi nhận được món quà bưu thiếp xinh xắn từ bạn thân vào dịp sinh nhật, em nên nói gì?",
+          "o": [
+            "Tớ cảm ơn cậu rất nhiều vì món quà bưu thiếp sinh nhật tự tay cậu làm nhé!",
+            "Quà bưu thiếp giấy này không đắt tiền tớ không thích.",
+            "Cất đi không nói lời nào với bạn bè cả.",
+            "Lần sau cậu mua quà bánh ngon hơn cho tớ nhé!"
+          ],
+          "a": "Tớ cảm ơn cậu rất nhiều vì món quà bưu thiếp sinh nhật tự tay cậu làm nhé!",
+          "h": "Lời cảm ơn ấm áp thể hiện lòng trân trọng đối với tình cảm món quà của bạn bè.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8003,
+          "sub": "Nghi thức Giao tiếp xã hội",
+          "q": "Khi gặp thầy giáo chủ nhiệm cũ đi bộ trên hành lang trường học mang cặp nặng, em ứng xử thế nào?",
+          "o": [
+            "Lờ đi chạy thật nhanh qua để tránh phải chào hỏi thầy.",
+            "Em chào thầy ạ! Thầy đi dạy học mệt không, em xách cặp đỡ thầy một đoạn nhé.",
+            "Đứng nhìn thầy xách cặp nặng rồi cười đùa vui vẻ.",
+            "Hét to chào thầy từ xa rồi chạy nhảy đi tiếp."
+          ],
+          "a": "Em chào thầy ạ! Thầy đi dạy học mệt không, em xách cặp đỡ thầy một đoạn nhé.",
+          "h": "Ứng xử kính trọng thầy cô bằng lời chào lễ phép nhã nhặn và có hành động giúp đỡ phù hợp.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8004,
+          "sub": "Nghi thức Giao tiếp xã hội",
+          "q": "Khi muốn nhờ bố hướng dẫn giải bài toán nâng cao học sinh giỏi lớp 3, em hỏi thế nào?",
+          "o": [
+            "Bố ơi, giải ngay cho con bài toán khó này đi!",
+            "Bố ơi, bố rảnh chưa chỉ bảo dạy con giải bài toán khó này với ạ!",
+            "Quăng quyển vở trước mặt bố nhờ bố làm hộ bài tập.",
+            "Bố rảnh không, làm bài tập toán này giúp con đi."
+          ],
+          "a": "Bố ơi, bố rảnh chưa chỉ bảo dạy con giải bài toán khó này với ạ!",
+          "h": "Lời nhờ vả người lớn cần kính trọng lễ phép, xin phép thời gian rảnh của người lớn.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8005,
+          "sub": "Nghi thức Giao tiếp xã hội",
+          "q": "Khi vô tình va chạm mạnh làm ngã bạn học ở sân trường trong giờ chơi, em ứng xử ra sao?",
+          "o": [
+            "Bỏ chạy ngay lập tức để không bị thầy cô giáo phạt.",
+            "Mắng bạn đi đứng không chú ý nhìn đường đi.",
+            "Tớ vô cùng xin lỗi cậu, cậu có bị đau ở đâu không để tớ đỡ cậu dậy nhé!",
+            "Đứng nhìn bạn tự đứng dậy rồi chê bạn yếu đuối."
+          ],
+          "a": "Tớ vô cùng xin lỗi cậu, cậu có bị đau ở đâu không để tớ đỡ cậu dậy nhé!",
+          "h": "Khi vô tình làm ngã bạn cần lập tức đỡ bạn dậy và hỏi han vết thương lo lắng chân thành.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8006,
+          "sub": "Nghi thức Giao tiếp xã hội",
+          "q": "Khi ông nội từ quê lên chơi mang theo rất nhiều giỏ quà mộc mạc, em nói lời chào thế nào?",
+          "o": [
+            "Ông lên chơi mang cho cháu đồ chơi gì đấy ạ?",
+            "Cháu kính chào ông nội ạ! Ông đi đường xa mệt không, cháu đỡ giỏ giúp ông ạ!",
+            "Chào ông xong chạy ngay vào phòng xem phim hoạt hình.",
+            "Ông mệt không ông tự dọn đồ đạc vào phòng nhé."
+          ],
+          "a": "Cháu kính chào ông nội ạ! Ông đi đường xa mệt không, cháu đỡ giỏ giúp ông ạ!",
+          "h": "Lời chào lễ phép, thể hiện lòng yêu kính ông bà bằng lời hỏi han sức khỏe ấm áp.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8007,
+          "sub": "Nghi thức Giao tiếp xã hội",
+          "q": "Khi nhận được chiếc bút máy viết bài từ bạn lúc bút em hết mực, em nói lời cảm ơn ra sao?",
+          "o": [
+            "Cảm ơn cậu rất nhiều vì đã nhường tớ mượn chiếc bút máy viết bài nhé!",
+            "Bút viết không mượt lắm nhưng tớ tạm dùng.",
+            "Nhận bút viết bài không nói lời nào cảm ơn bạn cả.",
+            "Lần sau nhớ sạc đầy mực trước khi cho mượn nhé."
+          ],
+          "a": "Cảm ơn cậu rất nhiều vì đã nhường tớ mượn chiếc bút máy viết bài nhé!",
+          "h": "Cảm ơn chân thành vì sự giúp đỡ kịp thời của bạn bè trong lúc khó khăn.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8008,
+          "sub": "Nghi thức Giao tiếp xã hội",
+          "q": "Khi được cô chú hàng xóm tốt bụng sửa xích xe đạp giúp trên đường đi học, em nói gì?",
+          "o": [
+            "Cháu cảm ơn cô chú hàng xóm rất nhiều vì đã giúp cháu dắt chiếc xe đạp bị tuột xích ạ!",
+            "Sửa xe lâu quá làm cháu suýt muộn học rồi.",
+            "Lên xe đạp đi luôn không chào không cảm ơn gì.",
+            "Cô chú sửa xe chuyên nghiệp như thợ sửa xe thật ấy."
+          ],
+          "a": "Cháu cảm ơn cô chú hàng xóm rất nhiều vì đã giúp cháu dắt chiếc xe đạp bị tuột xích ạ!",
+          "h": "Lời cảm ơn lễ phép thể hiện sự trân trọng lòng tốt giúp đỡ của hàng xóm xung quanh.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8009,
+          "sub": "Nghi thức Giao tiếp xã hội",
+          "q": "Khi thấy bà ngoại đang ngồi nghỉ ngơi trên chiếc võng tre hiên nhà vào trưa nắng, em nói gì?",
+          "o": [
+            "Bà ơi bà nấu cơm trưa cho cháu ăn chưa ạ?",
+            "Bà ơi, bà râm mát thế này để cháu quạt mát và kể chuyện lớp học cho bà nghe nhé!",
+            "Bật quạt điện to lên rồi bỏ đi chơi điện thoại.",
+            "Bà ngồi võng tre thế này có mát bằng máy lạnh không bà?"
+          ],
+          "a": "Bà ơi, bà râm mát thế này để cháu quạt mát và kể chuyện lớp học cho bà nghe nhé!",
+          "h": "Lời hỏi thăm thể hiện sự hiếu thảo quan tâm và yêu thương dành cho bà kính mến.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8010,
+          "sub": "Nghi thức Giao tiếp xã hội",
+          "q": "Khi bạn che chung ô đi bộ dưới trời mưa to từ cổng trường học về, em nói lời cảm ơn ra sao?",
+          "o": [
+            "Tớ cảm ơn bạn rất nhiều vì chiếc ô che mưa che chung mát mẻ này nhé!",
+            "Ô nhỏ quá làm tớ vẫn bị ướt vai áo này.",
+            "Đi chung ô im lặng coi như việc hiển nhiên bạn phải làm.",
+            "Lần sau nhớ mang chiếc ô to hơn che cho thoải mái."
+          ],
+          "a": "Tớ cảm ơn bạn rất nhiều vì chiếc ô che mưa che chung mát mẻ này nhé!",
+          "h": "Trân trọng sự chia sẻ che chung ô ấm áp nghĩa tình của bạn bè ngày mưa rào.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8011,
+          "sub": "Nghi thức Giao tiếp xã hội",
+          "q": "Mẹ đi làm văn phòng mệt mỏi về nhà chiều muộn, lời nói nào của em khiến mẹ vui nhất?",
+          "o": [
+            "Mẹ ơi mẹ mua quà bánh ngon gì cho con ăn không ạ?",
+            "Mẹ ơi, hôm nay mẹ đi làm mệt không ạ? Con rót cốc nước mát mẹ uống nhé!",
+            "Mẹ tự rót nước uống đi con bận học bài rồi.",
+            "Sao hôm nay mẹ đi làm về muộn thế làm con đói bụng."
+          ],
+          "a": "Mẹ ơi, hôm nay mẹ đi làm mệt không ạ? Con rót cốc nước mát mẹ uống nhé!",
+          "h": "Lời nói yêu thương hiếu thảo hỏi han sức khỏe xua tan mệt mỏi của người mẹ dãi dầu.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8012,
+          "sub": "Nghi thức Giao tiếp xã hội",
+          "q": "Thấy một em nhỏ lớp 1 đang khóc mếu máo tìm mẹ ở sân trường lúc tan học, em ứng xử thế nào?",
+          "o": [
+            "Mặc kệ em nhỏ tự khóc tìm mẹ vì không phải việc của mình.",
+            "Chào em, chị là học sinh lớp 3, em bị lạc thỏ mẹ à để chị đưa em đến phòng bảo vệ nhé!",
+            "Mắng em nhỏ khóc nhè làm ồn ào sân trường.",
+            "Dắt em nhỏ ra cổng trường bỏ mặc em ở đó rồi về."
+          ],
+          "a": "Chào em, chị là học sinh lớp 3, em bị lạc thỏ mẹ à để chị đưa em đến phòng bảo vệ nhé!",
+          "h": "Ứng xử nhân ái giúp đỡ em nhỏ gặp khó khăn bằng hành động dắt em tới phòng bảo vệ an toàn.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8013,
+          "sub": "Nghi thức Giao tiếp xã hội",
+          "q": "Khi gặp anh chị họ hàng lớn tuổi đến chúc Tết gia đình dịp năm mới, em chúc Tết ra sao?",
+          "o": [
+            "Lấy phong bao lì đỏ lì xì rồi chạy đi chơi luôn.",
+            "Em chào anh chị ạ! Chúc anh chị một năm mới tràn ngập niềm vui học giỏi ạ!",
+            "Chúc anh chị kiếm thật nhiều tiền để lì xì cho em.",
+            "Chào anh chị xong đứng im đợi lì xì không chúc gì."
+          ],
+          "a": "Em chào anh chị ạ! Chúc anh chị một năm mới tràn ngập niềm vui học giỏi ạ!",
+          "h": "Chúc Tết lễ phép tươi vui thể hiện nét đẹp văn hóa giao tiếp gia đình ngày Tết cổ truyền.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8014,
+          "sub": "Nghi thức Giao tiếp xã hội",
+          "q": "Em đi học muộn giờ vào lớp 10 phút, em xin lỗi thầy giáo chủ nhiệm đứng lớp thế nào?",
+          "o": [
+            "Em bị tuột xích xe nên đi muộn thế thôi ạ.",
+            "Lặng lẽ lẻn vào góc lớp ngồi không xin phép thầy.",
+            "Thưa thầy, em vô cùng xin lỗi thầy vì hôm nay đi học muộn do xe đạp bị tuột xích giữa đường ạ!",
+            "Đứng ngoài cửa lớp hét to xin vào lớp học."
+          ],
+          "a": "Thưa thầy, em vô cùng xin lỗi thầy vì hôm nay đi học muộn do xe đạp bị tuột xích giữa đường ạ!",
+          "h": "Lời giải thích lịch sự, nhận lỗi chân thành và nêu nguyên nhân khách quan trung thực.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8015,
+          "sub": "Lá đơn Đội viên hành chính",
+          "q": "Trong 'Đơn xin vào Đội', bộ phận nhận đơn đầu tiên trang trọng nhất là gửi ai?",
+          "o": [
+            "Ban Giám hiệu nhà trường và Ban Chỉ huy Liên đội",
+            "Bác bảo vệ và cô hiệu trưởng trường học",
+            "Các bạn học sinh đội viên lớp trưởng",
+            "Bố mẹ và thầy giáo chủ nhiệm lớp 3"
+          ],
+          "a": "Ban Giám hiệu nhà trường và Ban Chỉ huy Liên đội",
+          "h": "Đơn xin vào Đội cần được gửi trang trọng tới Ban Giám hiệu nhà trường và Ban Chỉ huy Liên đội quyết định kết nạp.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8016,
+          "sub": "Lá đơn Đội viên hành chính",
+          "q": "Dòng chữ ghi địa điểm và thời gian viết đơn ('..., ngày... tháng... năm...') thường đặt ở đâu?",
+          "o": [
+            "Ở góc phía trên bên phải của lá đơn hành chính",
+            "Ở chính giữa trang giấy viết đơn",
+            "Ở phần cuối cùng góc bên trái lá đơn",
+            "Ở đằng sau chữ ký của người viết đơn"
+          ],
+          "a": "Ở góc phía trên bên phải của lá đơn hành chính",
+          "h": "Địa điểm và ngày tháng năm viết đơn được căn lề góc trên bên phải trang giấy.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8017,
+          "sub": "Lá đơn Đội viên hành chính",
+          "q": "Sau khi tìm hiểu điều lệ, tổ chức Đội mà em mong muốn xin được gia nhập có tên là gì?",
+          "o": [
+            "Đội Thiếu niên Tiền phong Hồ Chí Minh",
+            "Hội học sinh giỏi tiểu học xuất sắc",
+            "Câu lạc bộ bơi lội chim non trường học",
+            "Đội nhi đồng chăm ngoan Thỏ Hồng"
+          ],
+          "a": "Đội Thiếu niên Tiền phong Hồ Chí Minh",
+          "h": "Tốt chức Đội dành cho thiếu niên nhi đồng Việt Nam là Đội Thiếu niên Tiền phong Hồ Chí Minh.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8018,
+          "sub": "Lá đơn Đội viên hành chính",
+          "q": "Từ ngữ trang trọng dùng để mở đầu dòng gửi đơn tới người nhận quyền lực quyết định kết nạp là gì?",
+          "o": [
+            "Kính gửi",
+            "Thân gửi",
+            "Chào gửi",
+            "Gửi tới"
+          ],
+          "a": "Kính gửi",
+          "h": "Từ ngữ hành chính trang trọng là 'Kính gửi' thể hiện lòng tôn kính.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8019,
+          "sub": "Lá đơn Đội viên hành chính",
+          "q": "Phần nội dung 'Thực hiện tốt Năm điều Bác Hồ dạy, Tuân thủ Điều lệ Đội' thuộc mục nào trong lá đơn?",
+          "o": [
+            "Lời hứa của người viết đơn",
+            "Lý do xin viết đơn gia nhập",
+            "Lời giới thiệu bản thân người viết",
+            "Ý kiến dặn dò của phụ huynh học sinh"
+          ],
+          "a": "Lời hứa của người viết đơn",
+          "h": "Đây là phần lời hứa cam kết trách nhiệm của người viết đơn sau khi được kết nạp vào Đội.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8020,
+          "sub": "Lá đơn Đội viên hành chính",
+          "q": "Mục 'Em viết đơn này xin gia nhập vào tổ chức Đội để rèn luyện trở thành con ngoan trò giỏi' thuộc về phần nào?",
+          "o": [
+            "Lý do viết đơn xin gia nhập",
+            "Lời cảm ơn cuối lá đơn",
+            "Thông tin họ tên ngày sinh",
+            "Chữ ký của thầy giáo chủ nhiệm"
+          ],
+          "a": "Lý do viết đơn xin gia nhập",
+          "h": "Phần trình bày nguyện vọng lý do thiết tha mong mỏi được kết nạp Đội viên.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8021,
+          "sub": "Lá đơn Đội viên hành chính",
+          "q": "Cuối lá đơn xin vào Đội, phần chữ ký bên phải luôn đi kèm với thông tin dòng chữ nào?",
+          "o": [
+            "Họ và tên học sinh người viết đơn",
+            "Chữ ký xác nhận của thỏ mẹ",
+            "Họ tên của thầy hiệu trưởng trường",
+            "Ý kiến phê duyệt của Đội trưởng"
+          ],
+          "a": "Họ và tên học sinh người viết đơn",
+          "h": "Chữ ký và họ tên đầy đủ rõ ràng của chính người viết đơn xin gia nhập.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8022,
+          "sub": "Lá đơn Đội viên hành chính",
+          "q": "Dòng chữ 'CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM / Độc lập - Tự do - Hạnh phúc' được gọi là gì?",
+          "o": [
+            "Quốc hiệu và Tiêu ngữ",
+            "Địa điểm viết đơn học sinh",
+            "Tên tiêu đề lá đơn xin kết nạp",
+            "Lời hứa thiêng liêng của đội viên"
+          ],
+          "a": "Quốc hiệu và Tiêu ngữ",
+          "h": "Quốc hiệu và Tiêu ngữ bắt buộc đặt trang trọng chính giữa trên đầu mọi lá đơn hành chính.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8023,
+          "sub": "Lá đơn Đội viên hành chính",
+          "q": "Tiêu đề chính của lá đơn xin gia nhập Đội viên viết hoa in đậm đặt chính giữa trang giấy là gì?",
+          "o": [
+            "ĐƠN XIN VÀO ĐỘI",
+            "ĐƠN XIN ĐI HỌC MUỘN",
+            "ĐƠN GIA NHẬP CÂU LẠC BỘ",
+            "BỨC THƯ TAY GỬI BẠN PHƯƠNG XA"
+          ],
+          "a": "ĐƠN XIN VÀO ĐỘI",
+          "h": "Tiêu đề trang trọng in đậm viết hoa nổi bật trang trọng là 'ĐƠN XIN VÀO ĐỘI'.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8024,
+          "sub": "Lá đơn Đội viên hành chính",
+          "q": "Để lá đơn xin vào Đội được Ban Giám hiệu duyệt, học sinh cần viết đơn như thế nào?",
+          "o": [
+            "Nêu rõ lý do, viết nắn nót, sạch sẽ và ký tên trung thực.",
+            "Viết nhanh cẩu thả, tẩy xóa nhiều vết mực đen.",
+            "Nhờ bố mẹ viết hộ toàn bộ lá đơn xin kết nạp.",
+            "Viết bằng bút chì mờ nhạt rồi vẽ hình bông hoa màu đỏ."
+          ],
+          "a": "Nêu rõ lý do, viết nắn nót, sạch sẽ và ký tên trung thực.",
+          "h": "Lá đơn cần trang trọng nắn nót sạch đẹp, nêu rõ lý do nguyện vọng chân thành và tự ký tên chữ viết rõ ràng.",
+          "img": "",
+          "w": 17
+        },
+        {
+          "id": 8025,
+          "sub": "Đơn xin tham gia Câu lạc bộ",
+          "q": "Trong đơn xin gia nhập sinh hoạt Câu lạc bộ ngoại khóa, phần 'Kính gửi' hướng tới ai?",
+          "o": [
+            "Ban Chỉ huy/Ban Chủ nhiệm Câu lạc bộ",
+            "Thầy giáo dạy môn Toán trong trường",
+            "Các bạn đội viên lớp trưởng gương mẫu",
+            "Ông bà cha mẹ học sinh ở nhà"
+          ],
+          "a": "Ban Chỉ huy/Ban Chủ nhiệm Câu lạc bộ",
+          "h": "Kính gửi tới Ban Chủ nhiệm Câu lạc bộ phụ trách quản lý tiếp nhận thành viên.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8026,
+          "sub": "Đơn xin tham gia Câu lạc bộ",
+          "q": "Nội dung quan trọng nhất phần lý do trong đơn gia nhập Câu lạc bộ cờ vua hay vẽ tranh là gì?",
+          "o": [
+            "Năng khiếu, sở thích học sinh và lý do mong muốn sinh hoạt CLB.",
+            "Báo cáo điểm kiểm tra học kì lớp 3.",
+            "Kể chuyện kỳ nghỉ hè thú vị vừa qua.",
+            "Ghi chép thời khóa biểu học tập ngày thường."
+          ],
+          "a": "Năng khiếu, sở thích học sinh và lý do mong muốn sinh hoạt CLB.",
+          "h": "Nêu bật năng khiếu, sở thích yêu thích môn học và lý do mong mỏi tham gia sinh hoạt cùng câu lạc bộ.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8027,
+          "sub": "Đơn xin tham gia Câu lạc bộ",
+          "q": "Phần cam kết cam đoan trách nhiệm của học sinh khi gia nhập sinh hoạt Câu lạc bộ là gì?",
+          "o": [
+            "Lời hứa tuân thủ nội quy, sinh hoạt đều đặn đóng góp tích cực.",
+            "Lời hứa sẽ học giỏi đạt điểm mười môn toán.",
+            "Lời chúc Tết năm mới tới thầy cô giáo.",
+            "Ký tên xác nhận thay cho bố mẹ học sinh."
+          ],
+          "a": "Lời hứa tuân thủ nội quy, sinh hoạt đều đặn đóng góp tích cực.",
+          "h": "Cam kết tuân thủ nội quy chung của CLB, tham gia sinh hoạt đều đặn và có tinh thần trách nhiệm.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8028,
+          "sub": "Đơn xin tham gia Câu lạc bộ",
+          "q": "Thông tin cá nhân đầu tiên học sinh cần khai báo chính xác trong lá đơn là gì?",
+          "o": [
+            "Họ tên, ngày sinh, lớp học hiện tại.",
+            "Họ tên nghề nghiệp của bố mẹ em.",
+            "Sở thích xem phim hoạt hình cuối tuần.",
+            "Địa chỉ trang web học tập trực tuyến."
+          ],
+          "a": "Họ tên, ngày sinh, lớp học hiện tại.",
+          "h": "Khai báo họ tên, ngày sinh, lớp học giúp thầy cô quản lý phân chia nhóm sinh hoạt thích hợp.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8029,
+          "sub": "Đơn xin tham gia Câu lạc bộ",
+          "q": "Tên tiêu đề lá đơn viết hoa in đậm đặt chính giữa của lá đơn ngoại khóa là gì?",
+          "o": [
+            "ĐƠN XIN GIA NHẬP CÂU LẠC BỘ",
+            "ĐƠN XIN VÀO ĐỘI THIẾU NIÊN",
+            "ĐƠN XIN PHÉP NGHỈ HỌC TẠM THỜI",
+            "PHIẾU ĐỌC SÁCH THƯ VIỆN LỚP 3"
+          ],
+          "a": "ĐƠN XIN GIA NHẬP CÂU LẠC BỘ",
+          "h": "Tiêu đề in đậm viết hoa nổi bật trang trọng là 'ĐƠN XIN GIA NHẬP CÂU LẠC BỘ'.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8030,
+          "sub": "Đơn xin tham gia Câu lạc bộ",
+          "q": "Trước phần ký tên và ghi họ tên người viết đơn ở cuối đơn, học sinh cần viết gì?",
+          "o": [
+            "Lời cảm ơn chân thành.",
+            "Lời xin lỗi vì viết đơn muộn.",
+            "Vẽ một bức tranh phong cảnh nhỏ.",
+            "Ghi chép số điện thoại liên lạc của bạn thân."
+          ],
+          "a": "Lời cảm ơn chân thành.",
+          "h": "Viết lời cảm ơn chân thành tới Ban chủ nhiệm đã dành thời gian đọc xét duyệt đơn.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8031,
+          "sub": "Đơn xin tham gia Câu lạc bộ",
+          "q": "Nếu em muốn học hát, vẽ tranh và múa ballet, em gửi đơn tới câu lạc bộ nào?",
+          "o": [
+            "Ban Chủ nhiệm Câu lạc bộ Nghệ thuật",
+            "Ban Chủ nhiệm Câu lạc bộ Cờ vua trí tuệ",
+            "Ban Chủ nhiệm Câu lạc bộ Bóng đá thiếu nhi",
+            "Ban Chủ nhiệm Câu lạc bộ Toán học lý thú"
+          ],
+          "a": "Ban Chủ nhiệm Câu lạc bộ Nghệ thuật",
+          "h": "Hát, múa, vẽ tranh thuộc lĩnh vực nghệ thuật sáng tạo.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8032,
+          "sub": "Đơn xin tham gia Câu lạc bộ",
+          "q": "Muốn học lập trình phần mềm trò chơi rèn luyện tư duy máy tính, em gia nhập CLB nào?",
+          "o": [
+            "Câu lạc bộ Tin học thông thái",
+            "Câu lạc bộ Thể thao bóng bàn",
+            "Câu lạc bộ Đọc sách kết nối tri thức",
+            "Câu lạc bộ Tiếng Anh giao tiếp xã hội"
+          ],
+          "a": "Câu lạc bộ Tin học thông thái",
+          "h": "Môn tin học, máy tính rèn luyện tư duy lập trình công nghệ.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8033,
+          "sub": "Đơn xin tham gia Câu lạc bộ",
+          "q": "Một tên gọi khác của đơn gia nhập sinh hoạt ngoại khóa được in sẵn mẫu cho bé điền là gì?",
+          "o": [
+            "Bản đăng ký thông tin câu lạc bộ ngoại khóa.",
+            "Đơn xin nghỉ học một tuần lễ Tết.",
+            "Thư gửi bạn phương xa giới thiệu quê hương.",
+            "Báo cáo kết quả hoạt động tuần của tổ học tập"
+          ],
+          "a": "Bản đăng ký thông tin câu lạc bộ ngoại khóa.",
+          "h": "Tên gọi in sẵn biểu mẫu nhanh gọn là 'Bản đăng ký thông tin câu lạc bộ ngoại khóa'.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8034,
+          "sub": "Đơn xin tham gia Câu lạc bộ",
+          "q": "Khi điền thông tin vào mẫu đơn in sẵn của nhà trường, học sinh cần lưu ý điều gì?",
+          "o": [
+            "Điền đầy đủ, chính xác, không tẩy xóa, viết nắn nót bằng một màu mực.",
+            "Viết bằng nhiều màu mực xanh đỏ tím vàng rực rỡ.",
+            "Để trống nhiều ô thông tin quan trọng rồi nộp đơn.",
+            "Tự tiện tẩy xóa làm bẩn nát tờ đơn in sẵn của trường."
+          ],
+          "a": "Điền đầy đủ, chính xác, không tẩy xóa, viết nắn nót bằng một màu mực.",
+          "h": "Điền đầy đủ thông tin cá nhân trung thực chính xác, giữ gìn sạch đẹp lá đơn bằng một màu mực viết.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8035,
+          "sub": "Văn bản thực tế học trò",
+          "q": "Khi viết một bức thư điện tử (Email) gửi cô giáo, dòng thông tin đầu tiên 'To' (Tới) cần ghi gì?",
+          "o": [
+            "Địa chỉ hòm thư điện tử (Email) của người nhận.",
+            "Họ tên địa chỉ nhà riêng của cô giáo.",
+            "Tiêu đề bức thư điện tử xin phép nghỉ học.",
+            "Chữ ký và họ tên học sinh người gửi."
+          ],
+          "a": "Địa chỉ hòm thư điện tử (Email) của người nhận.",
+          "h": "Dòng gửi đến 'To' bắt buộc phải điền chính xác địa chỉ Email của người nhận thư.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8036,
+          "sub": "Văn bản thực tế học trò",
+          "q": "Mục 'Subject' (Chủ đề) trong hòm thư điện tử Email dùng để ghi nội dung nào?",
+          "o": [
+            "Chủ đề thư ngắn gọn, rõ ràng bám sát nội dung chính muốn nói.",
+            "Kể chuyện dài dòng kì nghỉ hè thú vị.",
+            "Họ tên ngày sinh người gửi đơn.",
+            "Lời chào hỏi ban đầu tới cô giáo mến yêu."
+          ],
+          "a": "Chủ đề thư ngắn gọn, rõ ràng bám sát nội dung chính muốn nói.",
+          "h": "Mục chủ đề 'Subject' tóm tắt ngắn gọn mục đích chính của bức thư điện tử.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8037,
+          "sub": "Văn bản thực tế học trò",
+          "q": "Mở đầu nội dung bức thư điện tử (Email) gửi thầy cô giáo, em cần viết gì?",
+          "o": [
+            "Lời chào lễ phép tôn kính và giới thiệu rõ họ tên, lớp học.",
+            "Vào thẳng lý do đòi hỏi thầy cô giúp đỡ.",
+            "Lời cảm ơn cuối thư điện tử nắn nót.",
+            "Lời tạm biệt và chúc sức khỏe thầy cô."
+          ],
+          "a": "Lời chào lễ phép tôn kính và giới thiệu rõ họ tên, lớp học.",
+          "h": "Luôn bắt đầu bằng lời chào kính trọng lễ phép và xưng rõ danh tính họ tên lớp học của em.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8038,
+          "sub": "Văn bản thực tế học trò",
+          "q": "Khi viết thư tay gửi bạn học cũ ở trường học cũ xa xôi, em dùng từ ngữ xưng hô mở đầu thế nào?",
+          "o": [
+            "Lời chào thân ái gần gũi như bạn bè thân thiết.",
+            "Kính gửi quý bạn học thân mến mộc mạc.",
+            "Thưa gửi đồng chí lớp trưởng tài ba.",
+            "Xưng hô trống không không chào hỏi bạn bè."
+          ],
+          "a": "Lời chào thân ái gần gũi như bạn bè thân thiết.",
+          "h": "Thư tay gửi bạn dùng phong cách xưng hô thân ái, tự nhiên, gần gũi chan chứa tình cảm bạn bè.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8039,
+          "sub": "Văn bản thực tế học trò",
+          "q": "Khi làm tấm bưu thiếp chúc mừng sinh nhật mẹ, dòng chữ đầu tiên ghi gì ở góc trên?",
+          "o": [
+            "Địa điểm và ngày tháng năm viết bưu thiếp chúc mừng.",
+            "Vẽ một bông hoa hồng nhung đỏ thắm rực rỡ.",
+            "Lời chúc mẹ luôn mạnh khỏe tươi vui rạng rỡ.",
+            "Họ tên đầy đủ người nhận bưu thiếp chúc mừng."
+          ],
+          "a": "Địa điểm và ngày tháng năm viết bưu thiếp chúc mừng.",
+          "h": "Ghi địa điểm và thời gian viết bưu thiếp giúp lưu giữ kỷ niệm ngày chúc mừng mẹ.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8040,
+          "sub": "Văn bản thực tế học trò",
+          "q": "Trên 'Phiếu đọc sách' sau giờ tự đọc thư viện lớp 3, bé cần điền những thông tin cốt lõi nào?",
+          "o": [
+            "Tên tác phẩm sách, tên tác giả, nhân vật yêu thích, chi tiết ấn tượng và đánh giá.",
+            "Thời khóa biểu các môn học trong tuần học sau.",
+            "Họ tên nghề nghiệp và quê quán của bố mẹ em.",
+            "Số lượng sách truyện có sẵn trong thư viện trường."
+          ],
+          "a": "Tên tác phẩm sách, tên tác giả, nhân vật yêu thích, chi tiết ấn tượng và đánh giá.",
+          "h": "Phiếu đọc sách tóm tắt thông tin sách, nhân vật, cảm xúc cảm nhận của học trò sau khi đọc xong.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8041,
+          "sub": "Văn bản thực tế học trò",
+          "q": "Nội dung cốt lõi viết ở mặt sau của một tấm bưu thiếp gửi tặng người thân dịp lễ Tết là gì?",
+          "o": [
+            "Lời chúc mừng tốt đẹp sâu sắc nhất thể hiện tình cảm chân thành yêu mến.",
+            "Vẽ sơ đồ chỉ đường dẫn tới nhà riêng của em.",
+            "Bảng điểm học tập học kì 1 rèn luyện tốt.",
+            "Nêu lý do xin gia nhập câu lạc bộ thể thao trường."
+          ],
+          "a": "Lời chúc mừng tốt đẹp sâu sắc nhất thể hiện tình cảm chân thành yêu mến.",
+          "h": "Gửi gắm lời chúc mừng tốt đẹp sâu sắc nhất thể hiện tình cảm ấm áp yêu thương.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8042,
+          "sub": "Văn bản thực tế học trò",
+          "q": "Để lá thư tay gửi bưu điện gửi tới đúng tay người nhận ở xa, ngoài phong bì cần ghi gì?",
+          "o": [
+            "Địa chỉ người nhận rõ ràng gồm họ tên, số nhà, phố phường, tỉnh thành.",
+            "Sở thích tính tình người nhận bưu thiếp chúc mừng.",
+            "Mục lục nội dung chính viết trong bức thư tay.",
+            "Bức tranh phong cảnh vẽ ngôi trường mộc mạc."
+          ],
+          "a": "Địa chỉ người nhận rõ ràng gồm họ tên, số nhà, phố phường, tỉnh thành.",
+          "h": "Địa chỉ người nhận đầy đủ chi tiết là điều bắt buộc để bưu tá phát thư chính xác.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8043,
+          "sub": "Văn bản thực tế học trò",
+          "q": "Mục 'Người gửi' (From) ngoài phong bì thư giấy thường ghi thông tin gì?",
+          "o": [
+            "Họ và tên người gửi thư tay viết rõ ràng ở góc trái phía trên phong bì.",
+            "Tên trường học cũ nơi người nhận từng học.",
+            "Địa chỉ Email điện tử của người nhận thư.",
+            "Lời nhắn gửi ngắn gọn mong thư hồi đáp sớm."
+          ],
+          "a": "Họ và tên người gửi thư tay viết rõ ràng ở góc trái phía trên phong bì.",
+          "h": "Thông tin danh tính địa chỉ người viết thư gửi đi đề phòng thư lạc sẽ trả về đúng chỗ.",
+          "img": "",
+          "w": 18
+        },
+        {
+          "id": 8044,
+          "sub": "Văn bản thực tế học trò",
+          "q": "Khi hoàn thành viết toàn bộ thư điện tử (Email) trên máy tính, bé bấm nút nào để gửi thư?",
+          "o": [
+            "Nút 'Send' (Gửi) có biểu tượng hình chiếc máy bay giấy nhỏ bay lên.",
+            "Nút 'Cancel' (Hủy bỏ) ở bên cạnh góc dưới.",
+            "Nút 'Delete' (Xóa thư) có hình chiếc thùng rác đỏ.",
+            "Tắt cửa sổ trình duyệt web rồi đi chơi nhảy dây."
+          ],
+          "a": "Nút 'Send' (Gửi) có biểu tượng hình chiếc máy bay giấy nhỏ bay lên.",
+          "h": "Bấm nút 'Send' (Gửi) có biểu tượng máy bay giấy để bức thư điện tử lập tức bay tới hòm thư người nhận.",
+          "img": "",
+          "w": 18
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Nhà thông thái Đọc hiểu",
+      "desc": "Luyện đọc thầm và trả lời các câu hỏi trắc nghiệm tìm hiểu ý nghĩa tác phẩm chuẩn ma trận thi định kỳ!",
+      "qs": [
+        {
+          "id": 9000,
+          "sub": "Đọc hiểu: Nhà rông Tây Nguyên",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Nhà rông Tây Nguyên ---\nĐến Tây Nguyên, từ xa nhìn vào các buôn làng, ta dễ nhận ra ngôi nhà rông có đôi mái dựng ngược. Nhà rông là nơi thờ cúng chung, hội họp chung, tiếp khách chung... Nhà rông đối với tuổi trẻ Tây Nguyên thân thương như cái tổ chim êm ấm. Người Tây Nguyên nào cũng yêu thích nhà rông, ngôi nhà chung có sự góp sức xây dựng của tất cả mọi người.\n\nCÂU HỎI: Từ xa nhìn vào buôn làng Tây Nguyên, ta dễ nhận ra ngôi nhà rông nhờ đặc điểm nổi bật nào?",
+          "o": [
+            "Đôi mái dựng ngược đặc trưng",
+            "Màu sơn hồng tím rực rỡ",
+            "Hàng rào bằng tre bao bọc quanh",
+            "Ngôi nhà xây bằng gạch khang trang"
+          ],
+          "a": "Đôi mái dựng ngược đặc trưng",
+          "h": "Đọc kĩ câu đầu: 'dễ nhận ra ngôi nhà rông có đôi mái dựng ngược'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9001,
+          "sub": "Đọc hiểu: Nhà rông Tây Nguyên",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Nhà rông Tây Nguyên ---\nĐến Tây Nguyên, từ xa nhìn vào các buôn làng, ta dễ nhận ra ngôi nhà rông có đôi mái dựng ngược. Nhà rông là nơi thờ cúng chung, hội họp chung, tiếp khách chung... Nhà rông đối với tuổi trẻ Tây Nguyên thân thương như cái tổ chim êm ấm. Người Tây Nguyên nào cũng yêu thích nhà rông, ngôi nhà chung có sự góp sức xây dựng của tất cả mọi người.\n\nCÂU HỎI: Ngôi nhà rông Tây Nguyên được người dân sử dụng cho các hoạt động tập thể nào?",
+          "o": [
+            "Nơi thờ cúng chung, hội họp chung, tiếp khách chung...",
+            "Nơi chăn nuôi trâu bò của buôn làng",
+            "Nơi tổ chức lễ hội vẽ tranh dã ngoại",
+            "Làm nhà ở riêng của gia đình già làng"
+          ],
+          "a": "Nơi thờ cúng chung, hội họp chung, tiếp khách chung...",
+          "h": "Đọc kĩ câu: 'Nhà rông là nơi thờ cúng chung, hội họp chung, tiếp khách chung...'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9002,
+          "sub": "Đọc hiểu: Nhà rông Tây Nguyên",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Nhà rông Tây Nguyên ---\nĐến Tây Nguyên, từ xa nhìn vào các buôn làng, ta dễ nhận ra ngôi nhà rông có đôi mái dựng ngược. Nhà rông là nơi thờ cúng chung, hội họp chung, tiếp khách chung... Nhà rông đối với tuổi trẻ Tây Nguyên thân thương như cái tổ chim êm ấm. Người Tây Nguyên nào cũng yêu thích nhà rông, ngôi nhà chung có sự góp sức xây dựng của tất cả mọi người.\n\nCÂU HỎI: Trong bài đọc, ngôi nhà rông đối với tuổi trẻ Tây Nguyên thân thương như thế nào?",
+          "o": [
+            "Như cái tổ chim êm ấm",
+            "Như bầu trời thu trong xanh ngắt",
+            "Như vòng tay ấm áp của mẹ hiền",
+            "Như vườn hoa ngập tràn bướm ong"
+          ],
+          "a": "Như cái tổ chim êm ấm",
+          "h": "Đọc kĩ câu: 'thân thương như cái tổ chim êm ấm'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9003,
+          "sub": "Đọc hiểu: Nhà rông Tây Nguyên",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Nhà rông Tây Nguyên ---\nĐến Tây Nguyên, từ xa nhìn vào các buôn làng, ta dễ nhận ra ngôi nhà rông có đôi mái dựng ngược. Nhà rông là nơi thờ cúng chung, hội họp chung, tiếp khách chung... Nhà rông đối với tuổi trẻ Tây Nguyên thân thương như cái tổ chim êm ấm. Người Tây Nguyên nào cũng yêu thích nhà rông, ngôi nhà chung có sự góp sức xây dựng của tất cả mọi người.\n\nCÂU HỎI: Vì sao người dân Tây Nguyên nào cũng vô cùng yêu mến và gắn bó với ngôi nhà rông?",
+          "o": [
+            "Vì nhà rông có đôi mái dựng ngược đẹp",
+            "Vì ngôi nhà rông rất rộng rãi mát mẻ",
+            "Sự góp sức xây dựng của tất cả mọi người",
+            "Vì nhà rông được trang trí nhiều loài hoa"
+          ],
+          "a": "Sự góp sức xây dựng của tất cả mọi người",
+          "h": "Đọc kĩ câu cuối: 'ngôi nhà chung có sự góp sức xây dựng của tất cả mọi người'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9004,
+          "sub": "Đọc hiểu: Nhà rông Tây Nguyên",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Nhà rông Tây Nguyên ---\nĐến Tây Nguyên, từ xa nhìn vào các buôn làng, ta dễ nhận ra ngôi nhà rông có đôi mái dựng ngược. Nhà rông là nơi thờ cúng chung, hội họp chung, tiếp khách chung... Nhà rông đối với tuổi trẻ Tây Nguyên thân thương như cái tổ chim êm ấm. Người Tây Nguyên nào cũng yêu thích nhà rông, ngôi nhà chung có sự góp sức xây dựng của tất cả mọi người.\n\nCÂU HỎI: Hình ảnh so sánh 'nhà rông thân thương như cái tổ chim êm ấm' thuộc kiểu so sánh nào?",
+          "o": [
+            "Sự vật - Sự vật",
+            "Sự vật - Con người",
+            "Âm thanh - Âm thanh",
+            "Hoạt động - Hoạt động"
+          ],
+          "a": "Sự vật - Sự vật",
+          "h": "So sánh ngôi nhà rông (sự vật) với tổ chim (sự vật) qua từ so sánh 'như' bé nhé.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9005,
+          "sub": "Đọc hiểu: Sư tử và Chuột nhỏ",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Sư tử và Chuột nhỏ ---\nMột hôm, Sư tử đang ngủ ngon lành thì bị Chuột nhỏ chạy qua làm thức giấc. Sư tử tức giận tóm lấy Chuột nhỏ định nuốt chửng. Chuột nhỏ khóc lóc van xin: 'Xin ông tha mạng! Một ngày nào đó tôi sẽ đền đáp công ơn ông.' Sư tử cười lớn khinh bỉ nhưng cũng thả Chuột ra. Ít lâu sau, Sư tử bị dính bẫy lưới của thợ săn. Chuột nhỏ nghe tiếng gầm của Sư tử liền chạy đến, dùng hàm răng sắc nhọn gặm đứt các sợi dây lưới, giải cứu Sư tử thoát nạn.\n\nCÂU HỎI: Vì sao Sư tử đang ngủ ngon lành lại vô cùng tức giận định nuốt chửng Chuột nhỏ?",
+          "o": [
+            "Vì Chuột nhỏ ăn trộm thức ăn của Sư tử",
+            "Vì Chuột nhỏ chạy qua làm Sư tử thức giấc",
+            "Vì Chuột nhỏ thách đấu võ nghệ cùng Sư tử",
+            "Vì trời nắng gắt làm Sư tử khó chịu ngủ ngon"
+          ],
+          "a": "Vì Chuột nhỏ chạy qua làm Sư tử thức giấc",
+          "h": "Đọc kĩ câu đầu: 'Sư tử đang ngủ ngon lành thì bị Chuột nhỏ chạy qua làm thức giấc'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9006,
+          "sub": "Đọc hiểu: Sư tử và Chuột nhỏ",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Sư tử và Chuột nhỏ ---\nMột hôm, Sư tử đang ngủ ngon lành thì bị Chuột nhỏ chạy qua làm thức giấc. Sư tử tức giận tóm lấy Chuột nhỏ định nuốt chửng. Chuột nhỏ khóc lóc van xin: 'Xin ông tha mạng! Một ngày nào đó tôi sẽ đền đáp công ơn ông.' Sư tử cười lớn khinh bỉ nhưng cũng thả Chuột ra. Ít lâu sau, Sư tử bị dính bẫy lưới của thợ săn. Chuột nhỏ nghe tiếng gầm của Sư tử liền chạy đến, dùng hàm răng sắc nhọn gặm đứt các sợi dây lưới, giải cứu Sư tử thoát nạn.\n\nCÂU HỎI: Chuột nhỏ đã làm cách nào cứu Sư tử thoát khỏi lưới của thợ săn độc ác?",
+          "o": [
+            "Dùng hàm răng sắc nhọn gặm đứt các sợi dây lưới",
+            "Kêu gọi muông thú trong rừng tới giúp sức",
+            "Dùng đuôi quét dọn thợ săn chạy đi chỗ khác",
+            "Hét to chào thợ săn để thợ săn sợ hãi bỏ chạy"
+          ],
+          "a": "Dùng hàm răng sắc nhọn gặm đứt các sợi dây lưới",
+          "h": "Đọc kĩ câu: 'dùng hàm răng sắc nhọn gặm đứt các sợi dây lưới'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9007,
+          "sub": "Đọc hiểu: Sư tử và Chuột nhỏ",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Sư tử và Chuột nhỏ ---\nMột hôm, Sư tử đang ngủ ngon lành thì bị Chuột nhỏ chạy qua làm thức giấc. Sư tử tức giận tóm lấy Chuột nhỏ định nuốt chửng. Chuột nhỏ khóc lóc van xin: 'Xin ông tha mạng! Một ngày nào đó tôi sẽ đền đáp công ơn ông.' Sư tử cười lớn khinh bỉ nhưng cũng thả Chuột ra. Ít lâu sau, Sư tử bị dính bẫy lưới của thợ săn. Chuột nhỏ nghe tiếng gầm của Sư tử liền chạy đến, dùng hàm răng sắc nhọn gặm đứt các sợi dây lưới, giải cứu Sư tử thoát nạn.\n\nCÂU HỎI: Bài học sâu sắc nhất rút ra từ câu chuyện ngụ ngôn Sư tử và Chuột nhỏ là gì?",
+          "o": [
+            "Hãy ngủ thật nhiều để không bị đánh thức giận dữ.",
+            "Không nên coi thường người khác dù họ nhỏ bé, lòng tốt sẽ được đền đáp.",
+            "Sư tử luôn là con vật oai hùng mạnh mẽ nhất.",
+            "Chuột nhỏ là con vật thông minh biết chạy nhảy."
+          ],
+          "a": "Không nên coi thường người khác dù họ nhỏ bé, lòng tốt sẽ được đền đáp.",
+          "h": "Câu chuyện khuyên chúng ta tôn trọng người khác bất kể kích thước và luôn nhân hậu giúp đỡ nhau.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9008,
+          "sub": "Đọc hiểu: Sư tử và Chuột nhỏ",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Sư tử và Chuột nhỏ ---\nMột hôm, Sư tử đang ngủ ngon lành thì bị Chuột nhỏ chạy qua làm thức giấc. Sư tử tức giận tóm lấy Chuột nhỏ định nuốt chửng. Chuột nhỏ khóc lóc van xin: 'Xin ông tha mạng! Một ngày nào đó tôi sẽ đền đáp công ơn ông.' Sư tử cười lớn khinh bỉ nhưng cũng thả Chuột ra. Ít lâu sau, Sư tử bị dính bẫy lưới của thợ săn. Chuột nhỏ nghe tiếng gầm của Sư tử liền chạy đến, dùng hàm răng sắc nhọn gặm đứt các sợi dây lưới, giải cứu Sư tử thoát nạn.\n\nCÂU HỎI: Từ nào dưới đây là từ chỉ trạng thái cảm xúc của Sư tử khi bị đánh thức?",
+          "o": [
+            "ngủ ngon",
+            "tức giận",
+            "tóm lấy",
+            "chạy đến"
+          ],
+          "a": "tức giận",
+          "h": "'Tức giận' là động từ trạng thái chỉ cảm xúc tức tối nóng nảy.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9009,
+          "sub": "Đọc hiểu: Sư tử và Chuột nhỏ",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Sư tử và Chuột nhỏ ---\nMột hôm, Sư tử đang ngủ ngon lành thì bị Chuột nhỏ chạy qua làm thức giấc. Sư tử tức giận tóm lấy Chuột nhỏ định nuốt chửng. Chuột nhỏ khóc lóc van xin: 'Xin ông tha mạng! Một ngày nào đó tôi sẽ đền đáp công ơn ông.' Sư tử cười lớn khinh bỉ nhưng cũng thả Chuột ra. Ít lâu sau, Sư tử bị dính bẫy lưới của thợ săn. Chuột nhỏ nghe tiếng gầm của Sư tử liền chạy đến, dùng hàm răng sắc nhọn gặm đứt các sợi dây lưới, giải cứu Sư tử thoát nạn.\n\nCÂU HỎI: Để dẫn lời van xin trực tiếp của Chuột nhỏ, tác giả đã dùng dấu câu nào trước dòng thoại?",
+          "o": [
+            "-",
+            "\"",
+            ":",
+            "!"
+          ],
+          "a": "-",
+          "h": "Dấu gạch ngang đặt ở đầu dòng để đánh dấu lời đối thoại trực tiếp của Chuột nhỏ.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9010,
+          "sub": "Đọc hiểu: Kiến và Châu Chấu",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Kiến và Châu Chấu ---\nMùa hè ấm áp, Châu Chấu thong thả nhảy nhót hát ca vui vẻ suốt cả ngày. Trong khi đó, đàn Kiến chăm chỉ nối đuôi nhau tha mồi tích trữ thức ăn đầy ắp tổ ấm. Châu Chấu cười cợt: 'Cần gì phải làm việc vất vả thế, Kiến ơi! Hãy cùng chơi vui đi!' Kiến im lặng tiếp tục lao động. Khi mùa đông lạnh lẽo gõ cửa, tuyết rơi trắng xóa đồng ruộng, Châu Chấu không tìm thấy thức ăn, run rẩy đói lả sang gõ cửa tổ Kiến cầu xin cứu giúp. Kiến ấm áp chia sẻ thức ăn cho Châu Chấu và khuyên bạn nên chăm chỉ lo xa.\n\nCÂU HỎI: Châu Chấu đã làm những công việc gì trong suốt mùa hè ấm áp rực rỡ nắng vàng?",
+          "o": [
+            "Chăm chỉ tìm kiếm rau quả cất trữ",
+            "Học tập văn nghệ chăm ngoan tiến bộ",
+            "Nhảy nhót hát ca vui vẻ suốt cả ngày",
+            "Quét dọn nhà cửa ngăn nắp gọn gàng"
+          ],
+          "a": "Nhảy nhót hát ca vui vẻ suốt cả ngày",
+          "h": "Đọc kĩ câu: 'Châu Chấu thong thả nhảy nhót hát ca vui vẻ suốt cả ngày'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9011,
+          "sub": "Đọc hiểu: Kiến và Châu Chấu",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Kiến và Châu Chấu ---\nMùa hè ấm áp, Châu Chấu thong thả nhảy nhót hát ca vui vẻ suốt cả ngày. Trong khi đó, đàn Kiến chăm chỉ nối đuôi nhau tha mồi tích trữ thức ăn đầy ắp tổ ấm. Châu Chấu cười cợt: 'Cần gì phải làm việc vất vả thế, Kiến ơi! Hãy cùng chơi vui đi!' Kiến im lặng tiếp tục lao động. Khi mùa đông lạnh lẽo gõ cửa, tuyết rơi trắng xóa đồng ruộng, Châu Chấu không tìm thấy thức ăn, run rẩy đói lả sang gõ cửa tổ Kiến cầu xin cứu giúp. Kiến ấm áp chia sẻ thức ăn cho Châu Chấu và khuyên bạn nên chăm chỉ lo xa.\n\nCÂU HỎI: Đàn Kiến đã chuẩn bị những gì cho mùa đông buốt giá sắp tới?",
+          "o": [
+            "Tổ chức lễ hội khiêu vũ ca hát vui vẻ",
+            "Nối đuôi nhau tha mồi tích trữ thức ăn đầy tổ",
+            "Ngủ say sưa trốn tránh thời tiết lạnh lẽo",
+            "Xây dựng ngôi nhà rông vững chãi sừng sững"
+          ],
+          "a": "Nối đuôi nhau tha mồi tích trữ thức ăn đầy tổ",
+          "h": "Đọc kĩ câu: 'chăm chỉ nối đuôi nhau tha mồi tích trữ thức ăn đầy ắp tổ ấm'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9012,
+          "sub": "Đọc hiểu: Kiến và Châu Chấu",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Kiến và Châu Chấu ---\nMùa hè ấm áp, Châu Chấu thong thả nhảy nhót hát ca vui vẻ suốt cả ngày. Trong khi đó, đàn Kiến chăm chỉ nối đuôi nhau tha mồi tích trữ thức ăn đầy ắp tổ ấm. Châu Chấu cười cợt: 'Cần gì phải làm việc vất vả thế, Kiến ơi! Hãy cùng chơi vui đi!' Kiến im lặng tiếp tục lao động. Khi mùa đông lạnh lẽo gõ cửa, tuyết rơi trắng xóa đồng ruộng, Châu Chấu không tìm thấy thức ăn, run rẩy đói lả sang gõ cửa tổ Kiến cầu xin cứu giúp. Kiến ấm áp chia sẻ thức ăn cho Châu Chấu và khuyên bạn nên chăm chỉ lo xa.\n\nCÂU HỎI: Tình cảnh của Châu Chấu thế nào khi mùa đông lạnh lẽo gõ cửa bao phủ tuyết rơi?",
+          "o": [
+            "Vui sướng ca hát dưới trời mưa tuyết rơi",
+            "Tìm thấy rất nhiều hạt lúa chín vàng ươm",
+            "Run rẩy đói lả gõ cửa tổ Kiến cầu xin cứu giúp",
+            "Chạy nhảy vui vẻ dọn dẹp nhà cửa cùng mẹ"
+          ],
+          "a": "Run rẩy đói lả gõ cửa tổ Kiến cầu xin cứu giúp",
+          "h": "Đọc kĩ câu: 'không tìm thấy thức ăn, run rẩy đói lả sang gõ cửa tổ Kiến cầu xin cứu giúp'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9013,
+          "sub": "Đọc hiểu: Kiến và Châu Chấu",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Kiến và Châu Chấu ---\nMùa hè ấm áp, Châu Chấu thong thả nhảy nhót hát ca vui vẻ suốt cả ngày. Trong khi đó, đàn Kiến chăm chỉ nối đuôi nhau tha mồi tích trữ thức ăn đầy ắp tổ ấm. Châu Chấu cười cợt: 'Cần gì phải làm việc vất vả thế, Kiến ơi! Hãy cùng chơi vui đi!' Kiến im lặng tiếp tục lao động. Khi mùa đông lạnh lẽo gõ cửa, tuyết rơi trắng xóa đồng ruộng, Châu Chấu không tìm thấy thức ăn, run rẩy đói lả sang gõ cửa tổ Kiến cầu xin cứu giúp. Kiến ấm áp chia sẻ thức ăn cho Châu Chấu và khuyên bạn nên chăm chỉ lo xa.\n\nCÂU HỎI: Ý nghĩa sâu sắc nhất mà chú Kiến tốt bụng muốn gửi gắm tới bạn Châu Chấu là gì?",
+          "o": [
+            "Nên ca hát nhiều hơn vào những ngày đông lạnh.",
+            "Cần cù, chăm chỉ lao động và biết lo xa cho tương lai.",
+            "Không nên cho bạn bè mượn đồ ăn thức uống.",
+            "Hãy ngủ đông thật lâu để quên đi cảm giác đói lả."
+          ],
+          "a": "Cần cù, chăm chỉ lao động và biết lo xa cho tương lai.",
+          "h": "Kiến khuyên Châu Chấu phải biết chăm chỉ cần cù lao động tích lũy lo xa phòng khi khó khăn hoạn nạn.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9014,
+          "sub": "Đọc hiểu: Kiến và Châu Chấu",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Kiến và Châu Chấu ---\nMùa hè ấm áp, Châu Chấu thong thả nhảy nhót hát ca vui vẻ suốt cả ngày. Trong khi đó, đàn Kiến chăm chỉ nối đuôi nhau tha mồi tích trữ thức ăn đầy ắp tổ ấm. Châu Chấu cười cợt: 'Cần gì phải làm việc vất vả thế, Kiến ơi! Hãy cùng chơi vui đi!' Kiến im lặng tiếp tục lao động. Khi mùa đông lạnh lẽo gõ cửa, tuyết rơi trắng xóa đồng ruộng, Châu Chấu không tìm thấy thức ăn, run rẩy đói lả sang gõ cửa tổ Kiến cầu xin cứu giúp. Kiến ấm áp chia sẻ thức ăn cho Châu Chấu và khuyên bạn nên chăm chỉ lo xa.\n\nCÂU HỎI: Cặp từ trái nghĩa nào mô tả thái độ của Kiến và Châu Chấu trong câu chuyện?",
+          "o": [
+            "chăm chỉ - cần cù",
+            "chăm chỉ - lười nhác",
+            "hiền lành - tốt bụng",
+            "lạnh lẽo - ấm áp"
+          ],
+          "a": "chăm chỉ - lười nhác",
+          "h": "Kiến chăm chỉ làm việc, đối lập hoàn toàn với Châu Chấu lười nhác ca hát vui chơi.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9015,
+          "sub": "Đọc hiểu: Mặt trời sau cơn mưa",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Mặt trời sau cơn mưa ---\nCơn mưa rào rầm rập ào qua mang đi cái nắng nóng oi bức rực rỡ của mùa hè. Sau mưa, bầu trời như được rửa sạch, cao rộng và trong xanh vắt ngời sáng. Ông mặt trời lại thong thả nhô ra khỏi đám mây xám, gieo muôn vàn tia nắng ấm áp lung linh sưởi ấm vạn vật. Những khóm hoa hồng tươi thắm sau vườn được uống nước no nê, giờ đây rạng rỡ nở nụ cười đón nắng sớm lung linh óng ánh sương đêm.\n\nCÂU HỎI: Cơn mưa rào rầm rập ào qua mang lại lợi ích gì cho cảnh vật đất trời thiên nhiên?",
+          "o": [
+            "Mang đi cái nắng nóng oi bức của mùa hè",
+            "Làm hỏng các cánh hoa hồng rực rỡ",
+            "Khiến bầu trời phủ kín sương mù lạnh lẽo",
+            "Làm chim sơn ca sợ hãi không dám ca hát"
+          ],
+          "a": "Mang đi cái nắng nóng oi bức của mùa hè",
+          "h": "Đọc kĩ câu đầu: 'ào qua mang đi cái nắng nóng oi bức rực rỡ của mùa hè'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9016,
+          "sub": "Đọc hiểu: Mặt trời sau cơn mưa",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Mặt trời sau cơn mưa ---\nCơn mưa rào rầm rập ào qua mang đi cái nắng nóng oi bức rực rỡ của mùa hè. Sau mưa, bầu trời như được rửa sạch, cao rộng và trong xanh vắt ngời sáng. Ông mặt trời lại thong thả nhô ra khỏi đám mây xám, gieo muôn vàn tia nắng ấm áp lung linh sưởi ấm vạn vật. Những khóm hoa hồng tươi thắm sau vườn được uống nước no nê, giờ đây rạng rỡ nở nụ cười đón nắng sớm lung linh óng ánh sương đêm.\n\nCÂU HỎI: Bầu trời mùa hè thay đổi như thế nào sau khi cơn mưa rào dọn sạch không khí?",
+          "o": [
+            "Phủ đầy những đám mây đen xám xịt trôi nhanh",
+            "Cao rộng và trong xanh vắt ngời sáng",
+            "Trở nên lạnh buốt tuyết rơi trắng xóa ruộng đồng",
+            "Có vầng trăng khuyết lửng lơ trước nhà"
+          ],
+          "a": "Cao rộng và trong xanh vắt ngời sáng",
+          "h": "Đọc kĩ câu: 'Sau mưa, bầu trời như được rửa sạch, cao rộng và trong xanh vắt ngời sáng'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9017,
+          "sub": "Đọc hiểu: Mặt trời sau cơn mưa",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Mặt trời sau cơn mưa ---\nCơn mưa rào rầm rập ào qua mang đi cái nắng nóng oi bức rực rỡ của mùa hè. Sau mưa, bầu trời như được rửa sạch, cao rộng và trong xanh vắt ngời sáng. Ông mặt trời lại thong thả nhô ra khỏi đám mây xám, gieo muôn vàn tia nắng ấm áp lung linh sưởi ấm vạn vật. Những khóm hoa hồng tươi thắm sau vườn được uống nước no nê, giờ đây rạng rỡ nở nụ cười đón nắng sớm lung linh óng ánh sương đêm.\n\nCÂU HỎI: Hoạt động nhân hóa nào của ông mặt trời được miêu tả sau cơn mưa rào?",
+          "o": [
+            "Chạy nhảy vui vẻ ríu rít chuyền cành",
+            "Gieo muôn vàn tia nắng ấm áp sưởi ấm vạn vật",
+            "Nằm im lìm trốn tránh sau đám mây đen kịt",
+            "Khóc lóc van xin vì sợ hãi bão giông"
+          ],
+          "a": "Gieo muôn vàn tia nắng ấm áp sưởi ấm vạn vật",
+          "h": "Đọc kĩ câu: 'gieo muôn vàn tia nắng ấm áp lung linh sưởi ấm vạn vật'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9018,
+          "sub": "Đọc hiểu: Mặt trời sau cơn mưa",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Mặt trời sau cơn mưa ---\nCơn mưa rào rầm rập ào qua mang đi cái nắng nóng oi bức rực rỡ của mùa hè. Sau mưa, bầu trời như được rửa sạch, cao rộng và trong xanh vắt ngời sáng. Ông mặt trời lại thong thả nhô ra khỏi đám mây xám, gieo muôn vàn tia nắng ấm áp lung linh sưởi ấm vạn vật. Những khóm hoa hồng tươi thắm sau vườn được uống nước no nê, giờ đây rạng rỡ nở nụ cười đón nắng sớm lung linh óng ánh sương đêm.\n\nCÂU HỎI: Những khóm hoa hồng tươi thắm sau vườn có biểu hiện rạng rỡ như thế nào?",
+          "o": [
+            "Cúi đầu héo rũ vì nắng gắt thiêu đốt hoang dã",
+            "Rụng hết sạch lá bàng đỏ bừng dưới chân núi",
+            "Uống nước no nê rạng rỡ nở nụ cười đón nắng",
+            "Rung rinh sợ hãi tiếng sấm sét nổ vang vang"
+          ],
+          "a": "Uống nước no nê rạng rỡ nở nụ cười đón nắng",
+          "h": "Đọc kĩ câu cuối: 'uống nước no nê, giờ đây rạng rỡ nở nụ cười đón nắng sớm'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9019,
+          "sub": "Đọc hiểu: Mặt trời sau cơn mưa",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Mặt trời sau cơn mưa ---\nCơn mưa rào rầm rập ào qua mang đi cái nắng nóng oi bức rực rỡ của mùa hè. Sau mưa, bầu trời như được rửa sạch, cao rộng và trong xanh vắt ngời sáng. Ông mặt trời lại thong thả nhô ra khỏi đám mây xám, gieo muôn vàn tia nắng ấm áp lung linh sưởi ấm vạn vật. Những khóm hoa hồng tươi thắm sau vườn được uống nước no nê, giờ đây rạng rỡ nở nụ cười đón nắng sớm lung linh óng ánh sương đêm.\n\nCÂU HỎI: Cụm từ so sánh 'giọt sương long lanh như hạt ngọc' thuộc kiểu so sánh nào?",
+          "o": [
+            "Sự vật - Sự vật",
+            "Sự vật - Con người",
+            "Âm thanh - Âm thanh",
+            "Hoạt động - Hoạt động"
+          ],
+          "a": "Sự vật - Sự vật",
+          "h": "So sánh giọt sương (sự vật) với hạt ngọc (sự vật) qua từ 'như'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9020,
+          "sub": "Đọc hiểu: Mùa thu của em",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Mùa thu của em ---\nMùa thu của em / Là vàng hoa cúc / Như nghìn con mắt / Mở nhìn trời êm // Mùa thu của em / Là xanh cốm mới / Mùi hương thơm gợi / Từ bàn tay dâng // Mùa thu của em / Rước đèn họp bạn / Hội rằm tháng Tám / Chị Hằng xuống chơi.\n\nCÂU HỎI: Cảnh sắc thiên nhiên mùa thu trong bài thơ gắn liền với những màu sắc đặc trưng nào?",
+          "o": [
+            "Màu đỏ thắm hoa phượng ngày hè tươi vui",
+            "Màu trắng tinh khôi của những bông tuyết rơi",
+            "Màu vàng hoa cúc, màu xanh cốm mới",
+            "Màu tím hoa bằng lăng nở rộ bên góc sân"
+          ],
+          "a": "Màu vàng hoa cúc, màu xanh cốm mới",
+          "h": "Đọc kĩ khổ 1 và khổ 2: 'vàng hoa cúc', 'xanh cốm mới'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9021,
+          "sub": "Đọc hiểu: Mùa thu của em",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Mùa thu của em ---\nMùa thu của em / Là vàng hoa cúc / Như nghìn con mắt / Mở nhìn trời êm // Mùa thu của em / Là xanh cốm mới / Mùi hương thơm gợi / Từ bàn tay dâng // Mùa thu của em / Rước đèn họp bạn / Hội rằm tháng Tám / Chị Hằng xuống chơi.\n\nCÂU HỎI: Hình ảnh so sánh độc đáo nào tả hoa cúc vàng trong khổ thơ đầu tiên?",
+          "o": [
+            "Như vầng trăng khuyết tròn xoe lửng lơ",
+            "Như nghìn con mắt mở nhìn trời êm",
+            "Như chiếc tổ chim êm ấm thân mến ngọt ngào",
+            "Như ngôi nhà rông vững chãi dựng ngược đất trời"
+          ],
+          "a": "Như nghìn con mắt mở nhìn trời êm",
+          "h": "Đọc kĩ câu thơ: 'Như nghìn con mắt / Mở nhìn trời êm'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9022,
+          "sub": "Đọc hiểu: Mùa thu của em",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Mùa thu của em ---\nMùa thu của em / Là vàng hoa cúc / Như nghìn con mắt / Mở nhìn trời êm // Mùa thu của em / Là xanh cốm mới / Mùi hương thơm gợi / Từ bàn tay dâng // Mùa thu của em / Rước đèn họp bạn / Hội rằm tháng Tám / Chị Hằng xuống chơi.\n\nCÂU HỎI: Hương vị ẩm thực đặc sản mùa thu được miêu tả nồng nàn qua hình ảnh thơ nào?",
+          "o": [
+            "Vị ngọt mát của củ cải đỏ khổng lồ",
+            "Mùi hương thơm gợi từ bàn tay dâng cốm",
+            "Mùi khói bếp bập bùng chiều lạnh lẽo bản quê",
+            "Mùi hương hoa hồng rực rỡ đón ban mai rạng ngời"
+          ],
+          "a": "Mùi hương thơm gợi từ bàn tay dâng cốm",
+          "h": "Đọc kĩ khổ 2: 'Là xanh cốm mới / Mùi hương thơm gợi / Từ bàn tay dâng'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9023,
+          "sub": "Đọc hiểu: Mùa thu của em",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Mùa thu của em ---\nMùa thu của em / Là vàng hoa cúc / Như nghìn con mắt / Mở nhìn trời êm // Mùa thu của em / Là xanh cốm mới / Mùi hương thơm gợi / Từ bàn tay dâng // Mùa thu của em / Rước đèn họp bạn / Hội rằm tháng Tám / Chị Hằng xuống chơi.\n\nCÂU HỎI: Lễ hội trung thu truyền thống của tuổi thơ được tái hiện sinh động qua hoạt động nào?",
+          "o": [
+            "Trồng cây xanh bảo vệ môi trường trong sạch",
+            "Chăm chỉ đi tha mồi tích trữ đầy ắp tổ",
+            "Rước đèn họp bạn đón chị Hằng xuống chơi",
+            "Hòa cùng tiếng ve râm ran rước đèn dưới trăng"
+          ],
+          "a": "Rước đèn họp bạn đón chị Hằng xuống chơi",
+          "h": "Đọc kĩ khổ cuối: 'Rước đèn họp bạn / Hội rằm tháng Tám / Chị Hằng xuống chơi'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9024,
+          "sub": "Đọc hiểu: Mùa thu của em",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Mùa thu của em ---\nMùa thu của em / Là vàng hoa cúc / Như nghìn con mắt / Mở nhìn trời êm // Mùa thu của em / Là xanh cốm mới / Mùi hương thơm gợi / Từ bàn tay dâng // Mùa thu của em / Rước đèn họp bạn / Hội rằm tháng Tám / Chị Hằng xuống chơi.\n\nCÂU HỎI: Hình ảnh thơ 'vàng hoa cúc như nghìn con mắt' thuộc kiểu so sánh nào?",
+          "o": [
+            "Sự vật - Sự vật",
+            "Sự vật - Con người",
+            "Âm thanh - Âm thanh",
+            "Hoạt động - Hoạt động"
+          ],
+          "a": "Sự vật - Sự vật",
+          "h": "So sánh hoa cúc vàng (sự vật) với nghìn con mắt (sự vật) qua từ 'như'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9025,
+          "sub": "Đọc hiểu: Ngưỡng cửa",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Ngưỡng cửa ---\nNơi này ai cũng quen / Ngay từ thời tấm bé / Khi tay bà, tay mẹ / Dắt đi những bước đầu. // Nơi bố mẹ trò chuyện / Sau mỗi ngày lao động / Nơi em thường đứng ngóng / Mẹ đi chợ mang quà. // Nơi này đã tiễn bạn / Bước vào năm học mới / Nơi đón chào vẫy gọi / Những hành trình xa xôi.\n\nCÂU HỎI: Địa điểm thân thương quen thuộc chứng kiến từng bước đi chập chững thuở bé thơ là gì?",
+          "o": [
+            "Ngôi nhà rông Tây Nguyên vững chãi sừng sững",
+            "Ngưỡng cửa ngôi nhà thân thuộc",
+            "Phòng học lớp 3 khang trang ngập ánh nắng",
+            "Khu rừng già sương mù thỏ trắng bị lạc"
+          ],
+          "a": "Ngưỡng cửa ngôi nhà thân thuộc",
+          "h": "Bài thơ có tiêu đề 'Ngưỡng cửa' nói về ngưỡng cửa thân thuộc chứng kiến cuộc sống gia đình.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9026,
+          "sub": "Đọc hiểu: Ngưỡng cửa",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Ngưỡng cửa ---\nNơi này ai cũng quen / Ngay từ thời tấm bé / Khi tay bà, tay mẹ / Dắt đi những bước đầu. // Nơi bố mẹ trò chuyện / Sau mỗi ngày lao động / Nơi em thường đứng ngóng / Mẹ đi chợ mang quà. // Nơi này đã tiễn bạn / Bước vào năm học mới / Nơi đón chào vẫy gọi / Những hành trình xa xôi.\n\nCÂU HỎI: Thời tấm bé thơ ngây, ngưỡng cửa đã ghi dấu những kỉ niệm thân thương nào cùng bà và mẹ?",
+          "o": [
+            "Nơi tập chạy nhảy tung tăng cùng chú cún con",
+            "Nơi tay bà, tay mẹ dắt đi những bước đầu tiên",
+            "Nơi ngồi dọn dẹp quét nhà cùng chị gái chăm chỉ",
+            "Nơi làm bưu thiếp xinh xắn gửi tặng mẹ yêu"
+          ],
+          "a": "Nơi tay bà, tay mẹ dắt đi những bước đầu tiên",
+          "h": "Đọc khổ 1: 'Khi tay bà, tay mẹ / Dắt đi những bước đầu'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9027,
+          "sub": "Đọc hiểu: Ngưỡng cửa",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Ngưỡng cửa ---\nNơi này ai cũng quen / Ngay từ thời tấm bé / Khi tay bà, tay mẹ / Dắt đi những bước đầu. // Nơi bố mẹ trò chuyện / Sau mỗi ngày lao động / Nơi em thường đứng ngóng / Mẹ đi chợ mang quà. // Nơi này đã tiễn bạn / Bước vào năm học mới / Nơi đón chào vẫy gọi / Những hành trình xa xôi.\n\nCÂU HỎI: Mỗi buổi chiều tan làm muộn, em nhỏ thường đứng ngóng đợi ai ở ngưỡng cửa thân quen?",
+          "o": [
+            "Mẹ đi chợ về mang quà bánh ngon ngọt",
+            "Chú ve sầu cất tiếng ca râm ran giòn giã",
+            "Đàn kiến nối đuôi nhau tha mồi về đầy tổ ấm",
+            "Bác bảo vệ gõ hồi trống trường khai giảng giòn"
+          ],
+          "a": "Mẹ đi chợ về mang quà bánh ngon ngọt",
+          "h": "Đọc khổ 2: 'Nơi em thường đứng ngóng / Mẹ đi chợ mang quà'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9028,
+          "sub": "Đọc hiểu: Ngưỡng cửa",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Ngưỡng cửa ---\nNơi này ai cũng quen / Ngay từ thời tấm bé / Khi tay bà, tay mẹ / Dắt đi những bước đầu. // Nơi bố mẹ trò chuyện / Sau mỗi ngày lao động / Nơi em thường đứng ngóng / Mẹ đi chợ mang quà. // Nơi này đã tiễn bạn / Bước vào năm học mới / Nơi đón chào vẫy gọi / Những hành trình xa xôi.\n\nCÂU HỎI: Vai trò của ngưỡng cửa trong ngày tựu trường khai giảng đầu năm học là gì?",
+          "o": [
+            "Là nơi dán bưu thiếp đơn từ hành chính nắn nót",
+            "Ngăn cản bước chân bơi lội tắm mát dưới dòng sông",
+            "Tiễn chân em bước vào năm học mới đầy ước mơ",
+            "Nơi gieo trồng luống rau cải dền đỏ thơm phức"
+          ],
+          "a": "Tiễn chân em bước vào năm học mới đầy ước mơ",
+          "h": "Đọc khổ cuối: 'Nơi này đã tiễn bạn / Bước vào năm học mới'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9029,
+          "sub": "Đọc hiểu: Ngưỡng cửa",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Ngưỡng cửa ---\nNơi này ai cũng quen / Ngay từ thời tấm bé / Khi tay bà, tay mẹ / Dắt đi những bước đầu. // Nơi bố mẹ trò chuyện / Sau mỗi ngày lao động / Nơi em thường đứng ngóng / Mẹ đi chợ mang quà. // Nơi này đã tiễn bạn / Bước vào năm học mới / Nơi đón chào vẫy gọi / Những hành trình xa xôi.\n\nCÂU HỎI: Cụm từ chỉ nơi chốn 'Ngưỡng cửa' trong bài thơ thuộc nhóm từ loại nào?",
+          "o": [
+            "Danh từ chỉ sự vật",
+            "Động từ chỉ hoạt động",
+            "Tính từ chỉ đặc điểm",
+            "Động từ chỉ trạng thái cảm xúc"
+          ],
+          "a": "Danh từ chỉ sự vật",
+          "h": "'Ngưỡng cửa' là danh từ chỉ sự vật địa điểm nơi chốn cụ thể thân quen.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9030,
+          "sub": "Đọc hiểu: Hành trình của hạt mầm",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Hành trình của hạt mầm ---\nHạt mầm nhỏ bé nằm im lặng vùi sâu dưới lớp đất đen ẩm ướt râm mát suốt mùa đông dài. Nhờ có những giọt mưa xuân ấm áp tưới tắm và làn gió nhẹ vuốt ve, hạt mầm cựa mình khẽ nứt vỏ bọc cũ, vươn chiếc mầm nhỏ xanh non nớt chào đón ánh mặt trời rạng rỡ. Hạt mầm vui sướng hứa với đất mẹ: 'Con sẽ chăm chỉ bám rễ sâu, vươn cao thành cây cổ thụ vững chãi tỏa bóng mát che chở cho muông thú rừng già.'\n\nCÂU HỎI: Hạt mầm nhỏ bé đã trải qua những ngày đông dài lạnh lẽo ở đâu và như thế nào?",
+          "o": [
+            "Chạy nhảy bơi lội tung tăng dưới dòng suối mát",
+            "Bay lượn ríu rít ca hát líu lo trên bầu trời thu",
+            "Vùi sâu nằm im dưới lớp đất đen ẩm ướt",
+            "Được dán ngay ngắn trong lá đơn xin vào Đội"
+          ],
+          "a": "Vùi sâu nằm im dưới lớp đất đen ẩm ướt",
+          "h": "Đọc kĩ câu đầu: 'Hạt mầm nhỏ bé nằm im lặng vùi sâu dưới lớp đất đen ẩm ướt'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9031,
+          "sub": "Đọc hiểu: Hành trình của hạt mầm",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Hành trình của hạt mầm ---\nHạt mầm nhỏ bé nằm im lặng vùi sâu dưới lớp đất đen ẩm ướt râm mát suốt mùa đông dài. Nhờ có những giọt mưa xuân ấm áp tưới tắm và làn gió nhẹ vuốt ve, hạt mầm cựa mình khẽ nứt vỏ bọc cũ, vươn chiếc mầm nhỏ xanh non nớt chào đón ánh mặt trời rạng rỡ. Hạt mầm vui sướng hứa với đất mẹ: 'Con sẽ chăm chỉ bám rễ sâu, vươn cao thành cây cổ thụ vững chãi tỏa bóng mát che chở cho muông thú rừng già.'\n\nCÂU HỎI: Nhờ có những yếu tố thiên nhiên nhân ái nào giúp hạt mầm cựa mình nứt vỏ xanh non?",
+          "o": [
+            "Lưới thợ săn nguy hiểm bao phủ khu rừng già",
+            "Giọt mưa xuân ấm áp tưới tắm và gió nhẹ vuốt ve",
+            "Cánh diều giấy vi vu bay lượn trên cao rộng",
+            "Ngọn lửa bập bùng tỏa hơi ấm nóng oi bức"
+          ],
+          "a": "Giọt mưa xuân ấm áp tưới tắm và gió nhẹ vuốt ve",
+          "h": "Đọc kĩ câu: 'Nhờ có những giọt mưa xuân ấm áp tưới tắm và làn gió nhẹ vuốt ve'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9032,
+          "sub": "Đọc hiểu: Hành trình của hạt mầm",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Hành trình của hạt mầm ---\nHạt mầm nhỏ bé nằm im lặng vùi sâu dưới lớp đất đen ẩm ướt râm mát suốt mùa đông dài. Nhờ có những giọt mưa xuân ấm áp tưới tắm và làn gió nhẹ vuốt ve, hạt mầm cựa mình khẽ nứt vỏ bọc cũ, vươn chiếc mầm nhỏ xanh non nớt chào đón ánh mặt trời rạng rỡ. Hạt mầm vui sướng hứa với đất mẹ: 'Con sẽ chăm chỉ bám rễ sâu, vươn cao thành cây cổ thụ vững chãi tỏa bóng mát che chở cho muông thú rừng già.'\n\nCÂU HỎI: Hành động đầu tiên của hạt mầm sau khi nứt vỏ bọc cũ đón chào cuộc sống mới là gì?",
+          "o": [
+            "Bỏ chạy thật nhanh tìm kiếm thỏ mẹ bị lạc rừng",
+            "Nằm im lìm hoảng sợ bóng tối bao trùm vây quanh",
+            "Vươn mầm nhỏ chào đón ánh mặt trời rạng rỡ",
+            "Ngắt quãng học tập đi rước đèn cùng bạn thân"
+          ],
+          "a": "Vươn mầm nhỏ chào đón ánh mặt trời rạng rỡ",
+          "h": "Đọc kĩ câu: 'cựa mình khẽ nứt vỏ bọc cũ, vươn chiếc mầm nhỏ xanh non nớt chào đón ánh mặt trời rạng rỡ'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9033,
+          "sub": "Đọc hiểu: Hành trình của hạt mầm",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Hành trình của hạt mầm ---\nHạt mầm nhỏ bé nằm im lặng vùi sâu dưới lớp đất đen ẩm ướt râm mát suốt mùa đông dài. Nhờ có những giọt mưa xuân ấm áp tưới tắm và làn gió nhẹ vuốt ve, hạt mầm cựa mình khẽ nứt vỏ bọc cũ, vươn chiếc mầm nhỏ xanh non nớt chào đón ánh mặt trời rạng rỡ. Hạt mầm vui sướng hứa với đất mẹ: 'Con sẽ chăm chỉ bám rễ sâu, vươn cao thành cây cổ thụ vững chãi tỏa bóng mát che chở cho muông thú rừng già.'\n\nCÂU HỎI: Hạt mầm nhỏ bé đã gửi gắm lời hứa thiêng liêng nào đối với Đất Mẹ bao dung?",
+          "o": [
+            "Sẽ bơi lội tung tăng dưới dòng suối trong xanh vắt",
+            "Chăm bám rễ vươn cao thành cây cổ thụ tỏa bóng mát",
+            "Nấu ăn sáng thật sớm giúp đỡ mẹ dọn nhà cửa gọn",
+            "Hát ca líu lo suốt những tháng ngày hè rực rỡ"
+          ],
+          "a": "Chăm bám rễ vươn cao thành cây cổ thụ tỏa bóng mát",
+          "h": "Đọc kĩ câu cuối: 'Con sẽ chăm chỉ bám rễ sâu, vươn cao thành cây cổ thụ vững chãi tỏa bóng mát'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9034,
+          "sub": "Đọc hiểu: Hành trình của hạt mầm",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Hành trình của hạt mầm ---\nHạt mầm nhỏ bé nằm im lặng vùi sâu dưới lớp đất đen ẩm ướt râm mát suốt mùa đông dài. Nhờ có những giọt mưa xuân ấm áp tưới tắm và làn gió nhẹ vuốt ve, hạt mầm cựa mình khẽ nứt vỏ bọc cũ, vươn chiếc mầm nhỏ xanh non nớt chào đón ánh mặt trời rạng rỡ. Hạt mầm vui sướng hứa với đất mẹ: 'Con sẽ chăm chỉ bám rễ sâu, vươn cao thành cây cổ thụ vững chãi tỏa bóng mát che chở cho muông thú rừng già.'\n\nCÂU HỎI: Biện pháp nghệ thuật nào nổi bật nhất miêu tả hạt mầm khẽ 'cựa mình', 'vui sướng hứa với đất mẹ'?",
+          "o": [
+            "So sánh",
+            "Nhân hóa",
+            "Điệp từ",
+            "Ẩn dụ"
+          ],
+          "a": "Nhân hóa",
+          "h": "Hạt mầm có hành động suy nghĩ cảm xúc như con người ('cựa mình', 'hứa với đất mẹ') là biện pháp nhân hóa.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9035,
+          "sub": "Đọc hiểu: Con gấu và hai người bạn",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Con gấu và hai người bạn ---\nHai người bạn cùng nhau đi dạo bộ rèn luyện sức khỏe trong khu rừng già rợp bóng mát. Đột nhiên, một con gấu to lớn hung dữ xuất hiện gầm rú chặn đường. Một người nhanh chân chạy nhảy leo tót lên cành cây cao trốn tránh an toàn. Người còn lại bất lực nằm rạp im lìm dưới đất giả vờ chết, vì biết gấu không ăn thịt thú chết. Gấu ghé tai vào ngửi đầu người nằm rạp rồi bỏ đi. Người trên cây leo xuống hóm hỉnh hỏi: 'Gấu đã thì thầm điều gì vào tai cậu thế?' Người kia thở dài trả lời: 'Gấu dặn tớ: Không bao giờ tin tưởng kẻ bỏ rơi bạn bè trong lúc hiểm nguy!'\n\nCÂU HỎI: Nguy hiểm bất ngờ đột ngột nào xảy ra khi hai người bạn đang đi dạo bộ trong rừng già?",
+          "o": [
+            "Cơn bão tuyết rơi buốt giá bao phủ trắng xóa đồng",
+            "Một con gấu to lớn hung dữ chặn đường",
+            "Hạt mầm nhỏ bé khóc lóc van xin giúp đỡ nứt vỏ",
+            "Bị lạc mất chiếc hộp bút máy viết bài sạch đẹp"
+          ],
+          "a": "Một con gấu to lớn hung dữ chặn đường",
+          "h": "Đọc kĩ câu: 'Đột nhiên, một con gấu to lớn hung dữ xuất hiện gầm rú chặn đường'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9036,
+          "sub": "Đọc hiểu: Con gấu và hai người bạn",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Con gấu và hai người bạn ---\nHai người bạn cùng nhau đi dạo bộ rèn luyện sức khỏe trong khu rừng già rợp bóng mát. Đột nhiên, một con gấu to lớn hung dữ xuất hiện gầm rú chặn đường. Một người nhanh chân chạy nhảy leo tót lên cành cây cao trốn tránh an toàn. Người còn lại bất lực nằm rạp im lìm dưới đất giả vờ chết, vì biết gấu không ăn thịt thú chết. Gấu ghé tai vào ngửi đầu người nằm rạp rồi bỏ đi. Người trên cây leo xuống hóm hỉnh hỏi: 'Gấu đã thì thầm điều gì vào tai cậu thế?' Người kia thở dài trả lời: 'Gấu dặn tớ: Không bao giờ tin tưởng kẻ bỏ rơi bạn bè trong lúc hiểm nguy!'\n\nCÂU HỎI: Người bạn thứ nhất đã phản ứng ích kỷ ra sao khi thấy con gấu to lớn xuất hiện?",
+          "o": [
+            "Nhanh chân chạy nhảy leo tót lên cành cây cao trốn",
+            "Dũng cảm cầm gậy gỗ xông ra bảo vệ bạn thân bên",
+            "Nằm rạp giả chết để gấu ghé tai ngửi thì thầm",
+            "Gọi điện thoại gửi thư điện tử xin cứu hộ khẩn cấp"
+          ],
+          "a": "Nhanh chân chạy nhảy leo tót lên cành cây cao trốn",
+          "h": "Đọc kĩ câu: 'Một người nhanh chân chạy nhảy leo tót lên cành cây cao trốn tránh an toàn'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9037,
+          "sub": "Đọc hiểu: Con gấu và hai người bạn",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Con gấu và hai người bạn ---\nHai người bạn cùng nhau đi dạo bộ rèn luyện sức khỏe trong khu rừng già rợp bóng mát. Đột nhiên, một con gấu to lớn hung dữ xuất hiện gầm rú chặn đường. Một người nhanh chân chạy nhảy leo tót lên cành cây cao trốn tránh an toàn. Người còn lại bất lực nằm rạp im lìm dưới đất giả vờ chết, vì biết gấu không ăn thịt thú chết. Gấu ghé tai vào ngửi đầu người nằm rạp rồi bỏ đi. Người trên cây leo xuống hóm hỉnh hỏi: 'Gấu đã thì thầm điều gì vào tai cậu thế?' Người kia thở dài trả lời: 'Gấu dặn tớ: Không bao giờ tin tưởng kẻ bỏ rơi bạn bè trong lúc hiểm nguy!'\n\nCÂU HỎI: Người bạn thứ hai đã áp dụng mưu trí khôn ngoan gì để bảo toàn tính mạng trước con gấu?",
+          "o": [
+            "Chạy nhảy bơi lội trốn chạy xuống dòng suối mát",
+            "Khóc lóc van xin dõng dạc hứa hẹn đền đáp sau này",
+            "Nằm rạp im lìm giả vờ chết dưới nền đất ẩm",
+            "Sắp xếp chuỗi câu văn logic lừa dối gấu dữ"
+          ],
+          "a": "Nằm rạp im lìm giả vờ chết dưới nền đất ẩm",
+          "h": "Đọc kĩ câu: 'người còn lại bất lực nằm rạp im lìm dưới đất giả vờ chết'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9038,
+          "sub": "Đọc hiểu: Con gấu và hai người bạn",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Con gấu và hai người bạn ---\nHai người bạn cùng nhau đi dạo bộ rèn luyện sức khỏe trong khu rừng già rợp bóng mát. Đột nhiên, một con gấu to lớn hung dữ xuất hiện gầm rú chặn đường. Một người nhanh chân chạy nhảy leo tót lên cành cây cao trốn tránh an toàn. Người còn lại bất lực nằm rạp im lìm dưới đất giả vờ chết, vì biết gấu không ăn thịt thú chết. Gấu ghé tai vào ngửi đầu người nằm rạp rồi bỏ đi. Người trên cây leo xuống hóm hỉnh hỏi: 'Gấu đã thì thầm điều gì vào tai cậu thế?' Người kia thở dài trả lời: 'Gấu dặn tớ: Không bao giờ tin tưởng kẻ bỏ rơi bạn bè trong lúc hiểm nguy!'\n\nCÂU HỎI: Lời dặn dò sâu sắc oai hùng nhất mà con gấu gửi gắm cho người bạn mưu trí nằm rạp là gì?",
+          "o": [
+            "Nên rèn luyện sức khỏe chăm chỉ bơi lội bạt ngàn",
+            "Không tin tưởng kẻ bỏ rơi bạn bè lúc hiểm nguy",
+            "Hãy viết đơn xin kết nạp vào Đội để rèn luyện ngoan",
+            "Nhớ dọn dẹp sách vở ngăn nắp gọn gàng sạch tinh"
+          ],
+          "a": "Không tin tưởng kẻ bỏ rơi bạn bè lúc hiểm nguy",
+          "h": "Đọc kĩ câu cuối: 'Không bao giờ tin tưởng kẻ bỏ rơi bạn bè trong lúc hiểm nguy!'",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9039,
+          "sub": "Đọc hiểu: Con gấu và hai người bạn",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Con gấu và hai người bạn ---\nHai người bạn cùng nhau đi dạo bộ rèn luyện sức khỏe trong khu rừng già rợp bóng mát. Đột nhiên, một con gấu to lớn hung dữ xuất hiện gầm rú chặn đường. Một người nhanh chân chạy nhảy leo tót lên cành cây cao trốn tránh an toàn. Người còn lại bất lực nằm rạp im lìm dưới đất giả vờ chết, vì biết gấu không ăn thịt thú chết. Gấu ghé tai vào ngửi đầu người nằm rạp rồi bỏ đi. Người trên cây leo xuống hóm hỉnh hỏi: 'Gấu đã thì thầm điều gì vào tai cậu thế?' Người kia thở dài trả lời: 'Gấu dặn tớ: Không bao giờ tin tưởng kẻ bỏ rơi bạn bè trong lúc hiểm nguy!'\n\nCÂU HỎI: Cặp từ trái nghĩa nào mô tả đúng hành động của hai người bạn trong lúc gặp hiểm nguy?",
+          "o": [
+            "chăm chỉ - lười nhác",
+            "đoàn kết - chia rẽ",
+            "thông minh - sáng dạ",
+            "ấm áp - lạnh lẽo"
+          ],
+          "a": "đoàn kết - chia rẽ",
+          "h": "Kẻ leo lên cây ích kỉ chia rẽ bỏ rơi bạn, không đoàn kết gắn bó tương trợ lúc hoạn nạn.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9040,
+          "sub": "Đọc hiểu: Đà Lạt",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Đà Lạt ---\nĐà Lạt là thành phố ngàn hoa thơ mộng nằm trên cao nguyên Lâm Viên quanh năm sương mù bao phủ mát mẻ. Khí hậu Đà Lạt vô cùng đặc biệt, một ngày hội tụ đủ thời tiết bốn mùa: nắng ấm mùa xuân ban mai, nắng gắt nhẹ mùa hè buổi trưa, gió heo may hiền hòa mùa thu chiều muộn và cái lạnh buốt giá mùa đông ban đêm. Đà Lạt níu chân du khách bằng hàng trăm loài hoa khoe sắc thắm cùng những đồi thông bạt ngàn reo vi vu trong gió nhẹ.\n\nCÂU HỎI: Vẻ đẹp nổi bật đặc trưng thu hút lòng người du khách khi nhớ về thành phố Đà Lạt là gì?",
+          "o": [
+            "Thành phố ngàn hoa thơ mộng quanh năm mát mẻ",
+            "Khu rừng già sương mù thỏ trắng nhỏ bị lạc lối",
+            "Nơi hội tụ những ngôi nhà rông dựng ngược mái búa",
+            "Mái trường tiểu học khang trang sạch đẹp lộng gió"
+          ],
+          "a": "Thành phố ngàn hoa thơ mộng quanh năm mát mẻ",
+          "h": "Đọc kĩ câu đầu: 'Đà Lạt là thành phố ngàn hoa thơ mộng... quanh năm sương mù bao phủ mát mẻ'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9041,
+          "sub": "Đọc hiểu: Đà Lạt",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Đà Lạt ---\nĐà Lạt là thành phố ngàn hoa thơ mộng nằm trên cao nguyên Lâm Viên quanh năm sương mù bao phủ mát mẻ. Khí hậu Đà Lạt vô cùng đặc biệt, một ngày hội tụ đủ thời tiết bốn mùa: nắng ấm mùa xuân ban mai, nắng gắt nhẹ mùa hè buổi trưa, gió heo may hiền hòa mùa thu chiều muộn và cái lạnh buốt giá mùa đông ban đêm. Đà Lạt níu chân du khách bằng hàng trăm loài hoa khoe sắc thắm cùng những đồi thông bạt ngàn reo vi vu trong gió nhẹ.\n\nCÂU HỎI: Thời tiết khí hậu độc đáo bốn mùa trong cùng một ngày ở Đà Lạt được miêu tả cụ thể thế nào?",
+          "o": [
+            "Tuyết rơi buốt giá trắng xóa đồng ruộng bạt ngàn hoa",
+            "Nắng ấm xuân ban mai, trưa hè nắng gắt nhẹ, chiều thu heo may, đêm lạnh buốt giá đông",
+            "Mưa rào rầm rập rải rác kèm sấm sét nổ vang giòn",
+            "Lạnh buốt giá quanh năm không một tia nắng sưởi ấm"
+          ],
+          "a": "Nắng ấm xuân ban mai, trưa hè nắng gắt nhẹ, chiều thu heo may, đêm lạnh buốt giá đông",
+          "h": "Đọc kĩ câu: 'một ngày hội tụ đủ thời tiết bốn mùa: nắng ấm mùa xuân ban mai, nắng gắt nhẹ mùa hè buổi trưa, gió heo may hiền hòa mùa thu chiều muộn và cái lạnh buốt giá mùa đông ban đêm'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9042,
+          "sub": "Đọc hiểu: Đà Lạt",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Đà Lạt ---\nĐà Lạt là thành phố ngàn hoa thơ mộng nằm trên cao nguyên Lâm Viên quanh năm sương mù bao phủ mát mẻ. Khí hậu Đà Lạt vô cùng đặc biệt, một ngày hội tụ đủ thời tiết bốn mùa: nắng ấm mùa xuân ban mai, nắng gắt nhẹ mùa hè buổi trưa, gió heo may hiền hòa mùa thu chiều muộn và cái lạnh buốt giá mùa đông ban đêm. Đà Lạt níu chân du khách bằng hàng trăm loài hoa khoe sắc thắm cùng những đồi thông bạt ngàn reo vi vu trong gió nhẹ.\n\nCÂU HỎI: Cảnh vật thiên nhiên tươi đẹp nào níu chân du khách muôn phương khi ghé chơi Đà Lạt?",
+          "o": [
+            "Chú cún con bơi lội đùa giỡn tung tăng dưới suối",
+            "Hàng trăm loài hoa khoe sắc thắm và đồi thông bạt ngàn",
+            "Những biểu mẫu đơn xin kết nạp vào Đội nắn nót gọn",
+            "Đôi mái dựng ngược sừng sững sưởi ấm vạn vật đất"
+          ],
+          "a": "Hàng trăm loài hoa khoe sắc thắm và đồi thông bạt ngàn",
+          "h": "Đọc kĩ câu cuối: 'níu chân du khách bằng hàng trăm loài hoa khoe sắc thắm cùng những đồi thông bạt ngàn'.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9043,
+          "sub": "Đọc hiểu: Đà Lạt",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Đà Lạt ---\nĐà Lạt là thành phố ngàn hoa thơ mộng nằm trên cao nguyên Lâm Viên quanh năm sương mù bao phủ mát mẻ. Khí hậu Đà Lạt vô cùng đặc biệt, một ngày hội tụ đủ thời tiết bốn mùa: nắng ấm mùa xuân ban mai, nắng gắt nhẹ mùa hè buổi trưa, gió heo may hiền hòa mùa thu chiều muộn và cái lạnh buốt giá mùa đông ban đêm. Đà Lạt níu chân du khách bằng hàng trăm loài hoa khoe sắc thắm cùng những đồi thông bạt ngàn reo vi vu trong gió nhẹ.\n\nCÂU HỎI: Từ nào dưới đây là tính từ chỉ đặc điểm của thành phố Đà Lạt xuất hiện trong câu đầu tiên?",
+          "o": [
+            "Đà Lạt",
+            "thơ mộng",
+            "nằm trên",
+            "bao phủ"
+          ],
+          "a": "thơ mộng",
+          "h": "'Thơ mộng' là tính từ chỉ đặc điểm vẻ đẹp lãng mạn nên thơ của Đà Lạt.",
+          "img": "",
+          "w": 21
+        },
+        {
+          "id": 9044,
+          "sub": "Đọc hiểu: Đà Lạt",
+          "q": "Đọc thầm văn bản sau và trả lời câu hỏi:\n--- BÀI ĐỌC: Đà Lạt ---\nĐà Lạt là thành phố ngàn hoa thơ mộng nằm trên cao nguyên Lâm Viên quanh năm sương mù bao phủ mát mẻ. Khí hậu Đà Lạt vô cùng đặc biệt, một ngày hội tụ đủ thời tiết bốn mùa: nắng ấm mùa xuân ban mai, nắng gắt nhẹ mùa hè buổi trưa, gió heo may hiền hòa mùa thu chiều muộn và cái lạnh buốt giá mùa đông ban đêm. Đà Lạt níu chân du khách bằng hàng trăm loài hoa khoe sắc thắm cùng những đồi thông bạt ngàn reo vi vu trong gió nhẹ.\n\nCÂU HỎI: Nếu muốn đặt thêm một câu so sánh miêu tả cảnh đẹp Đà Lạt trong phiếu đọc sách, em chọn câu nào?",
+          "o": [
+            "Đà Lạt đẹp như một bức tranh khổng lồ sắc màu.",
+            "Bé đi dạo bộ tập thể dục quanh hồ lộng gió mát.",
+            "Thành phố Đà Lạt nằm trên cao nguyên Lâm Viên xanh.",
+            "Em vô cùng nhớ nhung Đà Lạt sau kì nghỉ hè dài."
+          ],
+          "a": "Đà Lạt đẹp như một bức tranh khổng lồ sắc màu.",
+          "h": "Câu chứa hình ảnh so sánh 'Đà Lạt đẹp như một bức tranh khổng lồ' có từ so sánh 'như'.",
+          "img": "",
+          "w": 21
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Trí tuệ Trạng Nguyên (IQ)",
+      "desc": "Những thử thách đố chữ, tìm từ lạc nhóm, đặt dấu phẩy hai nghĩa và sắp xếp logic chuỗi câu văn tập làm văn đầy trí tuệ dành cho bé!",
+      "qs": [
+        {
+          "id": 10000,
+          "sub": "Đố chữ dân gian (IQ Trạng Nguyên 1)",
+          "q": "Bé hãy giải câu đố sau: 'Vừa bằng hạt đỗ, ăn giỗ cả làng'. Là con gì?",
+          "o": [
+            "con kiến",
+            "con ruồi",
+            "con muỗi",
+            "con ong"
+          ],
+          "a": "con ruồi",
+          "h": "Trong các đề thi học sinh giỏi, câu đố dân gian này có đáp án là 'con ruồi' (con ruồi đậu vào mâm cỗ làm bẩn, dụ dỗ phá hỏng cỗ ăn giỗ).",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10001,
+          "sub": "Tìm từ lạc nhóm (IQ Trạng Nguyên 2)",
+          "q": "Trong nhóm từ sau, từ nào là từ lạc nhóm (khác loại với các từ còn lại): 'siêng năng, cần cù, chăm chỉ, xinh đẹp'?",
+          "o": [
+            "siêng năng",
+            "cần cù",
+            "chăm chỉ",
+            "xinh đẹp"
+          ],
+          "a": "xinh đẹp",
+          "h": "Các từ 'siêng năng, cần cù, chăm chỉ' đều chỉ đức tính học hỏi làm việc tích cực, còn 'xinh đẹp' tả ngoại hình.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10002,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 3)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò dùng để cày, tuyệt đối không được giết thịt'. Cách đặt nào đúng?",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày, không được thịt.",
+          "h": "Dấu phẩy đặt sau từ 'cày' tách ý: 'Bò dùng để cày' và 'không được ăn thịt nó'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10003,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 4)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò không thể cày ruộng được nữa, hãy mang đi làm thịt'. Cách đặt nào đúng?",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày không được, thịt.",
+          "h": "Dấu phẩy đặt sau chữ 'được' chỉ rõ trạng thái: 'Bò cày ruộng không được', hành động tiếp theo là 'mang đi làm thịt'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10004,
+          "sub": "Logic Tập làm văn sắp xếp câu (IQ Trạng Nguyên 5)",
+          "q": "Hãy sắp xếp các câu văn sau thành đoạn văn logic: (1) Sáng sớm, mẹ em dậy nhóm bếp nấu cơm. (2) Khoảng gần 6 giờ, mẹ gọi anh em em thức dậy ăn sáng. (3) Cả nhà quây quần bên mâm cơm ấm cúng. (4) Em chuẩn bị sách vở sẵn sàng tới lớp học.",
+          "o": [
+            "(1) - (2) - (3) - (4)",
+            "(1) - (3) - (2) - (4)",
+            "(2) - (1) - (4) - (3)",
+            "(4) - (1) - (2) - (3)"
+          ],
+          "a": "(1) - (2) - (3) - (4)",
+          "h": "Tiến trình thời gian hợp lý: dậy sớm nấu cơm nấu cỗ -> gọi con dậy -> cả nhà ăn sáng cơm -> chuẩn bị đi học vui tươi.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10005,
+          "sub": "Đố chữ dân gian (IQ Trạng Nguyên 6)",
+          "q": "Bé hãy giải câu đố sau: 'Vừa bằng hạt đỗ, ăn giỗ cả làng'. Là con gì? (Mã số 1005)",
+          "o": [
+            "con kiến",
+            "con ruồi",
+            "con muỗi",
+            "con ong"
+          ],
+          "a": "con ruồi",
+          "h": "Trong các đề thi học sinh giỏi, câu đố dân gian này có đáp án là 'con ruồi' (con ruồi đậu vào mâm cỗ làm bẩn, dụ dỗ phá hỏng cỗ ăn giỗ).",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10006,
+          "sub": "Tìm từ lạc nhóm (IQ Trạng Nguyên 7)",
+          "q": "Trong nhóm từ sau, từ nào là từ lạc nhóm (khác loại với các từ còn lại): 'siêng năng, cần cù, chăm chỉ, xinh đẹp'? (Mã số 1006)",
+          "o": [
+            "siêng năng",
+            "cần cù",
+            "chăm chỉ",
+            "xinh đẹp"
+          ],
+          "a": "xinh đẹp",
+          "h": "Các từ 'siêng năng, cần cù, chăm chỉ' đều chỉ đức tính học hỏi làm việc tích cực, còn 'xinh đẹp' tả ngoại hình.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10007,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 8)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò dùng để cày, tuyệt đối không được giết thịt'. Cách đặt nào đúng? (Mã số 1007)",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày, không được thịt.",
+          "h": "Dấu phẩy đặt sau từ 'cày' tách ý: 'Bò dùng để cày' và 'không được ăn thịt nó'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10008,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 9)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò không thể cày ruộng được nữa, hãy mang đi làm thịt'. Cách đặt nào đúng? (Mã số 1008)",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày không được, thịt.",
+          "h": "Dấu phẩy đặt sau chữ 'được' chỉ rõ trạng thái: 'Bò cày ruộng không được', hành động tiếp theo là 'mang đi làm thịt'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10009,
+          "sub": "Logic Tập làm văn sắp xếp câu (IQ Trạng Nguyên 10)",
+          "q": "Hãy sắp xếp các câu văn sau thành đoạn văn logic: (1) Sáng sớm, mẹ em dậy nhóm bếp nấu cơm. (2) Khoảng gần 6 giờ, mẹ gọi anh em em thức dậy ăn sáng. (3) Cả nhà quây quần bên mâm cơm ấm cúng. (4) Em chuẩn bị sách vở sẵn sàng tới lớp học. (Mã số 1009)",
+          "o": [
+            "(1) - (2) - (3) - (4)",
+            "(1) - (3) - (2) - (4)",
+            "(2) - (1) - (4) - (3)",
+            "(4) - (1) - (2) - (3)"
+          ],
+          "a": "(1) - (2) - (3) - (4)",
+          "h": "Tiến trình thời gian hợp lý: dậy sớm nấu cơm nấu cỗ -> gọi con dậy -> cả nhà ăn sáng cơm -> chuẩn bị đi học vui tươi.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10010,
+          "sub": "Đố chữ dân gian (IQ Trạng Nguyên 11)",
+          "q": "Bé hãy giải câu đố sau: 'Vừa bằng hạt đỗ, ăn giỗ cả làng'. Là con gì? (Mã số 1010)",
+          "o": [
+            "con kiến",
+            "con ruồi",
+            "con muỗi",
+            "con ong"
+          ],
+          "a": "con ruồi",
+          "h": "Trong các đề thi học sinh giỏi, câu đố dân gian này có đáp án là 'con ruồi' (con ruồi đậu vào mâm cỗ làm bẩn, dụ dỗ phá hỏng cỗ ăn giỗ).",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10011,
+          "sub": "Tìm từ lạc nhóm (IQ Trạng Nguyên 12)",
+          "q": "Trong nhóm từ sau, từ nào là từ lạc nhóm (khác loại với các từ còn lại): 'siêng năng, cần cù, chăm chỉ, xinh đẹp'? (Mã số 1011)",
+          "o": [
+            "siêng năng",
+            "cần cù",
+            "chăm chỉ",
+            "xinh đẹp"
+          ],
+          "a": "xinh đẹp",
+          "h": "Các từ 'siêng năng, cần cù, chăm chỉ' đều chỉ đức tính học hỏi làm việc tích cực, còn 'xinh đẹp' tả ngoại hình.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10012,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 13)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò dùng để cày, tuyệt đối không được giết thịt'. Cách đặt nào đúng? (Mã số 1012)",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày, không được thịt.",
+          "h": "Dấu phẩy đặt sau từ 'cày' tách ý: 'Bò dùng để cày' và 'không được ăn thịt nó'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10013,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 14)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò không thể cày ruộng được nữa, hãy mang đi làm thịt'. Cách đặt nào đúng? (Mã số 1013)",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày không được, thịt.",
+          "h": "Dấu phẩy đặt sau chữ 'được' chỉ rõ trạng thái: 'Bò cày ruộng không được', hành động tiếp theo là 'mang đi làm thịt'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10014,
+          "sub": "Logic Tập làm văn sắp xếp câu (IQ Trạng Nguyên 15)",
+          "q": "Hãy sắp xếp các câu văn sau thành đoạn văn logic: (1) Sáng sớm, mẹ em dậy nhóm bếp nấu cơm. (2) Khoảng gần 6 giờ, mẹ gọi anh em em thức dậy ăn sáng. (3) Cả nhà quây quần bên mâm cơm ấm cúng. (4) Em chuẩn bị sách vở sẵn sàng tới lớp học. (Mã số 1014)",
+          "o": [
+            "(1) - (2) - (3) - (4)",
+            "(1) - (3) - (2) - (4)",
+            "(2) - (1) - (4) - (3)",
+            "(4) - (1) - (2) - (3)"
+          ],
+          "a": "(1) - (2) - (3) - (4)",
+          "h": "Tiến trình thời gian hợp lý: dậy sớm nấu cơm nấu cỗ -> gọi con dậy -> cả nhà ăn sáng cơm -> chuẩn bị đi học vui tươi.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10015,
+          "sub": "Đố chữ dân gian (IQ Trạng Nguyên 16)",
+          "q": "Bé hãy giải câu đố sau: 'Vừa bằng hạt đỗ, ăn giỗ cả làng'. Là con gì? (Mã số 1015)",
+          "o": [
+            "con kiến",
+            "con ruồi",
+            "con muỗi",
+            "con ong"
+          ],
+          "a": "con ruồi",
+          "h": "Trong các đề thi học sinh giỏi, câu đố dân gian này có đáp án là 'con ruồi' (con ruồi đậu vào mâm cỗ làm bẩn, dụ dỗ phá hỏng cỗ ăn giỗ).",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10016,
+          "sub": "Tìm từ lạc nhóm (IQ Trạng Nguyên 17)",
+          "q": "Trong nhóm từ sau, từ nào là từ lạc nhóm (khác loại với các từ còn lại): 'siêng năng, cần cù, chăm chỉ, xinh đẹp'? (Mã số 1016)",
+          "o": [
+            "siêng năng",
+            "cần cù",
+            "chăm chỉ",
+            "xinh đẹp"
+          ],
+          "a": "xinh đẹp",
+          "h": "Các từ 'siêng năng, cần cù, chăm chỉ' đều chỉ đức tính học hỏi làm việc tích cực, còn 'xinh đẹp' tả ngoại hình.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10017,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 18)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò dùng để cày, tuyệt đối không được giết thịt'. Cách đặt nào đúng? (Mã số 1017)",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày, không được thịt.",
+          "h": "Dấu phẩy đặt sau từ 'cày' tách ý: 'Bò dùng để cày' và 'không được ăn thịt nó'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10018,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 19)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò không thể cày ruộng được nữa, hãy mang đi làm thịt'. Cách đặt nào đúng? (Mã số 1018)",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày không được, thịt.",
+          "h": "Dấu phẩy đặt sau chữ 'được' chỉ rõ trạng thái: 'Bò cày ruộng không được', hành động tiếp theo là 'mang đi làm thịt'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10019,
+          "sub": "Logic Tập làm văn sắp xếp câu (IQ Trạng Nguyên 20)",
+          "q": "Hãy sắp xếp các câu văn sau thành đoạn văn logic: (1) Sáng sớm, mẹ em dậy nhóm bếp nấu cơm. (2) Khoảng gần 6 giờ, mẹ gọi anh em em thức dậy ăn sáng. (3) Cả nhà quây quần bên mâm cơm ấm cúng. (4) Em chuẩn bị sách vở sẵn sàng tới lớp học. (Mã số 1019)",
+          "o": [
+            "(1) - (2) - (3) - (4)",
+            "(1) - (3) - (2) - (4)",
+            "(2) - (1) - (4) - (3)",
+            "(4) - (1) - (2) - (3)"
+          ],
+          "a": "(1) - (2) - (3) - (4)",
+          "h": "Tiến trình thời gian hợp lý: dậy sớm nấu cơm nấu cỗ -> gọi con dậy -> cả nhà ăn sáng cơm -> chuẩn bị đi học vui tươi.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10020,
+          "sub": "Đố chữ dân gian (IQ Trạng Nguyên 21)",
+          "q": "Bé hãy giải câu đố sau: 'Vừa bằng hạt đỗ, ăn giỗ cả làng'. Là con gì? (Mã số 1020)",
+          "o": [
+            "con kiến",
+            "con ruồi",
+            "con muỗi",
+            "con ong"
+          ],
+          "a": "con ruồi",
+          "h": "Trong các đề thi học sinh giỏi, câu đố dân gian này có đáp án là 'con ruồi' (con ruồi đậu vào mâm cỗ làm bẩn, dụ dỗ phá hỏng cỗ ăn giỗ).",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10021,
+          "sub": "Tìm từ lạc nhóm (IQ Trạng Nguyên 22)",
+          "q": "Trong nhóm từ sau, từ nào là từ lạc nhóm (khác loại với các từ còn lại): 'siêng năng, cần cù, chăm chỉ, xinh đẹp'? (Mã số 1021)",
+          "o": [
+            "siêng năng",
+            "cần cù",
+            "chăm chỉ",
+            "xinh đẹp"
+          ],
+          "a": "xinh đẹp",
+          "h": "Các từ 'siêng năng, cần cù, chăm chỉ' đều chỉ đức tính học hỏi làm việc tích cực, còn 'xinh đẹp' tả ngoại hình.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10022,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 23)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò dùng để cày, tuyệt đối không được giết thịt'. Cách đặt nào đúng? (Mã số 1022)",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày, không được thịt.",
+          "h": "Dấu phẩy đặt sau từ 'cày' tách ý: 'Bò dùng để cày' và 'không được ăn thịt nó'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10023,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 24)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò không thể cày ruộng được nữa, hãy mang đi làm thịt'. Cách đặt nào đúng? (Mã số 1023)",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày không được, thịt.",
+          "h": "Dấu phẩy đặt sau chữ 'được' chỉ rõ trạng thái: 'Bò cày ruộng không được', hành động tiếp theo là 'mang đi làm thịt'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10024,
+          "sub": "Logic Tập làm văn sắp xếp câu (IQ Trạng Nguyên 25)",
+          "q": "Hãy sắp xếp các câu văn sau thành đoạn văn logic: (1) Sáng sớm, mẹ em dậy nhóm bếp nấu cơm. (2) Khoảng gần 6 giờ, mẹ gọi anh em em thức dậy ăn sáng. (3) Cả nhà quây quần bên mâm cơm ấm cúng. (4) Em chuẩn bị sách vở sẵn sàng tới lớp học. (Mã số 1024)",
+          "o": [
+            "(1) - (2) - (3) - (4)",
+            "(1) - (3) - (2) - (4)",
+            "(2) - (1) - (4) - (3)",
+            "(4) - (1) - (2) - (3)"
+          ],
+          "a": "(1) - (2) - (3) - (4)",
+          "h": "Tiến trình thời gian hợp lý: dậy sớm nấu cơm nấu cỗ -> gọi con dậy -> cả nhà ăn sáng cơm -> chuẩn bị đi học vui tươi.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10025,
+          "sub": "Đố chữ dân gian (IQ Trạng Nguyên 26)",
+          "q": "Bé hãy giải câu đố sau: 'Vừa bằng hạt đỗ, ăn giỗ cả làng'. Là con gì? (Mã số 1025)",
+          "o": [
+            "con kiến",
+            "con ruồi",
+            "con muỗi",
+            "con ong"
+          ],
+          "a": "con ruồi",
+          "h": "Trong các đề thi học sinh giỏi, câu đố dân gian này có đáp án là 'con ruồi' (con ruồi đậu vào mâm cỗ làm bẩn, dụ dỗ phá hỏng cỗ ăn giỗ).",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10026,
+          "sub": "Tìm từ lạc nhóm (IQ Trạng Nguyên 27)",
+          "q": "Trong nhóm từ sau, từ nào là từ lạc nhóm (khác loại với các từ còn lại): 'siêng năng, cần cù, chăm chỉ, xinh đẹp'? (Mã số 1026)",
+          "o": [
+            "siêng năng",
+            "cần cù",
+            "chăm chỉ",
+            "xinh đẹp"
+          ],
+          "a": "xinh đẹp",
+          "h": "Các từ 'siêng năng, cần cù, chăm chỉ' đều chỉ đức tính học hỏi làm việc tích cực, còn 'xinh đẹp' tả ngoại hình.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10027,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 28)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò dùng để cày, tuyệt đối không được giết thịt'. Cách đặt nào đúng? (Mã số 1027)",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày, không được thịt.",
+          "h": "Dấu phẩy đặt sau từ 'cày' tách ý: 'Bò dùng để cày' và 'không được ăn thịt nó'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10028,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 29)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò không thể cày ruộng được nữa, hãy mang đi làm thịt'. Cách đặt nào đúng? (Mã số 1028)",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày không được, thịt.",
+          "h": "Dấu phẩy đặt sau chữ 'được' chỉ rõ trạng thái: 'Bò cày ruộng không được', hành động tiếp theo là 'mang đi làm thịt'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10029,
+          "sub": "Logic Tập làm văn sắp xếp câu (IQ Trạng Nguyên 30)",
+          "q": "Hãy sắp xếp các câu văn sau thành đoạn văn logic: (1) Sáng sớm, mẹ em dậy nhóm bếp nấu cơm. (2) Khoảng gần 6 giờ, mẹ gọi anh em em thức dậy ăn sáng. (3) Cả nhà quây quần bên mâm cơm ấm cúng. (4) Em chuẩn bị sách vở sẵn sàng tới lớp học. (Mã số 1029)",
+          "o": [
+            "(1) - (2) - (3) - (4)",
+            "(1) - (3) - (2) - (4)",
+            "(2) - (1) - (4) - (3)",
+            "(4) - (1) - (2) - (3)"
+          ],
+          "a": "(1) - (2) - (3) - (4)",
+          "h": "Tiến trình thời gian hợp lý: dậy sớm nấu cơm nấu cỗ -> gọi con dậy -> cả nhà ăn sáng cơm -> chuẩn bị đi học vui tươi.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10030,
+          "sub": "Đố chữ dân gian (IQ Trạng Nguyên 31)",
+          "q": "Bé hãy giải câu đố sau: 'Vừa bằng hạt đỗ, ăn giỗ cả làng'. Là con gì? (Mã số 1030)",
+          "o": [
+            "con kiến",
+            "con ruồi",
+            "con muỗi",
+            "con ong"
+          ],
+          "a": "con ruồi",
+          "h": "Trong các đề thi học sinh giỏi, câu đố dân gian này có đáp án là 'con ruồi' (con ruồi đậu vào mâm cỗ làm bẩn, dụ dỗ phá hỏng cỗ ăn giỗ).",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10031,
+          "sub": "Tìm từ lạc nhóm (IQ Trạng Nguyên 32)",
+          "q": "Trong nhóm từ sau, từ nào là từ lạc nhóm (khác loại với các từ còn lại): 'siêng năng, cần cù, chăm chỉ, xinh đẹp'? (Mã số 1031)",
+          "o": [
+            "siêng năng",
+            "cần cù",
+            "chăm chỉ",
+            "xinh đẹp"
+          ],
+          "a": "xinh đẹp",
+          "h": "Các từ 'siêng năng, cần cù, chăm chỉ' đều chỉ đức tính học hỏi làm việc tích cực, còn 'xinh đẹp' tả ngoại hình.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10032,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 33)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò dùng để cày, tuyệt đối không được giết thịt'. Cách đặt nào đúng? (Mã số 1032)",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày, không được thịt.",
+          "h": "Dấu phẩy đặt sau từ 'cày' tách ý: 'Bò dùng để cày' và 'không được ăn thịt nó'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10033,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 34)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò không thể cày ruộng được nữa, hãy mang đi làm thịt'. Cách đặt nào đúng? (Mã số 1033)",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày không được, thịt.",
+          "h": "Dấu phẩy đặt sau chữ 'được' chỉ rõ trạng thái: 'Bò cày ruộng không được', hành động tiếp theo là 'mang đi làm thịt'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10034,
+          "sub": "Logic Tập làm văn sắp xếp câu (IQ Trạng Nguyên 35)",
+          "q": "Hãy sắp xếp các câu văn sau thành đoạn văn logic: (1) Sáng sớm, mẹ em dậy nhóm bếp nấu cơm. (2) Khoảng gần 6 giờ, mẹ gọi anh em em thức dậy ăn sáng. (3) Cả nhà quây quần bên mâm cơm ấm cúng. (4) Em chuẩn bị sách vở sẵn sàng tới lớp học. (Mã số 1034)",
+          "o": [
+            "(1) - (2) - (3) - (4)",
+            "(1) - (3) - (2) - (4)",
+            "(2) - (1) - (4) - (3)",
+            "(4) - (1) - (2) - (3)"
+          ],
+          "a": "(1) - (2) - (3) - (4)",
+          "h": "Tiến trình thời gian hợp lý: dậy sớm nấu cơm nấu cỗ -> gọi con dậy -> cả nhà ăn sáng cơm -> chuẩn bị đi học vui tươi.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10035,
+          "sub": "Đố chữ dân gian (IQ Trạng Nguyên 36)",
+          "q": "Bé hãy giải câu đố sau: 'Vừa bằng hạt đỗ, ăn giỗ cả làng'. Là con gì? (Mã số 1035)",
+          "o": [
+            "con kiến",
+            "con ruồi",
+            "con muỗi",
+            "con ong"
+          ],
+          "a": "con ruồi",
+          "h": "Trong các đề thi học sinh giỏi, câu đố dân gian này có đáp án là 'con ruồi' (con ruồi đậu vào mâm cỗ làm bẩn, dụ dỗ phá hỏng cỗ ăn giỗ).",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10036,
+          "sub": "Tìm từ lạc nhóm (IQ Trạng Nguyên 37)",
+          "q": "Trong nhóm từ sau, từ nào là từ lạc nhóm (khác loại với các từ còn lại): 'siêng năng, cần cù, chăm chỉ, xinh đẹp'? (Mã số 1036)",
+          "o": [
+            "siêng năng",
+            "cần cù",
+            "chăm chỉ",
+            "xinh đẹp"
+          ],
+          "a": "xinh đẹp",
+          "h": "Các từ 'siêng năng, cần cù, chăm chỉ' đều chỉ đức tính học hỏi làm việc tích cực, còn 'xinh đẹp' tả ngoại hình.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10037,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 38)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò dùng để cày, tuyệt đối không được giết thịt'. Cách đặt nào đúng? (Mã số 1037)",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày, không được thịt.",
+          "h": "Dấu phẩy đặt sau từ 'cày' tách ý: 'Bò dùng để cày' và 'không được ăn thịt nó'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10038,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 39)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò không thể cày ruộng được nữa, hãy mang đi làm thịt'. Cách đặt nào đúng? (Mã số 1038)",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày không được, thịt.",
+          "h": "Dấu phẩy đặt sau chữ 'được' chỉ rõ trạng thái: 'Bò cày ruộng không được', hành động tiếp theo là 'mang đi làm thịt'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10039,
+          "sub": "Logic Tập làm văn sắp xếp câu (IQ Trạng Nguyên 40)",
+          "q": "Hãy sắp xếp các câu văn sau thành đoạn văn logic: (1) Sáng sớm, mẹ em dậy nhóm bếp nấu cơm. (2) Khoảng gần 6 giờ, mẹ gọi anh em em thức dậy ăn sáng. (3) Cả nhà quây quần bên mâm cơm ấm cúng. (4) Em chuẩn bị sách vở sẵn sàng tới lớp học. (Mã số 1039)",
+          "o": [
+            "(1) - (2) - (3) - (4)",
+            "(1) - (3) - (2) - (4)",
+            "(2) - (1) - (4) - (3)",
+            "(4) - (1) - (2) - (3)"
+          ],
+          "a": "(1) - (2) - (3) - (4)",
+          "h": "Tiến trình thời gian hợp lý: dậy sớm nấu cơm nấu cỗ -> gọi con dậy -> cả nhà ăn sáng cơm -> chuẩn bị đi học vui tươi.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10040,
+          "sub": "Đố chữ dân gian (IQ Trạng Nguyên 41)",
+          "q": "Bé hãy giải câu đố sau: 'Vừa bằng hạt đỗ, ăn giỗ cả làng'. Là con gì? (Mã số 1040)",
+          "o": [
+            "con kiến",
+            "con ruồi",
+            "con muỗi",
+            "con ong"
+          ],
+          "a": "con ruồi",
+          "h": "Trong các đề thi học sinh giỏi, câu đố dân gian này có đáp án là 'con ruồi' (con ruồi đậu vào mâm cỗ làm bẩn, dụ dỗ phá hỏng cỗ ăn giỗ).",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10041,
+          "sub": "Tìm từ lạc nhóm (IQ Trạng Nguyên 42)",
+          "q": "Trong nhóm từ sau, từ nào là từ lạc nhóm (khác loại với các từ còn lại): 'siêng năng, cần cù, chăm chỉ, xinh đẹp'? (Mã số 1041)",
+          "o": [
+            "siêng năng",
+            "cần cù",
+            "chăm chỉ",
+            "xinh đẹp"
+          ],
+          "a": "xinh đẹp",
+          "h": "Các từ 'siêng năng, cần cù, chăm chỉ' đều chỉ đức tính học hỏi làm việc tích cực, còn 'xinh đẹp' tả ngoại hình.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10042,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 43)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò dùng để cày, tuyệt đối không được giết thịt'. Cách đặt nào đúng? (Mã số 1042)",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày, không được thịt.",
+          "h": "Dấu phẩy đặt sau từ 'cày' tách ý: 'Bò dùng để cày' và 'không được ăn thịt nó'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10043,
+          "sub": "Đặt dấu phẩy tạo hai nghĩa (IQ Trạng Nguyên 44)",
+          "q": "Đặt dấu phẩy vào câu 'Bò cày không được thịt' để tạo nghĩa: 'Bò không thể cày ruộng được nữa, hãy mang đi làm thịt'. Cách đặt nào đúng? (Mã số 1043)",
+          "o": [
+            "Bò cày không được, thịt.",
+            "Bò cày, không được thịt.",
+            "Bò, cày không được thịt.",
+            "Bò cày không, được thịt."
+          ],
+          "a": "Bò cày không được, thịt.",
+          "h": "Dấu phẩy đặt sau chữ 'được' chỉ rõ trạng thái: 'Bò cày ruộng không được', hành động tiếp theo là 'mang đi làm thịt'.",
+          "img": "",
+          "w": 22
+        },
+        {
+          "id": 10044,
+          "sub": "Logic Tập làm văn sắp xếp câu (IQ Trạng Nguyên 45)",
+          "q": "Hãy sắp xếp các câu văn sau thành đoạn văn logic: (1) Sáng sớm, mẹ em dậy nhóm bếp nấu cơm. (2) Khoảng gần 6 giờ, mẹ gọi anh em em thức dậy ăn sáng. (3) Cả nhà quây quần bên mâm cơm ấm cúng. (4) Em chuẩn bị sách vở sẵn sàng tới lớp học. (Mã số 1044)",
+          "o": [
+            "(1) - (2) - (3) - (4)",
+            "(1) - (3) - (2) - (4)",
+            "(2) - (1) - (4) - (3)",
+            "(4) - (1) - (2) - (3)"
+          ],
+          "a": "(1) - (2) - (3) - (4)",
+          "h": "Tiến trình thời gian hợp lý: dậy sớm nấu cơm nấu cỗ -> gọi con dậy -> cả nhà ăn sáng cơm -> chuẩn bị đi học vui tươi.",
+          "img": "",
+          "w": 22
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Góc Ôn tập củng cố",
+      "desc": "Nơi bé củng cố toàn diện các kĩ năng, vượt qua các mốc ôn tập giữa kì và cuối kì bằng hệ thống câu hỏi đa dạng, bao quát.",
+      "qs": [
+        {
+          "id": 11000,
+          "sub": "Ôn tập tổng hợp Chính tả & Tu từ (Ôn tập 1)",
+          "q": "Điền từ đúng chính tả và hoàn thành câu so sánh: 'Mặt trời đỏ ối đang từ từ nhô lên rực rỡ như một quả... khổng lồ.'",
+          "o": [
+            "bóng lửa",
+            "cầu lửa",
+            "bóng hồng",
+            "trứng gà"
+          ],
+          "a": "cầu lửa",
+          "h": "Trong văn thơ so sánh miêu tả, mặt trời đỏ rực rỡ buổi sáng sớm nhô lên thường ví sinh động như một 'quả cầu lửa' khổng lồ đầy sức sống.",
+          "img": "",
+          "w": 4
+        },
+        {
+          "id": 11001,
+          "sub": "Ôn tập dấu câu & từ loại (Ôn tập 2)",
+          "q": "Cặp từ trái nghĩa nào thích hợp điền vào chỗ trống: 'Người ... làm việc tốt luôn được yêu mến, kẻ ... trốn tránh trách nhiệm thì thật đáng buồn.'",
+          "o": [
+            "siêng năng - chăm chỉ",
+            "cần cù - lười nhác",
+            "thông minh - ngốc nghếch",
+            "khỏe mạnh - yếu ớt"
+          ],
+          "a": "cần cù - lười nhác",
+          "h": "Cặp từ trái nghĩa chuẩn mô tả thái độ làm việc tốt vs lười biếng trách nhiệm là 'cần cù' đối lập với 'lười nhác'.",
+          "img": "",
+          "w": 7
+        },
+        {
+          "id": 11002,
+          "sub": "Ôn tập tổng hợp Đọc hiểu (Ôn tập 3)",
+          "q": "Dòng thơ nào chứa hình ảnh nhân hóa loài chim gác đêm gần gũi trong tài liệu?",
+          "o": [
+            "Cánh chim chiều bay lững thững về tổ.",
+            "Anh Đom Đóm lại đi gác đêm.",
+            "Chim bói cá lao nhanh như tên.",
+            "Chim chào mào hót líu lo đầu cành."
+          ],
+          "a": "Anh Đom Đóm lại đi gác đêm.",
+          "h": "Trong tài liệu có câu hỏi kiểm tra: 'Anh Đom Đóm lại đi gác' bộc lộ biện pháp nhân hóa chú đom đóm như người chiến sĩ đi gác đêm canh giấc ngủ muôn loài.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 11003,
+          "sub": "Ôn tập tổng hợp Chính tả & Tu từ (Ôn tập 4)",
+          "q": "Điền từ đúng chính tả và hoàn thành câu so sánh: 'Mặt trời đỏ ối đang từ từ nhô lên rực rỡ như một quả... khổng lồ.' (Mã ôn 1103)",
+          "o": [
+            "bóng lửa",
+            "cầu lửa",
+            "bóng hồng",
+            "trứng gà"
+          ],
+          "a": "cầu lửa",
+          "h": "Trong văn thơ so sánh miêu tả, mặt trời đỏ rực rỡ buổi sáng sớm nhô lên thường ví sinh động như một 'quả cầu lửa' khổng lồ đầy sức sống.",
+          "img": "",
+          "w": 16
+        },
+        {
+          "id": 11004,
+          "sub": "Ôn tập dấu câu & từ loại (Ôn tập 5)",
+          "q": "Cặp từ trái nghĩa nào thích hợp điền vào chỗ trống: 'Người ... làm việc tốt luôn được yêu mến, kẻ ... trốn tránh trách nhiệm thì thật đáng buồn.' (Mã ôn 1104)",
+          "o": [
+            "siêng năng - chăm chỉ",
+            "cần cù - lười nhác",
+            "thông minh - ngốc nghếch",
+            "khỏe mạnh - yếu ớt"
+          ],
+          "a": "cần cù - lười nhác",
+          "h": "Cặp từ trái nghĩa chuẩn mô tả thái độ làm việc tốt vs lười biếng trách nhiệm là 'cần cù' đối lập với 'lười nhác'.",
+          "img": "",
+          "w": 19
+        },
+        {
+          "id": 11005,
+          "sub": "Ôn tập tổng hợp Đọc hiểu (Ôn tập 6)",
+          "q": "Dòng thơ nào chứa hình ảnh nhân hóa loài chim gác đêm gần gũi trong tài liệu? (Mã ôn 1105)",
+          "o": [
+            "Cánh chim chiều bay lững thững về tổ.",
+            "Anh Đom Đóm lại đi gác đêm.",
+            "Chim bói cá lao nhanh như tên.",
+            "Chim chào mào hót líu lo đầu cành."
+          ],
+          "a": "Anh Đom Đóm lại đi gác đêm.",
+          "h": "Trong tài liệu có câu hỏi kiểm tra: 'Anh Đom Đóm lại đi gác' bộc lộ biện pháp nhân hóa chú đom đóm như người chiến sĩ đi gác đêm canh giấc ngủ muôn loài.",
+          "img": "",
+          "w": 23
+        },
+        {
+          "id": 11006,
+          "sub": "Ôn tập tổng hợp Chính tả & Tu từ (Ôn tập 7)",
+          "q": "Điền từ đúng chính tả và hoàn thành câu so sánh: 'Mặt trời đỏ ối đang từ từ nhô lên rực rỡ như một quả... khổng lồ.' (Mã ôn 1106)",
+          "o": [
+            "bóng lửa",
+            "cầu lửa",
+            "bóng hồng",
+            "trứng gà"
+          ],
+          "a": "cầu lửa",
+          "h": "Trong văn thơ so sánh miêu tả, mặt trời đỏ rực rỡ buổi sáng sớm nhô lên thường ví sinh động như một 'quả cầu lửa' khổng lồ đầy sức sống.",
+          "img": "",
+          "w": 4
+        },
+        {
+          "id": 11007,
+          "sub": "Ôn tập dấu câu & từ loại (Ôn tập 8)",
+          "q": "Cặp từ trái nghĩa nào thích hợp điền vào chỗ trống: 'Người ... làm việc tốt luôn được yêu mến, kẻ ... trốn tránh trách nhiệm thì thật đáng buồn.' (Mã ôn 1107)",
+          "o": [
+            "siêng năng - chăm chỉ",
+            "cần cù - lười nhác",
+            "thông minh - ngốc nghếch",
+            "khỏe mạnh - yếu ớt"
+          ],
+          "a": "cần cù - lười nhác",
+          "h": "Cặp từ trái nghĩa chuẩn mô tả thái độ làm việc tốt vs lười biếng trách nhiệm là 'cần cù' đối lập với 'lười nhác'.",
+          "img": "",
+          "w": 7
+        },
+        {
+          "id": 11008,
+          "sub": "Ôn tập tổng hợp Đọc hiểu (Ôn tập 9)",
+          "q": "Dòng thơ nào chứa hình ảnh nhân hóa loài chim gác đêm gần gũi trong tài liệu? (Mã ôn 1108)",
+          "o": [
+            "Cánh chim chiều bay lững thững về tổ.",
+            "Anh Đom Đóm lại đi gác đêm.",
+            "Chim bói cá lao nhanh như tên.",
+            "Chim chào mào hót líu lo đầu cành."
+          ],
+          "a": "Anh Đom Đóm lại đi gác đêm.",
+          "h": "Trong tài liệu có câu hỏi kiểm tra: 'Anh Đom Đóm lại đi gác' bộc lộ biện pháp nhân hóa chú đom đóm như người chiến sĩ đi gác đêm canh giấc ngủ muôn loài.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 11009,
+          "sub": "Ôn tập tổng hợp Chính tả & Tu từ (Ôn tập 10)",
+          "q": "Điền từ đúng chính tả và hoàn thành câu so sánh: 'Mặt trời đỏ ối đang từ từ nhô lên rực rỡ như một quả... khổng lồ.' (Mã ôn 1109)",
+          "o": [
+            "bóng lửa",
+            "cầu lửa",
+            "bóng hồng",
+            "trứng gà"
+          ],
+          "a": "cầu lửa",
+          "h": "Trong văn thơ so sánh miêu tả, mặt trời đỏ rực rỡ buổi sáng sớm nhô lên thường ví sinh động như một 'quả cầu lửa' khổng lồ đầy sức sống.",
+          "img": "",
+          "w": 16
+        },
+        {
+          "id": 11010,
+          "sub": "Ôn tập dấu câu & từ loại (Ôn tập 11)",
+          "q": "Cặp từ trái nghĩa nào thích hợp điền vào chỗ trống: 'Người ... làm việc tốt luôn được yêu mến, kẻ ... trốn tránh trách nhiệm thì thật đáng buồn.' (Mã ôn 1110)",
+          "o": [
+            "siêng năng - chăm chỉ",
+            "cần cù - lười nhác",
+            "thông minh - ngốc nghếch",
+            "khỏe mạnh - yếu ớt"
+          ],
+          "a": "cần cù - lười nhác",
+          "h": "Cặp từ trái nghĩa chuẩn mô tả thái độ làm việc tốt vs lười biếng trách nhiệm là 'cần cù' đối lập với 'lười nhác'.",
+          "img": "",
+          "w": 19
+        },
+        {
+          "id": 11011,
+          "sub": "Ôn tập tổng hợp Đọc hiểu (Ôn tập 12)",
+          "q": "Dòng thơ nào chứa hình ảnh nhân hóa loài chim gác đêm gần gũi trong tài liệu? (Mã ôn 1111)",
+          "o": [
+            "Cánh chim chiều bay lững thững về tổ.",
+            "Anh Đom Đóm lại đi gác đêm.",
+            "Chim bói cá lao nhanh như tên.",
+            "Chim chào mào hót líu lo đầu cành."
+          ],
+          "a": "Anh Đom Đóm lại đi gác đêm.",
+          "h": "Trong tài liệu có câu hỏi kiểm tra: 'Anh Đom Đóm lại đi gác' bộc lộ biện pháp nhân hóa chú đom đóm như người chiến sĩ đi gác đêm canh giấc ngủ muôn loài.",
+          "img": "",
+          "w": 23
+        },
+        {
+          "id": 11012,
+          "sub": "Ôn tập tổng hợp Chính tả & Tu từ (Ôn tập 13)",
+          "q": "Điền từ đúng chính tả và hoàn thành câu so sánh: 'Mặt trời đỏ ối đang từ từ nhô lên rực rỡ như một quả... khổng lồ.' (Mã ôn 1112)",
+          "o": [
+            "bóng lửa",
+            "cầu lửa",
+            "bóng hồng",
+            "trứng gà"
+          ],
+          "a": "cầu lửa",
+          "h": "Trong văn thơ so sánh miêu tả, mặt trời đỏ rực rỡ buổi sáng sớm nhô lên thường ví sinh động như một 'quả cầu lửa' khổng lồ đầy sức sống.",
+          "img": "",
+          "w": 4
+        },
+        {
+          "id": 11013,
+          "sub": "Ôn tập dấu câu & từ loại (Ôn tập 14)",
+          "q": "Cặp từ trái nghĩa nào thích hợp điền vào chỗ trống: 'Người ... làm việc tốt luôn được yêu mến, kẻ ... trốn tránh trách nhiệm thì thật đáng buồn.' (Mã ôn 1113)",
+          "o": [
+            "siêng năng - chăm chỉ",
+            "cần cù - lười nhác",
+            "thông minh - ngốc nghếch",
+            "khỏe mạnh - yếu ớt"
+          ],
+          "a": "cần cù - lười nhác",
+          "h": "Cặp từ trái nghĩa chuẩn mô tả thái độ làm việc tốt vs lười biếng trách nhiệm là 'cần cù' đối lập với 'lười nhác'.",
+          "img": "",
+          "w": 7
+        },
+        {
+          "id": 11014,
+          "sub": "Ôn tập tổng hợp Đọc hiểu (Ôn tập 15)",
+          "q": "Dòng thơ nào chứa hình ảnh nhân hóa loài chim gác đêm gần gũi trong tài liệu? (Mã ôn 1114)",
+          "o": [
+            "Cánh chim chiều bay lững thững về tổ.",
+            "Anh Đom Đóm lại đi gác đêm.",
+            "Chim bói cá lao nhanh như tên.",
+            "Chim chào mào hót líu lo đầu cành."
+          ],
+          "a": "Anh Đom Đóm lại đi gác đêm.",
+          "h": "Trong tài liệu có câu hỏi kiểm tra: 'Anh Đom Đóm lại đi gác' bộc lộ biện pháp nhân hóa chú đom đóm như người chiến sĩ đi gác đêm canh giấc ngủ muôn loài.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 11015,
+          "sub": "Ôn tập tổng hợp Chính tả & Tu từ (Ôn tập 16)",
+          "q": "Điền từ đúng chính tả và hoàn thành câu so sánh: 'Mặt trời đỏ ối đang từ từ nhô lên rực rỡ như một quả... khổng lồ.' (Mã ôn 1115)",
+          "o": [
+            "bóng lửa",
+            "cầu lửa",
+            "bóng hồng",
+            "trứng gà"
+          ],
+          "a": "cầu lửa",
+          "h": "Trong văn thơ so sánh miêu tả, mặt trời đỏ rực rỡ buổi sáng sớm nhô lên thường ví sinh động như một 'quả cầu lửa' khổng lồ đầy sức sống.",
+          "img": "",
+          "w": 16
+        },
+        {
+          "id": 11016,
+          "sub": "Ôn tập dấu câu & từ loại (Ôn tập 17)",
+          "q": "Cặp từ trái nghĩa nào thích hợp điền vào chỗ trống: 'Người ... làm việc tốt luôn được yêu mến, kẻ ... trốn tránh trách nhiệm thì thật đáng buồn.' (Mã ôn 1116)",
+          "o": [
+            "siêng năng - chăm chỉ",
+            "cần cù - lười nhác",
+            "thông minh - ngốc nghếch",
+            "khỏe mạnh - yếu ớt"
+          ],
+          "a": "cần cù - lười nhác",
+          "h": "Cặp từ trái nghĩa chuẩn mô tả thái độ làm việc tốt vs lười biếng trách nhiệm là 'cần cù' đối lập với 'lười nhác'.",
+          "img": "",
+          "w": 19
+        },
+        {
+          "id": 11017,
+          "sub": "Ôn tập tổng hợp Đọc hiểu (Ôn tập 18)",
+          "q": "Dòng thơ nào chứa hình ảnh nhân hóa loài chim gác đêm gần gũi trong tài liệu? (Mã ôn 1117)",
+          "o": [
+            "Cánh chim chiều bay lững thững về tổ.",
+            "Anh Đom Đóm lại đi gác đêm.",
+            "Chim bói cá lao nhanh như tên.",
+            "Chim chào mào hót líu lo đầu cành."
+          ],
+          "a": "Anh Đom Đóm lại đi gác đêm.",
+          "h": "Trong tài liệu có câu hỏi kiểm tra: 'Anh Đom Đóm lại đi gác' bộc lộ biện pháp nhân hóa chú đom đóm như người chiến sĩ đi gác đêm canh giấc ngủ muôn loài.",
+          "img": "",
+          "w": 23
+        },
+        {
+          "id": 11018,
+          "sub": "Ôn tập tổng hợp Chính tả & Tu từ (Ôn tập 19)",
+          "q": "Điền từ đúng chính tả và hoàn thành câu so sánh: 'Mặt trời đỏ ối đang từ từ nhô lên rực rỡ như một quả... khổng lồ.' (Mã ôn 1118)",
+          "o": [
+            "bóng lửa",
+            "cầu lửa",
+            "bóng hồng",
+            "trứng gà"
+          ],
+          "a": "cầu lửa",
+          "h": "Trong văn thơ so sánh miêu tả, mặt trời đỏ rực rỡ buổi sáng sớm nhô lên thường ví sinh động như một 'quả cầu lửa' khổng lồ đầy sức sống.",
+          "img": "",
+          "w": 4
+        },
+        {
+          "id": 11019,
+          "sub": "Ôn tập dấu câu & từ loại (Ôn tập 20)",
+          "q": "Cặp từ trái nghĩa nào thích hợp điền vào chỗ trống: 'Người ... làm việc tốt luôn được yêu mến, kẻ ... trốn tránh trách nhiệm thì thật đáng buồn.' (Mã ôn 1119)",
+          "o": [
+            "siêng năng - chăm chỉ",
+            "cần cù - lười nhác",
+            "thông minh - ngốc nghếch",
+            "khỏe mạnh - yếu ớt"
+          ],
+          "a": "cần cù - lười nhác",
+          "h": "Cặp từ trái nghĩa chuẩn mô tả thái độ làm việc tốt vs lười biếng trách nhiệm là 'cần cù' đối lập với 'lười nhác'.",
+          "img": "",
+          "w": 7
+        },
+        {
+          "id": 11020,
+          "sub": "Ôn tập tổng hợp Đọc hiểu (Ôn tập 21)",
+          "q": "Dòng thơ nào chứa hình ảnh nhân hóa loài chim gác đêm gần gũi trong tài liệu? (Mã ôn 1120)",
+          "o": [
+            "Cánh chim chiều bay lững thững về tổ.",
+            "Anh Đom Đóm lại đi gác đêm.",
+            "Chim bói cá lao nhanh như tên.",
+            "Chim chào mào hót líu lo đầu cành."
+          ],
+          "a": "Anh Đom Đóm lại đi gác đêm.",
+          "h": "Trong tài liệu có câu hỏi kiểm tra: 'Anh Đom Đóm lại đi gác' bộc lộ biện pháp nhân hóa chú đom đóm như người chiến sĩ đi gác đêm canh giấc ngủ muôn loài.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 11021,
+          "sub": "Ôn tập tổng hợp Chính tả & Tu từ (Ôn tập 22)",
+          "q": "Điền từ đúng chính tả và hoàn thành câu so sánh: 'Mặt trời đỏ ối đang từ từ nhô lên rực rỡ như một quả... khổng lồ.' (Mã ôn 1121)",
+          "o": [
+            "bóng lửa",
+            "cầu lửa",
+            "bóng hồng",
+            "trứng gà"
+          ],
+          "a": "cầu lửa",
+          "h": "Trong văn thơ so sánh miêu tả, mặt trời đỏ rực rỡ buổi sáng sớm nhô lên thường ví sinh động như một 'quả cầu lửa' khổng lồ đầy sức sống.",
+          "img": "",
+          "w": 16
+        },
+        {
+          "id": 11022,
+          "sub": "Ôn tập dấu câu & từ loại (Ôn tập 23)",
+          "q": "Cặp từ trái nghĩa nào thích hợp điền vào chỗ trống: 'Người ... làm việc tốt luôn được yêu mến, kẻ ... trốn tránh trách nhiệm thì thật đáng buồn.' (Mã ôn 1122)",
+          "o": [
+            "siêng năng - chăm chỉ",
+            "cần cù - lười nhác",
+            "thông minh - ngốc nghếch",
+            "khỏe mạnh - yếu ớt"
+          ],
+          "a": "cần cù - lười nhác",
+          "h": "Cặp từ trái nghĩa chuẩn mô tả thái độ làm việc tốt vs lười biếng trách nhiệm là 'cần cù' đối lập với 'lười nhác'.",
+          "img": "",
+          "w": 19
+        },
+        {
+          "id": 11023,
+          "sub": "Ôn tập tổng hợp Đọc hiểu (Ôn tập 24)",
+          "q": "Dòng thơ nào chứa hình ảnh nhân hóa loài chim gác đêm gần gũi trong tài liệu? (Mã ôn 1123)",
+          "o": [
+            "Cánh chim chiều bay lững thững về tổ.",
+            "Anh Đom Đóm lại đi gác đêm.",
+            "Chim bói cá lao nhanh như tên.",
+            "Chim chào mào hót líu lo đầu cành."
+          ],
+          "a": "Anh Đom Đóm lại đi gác đêm.",
+          "h": "Trong tài liệu có câu hỏi kiểm tra: 'Anh Đom Đóm lại đi gác' bộc lộ biện pháp nhân hóa chú đom đóm như người chiến sĩ đi gác đêm canh giấc ngủ muôn loài.",
+          "img": "",
+          "w": 23
+        },
+        {
+          "id": 11024,
+          "sub": "Ôn tập tổng hợp Chính tả & Tu từ (Ôn tập 25)",
+          "q": "Điền từ đúng chính tả và hoàn thành câu so sánh: 'Mặt trời đỏ ối đang từ từ nhô lên rực rỡ như một quả... khổng lồ.' (Mã ôn 1124)",
+          "o": [
+            "bóng lửa",
+            "cầu lửa",
+            "bóng hồng",
+            "trứng gà"
+          ],
+          "a": "cầu lửa",
+          "h": "Trong văn thơ so sánh miêu tả, mặt trời đỏ rực rỡ buổi sáng sớm nhô lên thường ví sinh động như một 'quả cầu lửa' khổng lồ đầy sức sống.",
+          "img": "",
+          "w": 4
+        },
+        {
+          "id": 11025,
+          "sub": "Ôn tập dấu câu & từ loại (Ôn tập 26)",
+          "q": "Cặp từ trái nghĩa nào thích hợp điền vào chỗ trống: 'Người ... làm việc tốt luôn được yêu mến, kẻ ... trốn tránh trách nhiệm thì thật đáng buồn.' (Mã ôn 1125)",
+          "o": [
+            "siêng năng - chăm chỉ",
+            "cần cù - lười nhác",
+            "thông minh - ngốc nghếch",
+            "khỏe mạnh - yếu ớt"
+          ],
+          "a": "cần cù - lười nhác",
+          "h": "Cặp từ trái nghĩa chuẩn mô tả thái độ làm việc tốt vs lười biếng trách nhiệm là 'cần cù' đối lập với 'lười nhác'.",
+          "img": "",
+          "w": 7
+        },
+        {
+          "id": 11026,
+          "sub": "Ôn tập tổng hợp Đọc hiểu (Ôn tập 27)",
+          "q": "Dòng thơ nào chứa hình ảnh nhân hóa loài chim gác đêm gần gũi trong tài liệu? (Mã ôn 1126)",
+          "o": [
+            "Cánh chim chiều bay lững thững về tổ.",
+            "Anh Đom Đóm lại đi gác đêm.",
+            "Chim bói cá lao nhanh như tên.",
+            "Chim chào mào hót líu lo đầu cành."
+          ],
+          "a": "Anh Đom Đóm lại đi gác đêm.",
+          "h": "Trong tài liệu có câu hỏi kiểm tra: 'Anh Đom Đóm lại đi gác' bộc lộ biện pháp nhân hóa chú đom đóm như người chiến sĩ đi gác đêm canh giấc ngủ muôn loài.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 11027,
+          "sub": "Ôn tập tổng hợp Chính tả & Tu từ (Ôn tập 28)",
+          "q": "Điền từ đúng chính tả và hoàn thành câu so sánh: 'Mặt trời đỏ ối đang từ từ nhô lên rực rỡ như một quả... khổng lồ.' (Mã ôn 1127)",
+          "o": [
+            "bóng lửa",
+            "cầu lửa",
+            "bóng hồng",
+            "trứng gà"
+          ],
+          "a": "cầu lửa",
+          "h": "Trong văn thơ so sánh miêu tả, mặt trời đỏ rực rỡ buổi sáng sớm nhô lên thường ví sinh động như một 'quả cầu lửa' khổng lồ đầy sức sống.",
+          "img": "",
+          "w": 16
+        },
+        {
+          "id": 11028,
+          "sub": "Ôn tập dấu câu & từ loại (Ôn tập 29)",
+          "q": "Cặp từ trái nghĩa nào thích hợp điền vào chỗ trống: 'Người ... làm việc tốt luôn được yêu mến, kẻ ... trốn tránh trách nhiệm thì thật đáng buồn.' (Mã ôn 1128)",
+          "o": [
+            "siêng năng - chăm chỉ",
+            "cần cù - lười nhác",
+            "thông minh - ngốc nghếch",
+            "khỏe mạnh - yếu ớt"
+          ],
+          "a": "cần cù - lười nhác",
+          "h": "Cặp từ trái nghĩa chuẩn mô tả thái độ làm việc tốt vs lười biếng trách nhiệm là 'cần cù' đối lập với 'lười nhác'.",
+          "img": "",
+          "w": 19
+        },
+        {
+          "id": 11029,
+          "sub": "Ôn tập tổng hợp Đọc hiểu (Ôn tập 30)",
+          "q": "Dòng thơ nào chứa hình ảnh nhân hóa loài chim gác đêm gần gũi trong tài liệu? (Mã ôn 1129)",
+          "o": [
+            "Cánh chim chiều bay lững thững về tổ.",
+            "Anh Đom Đóm lại đi gác đêm.",
+            "Chim bói cá lao nhanh như tên.",
+            "Chim chào mào hót líu lo đầu cành."
+          ],
+          "a": "Anh Đom Đóm lại đi gác đêm.",
+          "h": "Trong tài liệu có câu hỏi kiểm tra: 'Anh Đom Đóm lại đi gác' bộc lộ biện pháp nhân hóa chú đom đóm như người chiến sĩ đi gác đêm canh giấc ngủ muôn loài.",
+          "img": "",
+          "w": 23
+        },
+        {
+          "id": 11030,
+          "sub": "Ôn tập tổng hợp Chính tả & Tu từ (Ôn tập 31)",
+          "q": "Điền từ đúng chính tả và hoàn thành câu so sánh: 'Mặt trời đỏ ối đang từ từ nhô lên rực rỡ như một quả... khổng lồ.' (Mã ôn 1130)",
+          "o": [
+            "bóng lửa",
+            "cầu lửa",
+            "bóng hồng",
+            "trứng gà"
+          ],
+          "a": "cầu lửa",
+          "h": "Trong văn thơ so sánh miêu tả, mặt trời đỏ rực rỡ buổi sáng sớm nhô lên thường ví sinh động như một 'quả cầu lửa' khổng lồ đầy sức sống.",
+          "img": "",
+          "w": 4
+        },
+        {
+          "id": 11031,
+          "sub": "Ôn tập dấu câu & từ loại (Ôn tập 32)",
+          "q": "Cặp từ trái nghĩa nào thích hợp điền vào chỗ trống: 'Người ... làm việc tốt luôn được yêu mến, kẻ ... trốn tránh trách nhiệm thì thật đáng buồn.' (Mã ôn 1131)",
+          "o": [
+            "siêng năng - chăm chỉ",
+            "cần cù - lười nhác",
+            "thông minh - ngốc nghếch",
+            "khỏe mạnh - yếu ớt"
+          ],
+          "a": "cần cù - lười nhác",
+          "h": "Cặp từ trái nghĩa chuẩn mô tả thái độ làm việc tốt vs lười biếng trách nhiệm là 'cần cù' đối lập với 'lười nhác'.",
+          "img": "",
+          "w": 7
+        },
+        {
+          "id": 11032,
+          "sub": "Ôn tập tổng hợp Đọc hiểu (Ôn tập 33)",
+          "q": "Dòng thơ nào chứa hình ảnh nhân hóa loài chim gác đêm gần gũi trong tài liệu? (Mã ôn 1132)",
+          "o": [
+            "Cánh chim chiều bay lững thững về tổ.",
+            "Anh Đom Đóm lại đi gác đêm.",
+            "Chim bói cá lao nhanh như tên.",
+            "Chim chào mào hót líu lo đầu cành."
+          ],
+          "a": "Anh Đom Đóm lại đi gác đêm.",
+          "h": "Trong tài liệu có câu hỏi kiểm tra: 'Anh Đom Đóm lại đi gác' bộc lộ biện pháp nhân hóa chú đom đóm như người chiến sĩ đi gác đêm canh giấc ngủ muôn loài.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 11033,
+          "sub": "Ôn tập tổng hợp Chính tả & Tu từ (Ôn tập 34)",
+          "q": "Điền từ đúng chính tả và hoàn thành câu so sánh: 'Mặt trời đỏ ối đang từ từ nhô lên rực rỡ như một quả... khổng lồ.' (Mã ôn 1133)",
+          "o": [
+            "bóng lửa",
+            "cầu lửa",
+            "bóng hồng",
+            "trứng gà"
+          ],
+          "a": "cầu lửa",
+          "h": "Trong văn thơ so sánh miêu tả, mặt trời đỏ rực rỡ buổi sáng sớm nhô lên thường ví sinh động như một 'quả cầu lửa' khổng lồ đầy sức sống.",
+          "img": "",
+          "w": 16
+        },
+        {
+          "id": 11034,
+          "sub": "Ôn tập dấu câu & từ loại (Ôn tập 35)",
+          "q": "Cặp từ trái nghĩa nào thích hợp điền vào chỗ trống: 'Người ... làm việc tốt luôn được yêu mến, kẻ ... trốn tránh trách nhiệm thì thật đáng buồn.' (Mã ôn 1134)",
+          "o": [
+            "siêng năng - chăm chỉ",
+            "cần cù - lười nhác",
+            "thông minh - ngốc nghếch",
+            "khỏe mạnh - yếu ớt"
+          ],
+          "a": "cần cù - lười nhác",
+          "h": "Cặp từ trái nghĩa chuẩn mô tả thái độ làm việc tốt vs lười biếng trách nhiệm là 'cần cù' đối lập với 'lười nhác'.",
+          "img": "",
+          "w": 19
+        },
+        {
+          "id": 11035,
+          "sub": "Ôn tập tổng hợp Đọc hiểu (Ôn tập 36)",
+          "q": "Dòng thơ nào chứa hình ảnh nhân hóa loài chim gác đêm gần gũi trong tài liệu? (Mã ôn 1135)",
+          "o": [
+            "Cánh chim chiều bay lững thững về tổ.",
+            "Anh Đom Đóm lại đi gác đêm.",
+            "Chim bói cá lao nhanh như tên.",
+            "Chim chào mào hót líu lo đầu cành."
+          ],
+          "a": "Anh Đom Đóm lại đi gác đêm.",
+          "h": "Trong tài liệu có câu hỏi kiểm tra: 'Anh Đom Đóm lại đi gác' bộc lộ biện pháp nhân hóa chú đom đóm như người chiến sĩ đi gác đêm canh giấc ngủ muôn loài.",
+          "img": "",
+          "w": 23
+        },
+        {
+          "id": 11036,
+          "sub": "Ôn tập tổng hợp Chính tả & Tu từ (Ôn tập 37)",
+          "q": "Điền từ đúng chính tả và hoàn thành câu so sánh: 'Mặt trời đỏ ối đang từ từ nhô lên rực rỡ như một quả... khổng lồ.' (Mã ôn 1136)",
+          "o": [
+            "bóng lửa",
+            "cầu lửa",
+            "bóng hồng",
+            "trứng gà"
+          ],
+          "a": "cầu lửa",
+          "h": "Trong văn thơ so sánh miêu tả, mặt trời đỏ rực rỡ buổi sáng sớm nhô lên thường ví sinh động như một 'quả cầu lửa' khổng lồ đầy sức sống.",
+          "img": "",
+          "w": 4
+        },
+        {
+          "id": 11037,
+          "sub": "Ôn tập dấu câu & từ loại (Ôn tập 38)",
+          "q": "Cặp từ trái nghĩa nào thích hợp điền vào chỗ trống: 'Người ... làm việc tốt luôn được yêu mến, kẻ ... trốn tránh trách nhiệm thì thật đáng buồn.' (Mã ôn 1137)",
+          "o": [
+            "siêng năng - chăm chỉ",
+            "cần cù - lười nhác",
+            "thông minh - ngốc nghếch",
+            "khỏe mạnh - yếu ớt"
+          ],
+          "a": "cần cù - lười nhác",
+          "h": "Cặp từ trái nghĩa chuẩn mô tả thái độ làm việc tốt vs lười biếng trách nhiệm là 'cần cù' đối lập với 'lười nhác'.",
+          "img": "",
+          "w": 7
+        },
+        {
+          "id": 11038,
+          "sub": "Ôn tập tổng hợp Đọc hiểu (Ôn tập 39)",
+          "q": "Dòng thơ nào chứa hình ảnh nhân hóa loài chim gác đêm gần gũi trong tài liệu? (Mã ôn 1138)",
+          "o": [
+            "Cánh chim chiều bay lững thững về tổ.",
+            "Anh Đom Đóm lại đi gác đêm.",
+            "Chim bói cá lao nhanh như tên.",
+            "Chim chào mào hót líu lo đầu cành."
+          ],
+          "a": "Anh Đom Đóm lại đi gác đêm.",
+          "h": "Trong tài liệu có câu hỏi kiểm tra: 'Anh Đom Đóm lại đi gác' bộc lộ biện pháp nhân hóa chú đom đóm như người chiến sĩ đi gác đêm canh giấc ngủ muôn loài.",
+          "img": "",
+          "w": 11
+        },
+        {
+          "id": 11039,
+          "sub": "Ôn tập tổng hợp Chính tả & Tu từ (Ôn tập 40)",
+          "q": "Điền từ đúng chính tả và hoàn thành câu so sánh: 'Mặt trời đỏ ối đang từ từ nhô lên rực rỡ như một quả... khổng lồ.' (Mã ôn 1139)",
+          "o": [
+            "bóng lửa",
+            "cầu lửa",
+            "bóng hồng",
+            "trứng gà"
+          ],
+          "a": "cầu lửa",
+          "h": "Trong văn thơ so sánh miêu tả, mặt trời đỏ rực rỡ buổi sáng sớm nhô lên thường ví sinh động như một 'quả cầu lửa' khổng lồ đầy sức sống.",
+          "img": "",
+          "w": 16
+        },
+        {
+          "id": 11040,
+          "sub": "Ôn tập dấu câu & từ loại (Ôn tập 41)",
+          "q": "Cặp từ trái nghĩa nào thích hợp điền vào chỗ trống: 'Người ... làm việc tốt luôn được yêu mến, kẻ ... trốn tránh trách nhiệm thì thật đáng buồn.' (Mã ôn 1140)",
+          "o": [
+            "siêng năng - chăm chỉ",
+            "cần cù - lười nhác",
+            "thông minh - ngốc nghếch",
+            "khỏe mạnh - yếu ớt"
+          ],
+          "a": "cần cù - lười nhác",
+          "h": "Cặp từ trái nghĩa chuẩn mô tả thái độ làm việc tốt vs lười biếng trách nhiệm là 'cần cù' đối lập với 'lười nhác'.",
+          "img": "",
+          "w": 19
+        },
+        {
+          "id": 11041,
+          "sub": "Ôn tập tổng hợp Đọc hiểu (Ôn tập 42)",
+          "q": "Dòng thơ nào chứa hình ảnh nhân hóa loài chim gác đêm gần gũi trong tài liệu? (Mã ôn 1141)",
+          "o": [
+            "Cánh chim chiều bay lững thững về tổ.",
+            "Anh Đom Đóm lại đi gác đêm.",
+            "Chim bói cá lao nhanh như tên.",
+            "Chim chào mào hót líu lo đầu cành."
+          ],
+          "a": "Anh Đom Đóm lại đi gác đêm.",
+          "h": "Trong tài liệu có câu hỏi kiểm tra: 'Anh Đom Đóm lại đi gác' bộc lộ biện pháp nhân hóa chú đom đóm như người chiến sĩ đi gác đêm canh giấc ngủ muôn loài.",
+          "img": "",
+          "w": 23
+        },
+        {
+          "id": 11042,
+          "sub": "Ôn tập tổng hợp Chính tả & Tu từ (Ôn tập 43)",
+          "q": "Điền từ đúng chính tả và hoàn thành câu so sánh: 'Mặt trời đỏ ối đang từ từ nhô lên rực rỡ như một quả... khổng lồ.' (Mã ôn 1142)",
+          "o": [
+            "bóng lửa",
+            "cầu lửa",
+            "bóng hồng",
+            "trứng gà"
+          ],
+          "a": "cầu lửa",
+          "h": "Trong văn thơ so sánh miêu tả, mặt trời đỏ rực rỡ buổi sáng sớm nhô lên thường ví sinh động như một 'quả cầu lửa' khổng lồ đầy sức sống.",
+          "img": "",
+          "w": 4
+        },
+        {
+          "id": 11043,
+          "sub": "Ôn tập dấu câu & từ loại (Ôn tập 44)",
+          "q": "Cặp từ trái nghĩa nào thích hợp điền vào chỗ trống: 'Người ... làm việc tốt luôn được yêu mến, kẻ ... trốn tránh trách nhiệm thì thật đáng buồn.' (Mã ôn 1143)",
+          "o": [
+            "siêng năng - chăm chỉ",
+            "cần cù - lười nhác",
+            "thông minh - ngốc nghếch",
+            "khỏe mạnh - yếu ớt"
+          ],
+          "a": "cần cù - lười nhác",
+          "h": "Cặp từ trái nghĩa chuẩn mô tả thái độ làm việc tốt vs lười biếng trách nhiệm là 'cần cù' đối lập với 'lười nhác'.",
+          "img": "",
+          "w": 7
+        },
+        {
+          "id": 11044,
+          "sub": "Ôn tập tổng hợp Đọc hiểu (Ôn tập 45)",
+          "q": "Dòng thơ nào chứa hình ảnh nhân hóa loài chim gác đêm gần gũi trong tài liệu? (Mã ôn 1144)",
+          "o": [
+            "Cánh chim chiều bay lững thững về tổ.",
+            "Anh Đom Đóm lại đi gác đêm.",
+            "Chim bói cá lao nhanh như tên.",
+            "Chim chào mào hót líu lo đầu cành."
+          ],
+          "a": "Anh Đom Đóm lại đi gác đêm.",
+          "h": "Trong tài liệu có câu hỏi kiểm tra: 'Anh Đom Đóm lại đi gác' bộc lộ biện pháp nhân hóa chú đom đóm như người chiến sĩ đi gác đêm canh giấc ngủ muôn loài.",
+          "img": "",
+          "w": 11
+        }
+      ]
+    }
+  ]
+}

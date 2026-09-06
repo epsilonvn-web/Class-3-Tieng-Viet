@@ -1,0 +1,3414 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "name": "Hiệp sĩ Chính tả & Chữ hoa",
+      "desc": "Bé hãy cùng rèn luyện kĩ năng viết hoa tên riêng, phân biệt các âm đầu, vần khó để trở thành Hiệp sĩ Chính tả nhé!",
+      "qs": [
+        {
+          "id": 1000,
+          "sub": "Phân biệt s/x (Thử thách 1)",
+          "q": "Điền âm thích hợp vào chỗ trống trong từ sau: '...uất sắc'",
+          "o": [
+            "s",
+            "x",
+            "sh",
+            "c"
+          ],
+          "a": "x",
+          "h": "Từ viết đúng chính tả là 'xuất sắc' (tài giỏi, nổi bật) đấy bé yêu!",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1001,
+          "sub": "Phân biệt ch/tr (Thử thách 2)",
+          "q": "Từ nào sau đây viết SAI chính tả?",
+          "o": [
+            "trân trọng",
+            "chân thành",
+            "tranh giành",
+            "chăn trở"
+          ],
+          "a": "chăn trở",
+          "h": "Từ đúng phải viết là 'trăn trở' (băn khoăn suy nghĩ) với âm đầu 'tr' nhé.",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1002,
+          "sub": "Phân biệt l/n (Thử thách 3)",
+          "q": "Điền chữ thích hợp vào chỗ trống: 'Nước chảy ...ách tách.'",
+          "o": [
+            "r",
+            "l",
+            "n",
+            "d"
+          ],
+          "a": "r",
+          "h": "Trong tài liệu có câu 'Suối chảy róc rách' hoặc mô tả 'Nước chảy róc rách' (hoặc lách tách cho giọt mưa). Ở đây từ láy âm thanh giọt mưa rơi tí tách hay róc rách là chuẩn!",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1003,
+          "sub": "Phân biệt l/n (Thử thách 4)",
+          "q": "Trong các từ sau, từ nào chỉ hoạt động viết đúng chính tả?",
+          "o": [
+            "lắng nghe",
+            "nắng nghe",
+            "lắng nhe",
+            "nắng nhe"
+          ],
+          "a": "lắng nghe",
+          "h": "Chúng ta dùng tai để 'lắng nghe' bài giảng, âm đầu là 'l' bé nhé!",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1004,
+          "sub": "Quy tắc viết hoa tên riêng nước ngoài (Thử thách 5)",
+          "q": "Từ nào sau đây viết ĐÚNG quy tắc viết hoa tên người nước ngoài?",
+          "o": [
+            "Y-éc-xanh",
+            "Y éc xanh",
+            "Y-Éc-Xanh",
+            "y-éc-xanh"
+          ],
+          "a": "Y-éc-xanh",
+          "h": "Tên người nước ngoài cần viết hoa chữ cái đầu của bộ phận thứ nhất, các tiếng trong bộ phận đó nối với nhau bằng dấu gạch nối.",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1005,
+          "sub": "Quy tắc viết hoa tên riêng nước ngoài (Thử thách 6)",
+          "q": "Trong các từ sau, từ nào viết SAI quy tắc viết hoa tên người nước ngoài?",
+          "o": [
+            "Mô-da",
+            "Lu-i Pa-xtơ",
+            "Đắc-uyn",
+            "Mô Da"
+          ],
+          "a": "Mô Da",
+          "h": "Từ 'Mô Da' viết sai vì thiếu dấu gạch nối giữa hai tiếng 'Mô' và 'da', đồng thời không được viết hoa chữ 'D'!",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1006,
+          "sub": "Quy tắc viết hoa tên riêng Việt Nam (Thử thách 7)",
+          "q": "Từ nào sau đây viết SAI quy tắc viết hoa tên riêng địa lí Việt Nam?",
+          "o": [
+            "Đồng Nai",
+            "hồ Hoàn Kiếm",
+            "vịnh Hạ Long",
+            "Hải phòng"
+          ],
+          "a": "Hải phòng",
+          "h": "Tên địa lý Việt Nam cần viết hoa chữ cái đầu tiên của tất cả các tiếng, 'Hải Phòng' viết hoa cả chữ 'P' nhé!",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1007,
+          "sub": "Phân biệt g/gh (Thử thách 8)",
+          "q": "Quy tắc chính tả nào dưới đây viết ĐÚNG?",
+          "o": [
+            "ghê gớm",
+            "gê gớm",
+            "ghê ghớm",
+            "gê ghớm"
+          ],
+          "a": "ghê gớm",
+          "h": "Âm 'gh' chỉ đứng trước các nguyên âm 'e, ê, i'. Vì vậy 'ghê gớm' là từ viết đúng chính tả.",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1008,
+          "sub": "Phân biệt ng/ngh (Thử thách 9)",
+          "q": "Điền vào chỗ trống: '...ộ nghĩnh'",
+          "o": [
+            "ng",
+            "ngh",
+            "gh",
+            "g"
+          ],
+          "a": "ng",
+          "h": "Tiếng 'ngộ' đứng trước âm 'ô' nên dùng 'ng', tiếng 'ngĩnh' đứng trước âm 'i' dùng 'ngh'. Từ đúng là 'ngộ nghĩnh'!",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1009,
+          "sub": "Quy tắc viết hoa Hán Việt (Thử thách 10)",
+          "q": "Tên quốc gia nào dưới đây được viết hoa giống như quy tắc viết hoa tên riêng Việt Nam?",
+          "o": [
+            "Pháp",
+            "Ấn Độ",
+            "Ma-lai-xi-a",
+            "In-đô-nê-xi-a"
+          ],
+          "a": "Ấn Độ",
+          "h": "Tên nước ngoài được dịch theo âm Hán Việt (như Ấn Độ, Nhật Bản, Trung Quốc) thì viết hoa giống tên riêng Việt Nam.",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1010,
+          "sub": "Phân biệt s/x (Thử thách 11)",
+          "q": "Điền vào chỗ trống: 'hoa ...oan'",
+          "o": [
+            "s",
+            "x",
+            "ch",
+            "tr"
+          ],
+          "a": "x",
+          "h": "Trong câu thơ: 'Tim tím hoa xoan', hoa xoan viết bằng âm đầu 'x' bé nhé!",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1011,
+          "sub": "Phân biệt d/r/gi (Thử thách 12)",
+          "q": "Từ nào dưới đây viết SAI chính tả khi tả chuyển động của cánh hoa?",
+          "o": [
+            "dung dinh",
+            "rung rinh",
+            "rung dinh",
+            "dung rinh"
+          ],
+          "a": "dung dinh",
+          "h": "Trong tài liệu Đề 7 chỉ ra lỗi sai: 'cánh hoa dung dinh' viết sai, sửa lại thành 'cánh hoa rung rinh' hoặc 'rung rinh'!",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1012,
+          "sub": "Phân biệt d/r/gi (Thử thách 13)",
+          "q": "Điền vào chỗ trống: 'suối chảy ...óc rách'",
+          "o": [
+            "d",
+            "gi",
+            "r",
+            "l"
+          ],
+          "a": "r",
+          "h": "Suối chảy 'róc rách' âm đầu 'r', diễn tả âm thanh nhẹ nhàng của suối chảy.",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1013,
+          "sub": "Phân biệt c/k (Thử thách 14)",
+          "q": "Từ nào dưới đây viết ĐÚNG chính tả?",
+          "o": [
+            "kể chuyện",
+            "cể chuyện",
+            "ghể chuyện",
+            "gể chuyện"
+          ],
+          "a": "kể chuyện",
+          "h": "Âm 'k' đứng trước các nguyên âm 'e, ê, i', do đó 'kể chuyện' viết đúng chính tả.",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1014,
+          "sub": "Phân biệt vần khó (Thử thách 15)",
+          "q": "Điền vần thích hợp vào chỗ trống: 'khuyên b...'",
+          "o": [
+            "ảo",
+            "ão",
+            "ao",
+            "au"
+          ],
+          "a": "ảo",
+          "h": "Từ viết đúng là 'khuyên bảo' (khuyên răn những điều hay lẽ phải), thanh hỏi trên chữ a.",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1015,
+          "sub": "Phân biệt s/x (Thử thách 16)",
+          "q": "Điền âm thích hợp vào chỗ trống trong từ sau: '...uất sắc' (Câu hỏi mã 115)",
+          "o": [
+            "s",
+            "x",
+            "sh",
+            "c"
+          ],
+          "a": "x",
+          "h": "Từ viết đúng chính tả là 'xuất sắc' (tài giỏi, nổi bật) đấy bé yêu!",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1016,
+          "sub": "Phân biệt ch/tr (Thử thách 17)",
+          "q": "Từ nào sau đây viết SAI chính tả? (Câu hỏi mã 116)",
+          "o": [
+            "trân trọng",
+            "chân thành",
+            "tranh giành",
+            "chăn trở"
+          ],
+          "a": "chăn trở",
+          "h": "Từ đúng phải viết là 'trăn trở' (băn khoăn suy nghĩ) với âm đầu 'tr' nhé.",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1017,
+          "sub": "Phân biệt l/n (Thử thách 18)",
+          "q": "Điền chữ thích hợp vào chỗ trống: 'Nước chảy ...ách tách.' (Câu hỏi mã 117)",
+          "o": [
+            "r",
+            "l",
+            "n",
+            "d"
+          ],
+          "a": "r",
+          "h": "Trong tài liệu có câu 'Suối chảy róc rách' hoặc mô tả 'Nước chảy róc rách' (hoặc lách tách cho giọt mưa). Ở đây từ láy âm thanh giọt mưa rơi tí tách hay róc rách là chuẩn!",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1018,
+          "sub": "Phân biệt l/n (Thử thách 19)",
+          "q": "Trong các từ sau, từ nào chỉ hoạt động viết đúng chính tả? (Câu hỏi mã 118)",
+          "o": [
+            "lắng nghe",
+            "nắng nghe",
+            "lắng nhe",
+            "nắng nhe"
+          ],
+          "a": "lắng nghe",
+          "h": "Chúng ta dùng tai để 'lắng nghe' bài giảng, âm đầu là 'l' bé nhé!",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1019,
+          "sub": "Quy tắc viết hoa tên riêng nước ngoài (Thử thách 20)",
+          "q": "Từ nào sau đây viết ĐÚNG quy tắc viết hoa tên người nước ngoài? (Câu hỏi mã 119)",
+          "o": [
+            "Y-éc-xanh",
+            "Y éc xanh",
+            "Y-Éc-Xanh",
+            "y-éc-xanh"
+          ],
+          "a": "Y-éc-xanh",
+          "h": "Tên người nước ngoài cần viết hoa chữ cái đầu của bộ phận thứ nhất, các tiếng trong bộ phận đó nối với nhau bằng dấu gạch nối.",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1020,
+          "sub": "Quy tắc viết hoa tên riêng nước ngoài (Thử thách 21)",
+          "q": "Trong các từ sau, từ nào viết SAI quy tắc viết hoa tên người nước ngoài? (Câu hỏi mã 120)",
+          "o": [
+            "Mô-da",
+            "Lu-i Pa-xtơ",
+            "Đắc-uyn",
+            "Mô Da"
+          ],
+          "a": "Mô Da",
+          "h": "Từ 'Mô Da' viết sai vì thiếu dấu gạch nối giữa hai tiếng 'Mô' và 'da', đồng thời không được viết hoa chữ 'D'!",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1021,
+          "sub": "Quy tắc viết hoa tên riêng Việt Nam (Thử thách 22)",
+          "q": "Từ nào sau đây viết SAI quy tắc viết hoa tên riêng địa lí Việt Nam? (Câu hỏi mã 121)",
+          "o": [
+            "Đồng Nai",
+            "hồ Hoàn Kiếm",
+            "vịnh Hạ Long",
+            "Hải phòng"
+          ],
+          "a": "Hải phòng",
+          "h": "Tên địa lý Việt Nam cần viết hoa chữ cái đầu tiên của tất cả các tiếng, 'Hải Phòng' viết hoa cả chữ 'P' nhé!",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1022,
+          "sub": "Phân biệt g/gh (Thử thách 23)",
+          "q": "Quy tắc chính tả nào dưới đây viết ĐÚNG? (Câu hỏi mã 122)",
+          "o": [
+            "ghê gớm",
+            "gê gớm",
+            "ghê ghớm",
+            "gê ghớm"
+          ],
+          "a": "ghê gớm",
+          "h": "Âm 'gh' chỉ đứng trước các nguyên âm 'e, ê, i'. Vì vậy 'ghê gớm' là từ viết đúng chính tả.",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1023,
+          "sub": "Phân biệt ng/ngh (Thử thách 24)",
+          "q": "Điền vào chỗ trống: '...ộ nghĩnh' (Câu hỏi mã 123)",
+          "o": [
+            "ng",
+            "ngh",
+            "gh",
+            "g"
+          ],
+          "a": "ng",
+          "h": "Tiếng 'ngộ' đứng trước âm 'ô' nên dùng 'ng', tiếng 'ngĩnh' đứng trước âm 'i' dùng 'ngh'. Từ đúng là 'ngộ nghĩnh'!",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1024,
+          "sub": "Quy tắc viết hoa Hán Việt (Thử thách 25)",
+          "q": "Tên quốc gia nào dưới đây được viết hoa giống như quy tắc viết hoa tên riêng Việt Nam? (Câu hỏi mã 124)",
+          "o": [
+            "Pháp",
+            "Ấn Độ",
+            "Ma-lai-xi-a",
+            "In-đô-nê-xi-a"
+          ],
+          "a": "Ấn Độ",
+          "h": "Tên nước ngoài được dịch theo âm Hán Việt (như Ấn Độ, Nhật Bản, Trung Quốc) thì viết hoa giống tên riêng Việt Nam.",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1025,
+          "sub": "Phân biệt s/x (Thử thách 26)",
+          "q": "Điền vào chỗ trống: 'hoa ...oan' (Câu hỏi mã 125)",
+          "o": [
+            "s",
+            "x",
+            "ch",
+            "tr"
+          ],
+          "a": "x",
+          "h": "Trong câu thơ: 'Tim tím hoa xoan', hoa xoan viết bằng âm đầu 'x' bé nhé!",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1026,
+          "sub": "Phân biệt d/r/gi (Thử thách 27)",
+          "q": "Từ nào dưới đây viết SAI chính tả khi tả chuyển động của cánh hoa? (Câu hỏi mã 126)",
+          "o": [
+            "dung dinh",
+            "rung rinh",
+            "rung dinh",
+            "dung rinh"
+          ],
+          "a": "dung dinh",
+          "h": "Trong tài liệu Đề 7 chỉ ra lỗi sai: 'cánh hoa dung dinh' viết sai, sửa lại thành 'cánh hoa rung rinh' hoặc 'rung rinh'!",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1027,
+          "sub": "Phân biệt d/r/gi (Thử thách 28)",
+          "q": "Điền vào chỗ trống: 'suối chảy ...óc rách' (Câu hỏi mã 127)",
+          "o": [
+            "d",
+            "gi",
+            "r",
+            "l"
+          ],
+          "a": "r",
+          "h": "Suối chảy 'róc rách' âm đầu 'r', diễn tả âm thanh nhẹ nhàng của suối chảy.",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1028,
+          "sub": "Phân biệt c/k (Thử thách 29)",
+          "q": "Từ nào dưới đây viết ĐÚNG chính tả? (Câu hỏi mã 128)",
+          "o": [
+            "kể chuyện",
+            "cể chuyện",
+            "ghể chuyện",
+            "gể chuyện"
+          ],
+          "a": "kể chuyện",
+          "h": "Âm 'k' đứng trước các nguyên âm 'e, ê, i', do đó 'kể chuyện' viết đúng chính tả.",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1029,
+          "sub": "Phân biệt vần khó (Thử thách 30)",
+          "q": "Điền vần thích hợp vào chỗ trống: 'khuyên b...' (Câu hỏi mã 129)",
+          "o": [
+            "ảo",
+            "ão",
+            "ao",
+            "au"
+          ],
+          "a": "ảo",
+          "h": "Từ viết đúng là 'khuyên bảo' (khuyên răn những điều hay lẽ phải), thanh hỏi trên chữ a.",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1030,
+          "sub": "Phân biệt s/x (Thử thách 31)",
+          "q": "Điền âm thích hợp vào chỗ trống trong từ sau: '...uất sắc' (Câu hỏi mã 130)",
+          "o": [
+            "s",
+            "x",
+            "sh",
+            "c"
+          ],
+          "a": "x",
+          "h": "Từ viết đúng chính tả là 'xuất sắc' (tài giỏi, nổi bật) đấy bé yêu!",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1031,
+          "sub": "Phân biệt ch/tr (Thử thách 32)",
+          "q": "Từ nào sau đây viết SAI chính tả? (Câu hỏi mã 131)",
+          "o": [
+            "trân trọng",
+            "chân thành",
+            "tranh giành",
+            "chăn trở"
+          ],
+          "a": "chăn trở",
+          "h": "Từ đúng phải viết là 'trăn trở' (băn khoăn suy nghĩ) với âm đầu 'tr' nhé.",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1032,
+          "sub": "Phân biệt l/n (Thử thách 33)",
+          "q": "Điền chữ thích hợp vào chỗ trống: 'Nước chảy ...ách tách.' (Câu hỏi mã 132)",
+          "o": [
+            "r",
+            "l",
+            "n",
+            "d"
+          ],
+          "a": "r",
+          "h": "Trong tài liệu có câu 'Suối chảy róc rách' hoặc mô tả 'Nước chảy róc rách' (hoặc lách tách cho giọt mưa). Ở đây từ láy âm thanh giọt mưa rơi tí tách hay róc rách là chuẩn!",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1033,
+          "sub": "Phân biệt l/n (Thử thách 34)",
+          "q": "Trong các từ sau, từ nào chỉ hoạt động viết đúng chính tả? (Câu hỏi mã 133)",
+          "o": [
+            "lắng nghe",
+            "nắng nghe",
+            "lắng nhe",
+            "nắng nhe"
+          ],
+          "a": "lắng nghe",
+          "h": "Chúng ta dùng tai để 'lắng nghe' bài giảng, âm đầu là 'l' bé nhé!",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1034,
+          "sub": "Quy tắc viết hoa tên riêng nước ngoài (Thử thách 35)",
+          "q": "Từ nào sau đây viết ĐÚNG quy tắc viết hoa tên người nước ngoài? (Câu hỏi mã 134)",
+          "o": [
+            "Y-éc-xanh",
+            "Y éc xanh",
+            "Y-Éc-Xanh",
+            "y-éc-xanh"
+          ],
+          "a": "Y-éc-xanh",
+          "h": "Tên người nước ngoài cần viết hoa chữ cái đầu của bộ phận thứ nhất, các tiếng trong bộ phận đó nối với nhau bằng dấu gạch nối.",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1035,
+          "sub": "Quy tắc viết hoa tên riêng nước ngoài (Thử thách 36)",
+          "q": "Trong các từ sau, từ nào viết SAI quy tắc viết hoa tên người nước ngoài? (Câu hỏi mã 135)",
+          "o": [
+            "Mô-da",
+            "Lu-i Pa-xtơ",
+            "Đắc-uyn",
+            "Mô Da"
+          ],
+          "a": "Mô Da",
+          "h": "Từ 'Mô Da' viết sai vì thiếu dấu gạch nối giữa hai tiếng 'Mô' và 'da', đồng thời không được viết hoa chữ 'D'!",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1036,
+          "sub": "Quy tắc viết hoa tên riêng Việt Nam (Thử thách 37)",
+          "q": "Từ nào sau đây viết SAI quy tắc viết hoa tên riêng địa lí Việt Nam? (Câu hỏi mã 136)",
+          "o": [
+            "Đồng Nai",
+            "hồ Hoàn Kiếm",
+            "vịnh Hạ Long",
+            "Hải phòng"
+          ],
+          "a": "Hải phòng",
+          "h": "Tên địa lý Việt Nam cần viết hoa chữ cái đầu tiên của tất cả các tiếng, 'Hải Phòng' viết hoa cả chữ 'P' nhé!",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1037,
+          "sub": "Phân biệt g/gh (Thử thách 38)",
+          "q": "Quy tắc chính tả nào dưới đây viết ĐÚNG? (Câu hỏi mã 137)",
+          "o": [
+            "ghê gớm",
+            "gê gớm",
+            "ghê ghớm",
+            "gê ghớm"
+          ],
+          "a": "ghê gớm",
+          "h": "Âm 'gh' chỉ đứng trước các nguyên âm 'e, ê, i'. Vì vậy 'ghê gớm' là từ viết đúng chính tả.",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1038,
+          "sub": "Phân biệt ng/ngh (Thử thách 39)",
+          "q": "Điền vào chỗ trống: '...ộ nghĩnh' (Câu hỏi mã 138)",
+          "o": [
+            "ng",
+            "ngh",
+            "gh",
+            "g"
+          ],
+          "a": "ng",
+          "h": "Tiếng 'ngộ' đứng trước âm 'ô' nên dùng 'ng', tiếng 'ngĩnh' đứng trước âm 'i' dùng 'ngh'. Từ đúng là 'ngộ nghĩnh'!",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1039,
+          "sub": "Quy tắc viết hoa Hán Việt (Thử thách 40)",
+          "q": "Tên quốc gia nào dưới đây được viết hoa giống như quy tắc viết hoa tên riêng Việt Nam? (Câu hỏi mã 139)",
+          "o": [
+            "Pháp",
+            "Ấn Độ",
+            "Ma-lai-xi-a",
+            "In-đô-nê-xi-a"
+          ],
+          "a": "Ấn Độ",
+          "h": "Tên nước ngoài được dịch theo âm Hán Việt (như Ấn Độ, Nhật Bản, Trung Quốc) thì viết hoa giống tên riêng Việt Nam.",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1040,
+          "sub": "Phân biệt s/x (Thử thách 41)",
+          "q": "Điền vào chỗ trống: 'hoa ...oan' (Câu hỏi mã 140)",
+          "o": [
+            "s",
+            "x",
+            "ch",
+            "tr"
+          ],
+          "a": "x",
+          "h": "Trong câu thơ: 'Tim tím hoa xoan', hoa xoan viết bằng âm đầu 'x' bé nhé!",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1041,
+          "sub": "Phân biệt d/r/gi (Thử thách 42)",
+          "q": "Từ nào dưới đây viết SAI chính tả khi tả chuyển động của cánh hoa? (Câu hỏi mã 141)",
+          "o": [
+            "dung dinh",
+            "rung rinh",
+            "rung dinh",
+            "dung rinh"
+          ],
+          "a": "dung dinh",
+          "h": "Trong tài liệu Đề 7 chỉ ra lỗi sai: 'cánh hoa dung dinh' viết sai, sửa lại thành 'cánh hoa rung rinh' hoặc 'rung rinh'!",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1042,
+          "sub": "Phân biệt d/r/gi (Thử thách 43)",
+          "q": "Điền vào chỗ trống: 'suối chảy ...óc rách' (Câu hỏi mã 142)",
+          "o": [
+            "d",
+            "gi",
+            "r",
+            "l"
+          ],
+          "a": "r",
+          "h": "Suối chảy 'róc rách' âm đầu 'r', diễn tả âm thanh nhẹ nhàng của suối chảy.",
+          "img": "",
+          "w": 1
+        },
+        {
+          "id": 1043,
+          "sub": "Phân biệt c/k (Thử thách 44)",
+          "q": "Từ nào dưới đây viết ĐÚNG chính tả? (Câu hỏi mã 143)",
+          "o": [
+            "kể chuyện",
+            "cể chuyện",
+            "ghể chuyện",
+            "gể chuyện"
+          ],
+          "a": "kể chuyện",
+          "h": "Âm 'k' đứng trước các nguyên âm 'e, ê, i', do đó 'kể chuyện' viết đúng chính tả.",
+          "img": "",
+          "w": 2
+        },
+        {
+          "id": 1044,
+          "sub": "Phân biệt vần khó (Thử thách 45)",
+          "q": "Điền vần thích hợp vào chỗ trống: 'khuyên b...' (Câu hỏi mã 144)",
+          "o": [
+            "ảo",
+            "ão",
+            "ao",
+            "au"
+          ],
+          "a": "ảo",
+          "h": "Từ viết đúng là 'khuyên bảo' (khuyên răn những điều hay lẽ phải), thanh hỏi trên chữ a.",
+          "img": "",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Sắc màu Tu từ (So sánh)",
+      "desc": "Bé hãy khám phá thế giới so sánh đầy màu sắc để câu văn của mình thêm sinh động và giàu hình ảnh hơn nào!",
+      "qs": [
+        {
+          "id": 2000,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 1)",
+          "q": "Trong câu 'Quả khế chín mọng, vàng rộm như vẫy gọi bọn trẻ chúng tôi', từ so sánh là từ nào?",
+          "o": [
+            "chín mọng",
+            "như",
+            "vàng rộm",
+            "vẫy gọi"
+          ],
+          "a": "như",
+          "h": "Từ so sánh phổ biến nhất là từ 'như', dùng để nối hai sự vật hoặc hoạt động được so sánh với nhau.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2001,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 2)",
+          "q": "Tìm hình ảnh so sánh trong câu thơ: 'Trăng tròn như cái đĩa.'",
+          "o": [
+            "Trăng tròn với cái đĩa",
+            "Trăng với cái bánh",
+            "Cái đĩa với bầu trời",
+            "Trăng với quả cà chua"
+          ],
+          "a": "Trăng tròn với cái đĩa",
+          "h": "Vật được so sánh là 'Trăng tròn', vật dùng để so sánh là 'cái đĩa', liên kết bằng từ 'như'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2002,
+          "sub": "So sánh Sự vật - Con người (Luyện tập 3)",
+          "q": "Câu nào dưới đây chứa hình ảnh so sánh con người với sự vật?",
+          "o": [
+            "Bé khỏe như lực sĩ.",
+            "Trẻ em như búp trên cành.",
+            "Mẹ là ngọn gió của con suốt đời.",
+            "Bố em cao như một cây thông lớn."
+          ],
+          "a": "Trẻ em như búp trên cành.",
+          "h": "Trong tài liệu, câu thơ của Bác Hồ: 'Trẻ em như búp trên cành' ví tuổi thơ ngây với mầm non mướt đầy sức sống.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2003,
+          "sub": "So sánh Hoạt động - Hoạt động (Luyện tập 4)",
+          "q": "Tìm câu chứa hình ảnh so sánh hoạt động với hoạt động?",
+          "o": [
+            "Lá cờ bay phấp phới như những cánh chim.",
+            "Tiếng ve đồng loạt cất lên như một khúc nhạc dạo.",
+            "Chim bói cá lao xuống nước như một mũi tên.",
+            "Những chú voi chạy đến đích như những chiến binh."
+          ],
+          "a": "Chim bói cá lao xuống nước như một mũi tên.",
+          "h": "Hoạt động 'lao xuống nước' của chim bói cá được ví với chuyển động lao cực nhanh 'như một mũi tên'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2004,
+          "sub": "So sánh Âm thanh - Âm thanh (Luyện tập 5)",
+          "q": "Trong câu 'Tiếng suối ngân nga như tiếng hát xa', hai âm thanh nào được so sánh với nhau?",
+          "o": [
+            "Tiếng suối và tiếng đàn",
+            "Tiếng suối và tiếng hát xa",
+            "Tiếng đàn và tiếng ca",
+            "Tiếng thác và tiếng hát"
+          ],
+          "a": "Tiếng suối và tiếng hát xa",
+          "h": "Tác giả so sánh âm thanh 'Tiếng suối ngân nga' với âm thanh 'tiếng hát xa' để câu văn thêm thơ mộng.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2005,
+          "sub": "Tìm đặc điểm so sánh (Luyện tập 6)",
+          "q": "Trong câu 'Má em bé hồng như quả cà chua', đặc điểm so sánh giữa má em bé và quả cà chua là gì?",
+          "o": [
+            "tròn",
+            "hồng",
+            "mịn màng",
+            "đỏ"
+          ],
+          "a": "hồng",
+          "h": "Từ chỉ đặc điểm so sánh ở đây chính là 'hồng', mô tả màu sắc đôi má xinh xắn giống màu quả cà chua chín đỏ.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2006,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 7)",
+          "q": "Trong câu 'Cánh đồng lúa chín vàng rực như một tấm thảm khổng lồ', sự vật 2 dùng để so sánh là gì?",
+          "o": [
+            "cánh đồng",
+            "tấm thảm khổng lồ",
+            "lúa chín",
+            "vàng rực"
+          ],
+          "a": "tấm thảm khổng lồ",
+          "h": "Sự vật 1 là 'cánh đồng lúa chín', từ so sánh là 'như', sự vật 2 dùng để so sánh là 'tấm thảm khổng lồ'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2007,
+          "sub": "Đặt câu so sánh sinh động (Luyện tập 8)",
+          "q": "Điền từ thích hợp để hoàn thành câu so sánh sinh động: 'Những giọt sương mai long lanh như những hạt...'",
+          "o": [
+            "cát",
+            "ngọc",
+            "muối",
+            "bụi"
+          ],
+          "a": "ngọc",
+          "h": "Giọt sương long lanh, lấp lánh phản chiếu ánh nắng thường được so sánh đẹp đẽ với 'những hạt ngọc' quý giá.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2008,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 9)",
+          "q": "Trong câu 'Quả khế chín mọng, vàng rộm như vẫy gọi bọn trẻ chúng tôi', từ so sánh là từ nào? (Mã đề 208)",
+          "o": [
+            "chín mọng",
+            "như",
+            "vàng rộm",
+            "vẫy gọi"
+          ],
+          "a": "như",
+          "h": "Từ so sánh phổ biến nhất là từ 'như', dùng để nối hai sự vật hoặc hoạt động được so sánh với nhau.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2009,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 10)",
+          "q": "Tìm hình ảnh so sánh trong câu thơ: 'Trăng tròn như cái đĩa.' (Mã đề 209)",
+          "o": [
+            "Trăng tròn với cái đĩa",
+            "Trăng với cái bánh",
+            "Cái đĩa với bầu trời",
+            "Trăng với quả cà chua"
+          ],
+          "a": "Trăng tròn với cái đĩa",
+          "h": "Vật được so sánh là 'Trăng tròn', vật dùng để so sánh là 'cái đĩa', liên kết bằng từ 'như'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2010,
+          "sub": "So sánh Sự vật - Con người (Luyện tập 11)",
+          "q": "Câu nào dưới đây chứa hình ảnh so sánh con người với sự vật? (Mã đề 210)",
+          "o": [
+            "Bé khỏe như lực sĩ.",
+            "Trẻ em như búp trên cành.",
+            "Mẹ là ngọn gió của con suốt đời.",
+            "Bố em cao như một cây thông lớn."
+          ],
+          "a": "Trẻ em như búp trên cành.",
+          "h": "Trong tài liệu, câu thơ của Bác Hồ: 'Trẻ em như búp trên cành' ví tuổi thơ ngây với mầm non mướt đầy sức sống.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2011,
+          "sub": "So sánh Hoạt động - Hoạt động (Luyện tập 12)",
+          "q": "Tìm câu chứa hình ảnh so sánh hoạt động với hoạt động? (Mã đề 211)",
+          "o": [
+            "Lá cờ bay phấp phới như những cánh chim.",
+            "Tiếng ve đồng loạt cất lên như một khúc nhạc dạo.",
+            "Chim bói cá lao xuống nước như một mũi tên.",
+            "Những chú voi chạy đến đích như những chiến binh."
+          ],
+          "a": "Chim bói cá lao xuống nước như một mũi tên.",
+          "h": "Hoạt động 'lao xuống nước' của chim bói cá được ví với chuyển động lao cực nhanh 'như một mũi tên'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2012,
+          "sub": "So sánh Âm thanh - Âm thanh (Luyện tập 13)",
+          "q": "Trong câu 'Tiếng suối ngân nga như tiếng hát xa', hai âm thanh nào được so sánh với nhau? (Mã đề 212)",
+          "o": [
+            "Tiếng suối và tiếng đàn",
+            "Tiếng suối và tiếng hát xa",
+            "Tiếng đàn và tiếng ca",
+            "Tiếng thác và tiếng hát"
+          ],
+          "a": "Tiếng suối và tiếng hát xa",
+          "h": "Tác giả so sánh âm thanh 'Tiếng suối ngân nga' với âm thanh 'tiếng hát xa' để câu văn thêm thơ mộng.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2013,
+          "sub": "Tìm đặc điểm so sánh (Luyện tập 14)",
+          "q": "Trong câu 'Má em bé hồng như quả cà chua', đặc điểm so sánh giữa má em bé và quả cà chua là gì? (Mã đề 213)",
+          "o": [
+            "tròn",
+            "hồng",
+            "mịn màng",
+            "đỏ"
+          ],
+          "a": "hồng",
+          "h": "Từ chỉ đặc điểm so sánh ở đây chính là 'hồng', mô tả màu sắc đôi má xinh xắn giống màu quả cà chua chín đỏ.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2014,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 15)",
+          "q": "Trong câu 'Cánh đồng lúa chín vàng rực như một tấm thảm khổng lồ', sự vật 2 dùng để so sánh là gì? (Mã đề 214)",
+          "o": [
+            "cánh đồng",
+            "tấm thảm khổng lồ",
+            "lúa chín",
+            "vàng rực"
+          ],
+          "a": "tấm thảm khổng lồ",
+          "h": "Sự vật 1 là 'cánh đồng lúa chín', từ so sánh là 'như', sự vật 2 dùng để so sánh là 'tấm thảm khổng lồ'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2015,
+          "sub": "Đặt câu so sánh sinh động (Luyện tập 16)",
+          "q": "Điền từ thích hợp để hoàn thành câu so sánh sinh động: 'Những giọt sương mai long lanh như những hạt...' (Mã đề 215)",
+          "o": [
+            "cát",
+            "ngọc",
+            "muối",
+            "bụi"
+          ],
+          "a": "ngọc",
+          "h": "Giọt sương long lanh, lấp lánh phản chiếu ánh nắng thường được so sánh đẹp đẽ với 'những hạt ngọc' quý giá.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2016,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 17)",
+          "q": "Trong câu 'Quả khế chín mọng, vàng rộm như vẫy gọi bọn trẻ chúng tôi', từ so sánh là từ nào? (Mã đề 216)",
+          "o": [
+            "chín mọng",
+            "như",
+            "vàng rộm",
+            "vẫy gọi"
+          ],
+          "a": "như",
+          "h": "Từ so sánh phổ biến nhất là từ 'như', dùng để nối hai sự vật hoặc hoạt động được so sánh với nhau.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2017,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 18)",
+          "q": "Tìm hình ảnh so sánh trong câu thơ: 'Trăng tròn như cái đĩa.' (Mã đề 217)",
+          "o": [
+            "Trăng tròn với cái đĩa",
+            "Trăng với cái bánh",
+            "Cái đĩa với bầu trời",
+            "Trăng với quả cà chua"
+          ],
+          "a": "Trăng tròn với cái đĩa",
+          "h": "Vật được so sánh là 'Trăng tròn', vật dùng để so sánh là 'cái đĩa', liên kết bằng từ 'như'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2018,
+          "sub": "So sánh Sự vật - Con người (Luyện tập 19)",
+          "q": "Câu nào dưới đây chứa hình ảnh so sánh con người với sự vật? (Mã đề 218)",
+          "o": [
+            "Bé khỏe như lực sĩ.",
+            "Trẻ em như búp trên cành.",
+            "Mẹ là ngọn gió của con suốt đời.",
+            "Bố em cao như một cây thông lớn."
+          ],
+          "a": "Trẻ em như búp trên cành.",
+          "h": "Trong tài liệu, câu thơ của Bác Hồ: 'Trẻ em như búp trên cành' ví tuổi thơ ngây với mầm non mướt đầy sức sống.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2019,
+          "sub": "So sánh Hoạt động - Hoạt động (Luyện tập 20)",
+          "q": "Tìm câu chứa hình ảnh so sánh hoạt động với hoạt động? (Mã đề 219)",
+          "o": [
+            "Lá cờ bay phấp phới như những cánh chim.",
+            "Tiếng ve đồng loạt cất lên như một khúc nhạc dạo.",
+            "Chim bói cá lao xuống nước như một mũi tên.",
+            "Những chú voi chạy đến đích như những chiến binh."
+          ],
+          "a": "Chim bói cá lao xuống nước như một mũi tên.",
+          "h": "Hoạt động 'lao xuống nước' của chim bói cá được ví với chuyển động lao cực nhanh 'như một mũi tên'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2020,
+          "sub": "So sánh Âm thanh - Âm thanh (Luyện tập 21)",
+          "q": "Trong câu 'Tiếng suối ngân nga như tiếng hát xa', hai âm thanh nào được so sánh với nhau? (Mã đề 220)",
+          "o": [
+            "Tiếng suối và tiếng đàn",
+            "Tiếng suối và tiếng hát xa",
+            "Tiếng đàn và tiếng ca",
+            "Tiếng thác và tiếng hát"
+          ],
+          "a": "Tiếng suối và tiếng hát xa",
+          "h": "Tác giả so sánh âm thanh 'Tiếng suối ngân nga' với âm thanh 'tiếng hát xa' để câu văn thêm thơ mộng.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2021,
+          "sub": "Tìm đặc điểm so sánh (Luyện tập 22)",
+          "q": "Trong câu 'Má em bé hồng như quả cà chua', đặc điểm so sánh giữa má em bé và quả cà chua là gì? (Mã đề 221)",
+          "o": [
+            "tròn",
+            "hồng",
+            "mịn màng",
+            "đỏ"
+          ],
+          "a": "hồng",
+          "h": "Từ chỉ đặc điểm so sánh ở đây chính là 'hồng', mô tả màu sắc đôi má xinh xắn giống màu quả cà chua chín đỏ.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2022,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 23)",
+          "q": "Trong câu 'Cánh đồng lúa chín vàng rực như một tấm thảm khổng lồ', sự vật 2 dùng để so sánh là gì? (Mã đề 222)",
+          "o": [
+            "cánh đồng",
+            "tấm thảm khổng lồ",
+            "lúa chín",
+            "vàng rực"
+          ],
+          "a": "tấm thảm khổng lồ",
+          "h": "Sự vật 1 là 'cánh đồng lúa chín', từ so sánh là 'như', sự vật 2 dùng để so sánh là 'tấm thảm khổng lồ'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2023,
+          "sub": "Đặt câu so sánh sinh động (Luyện tập 24)",
+          "q": "Điền từ thích hợp để hoàn thành câu so sánh sinh động: 'Những giọt sương mai long lanh như những hạt...' (Mã đề 223)",
+          "o": [
+            "cát",
+            "ngọc",
+            "muối",
+            "bụi"
+          ],
+          "a": "ngọc",
+          "h": "Giọt sương long lanh, lấp lánh phản chiếu ánh nắng thường được so sánh đẹp đẽ với 'những hạt ngọc' quý giá.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2024,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 25)",
+          "q": "Trong câu 'Quả khế chín mọng, vàng rộm như vẫy gọi bọn trẻ chúng tôi', từ so sánh là từ nào? (Mã đề 224)",
+          "o": [
+            "chín mọng",
+            "như",
+            "vàng rộm",
+            "vẫy gọi"
+          ],
+          "a": "như",
+          "h": "Từ so sánh phổ biến nhất là từ 'như', dùng để nối hai sự vật hoặc hoạt động được so sánh với nhau.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2025,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 26)",
+          "q": "Tìm hình ảnh so sánh trong câu thơ: 'Trăng tròn như cái đĩa.' (Mã đề 225)",
+          "o": [
+            "Trăng tròn với cái đĩa",
+            "Trăng với cái bánh",
+            "Cái đĩa với bầu trời",
+            "Trăng với quả cà chua"
+          ],
+          "a": "Trăng tròn với cái đĩa",
+          "h": "Vật được so sánh là 'Trăng tròn', vật dùng để so sánh là 'cái đĩa', liên kết bằng từ 'như'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2026,
+          "sub": "So sánh Sự vật - Con người (Luyện tập 27)",
+          "q": "Câu nào dưới đây chứa hình ảnh so sánh con người với sự vật? (Mã đề 226)",
+          "o": [
+            "Bé khỏe như lực sĩ.",
+            "Trẻ em như búp trên cành.",
+            "Mẹ là ngọn gió của con suốt đời.",
+            "Bố em cao như một cây thông lớn."
+          ],
+          "a": "Trẻ em như búp trên cành.",
+          "h": "Trong tài liệu, câu thơ của Bác Hồ: 'Trẻ em như búp trên cành' ví tuổi thơ ngây với mầm non mướt đầy sức sống.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2027,
+          "sub": "So sánh Hoạt động - Hoạt động (Luyện tập 28)",
+          "q": "Tìm câu chứa hình ảnh so sánh hoạt động với hoạt động? (Mã đề 227)",
+          "o": [
+            "Lá cờ bay phấp phới như những cánh chim.",
+            "Tiếng ve đồng loạt cất lên như một khúc nhạc dạo.",
+            "Chim bói cá lao xuống nước như một mũi tên.",
+            "Những chú voi chạy đến đích như những chiến binh."
+          ],
+          "a": "Chim bói cá lao xuống nước như một mũi tên.",
+          "h": "Hoạt động 'lao xuống nước' của chim bói cá được ví với chuyển động lao cực nhanh 'như một mũi tên'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2028,
+          "sub": "So sánh Âm thanh - Âm thanh (Luyện tập 29)",
+          "q": "Trong câu 'Tiếng suối ngân nga như tiếng hát xa', hai âm thanh nào được so sánh với nhau? (Mã đề 228)",
+          "o": [
+            "Tiếng suối và tiếng đàn",
+            "Tiếng suối và tiếng hát xa",
+            "Tiếng đàn và tiếng ca",
+            "Tiếng thác và tiếng hát"
+          ],
+          "a": "Tiếng suối và tiếng hát xa",
+          "h": "Tác giả so sánh âm thanh 'Tiếng suối ngân nga' với âm thanh 'tiếng hát xa' để câu văn thêm thơ mộng.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2029,
+          "sub": "Tìm đặc điểm so sánh (Luyện tập 30)",
+          "q": "Trong câu 'Má em bé hồng như quả cà chua', đặc điểm so sánh giữa má em bé và quả cà chua là gì? (Mã đề 229)",
+          "o": [
+            "tròn",
+            "hồng",
+            "mịn màng",
+            "đỏ"
+          ],
+          "a": "hồng",
+          "h": "Từ chỉ đặc điểm so sánh ở đây chính là 'hồng', mô tả màu sắc đôi má xinh xắn giống màu quả cà chua chín đỏ.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2030,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 31)",
+          "q": "Trong câu 'Cánh đồng lúa chín vàng rực như một tấm thảm khổng lồ', sự vật 2 dùng để so sánh là gì? (Mã đề 230)",
+          "o": [
+            "cánh đồng",
+            "tấm thảm khổng lồ",
+            "lúa chín",
+            "vàng rực"
+          ],
+          "a": "tấm thảm khổng lồ",
+          "h": "Sự vật 1 là 'cánh đồng lúa chín', từ so sánh là 'như', sự vật 2 dùng để so sánh là 'tấm thảm khổng lồ'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2031,
+          "sub": "Đặt câu so sánh sinh động (Luyện tập 32)",
+          "q": "Điền từ thích hợp để hoàn thành câu so sánh sinh động: 'Những giọt sương mai long lanh như những hạt...' (Mã đề 231)",
+          "o": [
+            "cát",
+            "ngọc",
+            "muối",
+            "bụi"
+          ],
+          "a": "ngọc",
+          "h": "Giọt sương long lanh, lấp lánh phản chiếu ánh nắng thường được so sánh đẹp đẽ với 'những hạt ngọc' quý giá.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2032,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 33)",
+          "q": "Trong câu 'Quả khế chín mọng, vàng rộm như vẫy gọi bọn trẻ chúng tôi', từ so sánh là từ nào? (Mã đề 232)",
+          "o": [
+            "chín mọng",
+            "như",
+            "vàng rộm",
+            "vẫy gọi"
+          ],
+          "a": "như",
+          "h": "Từ so sánh phổ biến nhất là từ 'như', dùng để nối hai sự vật hoặc hoạt động được so sánh với nhau.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2033,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 34)",
+          "q": "Tìm hình ảnh so sánh trong câu thơ: 'Trăng tròn như cái đĩa.' (Mã đề 233)",
+          "o": [
+            "Trăng tròn với cái đĩa",
+            "Trăng với cái bánh",
+            "Cái đĩa với bầu trời",
+            "Trăng với quả cà chua"
+          ],
+          "a": "Trăng tròn với cái đĩa",
+          "h": "Vật được so sánh là 'Trăng tròn', vật dùng để so sánh là 'cái đĩa', liên kết bằng từ 'như'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2034,
+          "sub": "So sánh Sự vật - Con người (Luyện tập 35)",
+          "q": "Câu nào dưới đây chứa hình ảnh so sánh con người với sự vật? (Mã đề 234)",
+          "o": [
+            "Bé khỏe như lực sĩ.",
+            "Trẻ em như búp trên cành.",
+            "Mẹ là ngọn gió của con suốt đời.",
+            "Bố em cao như một cây thông lớn."
+          ],
+          "a": "Trẻ em như búp trên cành.",
+          "h": "Trong tài liệu, câu thơ của Bác Hồ: 'Trẻ em như búp trên cành' ví tuổi thơ ngây với mầm non mướt đầy sức sống.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2035,
+          "sub": "So sánh Hoạt động - Hoạt động (Luyện tập 36)",
+          "q": "Tìm câu chứa hình ảnh so sánh hoạt động với hoạt động? (Mã đề 235)",
+          "o": [
+            "Lá cờ bay phấp phới như những cánh chim.",
+            "Tiếng ve đồng loạt cất lên như một khúc nhạc dạo.",
+            "Chim bói cá lao xuống nước như một mũi tên.",
+            "Những chú voi chạy đến đích như những chiến binh."
+          ],
+          "a": "Chim bói cá lao xuống nước như một mũi tên.",
+          "h": "Hoạt động 'lao xuống nước' của chim bói cá được ví với chuyển động lao cực nhanh 'như một mũi tên'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2036,
+          "sub": "So sánh Âm thanh - Âm thanh (Luyện tập 37)",
+          "q": "Trong câu 'Tiếng suối ngân nga như tiếng hát xa', hai âm thanh nào được so sánh với nhau? (Mã đề 236)",
+          "o": [
+            "Tiếng suối và tiếng đàn",
+            "Tiếng suối và tiếng hát xa",
+            "Tiếng đàn và tiếng ca",
+            "Tiếng thác và tiếng hát"
+          ],
+          "a": "Tiếng suối và tiếng hát xa",
+          "h": "Tác giả so sánh âm thanh 'Tiếng suối ngân nga' với âm thanh 'tiếng hát xa' để câu văn thêm thơ mộng.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2037,
+          "sub": "Tìm đặc điểm so sánh (Luyện tập 38)",
+          "q": "Trong câu 'Má em bé hồng như quả cà chua', đặc điểm so sánh giữa má em bé và quả cà chua là gì? (Mã đề 237)",
+          "o": [
+            "tròn",
+            "hồng",
+            "mịn màng",
+            "đỏ"
+          ],
+          "a": "hồng",
+          "h": "Từ chỉ đặc điểm so sánh ở đây chính là 'hồng', mô tả màu sắc đôi má xinh xắn giống màu quả cà chua chín đỏ.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2038,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 39)",
+          "q": "Trong câu 'Cánh đồng lúa chín vàng rực như một tấm thảm khổng lồ', sự vật 2 dùng để so sánh là gì? (Mã đề 238)",
+          "o": [
+            "cánh đồng",
+            "tấm thảm khổng lồ",
+            "lúa chín",
+            "vàng rực"
+          ],
+          "a": "tấm thảm khổng lồ",
+          "h": "Sự vật 1 là 'cánh đồng lúa chín', từ so sánh là 'như', sự vật 2 dùng để so sánh là 'tấm thảm khổng lồ'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2039,
+          "sub": "Đặt câu so sánh sinh động (Luyện tập 40)",
+          "q": "Điền từ thích hợp để hoàn thành câu so sánh sinh động: 'Những giọt sương mai long lanh như những hạt...' (Mã đề 239)",
+          "o": [
+            "cát",
+            "ngọc",
+            "muối",
+            "bụi"
+          ],
+          "a": "ngọc",
+          "h": "Giọt sương long lanh, lấp lánh phản chiếu ánh nắng thường được so sánh đẹp đẽ với 'những hạt ngọc' quý giá.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2040,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 41)",
+          "q": "Trong câu 'Quả khế chín mọng, vàng rộm như vẫy gọi bọn trẻ chúng tôi', từ so sánh là từ nào? (Mã đề 240)",
+          "o": [
+            "chín mọng",
+            "như",
+            "vàng rộm",
+            "vẫy gọi"
+          ],
+          "a": "như",
+          "h": "Từ so sánh phổ biến nhất là từ 'như', dùng để nối hai sự vật hoặc hoạt động được so sánh với nhau.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2041,
+          "sub": "So sánh Sự vật - Sự vật (Luyện tập 42)",
+          "q": "Tìm hình ảnh so sánh trong câu thơ: 'Trăng tròn như cái đĩa.' (Mã đề 241)",
+          "o": [
+            "Trăng tròn với cái đĩa",
+            "Trăng với cái bánh",
+            "Cái đĩa với bầu trời",
+            "Trăng với quả cà chua"
+          ],
+          "a": "Trăng tròn với cái đĩa",
+          "h": "Vật được so sánh là 'Trăng tròn', vật dùng để so sánh là 'cái đĩa', liên kết bằng từ 'như'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2042,
+          "sub": "So sánh Sự vật - Con người (Luyện tập 43)",
+          "q": "Câu nào dưới đây chứa hình ảnh so sánh con người với sự vật? (Mã đề 242)",
+          "o": [
+            "Bé khỏe như lực sĩ.",
+            "Trẻ em như búp trên cành.",
+            "Mẹ là ngọn gió của con suốt đời.",
+            "Bố em cao như một cây thông lớn."
+          ],
+          "a": "Trẻ em như búp trên cành.",
+          "h": "Trong tài liệu, câu thơ của Bác Hồ: 'Trẻ em như búp trên cành' ví tuổi thơ ngây với mầm non mướt đầy sức sống.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2043,
+          "sub": "So sánh Hoạt động - Hoạt động (Luyện tập 44)",
+          "q": "Tìm câu chứa hình ảnh so sánh hoạt động với hoạt động? (Mã đề 243)",
+          "o": [
+            "Lá cờ bay phấp phới như những cánh chim.",
+            "Tiếng ve đồng loạt cất lên như một khúc nhạc dạo.",
+            "Chim bói cá lao xuống nước như một mũi tên.",
+            "Những chú voi chạy đến đích như những chiến binh."
+          ],
+          "a": "Chim bói cá lao xuống nước như một mũi tên.",
+          "h": "Hoạt động 'lao xuống nước' của chim bói cá được ví với chuyển động lao cực nhanh 'như một mũi tên'.",
+          "img": "",
+          "w": 3
+        },
+        {
+          "id": 2044,
+          "sub": "So sánh Âm thanh - Âm thanh (Luyện tập 45)",
+          "q": "Trong câu 'Tiếng suối ngân nga như tiếng hát xa', hai âm thanh nào được so sánh với nhau? (Mã đề 244)",
+          "o": [
+            "Tiếng suối và tiếng đàn",
+            "Tiếng suối và tiếng hát xa",
+            "Tiếng đàn và tiếng ca",
+            "Tiếng thác và tiếng hát"
+          ],
+          "a": "Tiếng suối và tiếng hát xa",
+          "h": "Tác giả so sánh âm thanh 'Tiếng suối ngân nga' với âm thanh 'tiếng hát xa' để câu văn thêm thơ mộng.",
+          "img": "",
+          "w": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Thế giới Nhân hóa",
+      "desc": "Bé có muốn kết bạn với muông thú, cỏ cây và đồ vật biết nói như con người? Hãy bước vào thế giới nhân hóa đáng yêu nhé!",
+      "qs": [
+        {
+          "id": 3000,
+          "sub": "Nhận diện Nhân hóa (Bài học 1)",
+          "q": "Đoạn thơ tả que diêm: 'Que diêm trốn đi chơi / Huênh hoang khoe đầu đỏ / Đắc chí nghênh ngang cười.' Que diêm được nhân hóa bằng cách nào?",
+          "o": [
+            "Tả hoạt động, tính cách giống con người",
+            "Gọi bằng các từ xưng hô của người",
+            "Trò chuyện trực tiếp với diêm",
+            "So sánh diêm với ánh sáng"
+          ],
+          "a": "Tả hoạt động, tính cách giống con người",
+          "h": "Diêm được gán cho các hành động, tính cách của con người như 'trốn đi chơi', 'huênh hoang', 'đắc chí', 'nghênh ngang cười'.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3001,
+          "sub": "Cách nhân hóa gọi vật bằng từ xưng hô của người (Bài học 2)",
+          "q": "Câu nào dưới đây sử dụng cách nhân hóa gọi con vật bằng từ xưng hô của người?",
+          "o": [
+            "Chú cào cào diện áo xanh nhảy nhót.",
+            "Chị ong chăm chỉ tìm mật.",
+            "Bác gà trống gáy vang gọi bình minh.",
+            "Cả ba câu trên đều đúng."
+          ],
+          "a": "Cả ba câu trên đều đúng.",
+          "h": "Các từ xưng hô của người như 'Chú', 'Chị', 'Bác' được dùng để gọi tên các con vật (cào cào, ong, gà trống) thân thương.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3002,
+          "sub": "Cách nhân hóa trò chuyện với vật như người (Bài học 3)",
+          "q": "Dòng thơ nào thể hiện cách nhân hóa trò chuyện thân mật với vật như với người?",
+          "o": [
+            "Tre bần thần nhớ gió.",
+            "Hỡi cô gió ơi, hãy thổi mát nhé!",
+            "Cây bầu hoa trắng.",
+            "Cây mướp hoa vàng."
+          ],
+          "a": "Hỡi cô gió ơi, hãy thổi mát nhé!",
+          "h": "Cụm từ 'Hỡi cô gió ơi' thể hiện việc gọi, trò chuyện, xưng hô thân thiết trực tiếp với hiện tượng thiên nhiên như một người bạn.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3003,
+          "sub": "Tìm từ ngữ nhân hóa (Bài học 4)",
+          "q": "Trong câu thơ 'Tre bần thần nhớ gió', từ ngữ nào thể hiện biện pháp nhân hóa?",
+          "o": [
+            "Tre",
+            "gió",
+            "bần thần nhớ",
+            "tre bần thần"
+          ],
+          "a": "bần thần nhớ",
+          "h": "Trạng thái cảm xúc 'bần thần nhớ' là tâm trạng chỉ có ở con người, được tác giả gán cho cây tre.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3004,
+          "sub": "Tác dụng của biện pháp nhân hóa (Bài học 5)",
+          "q": "Biện pháp nghệ thuật nhân hóa giúp ta thấy các sự vật trong bài thơ, câu văn trở nên thế nào?",
+          "o": [
+            "Xa lạ và khó hiểu",
+            "Sinh động, gần gũi với con người",
+            "Đáng sợ và to lớn hơn",
+            "Đơn giản và tẻ nhạt hơn"
+          ],
+          "a": "Sinh động, gần gũi với con người",
+          "h": "Nhân hóa giúp các sự vật vô tri trở nên có hồn, sống động, đáng yêu và gần gũi hơn với thế giới tâm hồn trẻ thơ.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3005,
+          "sub": "Nhận diện Nhân hóa (Bài học 6)",
+          "q": "Đoạn thơ tả que diêm: 'Que diêm trốn đi chơi / Huênh hoang khoe đầu đỏ / Đắc chí nghênh ngang cười.' Que diêm được nhân hóa bằng cách nào? (Mã câu 305)",
+          "o": [
+            "Tả hoạt động, tính cách giống con người",
+            "Gọi bằng các từ xưng hô của người",
+            "Trò chuyện trực tiếp với diêm",
+            "So sánh diêm với ánh sáng"
+          ],
+          "a": "Tả hoạt động, tính cách giống con người",
+          "h": "Diêm được gán cho các hành động, tính cách của con người như 'trốn đi chơi', 'huênh hoang', 'đắc chí', 'nghênh ngang cười'.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3006,
+          "sub": "Cách nhân hóa gọi vật bằng từ xưng hô của người (Bài học 7)",
+          "q": "Câu nào dưới đây sử dụng cách nhân hóa gọi con vật bằng từ xưng hô của người? (Mã câu 306)",
+          "o": [
+            "Chú cào cào diện áo xanh nhảy nhót.",
+            "Chị ong chăm chỉ tìm mật.",
+            "Bác gà trống gáy vang gọi bình minh.",
+            "Cả ba câu trên đều đúng."
+          ],
+          "a": "Cả ba câu trên đều đúng.",
+          "h": "Các từ xưng hô của người như 'Chú', 'Chị', 'Bác' được dùng để gọi tên các con vật (cào cào, ong, gà trống) thân thương.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3007,
+          "sub": "Cách nhân hóa trò chuyện với vật như người (Bài học 8)",
+          "q": "Dòng thơ nào thể hiện cách nhân hóa trò chuyện thân mật với vật như với người? (Mã câu 307)",
+          "o": [
+            "Tre bần thần nhớ gió.",
+            "Hỡi cô gió ơi, hãy thổi mát nhé!",
+            "Cây bầu hoa trắng.",
+            "Cây mướp hoa vàng."
+          ],
+          "a": "Hỡi cô gió ơi, hãy thổi mát nhé!",
+          "h": "Cụm từ 'Hỡi cô gió ơi' thể hiện việc gọi, trò chuyện, xưng hô thân thiết trực tiếp với hiện tượng thiên nhiên như một người bạn.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3008,
+          "sub": "Tìm từ ngữ nhân hóa (Bài học 9)",
+          "q": "Trong câu thơ 'Tre bần thần nhớ gió', từ ngữ nào thể hiện biện pháp nhân hóa? (Mã câu 308)",
+          "o": [
+            "Tre",
+            "gió",
+            "bần thần nhớ",
+            "tre bần thần"
+          ],
+          "a": "bần thần nhớ",
+          "h": "Trạng thái cảm xúc 'bần thần nhớ' là tâm trạng chỉ có ở con người, được tác giả gán cho cây tre.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3009,
+          "sub": "Tác dụng của biện pháp nhân hóa (Bài học 10)",
+          "q": "Biện pháp nghệ thuật nhân hóa giúp ta thấy các sự vật trong bài thơ, câu văn trở nên thế nào? (Mã câu 309)",
+          "o": [
+            "Xa lạ và khó hiểu",
+            "Sinh động, gần gũi với con người",
+            "Đáng sợ và to lớn hơn",
+            "Đơn giản và tẻ nhạt hơn"
+          ],
+          "a": "Sinh động, gần gũi với con người",
+          "h": "Nhân hóa giúp các sự vật vô tri trở nên có hồn, sống động, đáng yêu và gần gũi hơn với thế giới tâm hồn trẻ thơ.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3010,
+          "sub": "Nhận diện Nhân hóa (Bài học 11)",
+          "q": "Đoạn thơ tả que diêm: 'Que diêm trốn đi chơi / Huênh hoang khoe đầu đỏ / Đắc chí nghênh ngang cười.' Que diêm được nhân hóa bằng cách nào? (Mã câu 310)",
+          "o": [
+            "Tả hoạt động, tính cách giống con người",
+            "Gọi bằng các từ xưng hô của người",
+            "Trò chuyện trực tiếp với diêm",
+            "So sánh diêm với ánh sáng"
+          ],
+          "a": "Tả hoạt động, tính cách giống con người",
+          "h": "Diêm được gán cho các hành động, tính cách của con người như 'trốn đi chơi', 'huênh hoang', 'đắc chí', 'nghênh ngang cười'.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3011,
+          "sub": "Cách nhân hóa gọi vật bằng từ xưng hô của người (Bài học 12)",
+          "q": "Câu nào dưới đây sử dụng cách nhân hóa gọi con vật bằng từ xưng hô của người? (Mã câu 311)",
+          "o": [
+            "Chú cào cào diện áo xanh nhảy nhót.",
+            "Chị ong chăm chỉ tìm mật.",
+            "Bác gà trống gáy vang gọi bình minh.",
+            "Cả ba câu trên đều đúng."
+          ],
+          "a": "Cả ba câu trên đều đúng.",
+          "h": "Các từ xưng hô của người như 'Chú', 'Chị', 'Bác' được dùng để gọi tên các con vật (cào cào, ong, gà trống) thân thương.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3012,
+          "sub": "Cách nhân hóa trò chuyện với vật như người (Bài học 13)",
+          "q": "Dòng thơ nào thể hiện cách nhân hóa trò chuyện thân mật với vật như với người? (Mã câu 312)",
+          "o": [
+            "Tre bần thần nhớ gió.",
+            "Hỡi cô gió ơi, hãy thổi mát nhé!",
+            "Cây bầu hoa trắng.",
+            "Cây mướp hoa vàng."
+          ],
+          "a": "Hỡi cô gió ơi, hãy thổi mát nhé!",
+          "h": "Cụm từ 'Hỡi cô gió ơi' thể hiện việc gọi, trò chuyện, xưng hô thân thiết trực tiếp với hiện tượng thiên nhiên như một người bạn.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3013,
+          "sub": "Tìm từ ngữ nhân hóa (Bài học 14)",
+          "q": "Trong câu thơ 'Tre bần thần nhớ gió', từ ngữ nào thể hiện biện pháp nhân hóa? (Mã câu 313)",
+          "o": [
+            "Tre",
+            "gió",
+            "bần thần nhớ",
+            "tre bần thần"
+          ],
+          "a": "bần thần nhớ",
+          "h": "Trạng thái cảm xúc 'bần thần nhớ' là tâm trạng chỉ có ở con người, được tác giả gán cho cây tre.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3014,
+          "sub": "Tác dụng của biện pháp nhân hóa (Bài học 15)",
+          "q": "Biện pháp nghệ thuật nhân hóa giúp ta thấy các sự vật trong bài thơ, câu văn trở nên thế nào? (Mã câu 314)",
+          "o": [
+            "Xa lạ và khó hiểu",
+            "Sinh động, gần gũi với con người",
+            "Đáng sợ và to lớn hơn",
+            "Đơn giản và tẻ nhạt hơn"
+          ],
+          "a": "Sinh động, gần gũi với con người",
+          "h": "Nhân hóa giúp các sự vật vô tri trở nên có hồn, sống động, đáng yêu và gần gũi hơn với thế giới tâm hồn trẻ thơ.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3015,
+          "sub": "Nhận diện Nhân hóa (Bài học 16)",
+          "q": "Đoạn thơ tả que diêm: 'Que diêm trốn đi chơi / Huênh hoang khoe đầu đỏ / Đắc chí nghênh ngang cười.' Que diêm được nhân hóa bằng cách nào? (Mã câu 315)",
+          "o": [
+            "Tả hoạt động, tính cách giống con người",
+            "Gọi bằng các từ xưng hô của người",
+            "Trò chuyện trực tiếp với diêm",
+            "So sánh diêm với ánh sáng"
+          ],
+          "a": "Tả hoạt động, tính cách giống con người",
+          "h": "Diêm được gán cho các hành động, tính cách của con người như 'trốn đi chơi', 'huênh hoang', 'đắc chí', 'nghênh ngang cười'.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3016,
+          "sub": "Cách nhân hóa gọi vật bằng từ xưng hô của người (Bài học 17)",
+          "q": "Câu nào dưới đây sử dụng cách nhân hóa gọi con vật bằng từ xưng hô của người? (Mã câu 316)",
+          "o": [
+            "Chú cào cào diện áo xanh nhảy nhót.",
+            "Chị ong chăm chỉ tìm mật.",
+            "Bác gà trống gáy vang gọi bình minh.",
+            "Cả ba câu trên đều đúng."
+          ],
+          "a": "Cả ba câu trên đều đúng.",
+          "h": "Các từ xưng hô của người như 'Chú', 'Chị', 'Bác' được dùng để gọi tên các con vật (cào cào, ong, gà trống) thân thương.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3017,
+          "sub": "Cách nhân hóa trò chuyện với vật như người (Bài học 18)",
+          "q": "Dòng thơ nào thể hiện cách nhân hóa trò chuyện thân mật với vật như với người? (Mã câu 317)",
+          "o": [
+            "Tre bần thần nhớ gió.",
+            "Hỡi cô gió ơi, hãy thổi mát nhé!",
+            "Cây bầu hoa trắng.",
+            "Cây mướp hoa vàng."
+          ],
+          "a": "Hỡi cô gió ơi, hãy thổi mát nhé!",
+          "h": "Cụm từ 'Hỡi cô gió ơi' thể hiện việc gọi, trò chuyện, xưng hô thân thiết trực tiếp với hiện tượng thiên nhiên như một người bạn.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3018,
+          "sub": "Tìm từ ngữ nhân hóa (Bài học 19)",
+          "q": "Trong câu thơ 'Tre bần thần nhớ gió', từ ngữ nào thể hiện biện pháp nhân hóa? (Mã câu 318)",
+          "o": [
+            "Tre",
+            "gió",
+            "bần thần nhớ",
+            "tre bần thần"
+          ],
+          "a": "bần thần nhớ",
+          "h": "Trạng thái cảm xúc 'bần thần nhớ' là tâm trạng chỉ có ở con người, được tác giả gán cho cây tre.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3019,
+          "sub": "Tác dụng của biện pháp nhân hóa (Bài học 20)",
+          "q": "Biện pháp nghệ thuật nhân hóa giúp ta thấy các sự vật trong bài thơ, câu văn trở nên thế nào? (Mã câu 319)",
+          "o": [
+            "Xa lạ và khó hiểu",
+            "Sinh động, gần gũi với con người",
+            "Đáng sợ và to lớn hơn",
+            "Đơn giản và tẻ nhạt hơn"
+          ],
+          "a": "Sinh động, gần gũi với con người",
+          "h": "Nhân hóa giúp các sự vật vô tri trở nên có hồn, sống động, đáng yêu và gần gũi hơn với thế giới tâm hồn trẻ thơ.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3020,
+          "sub": "Nhận diện Nhân hóa (Bài học 21)",
+          "q": "Đoạn thơ tả que diêm: 'Que diêm trốn đi chơi / Huênh hoang khoe đầu đỏ / Đắc chí nghênh ngang cười.' Que diêm được nhân hóa bằng cách nào? (Mã câu 320)",
+          "o": [
+            "Tả hoạt động, tính cách giống con người",
+            "Gọi bằng các từ xưng hô của người",
+            "Trò chuyện trực tiếp với diêm",
+            "So sánh diêm với ánh sáng"
+          ],
+          "a": "Tả hoạt động, tính cách giống con người",
+          "h": "Diêm được gán cho các hành động, tính cách của con người như 'trốn đi chơi', 'huênh hoang', 'đắc chí', 'nghênh ngang cười'.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3021,
+          "sub": "Cách nhân hóa gọi vật bằng từ xưng hô của người (Bài học 22)",
+          "q": "Câu nào dưới đây sử dụng cách nhân hóa gọi con vật bằng từ xưng hô của người? (Mã câu 321)",
+          "o": [
+            "Chú cào cào diện áo xanh nhảy nhót.",
+            "Chị ong chăm chỉ tìm mật.",
+            "Bác gà trống gáy vang gọi bình minh.",
+            "Cả ba câu trên đều đúng."
+          ],
+          "a": "Cả ba câu trên đều đúng.",
+          "h": "Các từ xưng hô của người như 'Chú', 'Chị', 'Bác' được dùng để gọi tên các con vật (cào cào, ong, gà trống) thân thương.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3022,
+          "sub": "Cách nhân hóa trò chuyện với vật như người (Bài học 23)",
+          "q": "Dòng thơ nào thể hiện cách nhân hóa trò chuyện thân mật với vật như với người? (Mã câu 322)",
+          "o": [
+            "Tre bần thần nhớ gió.",
+            "Hỡi cô gió ơi, hãy thổi mát nhé!",
+            "Cây bầu hoa trắng.",
+            "Cây mướp hoa vàng."
+          ],
+          "a": "Hỡi cô gió ơi, hãy thổi mát nhé!",
+          "h": "Cụm từ 'Hỡi cô gió ơi' thể hiện việc gọi, trò chuyện, xưng hô thân thiết trực tiếp với hiện tượng thiên nhiên như một người bạn.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3023,
+          "sub": "Tìm từ ngữ nhân hóa (Bài học 24)",
+          "q": "Trong câu thơ 'Tre bần thần nhớ gió', từ ngữ nào thể hiện biện pháp nhân hóa? (Mã câu 323)",
+          "o": [
+            "Tre",
+            "gió",
+            "bần thần nhớ",
+            "tre bần thần"
+          ],
+          "a": "bần thần nhớ",
+          "h": "Trạng thái cảm xúc 'bần thần nhớ' là tâm trạng chỉ có ở con người, được tác giả gán cho cây tre.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3024,
+          "sub": "Tác dụng của biện pháp nhân hóa (Bài học 25)",
+          "q": "Biện pháp nghệ thuật nhân hóa giúp ta thấy các sự vật trong bài thơ, câu văn trở nên thế nào? (Mã câu 324)",
+          "o": [
+            "Xa lạ và khó hiểu",
+            "Sinh động, gần gũi với con người",
+            "Đáng sợ và to lớn hơn",
+            "Đơn giản và tẻ nhạt hơn"
+          ],
+          "a": "Sinh động, gần gũi với con người",
+          "h": "Nhân hóa giúp các sự vật vô tri trở nên có hồn, sống động, đáng yêu và gần gũi hơn với thế giới tâm hồn trẻ thơ.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3025,
+          "sub": "Nhận diện Nhân hóa (Bài học 26)",
+          "q": "Đoạn thơ tả que diêm: 'Que diêm trốn đi chơi / Huênh hoang khoe đầu đỏ / Đắc chí nghênh ngang cười.' Que diêm được nhân hóa bằng cách nào? (Mã câu 325)",
+          "o": [
+            "Tả hoạt động, tính cách giống con người",
+            "Gọi bằng các từ xưng hô của người",
+            "Trò chuyện trực tiếp với diêm",
+            "So sánh diêm với ánh sáng"
+          ],
+          "a": "Tả hoạt động, tính cách giống con người",
+          "h": "Diêm được gán cho các hành động, tính cách của con người như 'trốn đi chơi', 'huênh hoang', 'đắc chí', 'nghênh ngang cười'.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3026,
+          "sub": "Cách nhân hóa gọi vật bằng từ xưng hô của người (Bài học 27)",
+          "q": "Câu nào dưới đây sử dụng cách nhân hóa gọi con vật bằng từ xưng hô của người? (Mã câu 326)",
+          "o": [
+            "Chú cào cào diện áo xanh nhảy nhót.",
+            "Chị ong chăm chỉ tìm mật.",
+            "Bác gà trống gáy vang gọi bình minh.",
+            "Cả ba câu trên đều đúng."
+          ],
+          "a": "Cả ba câu trên đều đúng.",
+          "h": "Các từ xưng hô của người như 'Chú', 'Chị', 'Bác' được dùng để gọi tên các con vật (cào cào, ong, gà trống) thân thương.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3027,
+          "sub": "Cách nhân hóa trò chuyện với vật như người (Bài học 28)",
+          "q": "Dòng thơ nào thể hiện cách nhân hóa trò chuyện thân mật với vật như với người? (Mã câu 327)",
+          "o": [
+            "Tre bần thần nhớ gió.",
+            "Hỡi cô gió ơi, hãy thổi mát nhé!",
+            "Cây bầu hoa trắng.",
+            "Cây mướp hoa vàng."
+          ],
+          "a": "Hỡi cô gió ơi, hãy thổi mát nhé!",
+          "h": "Cụm từ 'Hỡi cô gió ơi' thể hiện việc gọi, trò chuyện, xưng hô thân thiết trực tiếp với hiện tượng thiên nhiên như một người bạn.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3028,
+          "sub": "Tìm từ ngữ nhân hóa (Bài học 29)",
+          "q": "Trong câu thơ 'Tre bần thần nhớ gió', từ ngữ nào thể hiện biện pháp nhân hóa? (Mã câu 328)",
+          "o": [
+            "Tre",
+            "gió",
+            "bần thần nhớ",
+            "tre bần thần"
+          ],
+          "a": "bần thần nhớ",
+          "h": "Trạng thái cảm xúc 'bần thần nhớ' là tâm trạng chỉ có ở con người, được tác giả gán cho cây tre.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3029,
+          "sub": "Tác dụng của biện pháp nhân hóa (Bài học 30)",
+          "q": "Biện pháp nghệ thuật nhân hóa giúp ta thấy các sự vật trong bài thơ, câu văn trở nên thế nào? (Mã câu 329)",
+          "o": [
+            "Xa lạ và khó hiểu",
+            "Sinh động, gần gũi với con người",
+            "Đáng sợ và to lớn hơn",
+            "Đơn giản và tẻ nhạt hơn"
+          ],
+          "a": "Sinh động, gần gũi với con người",
+          "h": "Nhân hóa giúp các sự vật vô tri trở nên có hồn, sống động, đáng yêu và gần gũi hơn với thế giới tâm hồn trẻ thơ.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3030,
+          "sub": "Nhận diện Nhân hóa (Bài học 31)",
+          "q": "Đoạn thơ tả que diêm: 'Que diêm trốn đi chơi / Huênh hoang khoe đầu đỏ / Đắc chí nghênh ngang cười.' Que diêm được nhân hóa bằng cách nào? (Mã câu 330)",
+          "o": [
+            "Tả hoạt động, tính cách giống con người",
+            "Gọi bằng các từ xưng hô của người",
+            "Trò chuyện trực tiếp với diêm",
+            "So sánh diêm với ánh sáng"
+          ],
+          "a": "Tả hoạt động, tính cách giống con người",
+          "h": "Diêm được gán cho các hành động, tính cách của con người như 'trốn đi chơi', 'huênh hoang', 'đắc chí', 'nghênh ngang cười'.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3031,
+          "sub": "Cách nhân hóa gọi vật bằng từ xưng hô của người (Bài học 32)",
+          "q": "Câu nào dưới đây sử dụng cách nhân hóa gọi con vật bằng từ xưng hô của người? (Mã câu 331)",
+          "o": [
+            "Chú cào cào diện áo xanh nhảy nhót.",
+            "Chị ong chăm chỉ tìm mật.",
+            "Bác gà trống gáy vang gọi bình minh.",
+            "Cả ba câu trên đều đúng."
+          ],
+          "a": "Cả ba câu trên đều đúng.",
+          "h": "Các từ xưng hô của người như 'Chú', 'Chị', 'Bác' được dùng để gọi tên các con vật (cào cào, ong, gà trống) thân thương.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3032,
+          "sub": "Cách nhân hóa trò chuyện với vật như người (Bài học 33)",
+          "q": "Dòng thơ nào thể hiện cách nhân hóa trò chuyện thân mật với vật như với người? (Mã câu 332)",
+          "o": [
+            "Tre bần thần nhớ gió.",
+            "Hỡi cô gió ơi, hãy thổi mát nhé!",
+            "Cây bầu hoa trắng.",
+            "Cây mướp hoa vàng."
+          ],
+          "a": "Hỡi cô gió ơi, hãy thổi mát nhé!",
+          "h": "Cụm từ 'Hỡi cô gió ơi' thể hiện việc gọi, trò chuyện, xưng hô thân thiết trực tiếp với hiện tượng thiên nhiên như một người bạn.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3033,
+          "sub": "Tìm từ ngữ nhân hóa (Bài học 34)",
+          "q": "Trong câu thơ 'Tre bần thần nhớ gió', từ ngữ nào thể hiện biện pháp nhân hóa? (Mã câu 333)",
+          "o": [
+            "Tre",
+            "gió",
+            "bần thần nhớ",
+            "tre bần thần"
+          ],
+          "a": "bần thần nhớ",
+          "h": "Trạng thái cảm xúc 'bần thần nhớ' là tâm trạng chỉ có ở con người, được tác giả gán cho cây tre.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3034,
+          "sub": "Tác dụng của biện pháp nhân hóa (Bài học 35)",
+          "q": "Biện pháp nghệ thuật nhân hóa giúp ta thấy các sự vật trong bài thơ, câu văn trở nên thế nào? (Mã câu 334)",
+          "o": [
+            "Xa lạ và khó hiểu",
+            "Sinh động, gần gũi với con người",
+            "Đáng sợ và to lớn hơn",
+            "Đơn giản và tẻ nhạt hơn"
+          ],
+          "a": "Sinh động, gần gũi với con người",
+          "h": "Nhân hóa giúp các sự vật vô tri trở nên có hồn, sống động, đáng yêu và gần gũi hơn với thế giới tâm hồn trẻ thơ.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3035,
+          "sub": "Nhận diện Nhân hóa (Bài học 36)",
+          "q": "Đoạn thơ tả que diêm: 'Que diêm trốn đi chơi / Huênh hoang khoe đầu đỏ / Đắc chí nghênh ngang cười.' Que diêm được nhân hóa bằng cách nào? (Mã câu 335)",
+          "o": [
+            "Tả hoạt động, tính cách giống con người",
+            "Gọi bằng các từ xưng hô của người",
+            "Trò chuyện trực tiếp với diêm",
+            "So sánh diêm với ánh sáng"
+          ],
+          "a": "Tả hoạt động, tính cách giống con người",
+          "h": "Diêm được gán cho các hành động, tính cách của con người như 'trốn đi chơi', 'huênh hoang', 'đắc chí', 'nghênh ngang cười'.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3036,
+          "sub": "Cách nhân hóa gọi vật bằng từ xưng hô của người (Bài học 37)",
+          "q": "Câu nào dưới đây sử dụng cách nhân hóa gọi con vật bằng từ xưng hô của người? (Mã câu 336)",
+          "o": [
+            "Chú cào cào diện áo xanh nhảy nhót.",
+            "Chị ong chăm chỉ tìm mật.",
+            "Bác gà trống gáy vang gọi bình minh.",
+            "Cả ba câu trên đều đúng."
+          ],
+          "a": "Cả ba câu trên đều đúng.",
+          "h": "Các từ xưng hô của người như 'Chú', 'Chị', 'Bác' được dùng để gọi tên các con vật (cào cào, ong, gà trống) thân thương.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3037,
+          "sub": "Cách nhân hóa trò chuyện với vật như người (Bài học 38)",
+          "q": "Dòng thơ nào thể hiện cách nhân hóa trò chuyện thân mật với vật như với người? (Mã câu 337)",
+          "o": [
+            "Tre bần thần nhớ gió.",
+            "Hỡi cô gió ơi, hãy thổi mát nhé!",
+            "Cây bầu hoa trắng.",
+            "Cây mướp hoa vàng."
+          ],
+          "a": "Hỡi cô gió ơi, hãy thổi mát nhé!",
+          "h": "Cụm từ 'Hỡi cô gió ơi' thể hiện việc gọi, trò chuyện, xưng hô thân thiết trực tiếp với hiện tượng thiên nhiên như một người bạn.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3038,
+          "sub": "Tìm từ ngữ nhân hóa (Bài học 39)",
+          "q": "Trong câu thơ 'Tre bần thần nhớ gió', từ ngữ nào thể hiện biện pháp nhân hóa? (Mã câu 338)",
+          "o": [
+            "Tre",
+            "gió",
+            "bần thần nhớ",
+            "tre bần thần"
+          ],
+          "a": "bần thần nhớ",
+          "h": "Trạng thái cảm xúc 'bần thần nhớ' là tâm trạng chỉ có ở con người, được tác giả gán cho cây tre.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3039,
+          "sub": "Tác dụng của biện pháp nhân hóa (Bài học 40)",
+          "q": "Biện pháp nghệ thuật nhân hóa giúp ta thấy các sự vật trong bài thơ, câu văn trở nên thế nào? (Mã câu 339)",
+          "o": [
+            "Xa lạ và khó hiểu",
+            "Sinh động, gần gũi với con người",
+            "Đáng sợ và to lớn hơn",
+            "Đơn giản và tẻ nhạt hơn"
+          ],
+          "a": "Sinh động, gần gũi với con người",
+          "h": "Nhân hóa giúp các sự vật vô tri trở nên có hồn, sống động, đáng yêu và gần gũi hơn với thế giới tâm hồn trẻ thơ.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3040,
+          "sub": "Nhận diện Nhân hóa (Bài học 41)",
+          "q": "Đoạn thơ tả que diêm: 'Que diêm trốn đi chơi / Huênh hoang khoe đầu đỏ / Đắc chí nghênh ngang cười.' Que diêm được nhân hóa bằng cách nào? (Mã câu 340)",
+          "o": [
+            "Tả hoạt động, tính cách giống con người",
+            "Gọi bằng các từ xưng hô của người",
+            "Trò chuyện trực tiếp với diêm",
+            "So sánh diêm với ánh sáng"
+          ],
+          "a": "Tả hoạt động, tính cách giống con người",
+          "h": "Diêm được gán cho các hành động, tính cách của con người như 'trốn đi chơi', 'huênh hoang', 'đắc chí', 'nghênh ngang cười'.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3041,
+          "sub": "Cách nhân hóa gọi vật bằng từ xưng hô của người (Bài học 42)",
+          "q": "Câu nào dưới đây sử dụng cách nhân hóa gọi con vật bằng từ xưng hô của người? (Mã câu 341)",
+          "o": [
+            "Chú cào cào diện áo xanh nhảy nhót.",
+            "Chị ong chăm chỉ tìm mật.",
+            "Bác gà trống gáy vang gọi bình minh.",
+            "Cả ba câu trên đều đúng."
+          ],
+          "a": "Cả ba câu trên đều đúng.",
+          "h": "Các từ xưng hô của người như 'Chú', 'Chị', 'Bác' được dùng để gọi tên các con vật (cào cào, ong, gà trống) thân thương.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3042,
+          "sub": "Cách nhân hóa trò chuyện với vật như người (Bài học 43)",
+          "q": "Dòng thơ nào thể hiện cách nhân hóa trò chuyện thân mật với vật như với người? (Mã câu 342)",
+          "o": [
+            "Tre bần thần nhớ gió.",
+            "Hỡi cô gió ơi, hãy thổi mát nhé!",
+            "Cây bầu hoa trắng.",
+            "Cây mướp hoa vàng."
+          ],
+          "a": "Hỡi cô gió ơi, hãy thổi mát nhé!",
+          "h": "Cụm từ 'Hỡi cô gió ơi' thể hiện việc gọi, trò chuyện, xưng hô thân thiết trực tiếp với hiện tượng thiên nhiên như một người bạn.",
+          "img": "",
+          "w": 5
+        },
+        {
+          "id": 3043,
+          "sub": "Tìm từ ngữ nhân hóa (Bài học 44)",
+          "q": "Trong câu thơ 'Tre bần thần nhớ gió', từ ngữ nào thể hiện biện pháp nhân hóa? (Mã câu 343)",
+          "o": [
+            "Tre",
+            "gió",
+            "bần thần nhớ",
+            "tre bần thần"
+          ],
+          "a": "bần thần nhớ",
+          "h": "Trạng thái cảm xúc 'bần thần nhớ' là tâm trạng chỉ có ở con người, được tác giả gán cho cây tre.",
+          "img": "",
+          "w": 6
+        },
+        {
+          "id": 3044,
+          "sub": "Tác dụng của biện pháp nhân hóa (Bài học 45)",
+          "q": "Biện pháp nghệ thuật nhân hóa giúp ta thấy các sự vật trong bài thơ, câu văn trở nên thế nào? (Mã câu 344)",
+          "o": [
+            "Xa lạ và khó hiểu",
+            "Sinh động, gần gũi với con người",
+            "Đáng sợ và to lớn hơn",
+            "Đơn giản và tẻ nhạt hơn"
+          ],
+          "a": "Sinh động, gần gũi với con người",
+          "h": "Nhân hóa giúp các sự vật vô tri trở nên có hồn, sống động, đáng yêu và gần gũi hơn với thế giới tâm hồn trẻ thơ.",
+          "img": "",
+          "w": 5
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Khu vườn Từ loại",
+      "desc": "Bé hãy cùng rèn luyện khả năng phân biệt Danh từ, Động từ hoạt động/trạng thái và Tính từ chỉ đặc điểm phong phú nhé!",
+      "qs": [
+        {
+          "id": 4000,
+          "sub": "Danh từ chỉ sự vật",
+          "q": "Trong câu văn: 'Học sinh lớp 3 đang ríu rít trò chuyện dưới bóng mát.', từ nào là từ chỉ sự vật (danh từ)?",
+          "o": [
+            "học sinh",
+            "ríu rít",
+            "trò chuyện",
+            "dưới"
+          ],
+          "a": "học sinh",
+          "h": "Từ chỉ sự vật là từ chỉ người, đồ vật, con vật, cây cối, địa danh hoặc hiện tượng tự nhiên đó bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4001,
+          "sub": "Danh từ chỉ sự vật",
+          "q": "Trong câu văn: 'Cây bút chì nhỏ của bé Lan được gọt rất cẩn thận.', từ nào là từ chỉ sự vật (danh từ)?",
+          "o": [
+            "cây",
+            "bút chì",
+            "nhỏ",
+            "gọt"
+          ],
+          "a": "bút chì",
+          "h": "Từ chỉ sự vật là từ chỉ người, đồ vật, con vật, cây cối, địa danh hoặc hiện tượng tự nhiên đó bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4002,
+          "sub": "Danh từ chỉ sự vật",
+          "q": "Trong câu văn: 'Mái trường Tiểu học thân thương nâng bước em thơ.', từ nào là từ chỉ sự vật (danh từ)?",
+          "o": [
+            "mái trường",
+            "thân thương",
+            "nâng bước",
+            "em thơ"
+          ],
+          "a": "mái trường",
+          "h": "Từ chỉ sự vật là từ chỉ người, đồ vật, con vật, cây cối, địa danh hoặc hiện tượng tự nhiên đó bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4003,
+          "sub": "Danh từ chỉ sự vật",
+          "q": "Trong câu văn: 'Dòng sông Hồng chở nặng phù sa trôi lững lờ.', từ nào là từ chỉ sự vật (danh từ)?",
+          "o": [
+            "dòng sông",
+            "chở nặng",
+            "phù sa",
+            "lững lờ"
+          ],
+          "a": "dòng sông",
+          "h": "Từ chỉ sự vật là từ chỉ người, đồ vật, con vật, cây cối, địa danh hoặc hiện tượng tự nhiên đó bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4004,
+          "sub": "Danh từ chỉ sự vật",
+          "q": "Trong câu văn: 'Cây bàng già bên góc sân trường dang rộng tán lá.', từ nào là từ chỉ sự vật (danh từ)?",
+          "o": [
+            "cây bàng",
+            "góc sân",
+            "dang rộng",
+            "tán lá"
+          ],
+          "a": "cây bàng",
+          "h": "Từ chỉ sự vật là từ chỉ người, đồ vật, con vật, cây cối, địa danh hoặc hiện tượng tự nhiên đó bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4005,
+          "sub": "Danh từ chỉ sự vật",
+          "q": "Trong câu văn: 'Mặt trời gieo những tia nắng vàng tươi xuống sân.', từ nào là từ chỉ sự vật (danh từ)?",
+          "o": [
+            "mặt trời",
+            "gieo",
+            "tia nắng",
+            "xuống"
+          ],
+          "a": "mặt trời",
+          "h": "Từ chỉ sự vật là từ chỉ người, đồ vật, con vật, cây cối, địa danh hoặc hiện tượng tự nhiên đó bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4006,
+          "sub": "Danh từ chỉ sự vật",
+          "q": "Trong câu văn: 'Bàn ghế trong lớp học được học sinh xếp ngay ngắn.', từ nào là từ chỉ sự vật (danh từ)?",
+          "o": [
+            "bàn ghế",
+            "lớp học",
+            "học sinh",
+            "ngay ngắn"
+          ],
+          "a": "bàn ghế",
+          "h": "Từ chỉ sự vật là từ chỉ người, đồ vật, con vật, cây cối, địa danh hoặc hiện tượng tự nhiên đó bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4007,
+          "sub": "Danh từ chỉ sự vật",
+          "q": "Trong câu văn: 'Bác bảo vệ gõ hồi trống trường vang giã báo giờ chơi.', từ nào là từ chỉ sự vật (danh từ)?",
+          "o": [
+            "bác bảo vệ",
+            "gõ",
+            "trống trường",
+            "giờ chơi"
+          ],
+          "a": "bác bảo vệ",
+          "h": "Từ chỉ sự vật là từ chỉ người, đồ vật, con vật, cây cối, địa danh hoặc hiện tượng tự nhiên đó bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4008,
+          "sub": "Danh từ chỉ sự vật",
+          "q": "Trong câu văn: 'Cánh đồng chín vàng ươm hứa hẹn một mùa vụ ấm no.', từ nào là từ chỉ sự vật (danh từ)?",
+          "o": [
+            "cánh đồng",
+            "vàng ươm",
+            "hứa hẹn",
+            "mùa vụ"
+          ],
+          "a": "cánh đồng",
+          "h": "Từ chỉ sự vật là từ chỉ người, đồ vật, con vật, cây cối, địa danh hoặc hiện tượng tự nhiên đó bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4009,
+          "sub": "Động từ chỉ hoạt động",
+          "q": "Từ nào dưới đây là từ chỉ hoạt động (động từ) trong câu văn: 'Mấy chú cún con đang chạy nhảy vui đùa trên bãi cỏ.'?",
+          "o": [
+            "chạy nhảy",
+            "chú cún",
+            "vui đùa",
+            "bãi cỏ"
+          ],
+          "a": "chạy nhảy",
+          "h": "Động từ chỉ hoạt động là những từ dùng để chỉ sự vận động, hành động bên ngoài của người, con vật hoặc đồ vật được nhân hóa nhé bé!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4010,
+          "sub": "Động từ chỉ hoạt động",
+          "q": "Từ nào dưới đây là từ chỉ hoạt động (động từ) trong câu văn: 'Chị gái chăm chỉ quét dọn nhà cửa sạch sẽ tinh tươm.'?",
+          "o": [
+            "quét dọn",
+            "chị gái",
+            "sạch sẽ",
+            "tinh tươm"
+          ],
+          "a": "quét dọn",
+          "h": "Động từ chỉ hoạt động là những từ dùng để chỉ sự vận động, hành động bên ngoài của người, con vật hoặc đồ vật được nhân hóa nhé bé!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4011,
+          "sub": "Động từ chỉ hoạt động",
+          "q": "Từ nào dưới đây là từ chỉ hoạt động (động từ) trong câu văn: 'Bé Lan say sưa đọc sách trong thư viện của trường.'?",
+          "o": [
+            "đọc sách",
+            "say sưa",
+            "thư viện",
+            "trong"
+          ],
+          "a": "đọc sách",
+          "h": "Động từ chỉ hoạt động là những từ dùng để chỉ sự vận động, hành động bên ngoài của người, con vật hoặc đồ vật được nhân hóa nhé bé!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4012,
+          "sub": "Động từ chỉ hoạt động",
+          "q": "Từ nào dưới đây là từ chỉ hoạt động (động từ) trong câu văn: 'Đàn cá tung tăng bơi lội dưới dòng suối trong veo.'?",
+          "o": [
+            "bơi lội",
+            "đàn cá",
+            "tung tăng",
+            "suối"
+          ],
+          "a": "bơi lội",
+          "h": "Động từ chỉ hoạt động là những từ dùng để chỉ sự vận động, hành động bên ngoài của người, con vật hoặc đồ vật được nhân hóa nhé bé!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4013,
+          "sub": "Động từ chỉ hoạt động",
+          "q": "Từ nào dưới đây là từ chỉ hoạt động (động từ) trong câu văn: 'Nam nắn nót viết bài vào quyển vở sạch chữ đẹp.'?",
+          "o": [
+            "viết bài",
+            "nắn nót",
+            "quyển vở",
+            "vào"
+          ],
+          "a": "viết bài",
+          "h": "Động từ chỉ hoạt động là những từ dùng để chỉ sự vận động, hành động bên ngoài của người, con vật hoặc đồ vật được nhân hóa nhé bé!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4014,
+          "sub": "Động từ chỉ hoạt động",
+          "q": "Từ nào dưới đây là từ chỉ hoạt động (động từ) trong câu văn: 'Họa sĩ nhí chăm chú vẽ tranh phong cảnh quê hương.'?",
+          "o": [
+            "vẽ tranh",
+            "họa sĩ",
+            "chăm chú",
+            "phong cảnh"
+          ],
+          "a": "vẽ tranh",
+          "h": "Động từ chỉ hoạt động là những từ dùng để chỉ sự vận động, hành động bên ngoài của người, con vật hoặc đồ vật được nhân hóa nhé bé!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4015,
+          "sub": "Động từ chỉ hoạt động",
+          "q": "Từ nào dưới đây là từ chỉ hoạt động (động từ) trong câu văn: 'Đàn chim sơn ca đang hát ca líu lo trên cành cao.'?",
+          "o": [
+            "hát ca",
+            "đàn chim",
+            "líu lo",
+            "trên"
+          ],
+          "a": "hát ca",
+          "h": "Động từ chỉ hoạt động là những từ dùng để chỉ sự vận động, hành động bên ngoài của người, con vật hoặc đồ vật được nhân hóa nhé bé!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4016,
+          "sub": "Động từ chỉ hoạt động",
+          "q": "Từ nào dưới đây là từ chỉ hoạt động (động từ) trong câu văn: 'Nhóm học tập cùng nhau thảo luận bài toán khó chiều nay.'?",
+          "o": [
+            "thảo luận",
+            "nhóm",
+            "bài toán",
+            "chiều nay"
+          ],
+          "a": "thảo luận",
+          "h": "Động từ chỉ hoạt động là những từ dùng để chỉ sự vận động, hành động bên ngoài của người, con vật hoặc đồ vật được nhân hóa nhé bé!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4017,
+          "sub": "Động từ chỉ hoạt động",
+          "q": "Từ nào dưới đây là từ chỉ hoạt động (động từ) trong câu văn: 'Bố em đang khom lưng tưới cây ngoài vườn rau nhỏ.'?",
+          "o": [
+            "tưới cây",
+            "khom lưng",
+            "ngoài",
+            "vườn rau"
+          ],
+          "a": "tưới cây",
+          "h": "Động từ chỉ hoạt động là những từ dùng để chỉ sự vận động, hành động bên ngoài của người, con vật hoặc đồ vật được nhân hóa nhé bé!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4018,
+          "sub": "Động từ chỉ trạng thái",
+          "q": "Trong câu văn: 'Em luôn yêu thương và kính trọng ông bà nội ngoại.', động từ chỉ trạng thái cảm xúc là từ nào?",
+          "o": [
+            "yêu thương",
+            "luôn",
+            "kính trọng",
+            "ông bà"
+          ],
+          "a": "yêu thương",
+          "h": "Động từ chỉ trạng thái là những từ chỉ cảm xúc, suy nghĩ hoặc trạng thái diễn ra bên trong tâm trí mà mắt thường khó nhìn thấy trực tiếp đấy bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4019,
+          "sub": "Động từ chỉ trạng thái",
+          "q": "Trong câu văn: 'Bé mong ngóng mẹ đi chợ về mua chiếc bánh ngọt.', động từ chỉ trạng thái cảm xúc là từ nào?",
+          "o": [
+            "mong ngóng",
+            "đi chợ",
+            "mua",
+            "bánh ngọt"
+          ],
+          "a": "mong ngóng",
+          "h": "Động từ chỉ trạng thái là những từ chỉ cảm xúc, suy nghĩ hoặc trạng thái diễn ra bên trong tâm trí mà mắt thường khó nhìn thấy trực tiếp đấy bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4020,
+          "sub": "Động từ chỉ trạng thái",
+          "q": "Trong câu văn: 'Lan lo lắng vì chưa làm xong bài tập thủ công lớp 3.', động từ chỉ trạng thái cảm xúc là từ nào?",
+          "o": [
+            "lo lắng",
+            "chưa làm",
+            "bài tập",
+            "thủ công"
+          ],
+          "a": "lo lắng",
+          "h": "Động từ chỉ trạng thái là những từ chỉ cảm xúc, suy nghĩ hoặc trạng thái diễn ra bên trong tâm trí mà mắt thường khó nhìn thấy trực tiếp đấy bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4021,
+          "sub": "Động từ chỉ trạng thái",
+          "q": "Trong câu văn: 'Cả lớp vui sướng reo hò khi đạt giải nhất văn nghệ.', động từ chỉ trạng thái cảm xúc là từ nào?",
+          "o": [
+            "vui sướng",
+            "reo hò",
+            "đạt",
+            "văn nghệ"
+          ],
+          "a": "vui sướng",
+          "h": "Động từ chỉ trạng thái là những từ chỉ cảm xúc, suy nghĩ hoặc trạng thái diễn ra bên trong tâm trí mà mắt thường khó nhìn thấy trực tiếp đấy bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4022,
+          "sub": "Động từ chỉ trạng thái",
+          "q": "Trong câu văn: 'Học sinh nhớ nhung mái trường xưa sau kì nghỉ hè dài.', động từ chỉ trạng thái cảm xúc là từ nào?",
+          "o": [
+            "nhớ nhung",
+            "mái trường",
+            "sau",
+            "kì nghỉ"
+          ],
+          "a": "nhớ nhung",
+          "h": "Động từ chỉ trạng thái là những từ chỉ cảm xúc, suy nghĩ hoặc trạng thái diễn ra bên trong tâm trí mà mắt thường khó nhìn thấy trực tiếp đấy bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4023,
+          "sub": "Động từ chỉ trạng thái",
+          "q": "Trong câu văn: 'Tâm băn khoăn không biết có nên kể thật với cô giáo.', động từ chỉ trạng thái cảm xúc là từ nào?",
+          "o": [
+            "băn khoăn",
+            "không biết",
+            "kể thật",
+            "cô giáo"
+          ],
+          "a": "băn khoăn",
+          "h": "Động từ chỉ trạng thái là những từ chỉ cảm xúc, suy nghĩ hoặc trạng thái diễn ra bên trong tâm trí mà mắt thường khó nhìn thấy trực tiếp đấy bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4024,
+          "sub": "Động từ chỉ trạng thái",
+          "q": "Trong câu văn: 'Chúng em vô cùng ngưỡng mộ bác sĩ nhí thông minh ấy.', động từ chỉ trạng thái cảm xúc là từ nào?",
+          "o": [
+            "ngưỡng mộ",
+            "vô cùng",
+            "bác sĩ",
+            "thông minh"
+          ],
+          "a": "ngưỡng mộ",
+          "h": "Động từ chỉ trạng thái là những từ chỉ cảm xúc, suy nghĩ hoặc trạng thái diễn ra bên trong tâm trí mà mắt thường khó nhìn thấy trực tiếp đấy bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4025,
+          "sub": "Động từ chỉ trạng thái",
+          "q": "Trong câu văn: 'Bạn bè đều quý mến Nam vì tấm lòng nhân hậu vô tư.', động từ chỉ trạng thái cảm xúc là từ nào?",
+          "o": [
+            "quý mến",
+            "bạn bè",
+            "tấm lòng",
+            "nhân hậu"
+          ],
+          "a": "quý mến",
+          "h": "Động từ chỉ trạng thái là những từ chỉ cảm xúc, suy nghĩ hoặc trạng thái diễn ra bên trong tâm trí mà mắt thường khó nhìn thấy trực tiếp đấy bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4026,
+          "sub": "Động từ chỉ trạng thái",
+          "q": "Trong câu văn: 'Bé hồi hộp chờ đợi tiếng pháo hoa đêm giao thừa rực rỡ.', động từ chỉ trạng thái cảm xúc là từ nào?",
+          "o": [
+            "hồi hộp",
+            "chờ đợi",
+            "tiếng pháo",
+            "đêm giao thừa"
+          ],
+          "a": "hồi hộp",
+          "h": "Động từ chỉ trạng thái là những từ chỉ cảm xúc, suy nghĩ hoặc trạng thái diễn ra bên trong tâm trí mà mắt thường khó nhìn thấy trực tiếp đấy bé yêu!",
+          "img": "",
+          "w": 8
+        },
+        {
+          "id": 4027,
+          "sub": "Tính từ chỉ đặc điểm",
+          "q": "Từ nào chỉ đặc điểm (tính từ) xuất hiện trong câu văn tả cảnh sau: 'Hoa hướng dương nở vàng rực rỡ dưới nắng ban mai.'?",
+          "o": [
+            "vàng rực",
+            "nở",
+            "dưới",
+            "nắng"
+          ],
+          "a": "vàng rực",
+          "h": "Tính từ chỉ đặc điểm là từ chỉ màu sắc, hình dáng, kích thước, hương vị, tính tình, hoặc tính chất của sự vật đấy bé!",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4028,
+          "sub": "Tính từ chỉ đặc điểm",
+          "q": "Từ nào chỉ đặc điểm (tính từ) xuất hiện trong câu văn tả cảnh sau: 'Bầu trời mùa thu trong xanh ngắt không gợn mây đen.'?",
+          "o": [
+            "trong xanh",
+            "mùa thu",
+            "gợn",
+            "mây đen"
+          ],
+          "a": "trong xanh",
+          "h": "Tính từ chỉ đặc điểm là từ chỉ màu sắc, hình dáng, kích thước, hương vị, tính tình, hoặc tính chất của sự vật đấy bé!",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4029,
+          "sub": "Tính từ chỉ đặc điểm",
+          "q": "Từ nào chỉ đặc điểm (tính từ) xuất hiện trong câu văn tả cảnh sau: 'Mái tóc của bé hồng mềm mại như sợi tơ tằm.'?",
+          "o": [
+            "mềm mại",
+            "mái tóc",
+            "sợi tơ",
+            "tơ tằm"
+          ],
+          "a": "mềm mại",
+          "h": "Tính từ chỉ đặc điểm là từ chỉ màu sắc, hình dáng, kích thước, hương vị, tính tình, hoặc tính chất của sự vật đấy bé!",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4030,
+          "sub": "Tính từ chỉ đặc điểm",
+          "q": "Từ nào chỉ đặc điểm (tính từ) xuất hiện trong câu văn tả cảnh sau: 'Phòng học lớp 3 mới rất rộng rãi và đầy ánh sáng.'?",
+          "o": [
+            "rộng rãi",
+            "lớp 3",
+            "mới",
+            "ánh sáng"
+          ],
+          "a": "rộng rãi",
+          "h": "Tính từ chỉ đặc điểm là từ chỉ màu sắc, hình dáng, kích thước, hương vị, tính tình, hoặc tính chất của sự vật đấy bé!",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4031,
+          "sub": "Tính từ chỉ đặc điểm",
+          "q": "Từ nào chỉ đặc điểm (tính từ) xuất hiện trong câu văn tả cảnh sau: 'Chú voi con hiền lành ngoan ngoãn ăn mía bố cho.'?",
+          "o": [
+            "hiền lành",
+            "ngoan ngoãn",
+            "ăn mía",
+            "bố cho"
+          ],
+          "a": "hiền lành",
+          "h": "Tính từ chỉ đặc điểm là từ chỉ màu sắc, hình dáng, kích thước, hương vị, tính tình, hoặc tính chất của sự vật đấy bé!",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4032,
+          "sub": "Tính từ chỉ đặc điểm",
+          "q": "Từ nào chỉ đặc điểm (tính từ) xuất hiện trong câu văn tả cảnh sau: 'Con đường đất ngoằn ngoèo uốn khúc quanh bản nhỏ quê em.'?",
+          "o": [
+            "ngoằn ngoèo",
+            "con đường",
+            "uốn khúc",
+            "bản nhỏ"
+          ],
+          "a": "ngoằn ngoèo",
+          "h": "Tính từ chỉ đặc điểm là từ chỉ màu sắc, hình dáng, kích thước, hương vị, tính tình, hoặc tính chất của sự vật đấy bé!",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4033,
+          "sub": "Tính từ chỉ đặc điểm",
+          "q": "Từ nào chỉ đặc điểm (tính từ) xuất hiện trong câu văn tả cảnh sau: 'Bạn Lan chăm chỉ quét dọn phòng học ngăn nắp.'?",
+          "o": [
+            "chăm chỉ",
+            "quét dọn",
+            "ngăn nắp",
+            "phòng học"
+          ],
+          "a": "chăm chỉ",
+          "h": "Tính từ chỉ đặc điểm là từ chỉ màu sắc, hình dáng, kích thước, hương vị, tính tình, hoặc tính chất của sự vật đấy bé!",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4034,
+          "sub": "Tính từ chỉ đặc điểm",
+          "q": "Từ nào chỉ đặc điểm (tính từ) xuất hiện trong câu văn tả cảnh sau: 'Nam là một học sinh thông minh và luôn tháo vát.'?",
+          "o": [
+            "thông minh",
+            "học sinh",
+            "luôn",
+            "tháo vát"
+          ],
+          "a": "thông minh",
+          "h": "Tính từ chỉ đặc điểm là từ chỉ màu sắc, hình dáng, kích thước, hương vị, tính tình, hoặc tính chất của sự vật đấy bé!",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4035,
+          "sub": "Tính từ chỉ đặc điểm",
+          "q": "Từ nào chỉ đặc điểm (tính từ) xuất hiện trong câu văn tả cảnh sau: 'Ngọn lửa bập bùng tỏa hơi ấm ấm áp khắp căn phòng.'?",
+          "o": [
+            "ấm áp",
+            "bập bùng",
+            "tỏa",
+            "căn phòng"
+          ],
+          "a": "ấm áp",
+          "h": "Tính từ chỉ đặc điểm là từ chỉ màu sắc, hình dáng, kích thước, hương vị, tính tình, hoặc tính chất của sự vật đấy bé!",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4036,
+          "sub": "Từ đồng nghĩa & Trái nghĩa",
+          "q": "Cặp từ nào dưới đây có nghĩa giống nhau hoặc gần giống nhau (Từ đồng nghĩa)?",
+          "o": [
+            "cần cù - siêng năng",
+            "chăm chỉ - lười biếng",
+            "nhanh nhẹn - chậm chạp",
+            "hiền lành - độc ác"
+          ],
+          "a": "cần cù - siêng năng",
+          "h": "Cặp từ 'cần cù' và 'siêng năng' đều chỉ đức tính chăm chỉ làm việc đấy bé.",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4037,
+          "sub": "Từ đồng nghĩa & Trái nghĩa",
+          "q": "Cặp từ nào là từ đồng nghĩa trong các cặp từ sau?",
+          "o": [
+            "yêu thương - quý mến",
+            "yêu thương - căm ghét",
+            "quý mến - ghét bỏ",
+            "giúp đỡ - cản trở"
+          ],
+          "a": "yêu thương - quý mến",
+          "h": "Từ 'yêu thương' và 'quý mến' đều thể hiện tình cảm quý trọng, gắn bó.",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4038,
+          "sub": "Từ đồng nghĩa & Trái nghĩa",
+          "q": "Tìm cặp từ đồng nghĩa mô tả không gian rộng lớn?",
+          "o": [
+            "mênh mông - bao la",
+            "chật hẹp - rộng lớn",
+            "cao vút - thấp bé",
+            "xa xôi - gần gũi"
+          ],
+          "a": "mênh mông - bao la",
+          "h": "Cặp từ 'mênh mông' và 'bao la' đều miêu tả không gian vô cùng rộng lớn.",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4039,
+          "sub": "Từ đồng nghĩa & Trái nghĩa",
+          "q": "Cặp từ nào là từ đồng nghĩa chỉ trí tuệ của con người?",
+          "o": [
+            "thông minh - sáng dạ",
+            "ngốc nghếch - sáng suốt",
+            "chăm chỉ - lười nhác",
+            "hiền hậu - hung dữ"
+          ],
+          "a": "thông minh - sáng dạ",
+          "h": "Từ 'thông minh' và 'sáng dạ' đều chỉ khả năng tiếp thu nhanh, hiểu biết tốt.",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4040,
+          "sub": "Từ đồng nghĩa & Trái nghĩa",
+          "q": "Cặp từ nào dưới đây có nghĩa trái ngược hoàn toàn nhau (Từ trái nghĩa)?",
+          "o": [
+            "đoàn kết - chia rẽ",
+            "chăm chỉ - cần cù",
+            "hiền lành - tốt bụng",
+            "nhanh nhẹn - tháo vát"
+          ],
+          "a": "đoàn kết - chia rẽ",
+          "h": "Đoàn kết là gắn bó thành một khối, trái ngược hoàn toàn với chia rẽ đấy bé!",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4041,
+          "sub": "Từ đồng nghĩa & Trái nghĩa",
+          "q": "Cặp từ trái nghĩa nào chỉ thái độ học tập, làm việc?",
+          "o": [
+            "chăm chỉ - lười nhác",
+            "siêng năng - cần cù",
+            "thông minh - giỏi giang",
+            "ngoan ngoãn - hiền lành"
+          ],
+          "a": "chăm chỉ - lười nhác",
+          "h": "'Chăm chỉ' và 'lười nhác' là cặp từ trái ngược nhau về thái độ siêng năng học tập, làm việc.",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4042,
+          "sub": "Từ đồng nghĩa & Trái nghĩa",
+          "q": "Tìm cặp từ trái nghĩa tả thói quen dọn dẹp, sắp xếp đồ đạc?",
+          "o": [
+            "ngăn nắp - bừa bộn",
+            "gọn gàng - sạch sẽ",
+            "ngăn nắp - gọn gàng",
+            "bừa bãi - bừa bộn"
+          ],
+          "a": "ngăn nắp - bừa bộn",
+          "h": "'Ngăn nắp' là gọn gàng, đúng chỗ, đối lập hoàn toàn với 'bừa bộn' đấy bé.",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4043,
+          "sub": "Từ đồng nghĩa & Trái nghĩa",
+          "q": "Cặp từ trái nghĩa nào chỉ lòng gan dạ, không sợ hiểm nguy?",
+          "o": [
+            "dũng cảm - hèn nhát",
+            "gan dạ - anh hùng",
+            "nhút nhát - sợ sệt",
+            "dũng cảm - mạnh mẽ"
+          ],
+          "a": "dũng cảm - hèn nhát",
+          "h": "'Dũng cảm' là không sợ hiểm nguy, đối lập với 'hèn nhát' là sợ hãi, lùi bước.",
+          "img": "",
+          "w": 9
+        },
+        {
+          "id": 4044,
+          "sub": "Từ đồng nghĩa & Trái nghĩa",
+          "q": "Cặp từ nào dưới đây có nghĩa trái ngược nhau chỉ thời tiết, cảm giác?",
+          "o": [
+            "ấm áp - lạnh lẽo",
+            "ấm áp - ấm nồng",
+            "lạnh lẽo - buốt giá",
+            "nóng nực - oi bức"
+          ],
+          "a": "ấm áp - lạnh lẽo",
+          "h": "Cặp từ 'ấm áp' và 'lạnh lẽo' thể hiện cảm giác nhiệt độ hoàn toàn trái ngược nhau.",
+          "img": "",
+          "w": 9
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Kho báu Từ vựng",
+      "desc": "Hành trình tích lũy từ ngữ theo từng chủ điểm gần gũi: Gia đình, Trường học, Cộng đồng, Quê hương, Đất nước...",
+      "qs": [
+        {
+          "id": 5000,
+          "sub": "Vốn từ chủ điểm Trường học (Mở rộng từ vựng 1)",
+          "q": "Từ nào dưới đây KHÔNG thuộc chủ điểm trường học?",
+          "o": [
+            "thầy giáo",
+            "bảng đen",
+            "vườn nhãn",
+            "bạn học"
+          ],
+          "a": "vườn nhãn",
+          "h": "'vườn nhãn' thuộc chủ điểm thiên nhiên hoặc quê hương, không phải là từ ngữ đặc trưng riêng của trường học.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5001,
+          "sub": "Vốn từ chủ điểm Gia đình (Mở rộng từ vựng 2)",
+          "q": "Từ nào thể hiện tình cảm của con cái đối với cha mẹ trong gia đình?",
+          "o": [
+            "yêu mến",
+            "kính trọng",
+            "biết ơn",
+            "Cả 3 phương án đều đúng"
+          ],
+          "a": "Cả 3 phương án đều đúng",
+          "h": "Con cái cần kính trọng, yêu mến và luôn biết ơn công lao sinh thành, nuôi dưỡng vất vả của mẹ cha.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5002,
+          "sub": "Vốn từ chủ điểm Cộng đồng (Mở rộng từ vựng 3)",
+          "q": "Tìm từ ngữ chỉ những người sống xung quanh trong khu phố, làng bản của em?",
+          "o": [
+            "bạn học",
+            "họ hàng",
+            "hàng xóm",
+            "đồng nghiệp"
+          ],
+          "a": "hàng xóm",
+          "h": "Những người sống lân cận, láng giềng xung quanh nhà em được gọi chung là 'hàng xóm' trong cộng đồng.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5003,
+          "sub": "Thành ngữ Tiếng Việt (Mở rộng từ vựng 4)",
+          "q": "Điền từ thích hợp hoàn thành thành ngữ chỉ sự đồng lòng: 'Một lòng một ...'",
+          "o": [
+            "dạ",
+            "bụng",
+            "tim",
+            "trí"
+          ],
+          "a": "dạ",
+          "h": "Thành ngữ viết đúng là 'Một lòng một dạ' (hoặc một lòng một ý), thể hiện sự chung thủy, trung thành kiên định.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5004,
+          "sub": "Thành ngữ chỉ tình đoàn kết (Mở rộng từ vựng 5)",
+          "q": "Thành ngữ nào dưới đây chỉ tinh thần đoàn kết, đồng lòng của một tập thể?",
+          "o": [
+            "Đồng tâm hiệp lực",
+            "Đứng mũi chịu sào",
+            "Ăn quả nhớ kẻ trồng cây",
+            "Chân cứng đá mềm"
+          ],
+          "a": "Đồng tâm hiệp lực",
+          "h": "'Đồng tâm hiệp lực' nghĩa là cùng một lòng, chung sức lực chiến đấu vượt qua khó khăn thách thức.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5005,
+          "sub": "Vốn từ chủ điểm Trường học (Mở rộng từ vựng 6)",
+          "q": "Từ nào dưới đây KHÔNG thuộc chủ điểm trường học? (Mã số 505)",
+          "o": [
+            "thầy giáo",
+            "bảng đen",
+            "vườn nhãn",
+            "bạn học"
+          ],
+          "a": "vườn nhãn",
+          "h": "'vườn nhãn' thuộc chủ điểm thiên nhiên hoặc quê hương, không phải là từ ngữ đặc trưng riêng của trường học.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5006,
+          "sub": "Vốn từ chủ điểm Gia đình (Mở rộng từ vựng 7)",
+          "q": "Từ nào thể hiện tình cảm của con cái đối với cha mẹ trong gia đình? (Mã số 506)",
+          "o": [
+            "yêu mến",
+            "kính trọng",
+            "biết ơn",
+            "Cả 3 phương án đều đúng"
+          ],
+          "a": "Cả 3 phương án đều đúng",
+          "h": "Con cái cần kính trọng, yêu mến và luôn biết ơn công lao sinh thành, nuôi dưỡng vất vả của mẹ cha.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5007,
+          "sub": "Vốn từ chủ điểm Cộng đồng (Mở rộng từ vựng 8)",
+          "q": "Tìm từ ngữ chỉ những người sống xung quanh trong khu phố, làng bản của em? (Mã số 507)",
+          "o": [
+            "bạn học",
+            "họ hàng",
+            "hàng xóm",
+            "đồng nghiệp"
+          ],
+          "a": "hàng xóm",
+          "h": "Những người sống lân cận, láng giềng xung quanh nhà em được gọi chung là 'hàng xóm' trong cộng đồng.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5008,
+          "sub": "Thành ngữ Tiếng Việt (Mở rộng từ vựng 9)",
+          "q": "Điền từ thích hợp hoàn thành thành ngữ chỉ sự đồng lòng: 'Một lòng một ...' (Mã số 508)",
+          "o": [
+            "dạ",
+            "bụng",
+            "tim",
+            "trí"
+          ],
+          "a": "dạ",
+          "h": "Thành ngữ viết đúng là 'Một lòng một dạ' (hoặc một lòng một ý), thể hiện sự chung thủy, trung thành kiên định.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5009,
+          "sub": "Thành ngữ chỉ tình đoàn kết (Mở rộng từ vựng 10)",
+          "q": "Thành ngữ nào dưới đây chỉ tinh thần đoàn kết, đồng lòng của một tập thể? (Mã số 509)",
+          "o": [
+            "Đồng tâm hiệp lực",
+            "Đứng mũi chịu sào",
+            "Ăn quả nhớ kẻ trồng cây",
+            "Chân cứng đá mềm"
+          ],
+          "a": "Đồng tâm hiệp lực",
+          "h": "'Đồng tâm hiệp lực' nghĩa là cùng một lòng, chung sức lực chiến đấu vượt qua khó khăn thách thức.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5010,
+          "sub": "Vốn từ chủ điểm Trường học (Mở rộng từ vựng 11)",
+          "q": "Từ nào dưới đây KHÔNG thuộc chủ điểm trường học? (Mã số 510)",
+          "o": [
+            "thầy giáo",
+            "bảng đen",
+            "vườn nhãn",
+            "bạn học"
+          ],
+          "a": "vườn nhãn",
+          "h": "'vườn nhãn' thuộc chủ điểm thiên nhiên hoặc quê hương, không phải là từ ngữ đặc trưng riêng của trường học.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5011,
+          "sub": "Vốn từ chủ điểm Gia đình (Mở rộng từ vựng 12)",
+          "q": "Từ nào thể hiện tình cảm của con cái đối với cha mẹ trong gia đình? (Mã số 511)",
+          "o": [
+            "yêu mến",
+            "kính trọng",
+            "biết ơn",
+            "Cả 3 phương án đều đúng"
+          ],
+          "a": "Cả 3 phương án đều đúng",
+          "h": "Con cái cần kính trọng, yêu mến và luôn biết ơn công lao sinh thành, nuôi dưỡng vất vả của mẹ cha.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5012,
+          "sub": "Vốn từ chủ điểm Cộng đồng (Mở rộng từ vựng 13)",
+          "q": "Tìm từ ngữ chỉ những người sống xung quanh trong khu phố, làng bản của em? (Mã số 512)",
+          "o": [
+            "bạn học",
+            "họ hàng",
+            "hàng xóm",
+            "đồng nghiệp"
+          ],
+          "a": "hàng xóm",
+          "h": "Những người sống lân cận, láng giềng xung quanh nhà em được gọi chung là 'hàng xóm' trong cộng đồng.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5013,
+          "sub": "Thành ngữ Tiếng Việt (Mở rộng từ vựng 14)",
+          "q": "Điền từ thích hợp hoàn thành thành ngữ chỉ sự đồng lòng: 'Một lòng một ...' (Mã số 513)",
+          "o": [
+            "dạ",
+            "bụng",
+            "tim",
+            "trí"
+          ],
+          "a": "dạ",
+          "h": "Thành ngữ viết đúng là 'Một lòng một dạ' (hoặc một lòng một ý), thể hiện sự chung thủy, trung thành kiên định.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5014,
+          "sub": "Thành ngữ chỉ tình đoàn kết (Mở rộng từ vựng 15)",
+          "q": "Thành ngữ nào dưới đây chỉ tinh thần đoàn kết, đồng lòng của một tập thể? (Mã số 514)",
+          "o": [
+            "Đồng tâm hiệp lực",
+            "Đứng mũi chịu sào",
+            "Ăn quả nhớ kẻ trồng cây",
+            "Chân cứng đá mềm"
+          ],
+          "a": "Đồng tâm hiệp lực",
+          "h": "'Đồng tâm hiệp lực' nghĩa là cùng một lòng, chung sức lực chiến đấu vượt qua khó khăn thách thức.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5015,
+          "sub": "Vốn từ chủ điểm Trường học (Mở rộng từ vựng 16)",
+          "q": "Từ nào dưới đây KHÔNG thuộc chủ điểm trường học? (Mã số 515)",
+          "o": [
+            "thầy giáo",
+            "bảng đen",
+            "vườn nhãn",
+            "bạn học"
+          ],
+          "a": "vườn nhãn",
+          "h": "'vườn nhãn' thuộc chủ điểm thiên nhiên hoặc quê hương, không phải là từ ngữ đặc trưng riêng của trường học.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5016,
+          "sub": "Vốn từ chủ điểm Gia đình (Mở rộng từ vựng 17)",
+          "q": "Từ nào thể hiện tình cảm của con cái đối với cha mẹ trong gia đình? (Mã số 516)",
+          "o": [
+            "yêu mến",
+            "kính trọng",
+            "biết ơn",
+            "Cả 3 phương án đều đúng"
+          ],
+          "a": "Cả 3 phương án đều đúng",
+          "h": "Con cái cần kính trọng, yêu mến và luôn biết ơn công lao sinh thành, nuôi dưỡng vất vả của mẹ cha.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5017,
+          "sub": "Vốn từ chủ điểm Cộng đồng (Mở rộng từ vựng 18)",
+          "q": "Tìm từ ngữ chỉ những người sống xung quanh trong khu phố, làng bản của em? (Mã số 517)",
+          "o": [
+            "bạn học",
+            "họ hàng",
+            "hàng xóm",
+            "đồng nghiệp"
+          ],
+          "a": "hàng xóm",
+          "h": "Những người sống lân cận, láng giềng xung quanh nhà em được gọi chung là 'hàng xóm' trong cộng đồng.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5018,
+          "sub": "Thành ngữ Tiếng Việt (Mở rộng từ vựng 19)",
+          "q": "Điền từ thích hợp hoàn thành thành ngữ chỉ sự đồng lòng: 'Một lòng một ...' (Mã số 518)",
+          "o": [
+            "dạ",
+            "bụng",
+            "tim",
+            "trí"
+          ],
+          "a": "dạ",
+          "h": "Thành ngữ viết đúng là 'Một lòng một dạ' (hoặc một lòng một ý), thể hiện sự chung thủy, trung thành kiên định.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5019,
+          "sub": "Thành ngữ chỉ tình đoàn kết (Mở rộng từ vựng 20)",
+          "q": "Thành ngữ nào dưới đây chỉ tinh thần đoàn kết, đồng lòng của một tập thể? (Mã số 519)",
+          "o": [
+            "Đồng tâm hiệp lực",
+            "Đứng mũi chịu sào",
+            "Ăn quả nhớ kẻ trồng cây",
+            "Chân cứng đá mềm"
+          ],
+          "a": "Đồng tâm hiệp lực",
+          "h": "'Đồng tâm hiệp lực' nghĩa là cùng một lòng, chung sức lực chiến đấu vượt qua khó khăn thách thức.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5020,
+          "sub": "Vốn từ chủ điểm Trường học (Mở rộng từ vựng 21)",
+          "q": "Từ nào dưới đây KHÔNG thuộc chủ điểm trường học? (Mã số 520)",
+          "o": [
+            "thầy giáo",
+            "bảng đen",
+            "vườn nhãn",
+            "bạn học"
+          ],
+          "a": "vườn nhãn",
+          "h": "'vườn nhãn' thuộc chủ điểm thiên nhiên hoặc quê hương, không phải là từ ngữ đặc trưng riêng của trường học.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5021,
+          "sub": "Vốn từ chủ điểm Gia đình (Mở rộng từ vựng 22)",
+          "q": "Từ nào thể hiện tình cảm của con cái đối với cha mẹ trong gia đình? (Mã số 521)",
+          "o": [
+            "yêu mến",
+            "kính trọng",
+            "biết ơn",
+            "Cả 3 phương án đều đúng"
+          ],
+          "a": "Cả 3 phương án đều đúng",
+          "h": "Con cái cần kính trọng, yêu mến và luôn biết ơn công lao sinh thành, nuôi dưỡng vất vả của mẹ cha.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5022,
+          "sub": "Vốn từ chủ điểm Cộng đồng (Mở rộng từ vựng 23)",
+          "q": "Tìm từ ngữ chỉ những người sống xung quanh trong khu phố, làng bản của em? (Mã số 522)",
+          "o": [
+            "bạn học",
+            "họ hàng",
+            "hàng xóm",
+            "đồng nghiệp"
+          ],
+          "a": "hàng xóm",
+          "h": "Những người sống lân cận, láng giềng xung quanh nhà em được gọi chung là 'hàng xóm' trong cộng đồng.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5023,
+          "sub": "Thành ngữ Tiếng Việt (Mở rộng từ vựng 24)",
+          "q": "Điền từ thích hợp hoàn thành thành ngữ chỉ sự đồng lòng: 'Một lòng một ...' (Mã số 523)",
+          "o": [
+            "dạ",
+            "bụng",
+            "tim",
+            "trí"
+          ],
+          "a": "dạ",
+          "h": "Thành ngữ viết đúng là 'Một lòng một dạ' (hoặc một lòng một ý), thể hiện sự chung thủy, trung thành kiên định.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5024,
+          "sub": "Thành ngữ chỉ tình đoàn kết (Mở rộng từ vựng 25)",
+          "q": "Thành ngữ nào dưới đây chỉ tinh thần đoàn kết, đồng lòng của một tập thể? (Mã số 524)",
+          "o": [
+            "Đồng tâm hiệp lực",
+            "Đứng mũi chịu sào",
+            "Ăn quả nhớ kẻ trồng cây",
+            "Chân cứng đá mềm"
+          ],
+          "a": "Đồng tâm hiệp lực",
+          "h": "'Đồng tâm hiệp lực' nghĩa là cùng một lòng, chung sức lực chiến đấu vượt qua khó khăn thách thức.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5025,
+          "sub": "Vốn từ chủ điểm Trường học (Mở rộng từ vựng 26)",
+          "q": "Từ nào dưới đây KHÔNG thuộc chủ điểm trường học? (Mã số 525)",
+          "o": [
+            "thầy giáo",
+            "bảng đen",
+            "vườn nhãn",
+            "bạn học"
+          ],
+          "a": "vườn nhãn",
+          "h": "'vườn nhãn' thuộc chủ điểm thiên nhiên hoặc quê hương, không phải là từ ngữ đặc trưng riêng của trường học.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5026,
+          "sub": "Vốn từ chủ điểm Gia đình (Mở rộng từ vựng 27)",
+          "q": "Từ nào thể hiện tình cảm của con cái đối với cha mẹ trong gia đình? (Mã số 526)",
+          "o": [
+            "yêu mến",
+            "kính trọng",
+            "biết ơn",
+            "Cả 3 phương án đều đúng"
+          ],
+          "a": "Cả 3 phương án đều đúng",
+          "h": "Con cái cần kính trọng, yêu mến và luôn biết ơn công lao sinh thành, nuôi dưỡng vất vả của mẹ cha.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5027,
+          "sub": "Vốn từ chủ điểm Cộng đồng (Mở rộng từ vựng 28)",
+          "q": "Tìm từ ngữ chỉ những người sống xung quanh trong khu phố, làng bản của em? (Mã số 527)",
+          "o": [
+            "bạn học",
+            "họ hàng",
+            "hàng xóm",
+            "đồng nghiệp"
+          ],
+          "a": "hàng xóm",
+          "h": "Những người sống lân cận, láng giềng xung quanh nhà em được gọi chung là 'hàng xóm' trong cộng đồng.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5028,
+          "sub": "Thành ngữ Tiếng Việt (Mở rộng từ vựng 29)",
+          "q": "Điền từ thích hợp hoàn thành thành ngữ chỉ sự đồng lòng: 'Một lòng một ...' (Mã số 528)",
+          "o": [
+            "dạ",
+            "bụng",
+            "tim",
+            "trí"
+          ],
+          "a": "dạ",
+          "h": "Thành ngữ viết đúng là 'Một lòng một dạ' (hoặc một lòng một ý), thể hiện sự chung thủy, trung thành kiên định.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5029,
+          "sub": "Thành ngữ chỉ tình đoàn kết (Mở rộng từ vựng 30)",
+          "q": "Thành ngữ nào dưới đây chỉ tinh thần đoàn kết, đồng lòng của một tập thể? (Mã số 529)",
+          "o": [
+            "Đồng tâm hiệp lực",
+            "Đứng mũi chịu sào",
+            "Ăn quả nhớ kẻ trồng cây",
+            "Chân cứng đá mềm"
+          ],
+          "a": "Đồng tâm hiệp lực",
+          "h": "'Đồng tâm hiệp lực' nghĩa là cùng một lòng, chung sức lực chiến đấu vượt qua khó khăn thách thức.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5030,
+          "sub": "Vốn từ chủ điểm Trường học (Mở rộng từ vựng 31)",
+          "q": "Từ nào dưới đây KHÔNG thuộc chủ điểm trường học? (Mã số 530)",
+          "o": [
+            "thầy giáo",
+            "bảng đen",
+            "vườn nhãn",
+            "bạn học"
+          ],
+          "a": "vườn nhãn",
+          "h": "'vườn nhãn' thuộc chủ điểm thiên nhiên hoặc quê hương, không phải là từ ngữ đặc trưng riêng của trường học.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5031,
+          "sub": "Vốn từ chủ điểm Gia đình (Mở rộng từ vựng 32)",
+          "q": "Từ nào thể hiện tình cảm của con cái đối với cha mẹ trong gia đình? (Mã số 531)",
+          "o": [
+            "yêu mến",
+            "kính trọng",
+            "biết ơn",
+            "Cả 3 phương án đều đúng"
+          ],
+          "a": "Cả 3 phương án đều đúng",
+          "h": "Con cái cần kính trọng, yêu mến và luôn biết ơn công lao sinh thành, nuôi dưỡng vất vả của mẹ cha.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5032,
+          "sub": "Vốn từ chủ điểm Cộng đồng (Mở rộng từ vựng 33)",
+          "q": "Tìm từ ngữ chỉ những người sống xung quanh trong khu phố, làng bản của em? (Mã số 532)",
+          "o": [
+            "bạn học",
+            "họ hàng",
+            "hàng xóm",
+            "đồng nghiệp"
+          ],
+          "a": "hàng xóm",
+          "h": "Những người sống lân cận, láng giềng xung quanh nhà em được gọi chung là 'hàng xóm' trong cộng đồng.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5033,
+          "sub": "Thành ngữ Tiếng Việt (Mở rộng từ vựng 34)",
+          "q": "Điền từ thích hợp hoàn thành thành ngữ chỉ sự đồng lòng: 'Một lòng một ...' (Mã số 533)",
+          "o": [
+            "dạ",
+            "bụng",
+            "tim",
+            "trí"
+          ],
+          "a": "dạ",
+          "h": "Thành ngữ viết đúng là 'Một lòng một dạ' (hoặc một lòng một ý), thể hiện sự chung thủy, trung thành kiên định.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5034,
+          "sub": "Thành ngữ chỉ tình đoàn kết (Mở rộng từ vựng 35)",
+          "q": "Thành ngữ nào dưới đây chỉ tinh thần đoàn kết, đồng lòng của một tập thể? (Mã số 534)",
+          "o": [
+            "Đồng tâm hiệp lực",
+            "Đứng mũi chịu sào",
+            "Ăn quả nhớ kẻ trồng cây",
+            "Chân cứng đá mềm"
+          ],
+          "a": "Đồng tâm hiệp lực",
+          "h": "'Đồng tâm hiệp lực' nghĩa là cùng một lòng, chung sức lực chiến đấu vượt qua khó khăn thách thức.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5035,
+          "sub": "Vốn từ chủ điểm Trường học (Mở rộng từ vựng 36)",
+          "q": "Từ nào dưới đây KHÔNG thuộc chủ điểm trường học? (Mã số 535)",
+          "o": [
+            "thầy giáo",
+            "bảng đen",
+            "vườn nhãn",
+            "bạn học"
+          ],
+          "a": "vườn nhãn",
+          "h": "'vườn nhãn' thuộc chủ điểm thiên nhiên hoặc quê hương, không phải là từ ngữ đặc trưng riêng của trường học.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5036,
+          "sub": "Vốn từ chủ điểm Gia đình (Mở rộng từ vựng 37)",
+          "q": "Từ nào thể hiện tình cảm của con cái đối với cha mẹ trong gia đình? (Mã số 536)",
+          "o": [
+            "yêu mến",
+            "kính trọng",
+            "biết ơn",
+            "Cả 3 phương án đều đúng"
+          ],
+          "a": "Cả 3 phương án đều đúng",
+          "h": "Con cái cần kính trọng, yêu mến và luôn biết ơn công lao sinh thành, nuôi dưỡng vất vả của mẹ cha.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5037,
+          "sub": "Vốn từ chủ điểm Cộng đồng (Mở rộng từ vựng 38)",
+          "q": "Tìm từ ngữ chỉ những người sống xung quanh trong khu phố, làng bản của em? (Mã số 537)",
+          "o": [
+            "bạn học",
+            "họ hàng",
+            "hàng xóm",
+            "đồng nghiệp"
+          ],
+          "a": "hàng xóm",
+          "h": "Những người sống lân cận, láng giềng xung quanh nhà em được gọi chung là 'hàng xóm' trong cộng đồng.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5038,
+          "sub": "Thành ngữ Tiếng Việt (Mở rộng từ vựng 39)",
+          "q": "Điền từ thích hợp hoàn thành thành ngữ chỉ sự đồng lòng: 'Một lòng một ...' (Mã số 538)",
+          "o": [
+            "dạ",
+            "bụng",
+            "tim",
+            "trí"
+          ],
+          "a": "dạ",
+          "h": "Thành ngữ viết đúng là 'Một lòng một dạ' (hoặc một lòng một ý), thể hiện sự chung thủy, trung thành kiên định.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5039,
+          "sub": "Thành ngữ chỉ tình đoàn kết (Mở rộng từ vựng 40)",
+          "q": "Thành ngữ nào dưới đây chỉ tinh thần đoàn kết, đồng lòng của một tập thể? (Mã số 539)",
+          "o": [
+            "Đồng tâm hiệp lực",
+            "Đứng mũi chịu sào",
+            "Ăn quả nhớ kẻ trồng cây",
+            "Chân cứng đá mềm"
+          ],
+          "a": "Đồng tâm hiệp lực",
+          "h": "'Đồng tâm hiệp lực' nghĩa là cùng một lòng, chung sức lực chiến đấu vượt qua khó khăn thách thức.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5040,
+          "sub": "Vốn từ chủ điểm Trường học (Mở rộng từ vựng 41)",
+          "q": "Từ nào dưới đây KHÔNG thuộc chủ điểm trường học? (Mã số 540)",
+          "o": [
+            "thầy giáo",
+            "bảng đen",
+            "vườn nhãn",
+            "bạn học"
+          ],
+          "a": "vườn nhãn",
+          "h": "'vườn nhãn' thuộc chủ điểm thiên nhiên hoặc quê hương, không phải là từ ngữ đặc trưng riêng của trường học.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5041,
+          "sub": "Vốn từ chủ điểm Gia đình (Mở rộng từ vựng 42)",
+          "q": "Từ nào thể hiện tình cảm của con cái đối với cha mẹ trong gia đình? (Mã số 541)",
+          "o": [
+            "yêu mến",
+            "kính trọng",
+            "biết ơn",
+            "Cả 3 phương án đều đúng"
+          ],
+          "a": "Cả 3 phương án đều đúng",
+          "h": "Con cái cần kính trọng, yêu mến và luôn biết ơn công lao sinh thành, nuôi dưỡng vất vả của mẹ cha.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5042,
+          "sub": "Vốn từ chủ điểm Cộng đồng (Mở rộng từ vựng 43)",
+          "q": "Tìm từ ngữ chỉ những người sống xung quanh trong khu phố, làng bản của em? (Mã số 542)",
+          "o": [
+            "bạn học",
+            "họ hàng",
+            "hàng xóm",
+            "đồng nghiệp"
+          ],
+          "a": "hàng xóm",
+          "h": "Những người sống lân cận, láng giềng xung quanh nhà em được gọi chung là 'hàng xóm' trong cộng đồng.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5043,
+          "sub": "Thành ngữ Tiếng Việt (Mở rộng từ vựng 44)",
+          "q": "Điền từ thích hợp hoàn thành thành ngữ chỉ sự đồng lòng: 'Một lòng một ...' (Mã số 543)",
+          "o": [
+            "dạ",
+            "bụng",
+            "tim",
+            "trí"
+          ],
+          "a": "dạ",
+          "h": "Thành ngữ viết đúng là 'Một lòng một dạ' (hoặc một lòng một ý), thể hiện sự chung thủy, trung thành kiên định.",
+          "img": "",
+          "w": 10
+        },
+        {
+          "id": 5044,
+          "sub": "Thành ngữ chỉ tình đoàn kết (Mở rộng từ vựng 45)",
+          "q": "Thành ngữ nào dưới đây chỉ tinh thần đoàn kết, đồng lòng của một tập thể? (Mã số 544)",
+          "o": [
+            "Đồng tâm hiệp lực",
+            "Đứng mũi chịu sào",
+            "Ăn quả nhớ kẻ trồng cây",
+            "Chân cứng đá mềm"
+          ],
+          "a": "Đồng tâm hiệp lực",
+          "h": "'Đồng tâm hiệp lực' nghĩa là cùng một lòng, chung sức lực chiến đấu vượt qua khó khăn thách thức.",
+          "img": "",
+          "w": 10
+        }
+      ]
+    }
+  ]
+}
