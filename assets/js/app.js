@@ -1061,7 +1061,12 @@ async function selectRoadmapWeek(weekNum) {
 function startTopicQuiz(topicNum, topicName, questions, subLabel) {
     stopSpeaking();
     clearInterval(quizTimerInterval);
-    activeQuestionsList = questions; 
+    // Xáo trộn thứ tự đáp án A/B/C/D của TỪNG câu — chỉ 1 lần khi bắt đầu quiz (không xáo lại mỗi lần
+    // loadQuestion để tránh đáp án "nhảy" chỗ khi bé bấm Câu trước/Câu tiếp xem lại).
+    // Áp dụng chung cho MỌI chế độ (Học tự do / Tiến trình tuần / Đấu trường đề thi) vì cả 3 đều gọi qua hàm này.
+    activeQuestionsList = questions.map(q => (
+        Array.isArray(q.options) && q.options.length ? { ...q, options: shuffleArray(q.options) } : q
+    ));
     currentQIndex = 0; 
     score = 0;
     userAnswers = {};
