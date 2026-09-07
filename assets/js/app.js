@@ -141,6 +141,7 @@ let autoSpeechEnabled = localStorage.getItem('tvl3_autoSpeechEnabled') !== 'fals
 const examsCache = {};
 
 let currentUser = null;
+let pedagogicalEvaluationText = '';
 let starGreenCount = 0;
 let starRedCount = 0;
 let activeTopicId = null;
@@ -1795,7 +1796,9 @@ async function openHistoryModal(sheetName = 'LichSuTienTrinhTuan') {
     document.getElementById('hist-info-name').textContent = currentUser.hoTen || '--';
     document.getElementById('hist-info-class').textContent = currentUser.lop || '--';
     document.getElementById('hist-info-code').textContent = currentUser.maHS || '--';
-    document.getElementById('hist-info-dob').textContent = currentUser.ngaySinh || '03/09/2019';
+    // Chuẩn hóa hiển thị Ngày sinh về đúng DD-MM-YY (bỏ giờ) — phòng cả trường hợp Google Sheets
+// lỡ tự động ép chuỗi ngày sinh thành kiểu Date thật (trả về dạng ISO "2019-09-05T17:00:00.000Z").
+document.getElementById('hist-info-dob').textContent = formatDobDisplay(currentUser.ngaySinh);
     document.getElementById('hist-report-date').textContent = new Date().toLocaleDateString('vi-VN');
 
     const titleMap = {
@@ -1904,10 +1907,13 @@ function renderHistoryReport(rows, sheetName) {
     });
 
     const skillKeys = ['C1', 'C2', 'C3', 'C4', 'C5', 'C6'];
-    const skillAverages = isWeekly
-        ? { C1: 0, C2: 0, C3: 0, C4: 0, C5: 0, C6: 0 }
-        : { C1: 85, C2: 78, C3: 92, C4: 70, C5: 80, C6: 75 };
+    const skillAverages = { C1: 0, C2: 0, C3: 0, C4: 0, C5: 0, C6: 0 };
     const touchedSkills = [];
+
+    // Điểm tối đa mỗi nhóm năng lực trong 1 đề thi, đúng theo ma trận V9 (tổng 6 nhóm = 10.0đ):
+    // C1: câu 1-3 (0.5đ x3 = 1.5đ) | C2: câu 4-5 (0.5đ x2 = 1.0đ) | C3: câu 6 (0.5đ) + câu 7 (1.0đ) = 1.5đ
+    // C4: câu 8-9 (1.0đ x2 = 2.0đ) | C6: câu 10-11 (1.0đ x2 = 2.0đ) | C5: câu 12-13 (1.0đ x2 = 2.0đ)
+    const EXAM_SKILL_MAX_POINTS = { C1: 1.5, C2: 1.0, C3: 1.5, C4: 2.0, C6: 2.0, C5: 2.0 };
 
     if (rows.length && isWeekly) {
         // Tiến trình tuần: % = tổng số câu đúng / tổng số câu đã làm THẬT của nhóm kỹ năng đó
@@ -1933,7 +1939,10 @@ function renderHistoryReport(rows, sheetName) {
             });
             const sum = vals.reduce((a, b) => a + b, 0);
             if (vals.length > 0) {
-                skillAverages[k] = Math.min(100, Math.round((sum / (vals.length * 1.5)) * 100)) || 75;
+                // KHÔNG dùng "|| 75": điểm thật bằng 0 (0 là giá trị falsy trong JS) phải hiển thị đúng 0%,
+                // không được tự đổi thành 75%. Đồng thời chia đúng điểm tối đa riêng của từng nhóm (không
+                // dùng chung 1.5 cho tất cả) để ra đúng % thực chất theo ma trận đề thi.
+                skillAverages[k] = Math.min(100, Math.round((sum / (vals.length * EXAM_SKILL_MAX_POINTS[k])) * 100));
                 touchedSkills.push(k);
             }
         });
@@ -2065,6 +2074,19 @@ function renderPedagogicalEvaluation(rows, skillAverages, touchedSkills) {
             <p class="text-gray-700">Ba mẹ nên dành 15 phút mỗi tối cùng con ôn lại chính tả, tập đặt câu và đọc thêm truyện ngắn, khen ngợi kịp thời để giúp ${studentName} giữ vững niềm yêu thích môn Tiếng Việt nhé!</p>
         </div>
     `;
+
+    // Lưu lại bản text thuần (đã bỏ hết thẻ HTML, giữ nguyên 4 mục) để nút "Nghe cô giáo đọc" dùng.
+    pedagogicalEvaluationText =
+        `Đánh giá tổng quan năng lực và xu hướng tiến bộ. Học sinh ${currentUser.hoTen} đã hoàn thành ${count} bài kiểm tra với điểm số trung bình tích lũy đạt ${avgScoreStr} trên 10 điểm. ${overviewText} `
+        + `Khen ngợi và thế mạnh nổi trội. ${strengthHtml.replace(/<[^>]*>/g, '')} `
+        + `Điểm cần lưu ý và khắc phục. ${weaknessHtml.replace(/<[^>]*>/g, '')} `
+        + `Kế hoạch bồi dưỡng và hướng dẫn phụ huynh. Ba mẹ nên dành 15 phút mỗi tối cùng con ôn lại chính tả, tập đặt câu và đọc thêm truyện ngắn, khen ngợi kịp thời để giúp ${studentName} giữ vững niềm yêu thích môn Tiếng Việt nhé!`;
+}
+
+// Đọc to toàn bộ 4 mục nhận xét sư phạm (dùng chung engine TTS với "Nghe câu hỏi"/"Nghe bài giảng").
+function speakPedagogicalEvaluation() {
+    if (!pedagogicalEvaluationText) return;
+    speakVietnamese(pedagogicalEvaluationText, 0.96);
 }
 
 function renderHistoryTable(rows, sheetName) {
@@ -2385,6 +2407,28 @@ function escapeHtml(str) {
 // vì có những đáp án chính là dấu câu như dấu ngoặc kép ("), nếu escape thiếu sẽ làm nút bấm bị hỏng.
 function safeJsAttr(str) {
     return JSON.stringify(String(str)).replace(/"/g, '&quot;');
+}
+
+// Chuẩn hóa hiển thị Ngày sinh về đúng DD-MM-YY (bỏ giờ) — phòng cả trường hợp Google Sheets
+// lỡ tự động ép chuỗi ngày sinh thành kiểu Date thật (trả về dạng ISO "2019-09-05T17:00:00.000Z").
+function formatDobDisplay(raw) {
+    if (!raw) return '--';
+    const s = String(raw).trim();
+    // Đã đúng định dạng DD-MM-YY hoặc DD-MM-YYYY sẵn rồi thì chỉ cần rút gọn năm về 2 số.
+    const mSimple = s.match(/^(\d{1,2})-(\d{1,2})-(\d{2,4})$/);
+    if (mSimple) {
+        const [, d, m, y] = mSimple;
+        return `${d.padStart(2,'0')}-${m.padStart(2,'0')}-${y.slice(-2)}`;
+    }
+    // Bị Google Sheets ép thành ISO date (VD "2019-09-05T17:00:00.000Z") thì tự parse lại.
+    const dt = new Date(s);
+    if (!isNaN(dt.getTime())) {
+        const d = String(dt.getUTCDate()).padStart(2, '0');
+        const m = String(dt.getUTCMonth() + 1).padStart(2, '0');
+        const y = String(dt.getUTCFullYear()).slice(-2);
+        return `${d}-${m}-${y}`;
+    }
+    return s;
 }
 
 function showLoadingOverlay(msg) {
