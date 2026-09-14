@@ -1768,8 +1768,15 @@ document.getElementById('hist-info-dob').textContent = formatDobDisplay(currentU
 
     showLoadingOverlay('Đang trích xuất dữ liệu và vẽ biểu đồ năng lực...');
     try {
-        const res = await callAppsScript('getHistory', { maHS: currentUser.maHS, sheetName });
+        const res = await callAppsScript('getHistory', { maHS: currentUser.maHS, sheetName, sessionToken: currentUser.sessionToken || localStorage.getItem('tvl3_session_token') || '' });
         hideLoadingOverlay();
+        if (res && res.ok === false) {
+            // Token hết hạn/không hợp lệ - đóng modal, báo rõ thay vì âm thầm hiện báo cáo trống
+            // (dễ gây hiểu lầm là bé chưa học gì).
+            closeHistoryModal();
+            alert(res.error || 'Không thể tải lịch sử - bé đăng nhập lại nhé!');
+            return;
+        }
         const rows = (res && res.history) ? res.history : [];
         renderHistoryReport(rows, sheetName);
     } catch (err) {
