@@ -147,6 +147,7 @@ let starRedCount = 0;
 let activeTopicId = null;
 let activeExamContext = null;
 let activeRoadmapContext = null;
+let inMiniGameFlow = false;
 let activeQuestionsList = [];
 let practiceCycleRawPool = [];
 let pendingTopicQuiz = null;
@@ -593,12 +594,14 @@ function returnToTopicLecture() {
     } else if (pendingTopicQuiz) {
         updateNavTabs(pendingTopicQuiz.topicName, TOPICS_CONFIG.find(t => t.id === pendingTopicQuiz.topicNum)?.icon, null);
         switchAppView('view-lecture');
+    } else if (inMiniGameFlow) {
+        openMiniGameHub();
     }
 }
 
 function switchAppView(viewId) {
     stopSpeaking();
-    ['view-dashboard-grid', 'view-lecture', 'view-quiz', 'view-roadmap', 'view-exam-hub', 'view-result'].forEach(id => {
+    ['view-dashboard-grid', 'view-lecture', 'view-quiz', 'view-roadmap', 'view-minigame-hub', 'view-game-play', 'view-exam-hub', 'view-result'].forEach(id => {
         const el = document.getElementById(id);
         if (!el) return;
         if (id === viewId) el.classList.remove('hidden');
@@ -608,6 +611,7 @@ function switchAppView(viewId) {
 
 function goHome() {
     stopSpeaking();
+    inMiniGameFlow = false;
     clearInterval(quizTimerInterval);
     updateNavTabs(null, null, null);
     switchAppView('view-dashboard-grid');
@@ -1768,15 +1772,8 @@ document.getElementById('hist-info-dob').textContent = formatDobDisplay(currentU
 
     showLoadingOverlay('Đang trích xuất dữ liệu và vẽ biểu đồ năng lực...');
     try {
-        const res = await callAppsScript('getHistory', { maHS: currentUser.maHS, sheetName, sessionToken: currentUser.sessionToken || localStorage.getItem('tvl3_session_token') || '' });
+        const res = await callAppsScript('getHistory', { maHS: currentUser.maHS, sheetName });
         hideLoadingOverlay();
-        if (res && res.ok === false) {
-            // Token hết hạn/không hợp lệ - đóng modal, báo rõ thay vì âm thầm hiện báo cáo trống
-            // (dễ gây hiểu lầm là bé chưa học gì).
-            closeHistoryModal();
-            alert(res.error || 'Không thể tải lịch sử - bé đăng nhập lại nhé!');
-            return;
-        }
         const rows = (res && res.history) ? res.history : [];
         renderHistoryReport(rows, sheetName);
     } catch (err) {
@@ -2432,6 +2429,141 @@ function updateAutoSpeechButtonUI() {
 }
 
 // ==========================================
+// TRUNG TÂM MINI GAME - TIẾNG VIỆT 3
+// Kiến trúc giống TA2: Hub -> lazy-load file JS riêng -> game tự quản lý state.
+// ==========================================
+const MINIGAME_TOPIC_PALETTES = SUBTOPIC_PALETTES;
+
+function miniGameHash(text = '') {
+    return [...String(text)].reduce((acc, ch) => ((acc * 31) + ch.charCodeAt(0)) >>> 0, 7);
+}
+
+function getMiniGamePaletteOrder(seed = 'tv3-minigame') {
+    const order = MINIGAME_TOPIC_PALETTES.map((_, i) => i);
+    let state = miniGameHash(seed) || 1;
+    for (let i = order.length - 1; i > 0; i--) {
+        state = (state * 1664525 + 1013904223) >>> 0;
+        const j = state % (i + 1);
+        [order[i], order[j]] = [order[j], order[i]];
+    }
+    return order.map(i => MINIGAME_TOPIC_PALETTES[i]);
+}
+
+function ensureMiniGameThemeStyles() {
+    if (document.getElementById('tv3-minigame-theme-v1')) return;
+    const style = document.createElement('style');
+    style.id = 'tv3-minigame-theme-v1';
+    style.textContent = `
+        #view-game-play > div { max-width: 56rem !important; }
+        #game-play-title { font-size: 1.2rem !important; }
+        #game-play-container { font-size: 16px; }
+        @media (max-width: 640px) {
+            #view-game-play > div { max-width: 100% !important; }
+            #game-play-title { font-size: 1.05rem !important; }
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+const MINIGAME_LIST = [
+    { id: 'spelling-knight', title: '1. Hiệp sĩ Chính tả', desc: 'Vượt cổng từ đúng - giữ khiên thật lâu', icon: '⚔️', ready: true },
+    { id: 'rhyme-treasure', title: '2. Kho báu âm vần', desc: 'Ghép âm đầu, vần và thanh', icon: '💎', ready: false },
+    { id: 'word-garden', title: '3. Khu vườn từ loại', desc: 'Phân loại sự vật - hoạt động - đặc điểm', icon: '🌳', ready: false },
+    { id: 'sentence-train-tv', title: '4. Đoàn tàu ghép câu', desc: 'Xếp từ thành câu hoàn chỉnh', icon: '🚂', ready: false },
+    { id: 'punctuation-doctor', title: '5. Bác sĩ dấu câu', desc: 'Tìm và chữa dấu câu chưa đúng', icon: '🩺', ready: false },
+    { id: 'sentence-world', title: '6. Phép thuật Tu từ', desc: 'So sánh và nhân hóa thật sinh động', icon: '🎭', ready: false },
+    { id: 'vocab-fishing', title: '7. Câu cá từ vựng', desc: 'Câu đúng từ theo từng chủ đề', icon: '🎣', ready: false },
+    { id: 'reading-detective', title: '8. Thám tử đọc hiểu', desc: 'Truy tìm chi tiết trong đoạn đọc', icon: '🕵️', ready: false },
+    { id: 'riddle-arena', title: '9. Đấu trường câu đố', desc: 'Giải đố dân gian và IQ ngôn ngữ', icon: '🏆', ready: false },
+    { id: 'message-postman', title: '10. Đại sứ Giao tiếp', desc: 'Chọn lời nói và văn bản phù hợp', icon: '💌', ready: false },
+    { id: 'word-maze', title: '11. Mê cung từ ngữ', desc: 'Tìm đường qua các từ đúng', icon: '🌀', ready: false },
+    { id: 'teacher-says-tv', title: '12. Cô Ong ra lệnh', desc: 'Phản xạ đọc hiểu thật nhanh', icon: '🐝', ready: false }
+];
+
+function openMiniGameHub() {
+    stopSpeaking();
+    if (!hasPremiumAccess()) {
+        showPremiumModal('Mini Game');
+        return;
+    }
+    inMiniGameFlow = true;
+    activeExamContext = null;
+    activeRoadmapContext = null;
+    activeTopicId = null;
+    pendingTopicQuiz = null;
+    updateNavTabs('Mini Game', '🎮', null);
+    ensureMiniGameThemeStyles();
+
+    const grid = document.getElementById('minigame-grid');
+    if (!grid) return;
+    const palettes = getMiniGamePaletteOrder('tv3-hub');
+    grid.innerHTML = MINIGAME_LIST.map((g, idx) => {
+        const style = palettes[idx % palettes.length];
+        return `
+        <div onclick="openGamePlay('${g.id}')" class="p-3.5 md:p-4 flex flex-col items-center text-center cursor-pointer transition-all group ${style.card} border-2 rounded-[26px] min-h-[132px] justify-between relative shadow-sm pastel-btn">
+            ${!g.ready ? `<span class="absolute top-2 right-2 bg-amber-100 text-amber-700 text-[10px] font-black px-2 py-0.5 rounded-full border border-amber-200">Sắp ra mắt</span>` : ''}
+            <div class="text-4xl group-hover:scale-110 transition-transform mt-1">${g.icon}</div>
+            <div class="w-full">
+                <h3 class="font-extrabold ${style.num} text-base leading-tight">${g.title}</h3>
+                <p class="text-sm text-gray-700 font-bold mt-1 w-full leading-snug">${g.desc}</p>
+            </div>
+        </div>`;
+    }).join('');
+    switchAppView('view-minigame-hub');
+}
+
+const GAME_SCRIPT_MAP = {
+    'spelling-knight': 'assets/js/games/hiep-si-chinh-ta.js?v=tv3mg1'
+};
+const loadedGameScripts = {};
+
+function loadGameScript(src) {
+    if (loadedGameScripts[src]) return Promise.resolve();
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = src;
+        script.onload = () => { loadedGameScripts[src] = true; resolve(); };
+        script.onerror = () => reject(new Error(`Không tải được file game: ${src}`));
+        document.body.appendChild(script);
+    });
+}
+
+async function openGamePlay(gameId) {
+    stopSpeaking();
+    ensureMiniGameThemeStyles();
+    inMiniGameFlow = true;
+    const game = MINIGAME_LIST.find(g => g.id === gameId);
+    if (!game) return;
+
+    if (!game.ready) {
+        showToast(`${game.title} đang được cô Ong Vàng chuẩn bị. Con quay lại sau nhé!`, 'info', 4200);
+        return;
+    }
+
+    const title = document.getElementById('game-play-title');
+    if (title) title.innerHTML = `<span>${game.icon}</span><span>${game.title}</span>`;
+    updateNavTabs('Mini Game', '🎮', game.title);
+    switchAppView('view-game-play');
+
+    const scriptSrc = GAME_SCRIPT_MAP[gameId];
+    if (scriptSrc) {
+        const box = document.getElementById('game-play-container');
+        if (box) box.innerHTML = '<p class="text-center text-gray-400 font-bold py-8">Đang mở cổng thành...</p>';
+        try {
+            await loadGameScript(scriptSrc);
+        } catch (e) {
+            if (box) box.innerHTML = '<p class="text-center text-rose-500 font-bold py-8">Không tải được game. Bé thử lại nhé!</p>';
+            return;
+        }
+    }
+
+    if (gameId === 'spelling-knight' && typeof startSpellingKnightGame === 'function') {
+        startSpellingKnightGame();
+    }
+}
+
+
+// ==========================================
 // ACCOUNT ENGINE V3 — Guest / Regular / Trial / VIP / Admin
 // ==========================================
 function isAdminUser() { return !!currentUser && !currentUser.isGuest && currentUser.vaiTro === 'admin'; }
@@ -2442,7 +2574,7 @@ function closeAuthModal() { const el=document.getElementById('screen-login'); if
 function ensureAuthBackdrop(){ if(document.getElementById('auth-backdrop'))return; const d=document.createElement('div'); d.id='auth-backdrop'; d.className='hidden fixed inset-0 z-[65] bg-slate-900/45 backdrop-blur-sm'; d.onclick=closeAuthModal; document.body.appendChild(d); }
 function showPremiumModal(featureName='Tính năng này'){ let modal=document.getElementById('premium-access-modal'); if(!modal){modal=document.createElement('div');modal.id='premium-access-modal';modal.className='fixed inset-0 z-[80] bg-slate-900/55 backdrop-blur-sm hidden items-center justify-center p-3';document.body.appendChild(modal);} const guest=!currentUser||currentUser.isGuest; const title=guest?'Nội dung Premium':'Tài khoản Regular'; const body=guest?`Đây là <strong>${escapeHtml(featureName)}</strong> dành cho tài khoản <strong>Trial hoặc VIP</strong>.<br><br>Con có thể Sign in nếu đã có tài khoản hoặc Sign up để đăng ký nhé!<br><span class="text-slate-500">Các chuyên đề cơ bản vẫn học miễn phí bình thường.</span>`:`Tài khoản hiện tại của con là <strong>Regular</strong>.<br><br><strong>${escapeHtml(featureName)}</strong> yêu cầu tài khoản <strong>Trial hoặc VIP</strong>. Ba mẹ có thể liên hệ giáo viên để được nâng hạng.`; modal.innerHTML=`<div class="w-full max-w-md bg-white rounded-3xl border-2 border-amber-200 shadow-2xl overflow-hidden"><div class="p-5 bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50 text-center"><div class="text-4xl mb-2">🔒</div><h3 class="text-xl font-black text-amber-700">${title}</h3><div class="mt-3 text-sm font-bold text-slate-700 leading-relaxed">${body}</div></div><div class="p-4 space-y-2 bg-white">${guest?`<div class="grid grid-cols-2 gap-2"><button onclick="closePremiumModal();openAuthModal('login')" class="py-2.5 rounded-xl bg-amber-500 text-white font-extrabold">Sign in</button><button onclick="closePremiumModal();openAuthModal('register')" class="py-2.5 rounded-xl bg-fuchsia-50 text-fuchsia-600 border border-fuchsia-200 font-extrabold">Sign up</button></div>`:''}<button onclick="closePremiumModal()" class="w-full py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-black text-base">Để sau nhé</button></div></div>`; modal.classList.remove('hidden');modal.classList.add('flex'); }
 function closePremiumModal(){const m=document.getElementById('premium-access-modal');if(m){m.classList.add('hidden');m.classList.remove('flex');}}
-function applyPremiumLockUI(){ const locked=!hasPremiumAccess(); const addLock=(el)=>{if(!el)return;el.classList.add('relative');el.querySelector(':scope > .premium-lock-badge')?.remove();if(locked){const span=document.createElement('span');span.className='premium-lock-badge absolute top-2 right-2 text-slate-400 text-xs';span.innerHTML='<i class="fa-solid fa-lock"></i>';el.appendChild(span);}}; addLock(document.querySelector('[onclick^="openTopic(11,"]')); addLock(document.querySelector('[onclick="openExamHub()"]')); const road=document.getElementById('btn-roadmap-main'); if(road){road.querySelector('.roadmap-lock-inline')?.remove();if(locked){const sp=document.createElement('span');sp.className='roadmap-lock-inline ml-1';sp.textContent='🔒';road.appendChild(sp);}} }
+function applyPremiumLockUI(){ const locked=!hasPremiumAccess(); const addLock=(el)=>{if(!el)return;el.classList.add('relative');el.querySelector(':scope > .premium-lock-badge')?.remove();if(locked){const span=document.createElement('span');span.className='premium-lock-badge absolute top-2 right-2 text-slate-400 text-xs';span.innerHTML='<i class="fa-solid fa-lock"></i>';el.appendChild(span);}}; addLock(document.querySelector('[onclick^="openTopic(11,"]')); addLock(document.querySelector('[onclick="openExamHub()"]')); const road=document.getElementById('btn-roadmap-main'); if(road){road.querySelector('.roadmap-lock-inline')?.remove();if(locked){const sp=document.createElement('span');sp.className='roadmap-lock-inline ml-1';sp.textContent='🔒';road.appendChild(sp);}} const mg=document.getElementById('minigame-lock-icon'); if(mg) mg.classList.toggle('hidden',!locked); }
 function showToast(message,type='info',duration=3600){let wrap=document.getElementById('app-toast-wrap');if(!wrap){wrap=document.createElement('div');wrap.id='app-toast-wrap';wrap.className='fixed z-[100] top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-lg';document.body.appendChild(wrap);}const cls=type==='success'?'border-emerald-200 text-emerald-800 bg-emerald-50':'border-amber-200 text-amber-800 bg-amber-50';const t=document.createElement('div');t.className=`px-4 py-3 rounded-2xl border shadow-xl text-sm font-extrabold ${cls}`;t.textContent=message;wrap.innerHTML='';wrap.appendChild(t);setTimeout(()=>t.remove(),duration);}
 let adminStudentsCache=[]; let adminSortKey='MaHS'; let adminSortAsc=true;
 async function openAccountManager(){if(!isAdminUser())return;ensureAdminModal();const m=document.getElementById('admin-manager-modal');m.classList.remove('hidden');m.classList.add('flex');await refreshAdminStudents();}
