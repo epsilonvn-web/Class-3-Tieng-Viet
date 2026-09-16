@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-    <title>Tiếng Việt 3 - Cô giáo Ong Vàng</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <meta name="theme-color" content="#f59e0b">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <title>Tiếng Việt 3 - Cô giáo Ong Vàng</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome 6 -->
@@ -81,6 +82,98 @@
         ::-webkit-scrollbar-thumb { background: #fbbf24; border-radius: 10px; }
         ::-webkit-scrollbar-thumb:hover { background: #f59e0b; }
 
+
+        @media (max-width: 767px) {
+            .app-main-header {
+                display: grid !important;
+                grid-template-columns: auto minmax(0, 1fr) auto auto;
+                grid-template-rows: auto auto;
+                gap: 0.35rem 0.35rem !important;
+                align-items: center;
+                padding: 0.35rem 0.45rem !important;
+            }
+
+            #header-nav-zone,
+            #header-info-zone {
+                display: contents !important;
+            }
+
+            #btn-header-home {
+                grid-row: 1;
+                grid-column: 1;
+            }
+
+            #header-learning-tabs {
+                grid-row: 1;
+                grid-column: 2;
+                min-width: 0;
+                overflow-x: auto;
+                overflow-y: hidden;
+                scrollbar-width: none;
+                margin-left: 0;
+            }
+            #header-learning-tabs::-webkit-scrollbar { display: none; }
+
+            #header-level2-icon { display: none !important; }
+            #header-level2-tab > button {
+                padding-left: 0.5rem !important;
+                padding-right: 0.5rem !important;
+                column-gap: 0 !important;
+            }
+
+            #btn-roadmap-main {
+                grid-row: 1;
+                grid-column: 3;
+                justify-self: end;
+            }
+
+            #btn-minigame-main {
+                grid-row: 1;
+                grid-column: 4;
+                justify-self: end;
+            }
+
+            #btn-toggle-autospeech {
+                grid-row: 2;
+                grid-column: 1;
+                justify-self: start;
+                margin: 0;
+            }
+
+            #header-star-box {
+                grid-row: 2;
+                grid-column: 1;
+                justify-self: start;
+                margin-left: 0 !important;
+                transform: translateX(2.7rem);
+            }
+
+            #user-info-box {
+                grid-row: 2;
+                grid-column: 2 / 5;
+                justify-self: end;
+                width: auto;
+                min-width: 0;
+                margin-left: auto;
+                text-align: right;
+            }
+
+            #user-info-box > div,
+            #user-info-box > span { margin-left: auto; }
+            #user-info-box > * { max-width: 100%; }
+
+            #btn-roadmap-main .roadmap-lock-inline,
+            #minigame-lock-icon {
+                position: absolute !important;
+                top: -0.5rem !important;
+                right: -0.2rem !important;
+                margin: 0 !important;
+                font-size: 0.7rem !important;
+                line-height: 1 !important;
+                display: inline-block !important;
+            }
+        }
+
         @media print {
             body * { visibility: hidden; }
             #printable-report-area, #printable-report-area * { visibility: visible; }
@@ -99,18 +192,17 @@
         }
     </style>
 </head>
-<body class="p-1 md:p-2 w-full">
+<body class="p-1 md:p-2 w-full" style="padding-top:max(0.25rem,env(safe-area-inset-top));padding-bottom:max(0.25rem,env(safe-area-inset-bottom));padding-left:max(0.25rem,env(safe-area-inset-left));padding-right:max(0.25rem,env(safe-area-inset-right));">
 
     <div class="w-full flex justify-center items-center mt-4 md:mt-6">
         <!-- 1. MÀN HÌNH ĐĂNG NHẬP / ĐĂNG KÝ -->
         <div id="screen-login" class="hidden fixed z-[70] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-1.5rem)] max-w-md max-h-[calc(100dvh-1rem)] overflow-y-auto pastel-card p-4 sm:p-6 md:p-8 flex-col items-center text-center">
             <button onclick="closeAuthModal()" title="Đóng" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-amber-50 border border-amber-200 text-amber-600 hover:bg-amber-100 flex items-center justify-center"><i class="fa-solid fa-xmark"></i></button>
-            <div class="mb-2">
-                <span class="text-7xl md:text-8xl swaying select-none">🐝</span>
+            <div class="mb-2 flex flex-col items-center">
+                <img src="icon-512.png" alt="Tiếng Việt 3" class="w-28 h-28 md:w-32 md:h-32 object-contain rounded-[28%] shadow-md select-none">
             </div>
 
-            <h1 class="text-2xl md:text-3xl font-extrabold text-amber-600 tracking-wide mb-1 text-center">Tiếng Việt 3</h1>
-            <p class="text-sm font-bold text-orange-600 mb-5">Cô giáo Ong Vàng</p>
+            <p class="text-base md:text-lg font-extrabold text-orange-600 mb-5">Cô giáo Ong Vàng</p>
 
             <div class="w-full grid grid-cols-2 bg-amber-50 rounded-2xl p-1 mb-5 border border-amber-200">
                 <button id="tab-btn-login" onclick="switchAuthTab('login')" class="py-2.5 rounded-xl font-extrabold text-sm pastel-btn bg-white text-amber-600 shadow-sm">Đăng nhập</button>
@@ -176,61 +268,65 @@
         <!-- 2. KHUNG CHÍNH CHUẨN TỶ LỆ 16:9 / 16:10 -->
         <div id="screen-dashboard" class="w-full max-w-5xl flex flex-col space-y-1.5 md:space-y-2 p-1 md:p-2">
             
-            <header class="w-full bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-2xl shadow-sm border-2 border-amber-200 flex flex-col md:flex-row justify-between items-center gap-2">
-                <div class="flex items-center space-x-2 w-full md:w-auto justify-between md:justify-start overflow-x-auto pb-0.5">
-                    <button id="btn-header-home" onclick="goHome()" title="Về trang chủ" class="h-12 flex items-center gap-1.5 bg-gradient-to-br from-amber-50 via-rose-50 to-orange-50 pl-2 pr-3 rounded-2xl border-2 border-amber-300 shadow-sm shrink-0 transition-all duration-200 hover:border-amber-400 hover:shadow-[0_0_18px_rgba(251,191,36,0.65)]">
-                        <span class="w-8 h-8 flex items-center justify-center bg-white rounded-full text-lg shadow-inner border border-amber-200 shrink-0">🐝</span>
-                        <span class="flex flex-col items-center leading-none">
-                            <span class="text-sm font-black bg-gradient-to-r from-amber-600 to-orange-500 bg-clip-text text-transparent tracking-wide whitespace-nowrap text-center">Tiếng Việt 3</span>
-                            <span class="text-[10px] font-bold text-orange-500 mt-0.5 whitespace-nowrap">Cô giáo Ong Vàng</span>
-                        </span>
+            <header class="app-main-header w-full bg-white/95 backdrop-blur-md px-2 py-1 rounded-2xl shadow-sm border-2 border-amber-200 flex flex-col md:flex-row justify-between items-center gap-2">
+                <div id="header-nav-zone" class="flex items-center space-x-2 w-full md:w-auto justify-between md:justify-start overflow-x-auto">
+                    <button id="btn-header-home" onclick="goHome()" title="Về trang chủ" class="w-[62px] h-[62px] flex items-center justify-center bg-white rounded-xl border border-amber-300 shadow-sm shrink-0 overflow-hidden p-0 transition-shadow duration-200 hover:border-amber-400 hover:shadow-[0_0_18px_rgba(251,191,36,0.65)]">
+                        <img src="icon-192.png" alt="Trang chủ Tiếng Việt 3" class="w-full h-full object-cover">
                     </button>
 
-                    <div id="header-level2-tab" class="hidden items-center">
-                        <button onclick="returnToTopicLecture()" class="h-10 px-3 bg-gradient-to-r from-amber-500 to-rose-500 text-white font-extrabold rounded-xl text-xs md:text-sm flex items-center space-x-1.5 shadow-sm border border-amber-300 shrink-0 max-w-[200px] md:max-w-[260px] transition-shadow duration-200 hover:shadow-[0_0_14px_rgba(244,63,94,0.65)]">
-                            <span id="header-level2-icon">🔢</span>
-                            <span id="header-level2-title" class="truncate">Chủ đề học</span>
-                        </button>
-                    </div>
-
-                    <div id="header-level3-tab" class="hidden items-center space-x-1">
-                        <span class="text-amber-300 font-bold text-xs">/</span>
-                        <div class="h-10 px-2.5 bg-orange-50 border border-orange-200 text-orange-700 font-extrabold rounded-xl text-xs md:text-sm max-w-[170px] md:max-w-[210px] truncate shadow-inner flex items-center">
-                            <span id="header-level3-title" class="truncate">Mục nhỏ</span>
+                    <div id="header-learning-tabs" class="flex items-center space-x-1 min-w-0">
+                        <div id="header-level2-tab" class="hidden items-center">
+                            <button onclick="returnToTopicLecture()" class="h-10 px-3 bg-gradient-to-r from-amber-500 to-rose-500 text-white font-extrabold rounded-xl text-xs md:text-sm flex items-center space-x-1.5 shadow-sm border border-amber-300 shrink-0 max-w-[200px] md:max-w-[260px] transition-shadow duration-200 hover:shadow-[0_0_14px_rgba(244,63,94,0.65)]">
+                                <span id="header-level2-icon">🐝</span>
+                                <span id="header-level2-title" class="truncate">Chủ đề học</span>
+                            </button>
                         </div>
-                    </div>
 
-                    <div id="header-level4-tab" class="hidden items-center space-x-1">
-                        <span class="text-amber-300 font-bold text-xs">/</span>
-                        <div class="h-10 px-2.5 bg-amber-50 border border-amber-200 text-amber-700 font-extrabold rounded-xl text-xs md:text-sm max-w-[200px] md:max-w-[260px] truncate shadow-inner flex items-center">
-                            <span id="header-level4-title" class="truncate">Chủ đề tuần</span>
+                        <div id="header-level3-tab" class="hidden items-center space-x-1">
+                            <span class="text-amber-300 font-bold text-xs">/</span>
+                            <div class="h-10 px-2.5 bg-orange-50 border border-orange-200 text-orange-700 font-extrabold rounded-xl text-xs md:text-sm max-w-[170px] md:max-w-[210px] truncate shadow-inner flex items-center">
+                                <span id="header-level3-title" class="truncate">Mục nhỏ</span>
+                            </div>
+                        </div>
+
+                        <div id="header-level4-tab" class="hidden items-center space-x-1">
+                            <span class="text-amber-300 font-bold text-xs">/</span>
+                            <div class="h-10 px-2.5 bg-amber-50 border border-amber-200 text-amber-700 font-extrabold rounded-xl text-xs md:text-sm max-w-[200px] md:max-w-[260px] truncate shadow-inner flex items-center">
+                                <span id="header-level4-title" class="truncate">Chủ đề tuần</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex items-center space-x-2 w-full md:w-auto justify-between md:justify-end ml-auto shrink-0">
+                <div id="header-info-zone" class="flex items-center space-x-1.5 md:space-x-2 w-full md:w-auto justify-between md:justify-end ml-auto shrink-0">
                     <button id="btn-toggle-autospeech" onclick="toggleAutoSpeech()" title="Bật/tắt tự động đọc câu hỏi" class="h-10 w-10 shrink-0 flex items-center justify-center bg-amber-50 text-amber-600 border border-amber-200 rounded-xl shadow-inner transition-colors">
                         <i class="fa-solid fa-volume-high"></i>
                     </button>
 
-                    <div class="flex flex-col space-y-0.5 bg-amber-50/90 px-2.5 py-1 rounded-xl border border-amber-200 shadow-inner">
+                    <div id="header-star-box" class="flex flex-col space-y-0.5 bg-amber-50/90 px-1.5 md:px-2.5 py-1 rounded-xl border border-amber-200 shadow-inner">
                         <div class="flex items-center justify-between space-x-2 font-extrabold">
-                            <span class="px-1.5 py-0.2 bg-emerald-500 text-white rounded text-[10px] shadow-sm"><i class="fa-solid fa-star mr-0.5"></i> Đúng</span>
+                            <span class="px-1.5 py-0.5 bg-emerald-500 text-white rounded text-[10px] shadow-sm flex items-center justify-center"><i class="fa-solid fa-star md:mr-0.5"></i><span class="hidden md:inline"> Đúng</span></span>
                             <span class="text-emerald-600 font-extrabold text-xs" id="star-green-count">0</span>
                         </div>
                         <div class="flex items-center justify-between space-x-2 font-extrabold">
-                            <span class="px-1.5 py-0.2 bg-rose-500 text-white rounded text-[10px] shadow-sm"><i class="fa-solid fa-star mr-0.5"></i> Sai</span>
+                            <span class="px-1.5 py-0.5 bg-rose-500 text-white rounded text-[10px] shadow-sm flex items-center justify-center"><i class="fa-solid fa-star md:mr-0.5"></i><span class="hidden md:inline"> Sai</span></span>
                             <span class="text-rose-600 font-extrabold text-xs" id="star-red-count">0</span>
                         </div>
                     </div>
 
                     <div id="user-info-box" class="text-xs font-bold text-gray-600 text-right"></div>
 
-                    <button id="btn-roadmap-main" onclick="clickProgressOrExam('progress')" class="h-10 px-2.5 md:px-3 bg-gradient-to-r from-orange-500 to-indigo-500 text-white font-extrabold rounded-xl text-xs md:text-sm shadow-md hover:from-orange-600 hover:to-indigo-600 flex items-center space-x-1.5 shrink-0 transition-shadow duration-200 hover:shadow-[0_0_14px_rgba(244,63,94,0.65)]">
-                        <i class="fa-solid fa-map-location-dot"></i><span class="hidden sm:inline">Bản đồ tuần</span>
+                    <button id="btn-roadmap-main" onclick="clickProgressOrExam('progress')" class="relative overflow-visible h-10 px-2.5 md:px-3 bg-gradient-to-r from-orange-500 to-indigo-500 text-white font-extrabold rounded-xl text-xs md:text-sm shadow-md hover:from-orange-600 hover:to-indigo-600 flex items-center space-x-1 md:space-x-1.5 shrink-0 transition-shadow duration-200 hover:shadow-[0_0_14px_rgba(244,63,94,0.65)]">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <span class="md:hidden">Tuần</span>
+                        <span class="hidden md:inline">Bản đồ tuần</span>
                     </button>
-                    <button id="btn-minigame-main" onclick="openMiniGameHub()" class="h-10 px-2.5 md:px-3 bg-gradient-to-r from-teal-500 to-emerald-500 text-white font-extrabold rounded-xl text-xs md:text-sm shadow-md hover:from-teal-600 hover:to-emerald-600 flex items-center space-x-1.5 shrink-0 transition-shadow duration-200 hover:shadow-[0_0_14px_rgba(20,184,166,0.65)]">
-                        <i class="fa-solid fa-gamepad"></i><span class="hidden sm:inline">Mini Game</span><i id="minigame-lock-icon" class="fa-solid fa-lock text-[9px] opacity-80 hidden sm:inline-block" title="Khu vực Premium"></i>
+
+                    <button id="btn-minigame-main" onclick="openMiniGameHub()" class="relative overflow-visible h-10 px-2.5 md:px-3 bg-gradient-to-r from-teal-500 to-emerald-500 text-white font-extrabold rounded-xl text-xs md:text-sm shadow-md hover:from-teal-600 hover:to-emerald-600 flex items-center space-x-1 md:space-x-1.5 shrink-0 transition-shadow duration-200 hover:shadow-[0_0_14px_rgba(20,184,166,0.65)]">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span class="md:hidden">Game</span>
+                        <span class="hidden md:inline">Mini Game</span>
+                        <span id="minigame-lock-icon" class="hidden absolute -top-2 -right-1 text-[11px] leading-none drop-shadow-sm">🔒</span>
                     </button>
                 </div>
             </header>
@@ -621,6 +717,21 @@
     </footer>
 
     <!-- NẠP ENGINE JAVASCRIPT ĐỒNG BỘ -->
-    <script src="assets/js/app.js?v=3.0"></script>
+    <script src="assets/js/app.js?v=3.1"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./service-worker.js').then((reg) => {
+            if (reg.waiting) reg.waiting.postMessage('SKIP_WAITING');
+            reg.addEventListener('updatefound', () => {
+              const worker = reg.installing;
+              if (worker) worker.addEventListener('statechange', () => {
+                if (worker.state === 'installed' && navigator.serviceWorker.controller) worker.postMessage('SKIP_WAITING');
+              });
+            });
+          }).catch(() => {});
+        });
+      }
+    </script>
 </body>
 </html>
