@@ -721,25 +721,60 @@ async function tryAutoLogin() {
     const maHS = localStorage.getItem('tvl3_mahs');
     const sessionToken = localStorage.getItem('tvl3_session_token');
     if (!maHS || !sessionToken) { handleGuestMode(true); return; }
+
     showLoadingOverlay('Đang khôi phục phiên đăng nhập...');
     try {
-        const res = await callAppsScript('resumeSession', { maHS, sessionToken });
+        const res = await callAppsScript('restoreSession', { maHS, sessionToken });
         if (res.ok) {
-            currentUser = { ...res.student, isGuest: false, sessionToken };
+            const refreshedToken = res.sessionToken || sessionToken;
+            currentUser = { ...res.student, isGuest: false, sessionToken: refreshedToken, sessionPending: false };
+            localStorage.setItem('tvl3_mahs', currentUser.maHS || maHS);
+            localStorage.setItem('tvl3_session_token', refreshedToken);
             enterDashboard(true);
-        } else {
-            localStorage.removeItem('tvl3_mahs');
-            localStorage.removeItem('tvl3_session_token');
-            handleGuestMode(true);
+            return;
         }
-    } catch (e) { handleGuestMode(true); }
-    finally { hideLoadingOverlay(); }
+
+        // Token bi backend xac nhan khong hop le/da bi thu hoi: day khong phai loi mang.
+        // Xoa token hong de nguoi dung co the dang nhap lai. Tuyet doi khong luu PIN tren client.
+        localStorage.removeItem('tvl3_mahs');
+        localStorage.removeItem('tvl3_session_token');
+        localStorage.removeItem('tvl3_mapin');
+        handleGuestMode(true);
+        showToast(res.error || 'Phiên đăng nhập không còn hợp lệ. Vui lòng đăng nhập lại.', 'info', 5200);
+    } catch (e) {
+        // Loi mang tam thoi KHONG duoc xoa phien va KHONG ha user ve Khach.
+        // Giữ trạng thái "đang chờ xác thực"; mọi quyền Admin/Trial/VIP vẫn khóa cho tới khi backend xác thực lại.
+        currentUser = {
+            maHS,
+            hoTen: maHS,
+            lop: '',
+            isGuest: false,
+            vaiTro: 'pending',
+            loaiTaiKhoan: 'pending',
+            tuanHienTai: 1,
+            sessionToken,
+            sessionPending: true
+        };
+        enterDashboard(true);
+        showToast('Chưa kết nối được máy chủ. Phiên đăng nhập vẫn được giữ và sẽ xác thực lại khi có mạng.', 'info', 6000);
+    } finally {
+        hideLoadingOverlay();
+    }
 }
 
 async function logout() {
     const token = localStorage.getItem('tvl3_session_token');
     const maHS = localStorage.getItem('tvl3_mahs');
-    if (token && maHS) callAppsScript('logout', { maHS, sessionToken: token }).catch(() => {});
+
+    // Chỉ thao tác này mới chủ động thu hồi phiên phía backend.
+    if (token && maHS) {
+        try { await callAppsScript('logout', { maHS, sessionToken: token }); }
+        catch (e) {
+            // Vẫn xóa local token theo đúng yêu cầu "người dùng chủ động Đăng xuất".
+            // Backend sẽ không còn được client sử dụng token này; lần sau muốn vào phải đăng nhập lại.
+        }
+    }
+
     localStorage.removeItem('tvl3_mahs');
     localStorage.removeItem('tvl3_session_token');
     localStorage.removeItem('tvl3_mapin');
@@ -776,9 +811,11 @@ function updateUserInfoBox() {
     if (!currentUser || currentUser.isGuest) {
         box.innerHTML = `<div class="flex items-center gap-1.5"><span class="text-amber-600 font-extrabold text-xs mr-1">Khách</span><button onclick="openAuthModal('login')" class="h-9 px-3 bg-amber-500 hover:bg-amber-600 text-white rounded-xl text-xs font-extrabold shadow-sm">Sign in</button><button onclick="openAuthModal('register')" class="h-9 px-3 bg-white hover:bg-fuchsia-50 text-fuchsia-600 border border-fuchsia-200 rounded-xl text-xs font-extrabold">Sign up</button></div>`;
     } else {
-        const isAdmin = currentUser.vaiTro === 'admin';
-        const tier = isAdmin ? 'Admin' : ({regular:'Regular', trial:'Trial', vip:'VIP'}[currentUser.loaiTaiKhoan] || 'Regular');
-        box.innerHTML = `<div class="flex items-center space-x-2"><div class="text-right"><div class="text-amber-600 font-extrabold text-xs md:text-sm leading-tight">${escapeHtml(currentUser.hoTen)}</div><div class="text-gray-500 font-semibold text-[10px]">${isAdmin ? 'Admin' : `${tier} · ID ${escapeHtml(currentUser.maHS)}`}</div></div>${isAdmin ? `<button onclick="openAccountManager()" class="h-9 px-3 bg-amber-100 hover:bg-amber-200 text-amber-700 border border-amber-300 rounded-xl text-xs font-extrabold"><i class="fa-solid fa-users-gear mr-1"></i>Quản lý</button>` : ''}<button onclick="logout()" title="Đăng xuất" class="w-9 h-9 flex items-center justify-center bg-orange-50 hover:bg-orange-100 text-orange-500 rounded-xl border border-orange-200 text-xs"><i class="fa-solid fa-right-from-bracket"></i></button></div>`;
+        const isPending = !!currentUser.sessionPending;
+        const isAdmin = !isPending && currentUser.vaiTro === 'admin';
+        const tier = isPending ? 'Chờ xác thực' : (isAdmin ? 'Admin' : ({regular:'Regular', trial:'Trial', vip:'VIP'}[currentUser.loaiTaiKhoan] || 'Regular'));
+        const displayName = isPending ? `ID ${currentUser.maHS}` : currentUser.hoTen;
+        box.innerHTML = `<div class="flex items-center space-x-2"><div class="text-right"><div class="text-amber-600 font-extrabold text-xs md:text-sm leading-tight">${escapeHtml(displayName)}</div><div class="text-gray-500 font-semibold text-[10px]">${isPending ? tier : (isAdmin ? 'Admin' : `${tier} · ID ${escapeHtml(currentUser.maHS)}`)}</div></div>${isAdmin ? `<button onclick="openAccountManager()" class="h-9 px-3 bg-amber-100 hover:bg-amber-200 text-amber-700 border border-amber-300 rounded-xl text-xs font-extrabold"><i class="fa-solid fa-users-gear mr-1"></i>Quản lý</button>` : ''}<button onclick="logout()" title="Đăng xuất" class="w-9 h-9 flex items-center justify-center bg-orange-50 hover:bg-orange-100 text-orange-500 rounded-xl border border-orange-200 text-xs"><i class="fa-solid fa-right-from-bracket"></i></button></div>`;
     }
     applyPremiumLockUI();
 }
