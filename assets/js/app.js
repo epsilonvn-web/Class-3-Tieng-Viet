@@ -135,6 +135,7 @@ const GREETINGS_GUEST = [
 const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxUyrYzgKeYcma0ftcyDnCE2HDNjfewvB_PgvfoQLZI-8Hjul4ATDxhNb9mW9FDFEtQ/exec";
 let allTopicsDataCache = null;
 let allQuestionsFlatCache = null;
+let appViewEpoch = 0; // epoch điều hướng: dùng để hủy tác vụ/audio cũ khi đổi view
 // Bật/tắt đọc câu hỏi TỰ ĐỘNG khi vào câu mới — nút "Nghe câu hỏi" thủ công vẫn luôn hoạt động
 // dù tắt tính năng này (đây chỉ tắt phần tự động phát, không tắt hẳn tính năng nghe).
 let autoSpeechEnabled = localStorage.getItem('tvl3_autoSpeechEnabled') !== 'false';
@@ -440,7 +441,7 @@ async function startRandomExam(categoryKey) {
 
         const pool = (examData && Array.isArray(examData.exams)) ? examData.exams : [];
         let candidates = pool.filter(e => String(e.exam_category || '').trim() === categoryLabel);
-        if (!candidates.length) return alert('Đang cập nhật thêm đề thi cho mục này, bé quay lại sau nhé!');
+        if (!candidates.length) return showToast('Đang cập nhật thêm đề thi cho mục này, bé quay lại sau nhé!', 'info', 4800);
 
         const exam = candidates[Math.floor(Math.random() * candidates.length)];
         const examIndex = pool.indexOf(exam);
@@ -452,13 +453,13 @@ async function startRandomExam(categoryKey) {
         pendingTopicQuiz = null;
 
         const questions = Array.isArray(exam.questions) && exam.questions.length ? exam.questions : [];
-        if (!questions.length) return alert('Đề thi này chưa có câu hỏi, bé chọn đề khác nhé!');
+        if (!questions.length) return showToast('Đề thi này chưa có câu hỏi, bé chọn đề khác nhé!', 'info', 4800);
 
         updateNavTabs("12. Đấu trường đề thi", "🏆", examTitle);
         startTopicQuiz(0, examTitle, shuffleArray(questions), null);
     } catch (err) {
         hideLoadingOverlay();
-        alert(`Không thể tải đề thi: ${err.message}`);
+        showToast(`Không thể tải đề thi: ${err.message}`, 'error', 5600);
     }
 }
 
@@ -471,7 +472,7 @@ function startExamCountdown() {
         updateExamTimerDisplay();
         if (quizRemainingSeconds <= 0) {
             clearInterval(quizTimerInterval);
-            alert('Đã hết giờ làm bài! Bài thi sẽ được nộp lại nhé bé.');
+            showToast('Đã hết giờ làm bài! Bài thi sẽ được nộp lại nhé bé.', 'warning', 4800);
             showResultScreen();
         }
     }, 1000);
@@ -592,7 +593,8 @@ function returnToTopicLecture() {
     } else if (activeRoadmapContext) {
         openRoadmap();
     } else if (pendingTopicQuiz) {
-        updateNavTabs(pendingTopicQuiz.topicName, TOPICS_CONFIG.find(t => t.id === pendingTopicQuiz.topicNum)?.icon, null);
+        if (Number(pendingTopicQuiz.topicNum) === 11) updateNavTabs('Ôn tập', null, null);
+        else updateNavTabs('Khám phá', null, pendingTopicQuiz.topicName);
         switchAppView('view-lecture');
     } else if (inMiniGameFlow) {
         openMiniGameHub();
@@ -792,6 +794,7 @@ function enterDashboard(isSilent = false) {
     document.getElementById('screen-login')?.classList.remove('flex');
     document.getElementById('screen-dashboard')?.classList.remove('hidden');
     updateUserInfoBox();
+    refreshMainTabLocks_();
     resetStars();
     renderDashboardGrid();
     renderExamHubGrid();
@@ -840,7 +843,8 @@ function openTopic(topicNum, topicName, icon) {
     if (Number(topicNum) === 11 && !ensurePremiumAccess('Góc Ôn tập củng cố')) return;
     stopSpeaking();
     activeTopicId = topicNum; activeExamContext = null; activeRoadmapContext = null;
-    updateNavTabs(topicName, icon || '🐝', null);
+    if (Number(topicNum) === 11) updateNavTabs('Ôn tập', null, null);
+    else updateNavTabs('Khám phá', null, topicName);
 
     showLoadingOverlay(`Đang tải chủ đề "${topicName}"...`);
     fetchAllTopicsData().then(topics => {
@@ -853,7 +857,7 @@ function openTopic(topicNum, topicName, icon) {
         // Tải lỗi thì đưa header về đúng trạng thái trang chủ (không để lại tab/gạch breadcrumb thừa)
         activeTopicId = null;
         updateNavTabs(null, null, null);
-        alert(`Không thể tải chủ đề: ${err.message}`);
+        showToast(`Không thể tải chủ đề: ${err.message}`, 'error', 5600);
     });
 }
 
@@ -899,7 +903,8 @@ function showLectureAndSubtopics(topicNum, topicName, topicObj) {
     setSubtopicGridColumns(groups.length);
     document.getElementById('lecture-subtopics-list').innerHTML = subHtml;
 
-    updateNavTabs(topicName, TOPICS_CONFIG.find(t => t.id === topicNum)?.icon || '🔢', null);
+    if (Number(topicNum) === 11) updateNavTabs('Ôn tập', null, null);
+    else updateNavTabs('Khám phá', null, topicName);
     switchAppView('view-lecture');
 }
 
@@ -919,7 +924,8 @@ function selectSubtopic(idx) {
     practiceCycleRawPool = [...pool];
     const firstCycleQuestions = shuffleArray([...pool]);
 
-    updateNavTabs(topicName, TOPICS_CONFIG.find(t => t.id === topicNum)?.icon || '🔢', displayLabel || 'Tất cả các mục');
+    if (Number(topicNum) === 11) updateNavTabs('Ôn tập', null, displayLabel || 'Tất cả các mục');
+    else updateNavTabs('Khám phá', null, topicName, displayLabel || 'Tất cả các mục');
     startTopicQuiz(topicNum, finalTitle, firstCycleQuestions, subLabel);
 }
 
@@ -1025,7 +1031,7 @@ async function selectRoadmapWeek(weekNum) {
     
     const tuanHienTai = Number(currentUser?.tuanHienTai) || 1;
     if (weekNum > tuanHienTai) {
-        return alert(`Tuần ${weekNum} đang bị khóa. Bé hãy hoàn thành Tuần ${tuanHienTai} đạt từ 80% trở lên để mở khóa nhé!`);
+        return showToast(`Nội dung này đang bị khóa. Bé hãy hoàn thành bài trước đạt từ 80% trở lên để mở khóa nhé!`, 'warning', 5200);
     }
 
     if (config.isExam) return openExamHub();
@@ -1041,12 +1047,12 @@ async function selectRoadmapWeek(weekNum) {
         hideLoadingOverlay();
 
         const weekQuestions = getQuestionsForWeek343(weekNum);
-        if (!weekQuestions.length) return alert('Tuần này đang chuẩn bị thêm câu hỏi, bé quay lại sau nhé!');
+        if (!weekQuestions.length) return showToast('Bài này đang chuẩn bị thêm câu hỏi, bé quay lại sau nhé!', 'info', 4800);
 
         startTopicQuiz(weekNum, config.name, weekQuestions, null);
     } catch (err) {
         hideLoadingOverlay();
-        alert(`Lỗi tải dữ liệu tuần: ${err.message}`);
+        showToast(`Không thể tải dữ liệu bài tập: ${err.message}`, 'error', 5600);
     }
 }
 
@@ -1465,7 +1471,7 @@ function nextQuestion() {
     const isEvaluationMode = !!activeExamContext || !!activeRoadmapContext;
 
     if (!isEvaluationMode && userAnswers[currentQIndex] === undefined) {
-        alert('Bé hãy tìm đáp án đúng để hoàn thành câu này nhé!');
+        showToast('Bé hãy tìm đáp án đúng để hoàn thành câu này nhé!', 'warning', 3600);
         return;
     }
 
@@ -1478,7 +1484,7 @@ function nextQuestion() {
         } else {
             confetti({ particleCount: 75, spread: 75, origin: { y: 0.6 } });
             playAudio('win');
-            alert(`🎉 Chúc mừng bé đã hoàn thành trọn vẹn 1 vòng luyện tập (${activeQuestionsList.length} câu)!\nBây giờ cô giáo Ong Vàng sẽ xáo trộn ngẫu nhiên để con bước vào vòng luyện tập tiếp theo nhé!`);
+            showToast(`Chúc mừng bé đã hoàn thành trọn vẹn 1 vòng luyện tập (${activeQuestionsList.length} câu)! Cô Ong Vàng sẽ xáo trộn để con bước vào vòng tiếp theo nhé!`, 'success', 6000);
 
             const basePool = practiceCycleRawPool.length ? practiceCycleRawPool : activeQuestionsList;
             activeQuestionsList = shuffleArray([...basePool]);
@@ -1558,7 +1564,7 @@ function showResultScreen() {
 
     const nextActionLabel = document.getElementById('report-next-action-label');
     if (nextActionLabel) {
-        nextActionLabel.textContent = activeRoadmapContext ? '🔙 Quay lại tiến trình tuần' : '🚀 Làm đề thi tiếp theo';
+        nextActionLabel.textContent = activeRoadmapContext ? '🔙 Quay lại Bài tập' : '🚀 Làm đề thi tiếp theo';
     }
 
     const historyBtn = document.getElementById('report-history-btn');
@@ -1775,7 +1781,7 @@ async function saveWeeklyProgressToSheet(percent, starCount, scoreVal) {
             const nextWeek = week + 1;
             if (nextWeek > (Number(currentUser.tuanHienTai) || 1) && nextWeek <= TOTAL_ROADMAP_WEEKS) {
                 currentUser.tuanHienTai = nextWeek;
-                setTimeout(() => alert(`🎉 Chúc mừng bé đạt ${percent}% điểm! Tuần ${nextWeek} đã được mở khóa trên bản đồ!`), 500);
+                setTimeout(() => showToast(`Chúc mừng bé đạt ${percent}% điểm! Nội dung tiếp theo đã được mở khóa.`, 'success', 5200), 500);
             }
         }
     } catch (e) {}
@@ -1783,7 +1789,7 @@ async function saveWeeklyProgressToSheet(percent, starCount, scoreVal) {
 
 async function openHistoryModal(sheetName = 'LichSuTienTrinhTuan') {
     if (!currentUser || currentUser.isGuest) {
-        return alert('Bé vui lòng đăng nhập để xem lịch sử tiến trình nhé!');
+        return showToast('Bé vui lòng đăng nhập để xem lịch sử tiến trình nhé!', 'info', 4200);
     }
 
     const modal = document.getElementById('modal-history-progress');
@@ -1798,7 +1804,7 @@ document.getElementById('hist-info-dob').textContent = formatDobDisplay(currentU
     document.getElementById('hist-report-date').textContent = new Date().toLocaleDateString('vi-VN');
 
     const titleMap = {
-        LichSuTienTrinhTuan: "Báo cáo tiến trình 24 tuần học tập",
+        LichSuTienTrinhTuan: "Báo cáo lịch sử Bài tập",
         LichSuBaiThiGiuaHK1: "Báo cáo kết quả đấu trường — Giữa học kỳ 1",
         LichSuBaiThiHK1: "Báo cáo kết quả đấu trường — Học kỳ 1",
         LichSuBaiThiGiuaHK2: "Báo cáo kết quả đấu trường — Giữa học kỳ 2",
@@ -1815,7 +1821,7 @@ document.getElementById('hist-info-dob').textContent = formatDobDisplay(currentU
         renderHistoryReport(rows, sheetName);
     } catch (err) {
         hideLoadingOverlay();
-        alert('Không thể tải lịch sử: ' + err.message);
+        showToast('Không thể tải lịch sử: ' + err.message, 'error', 5600);
     }
 }
 
@@ -2227,6 +2233,24 @@ function stopSpeaking() {
     } catch (e) {}
 }
 
+function stopAllAudio() {
+    // Dừng toàn bộ âm thanh đang phát khi chuyển view.
+    // TV3 hiện dùng banMaiAudio là nguồn TTS chính; thêm các nhánh an toàn
+    // để không còn lỗi ReferenceError nếu module mới gọi hàm này.
+    try { stopSpeaking(); } catch (e) {}
+    try {
+        if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    } catch (e) {}
+    try {
+        document.querySelectorAll('audio').forEach(audio => {
+            try {
+                audio.pause();
+                audio.currentTime = 0;
+            } catch (e) {}
+        });
+    } catch (e) {}
+}
+
 function speakVietnamese(text, rate = 0.96) {
     if (!text) return;
     try {
@@ -2519,6 +2543,7 @@ const MINIGAME_LIST = [
 
 function openMiniGameHub() {
     stopSpeaking();
+    setMainTabActive_('games');
     if (!hasPremiumAccess()) {
         showPremiumModal('Mini Game');
         return;
@@ -2612,7 +2637,30 @@ function ensureAuthBackdrop(){ if(document.getElementById('auth-backdrop'))retur
 function showPremiumModal(featureName='Tính năng này'){ let modal=document.getElementById('premium-access-modal'); if(!modal){modal=document.createElement('div');modal.id='premium-access-modal';modal.className='fixed inset-0 z-[80] bg-slate-900/55 backdrop-blur-sm hidden items-center justify-center p-3';document.body.appendChild(modal);} const guest=!currentUser||currentUser.isGuest; const title=guest?'Nội dung Premium':'Tài khoản Regular'; const body=guest?`Đây là <strong>${escapeHtml(featureName)}</strong> dành cho tài khoản <strong>Trial hoặc VIP</strong>.<br><br>Con có thể Sign in nếu đã có tài khoản hoặc Sign up để đăng ký nhé!<br><span class="text-slate-500">Các chuyên đề cơ bản vẫn học miễn phí bình thường.</span>`:`Tài khoản hiện tại của con là <strong>Regular</strong>.<br><br><strong>${escapeHtml(featureName)}</strong> yêu cầu tài khoản <strong>Trial hoặc VIP</strong>. Ba mẹ có thể liên hệ giáo viên để được nâng hạng.`; modal.innerHTML=`<div class="w-full max-w-md bg-white rounded-3xl border-2 border-amber-200 shadow-2xl overflow-hidden"><div class="p-5 bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50 text-center"><div class="text-4xl mb-2">🔒</div><h3 class="text-xl font-black text-amber-700">${title}</h3><div class="mt-3 text-sm font-bold text-slate-700 leading-relaxed">${body}</div></div><div class="p-4 space-y-2 bg-white">${guest?`<div class="grid grid-cols-2 gap-2"><button onclick="closePremiumModal();openAuthModal('login')" class="py-2.5 rounded-xl bg-amber-500 text-white font-extrabold">Sign in</button><button onclick="closePremiumModal();openAuthModal('register')" class="py-2.5 rounded-xl bg-fuchsia-50 text-fuchsia-600 border border-fuchsia-200 font-extrabold">Sign up</button></div>`:''}<button onclick="closePremiumModal()" class="w-full py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-black text-base">Để sau nhé</button></div></div>`; modal.classList.remove('hidden');modal.classList.add('flex'); }
 function closePremiumModal(){const m=document.getElementById('premium-access-modal');if(m){m.classList.add('hidden');m.classList.remove('flex');}}
 function applyPremiumLockUI(){ const locked=!hasPremiumAccess(); const addLock=(el)=>{if(!el)return;el.classList.add('relative');el.querySelector(':scope > .premium-lock-badge')?.remove();if(locked){const span=document.createElement('span');span.className='premium-lock-badge absolute top-2 right-2 text-slate-400 text-xs';span.innerHTML='<i class="fa-solid fa-lock"></i>';el.appendChild(span);}}; addLock(document.querySelector('[onclick^="openTopic(11,"]')); addLock(document.querySelector('[onclick="openExamHub()"]')); const road=document.getElementById('btn-roadmap-main'); if(road){road.querySelector('.roadmap-lock-inline')?.remove();if(locked){const sp=document.createElement('span');sp.className='roadmap-lock-inline ml-1';sp.textContent='🔒';road.appendChild(sp);}} const mg=document.getElementById('minigame-lock-icon'); if(mg) mg.classList.toggle('hidden',!locked); }
-function showToast(message,type='info',duration=3600){let wrap=document.getElementById('app-toast-wrap');if(!wrap){wrap=document.createElement('div');wrap.id='app-toast-wrap';wrap.className='fixed z-[100] top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-lg';document.body.appendChild(wrap);}const cls=type==='success'?'border-emerald-200 text-emerald-800 bg-emerald-50':'border-amber-200 text-amber-800 bg-amber-50';const t=document.createElement('div');t.className=`px-4 py-3 rounded-2xl border shadow-xl text-sm font-extrabold ${cls}`;t.textContent=message;wrap.innerHTML='';wrap.appendChild(t);setTimeout(()=>t.remove(),duration);}
+function showToast(message,type='info',duration=3600){
+    let wrap=document.getElementById('app-toast-wrap');
+    if(!wrap){
+        wrap=document.createElement('div');
+        wrap.id='app-toast-wrap';
+        wrap.className='fixed z-[100] top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-lg pointer-events-none';
+        document.body.appendChild(wrap);
+    }
+    const styles={
+        success:{cls:'border-emerald-200 text-emerald-800 bg-emerald-50',icon:'✅'},
+        error:{cls:'border-rose-200 text-rose-800 bg-rose-50',icon:'🌷'},
+        warning:{cls:'border-amber-200 text-amber-900 bg-amber-50',icon:'💡'},
+        info:{cls:'border-purple-200 text-purple-800 bg-purple-50',icon:'🐝'}
+    };
+    const st=styles[type]||styles.info;
+    const t=document.createElement('div');
+    t.className=`pointer-events-auto px-4 py-3 rounded-2xl border-2 shadow-xl text-sm font-extrabold flex items-start gap-2 backdrop-blur-sm ${st.cls}`;
+    const icon=document.createElement('span'); icon.className='text-lg leading-5 shrink-0'; icon.textContent=st.icon;
+    const text=document.createElement('span'); text.className='leading-5 flex-1'; text.textContent=String(message??'');
+    t.append(icon,text);
+    wrap.innerHTML=''; wrap.appendChild(t);
+    requestAnimationFrame(()=>{t.classList.add('animate-[pulse_0.18s_ease-out_1]');});
+    setTimeout(()=>{t.style.opacity='0';t.style.transform='translateY(-6px)';t.style.transition='all .22s ease';setTimeout(()=>t.remove(),230);},duration);
+}
 let adminStudentsCache=[]; let adminSortKey='MaHS'; let adminSortAsc=true;
 async function openAccountManager(){if(!isAdminUser())return;ensureAdminModal();const m=document.getElementById('admin-manager-modal');m.classList.remove('hidden');m.classList.add('flex');await refreshAdminStudents();}
 function closeAccountManager(){const m=document.getElementById('admin-manager-modal');if(m){m.classList.add('hidden');m.classList.remove('flex');}}
@@ -2649,3 +2697,213 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 tryAutoLogin();
+
+// ============================================================
+// TV3 V10 STEP 1 - BAI HOC <-> BAI TAP THEO SGK
+// UI tong the giu nguyen; chi them module va thay logic roadmap cu.
+// ============================================================
+const BAI_HOC_DATA_FILE_V10 = 'assets/data/bai_hoc_tieng_viet_3.json';
+let baiHocDataCacheV10 = null;
+let inBaiHocFlow = false;
+let activeBaiHocContext = { semester: 1, bai: null, lessonId: null, pageNo: 1 };
+
+async function loadBaiHocDataV10_() {
+    if (baiHocDataCacheV10) return baiHocDataCacheV10;
+    const res = await fetch(BAI_HOC_DATA_FILE_V10);
+    if (!res.ok) throw new Error('Không thể tải dữ liệu Bài học');
+    baiHocDataCacheV10 = await res.json();
+    return baiHocDataCacheV10;
+}
+function getBaiHocProgressKeyV10_(){ const id=currentUser?.maHS||'KHACH'; return `tv3_bai_hoc_completed_v10_${String(id).toUpperCase()}`; }
+function getBaiHocCompletedSetV10_(){ try{return new Set(JSON.parse(localStorage.getItem(getBaiHocProgressKeyV10_())||'[]'));}catch(e){return new Set();} }
+function saveBaiHocCompletedSetV10_(s){ try{localStorage.setItem(getBaiHocProgressKeyV10_(),JSON.stringify([...s]));}catch(e){} }
+function getBaiTapUnlockKeyV10_(){ const id=currentUser?.maHS||'KHACH'; return `tv3_bai_tap_unlocked_v10_${String(id).toUpperCase()}`; }
+function getUnlockedBaiTapV10_(){ try{return Math.max(1,Number(localStorage.getItem(getBaiTapUnlockKeyV10_())||1));}catch(e){return 1;} }
+function saveUnlockedBaiTapV10_(n){ try{localStorage.setItem(getBaiTapUnlockKeyV10_(),String(Math.max(1,Number(n)||1)));}catch(e){} }
+
+async function openBaiHocHub(semesterNumber=1){
+    stopSpeaking(); clearInterval(quizTimerInterval);
+    if(!hasPremiumAccess()){ showPremiumGate('Bài học','📖'); return; }
+    inBaiHocFlow=true; inMiniGameFlow=false; setMainTabActive_('lessons'); activeExamContext=null; activeRoadmapContext=null; activeTopicId=null; pendingTopicQuiz=null;
+    activeBaiHocContext={semester:Number(semesterNumber)||1,bai:null,lessonId:null,pageNo:1};
+    updateNavTabs('Bài học','📖',null); switchAppView('view-bai-hoc-hub'); showLoadingOverlay('Đang mở Bài học Tiếng Việt 3...');
+    try{const data=await loadBaiHocDataV10_(); renderBaiHocHubV10_(data,activeBaiHocContext.semester);}catch(err){showToast(`Không thể mở Bài học: ${err.message}`, 'error', 5600);}finally{hideLoadingOverlay();}
+}
+function renderBaiHocHubV10_(data,semesterNumber){
+    const tabs=document.getElementById('bai-hoc-semester-tabs'),grid=document.getElementById('bai-hoc-week-grid'),sub=document.getElementById('bai-hoc-hub-subtitle');
+    if(!tabs||!grid)return;
+    const arr=(data.bai_hoc||[]).filter(x=>Number(x.semester)===Number(semesterNumber));
+    tabs.innerHTML=[1,2].map(s=>`<button onclick="openBaiHocHub(${s})" class="semester-switch-btn ${Number(s)===Number(semesterNumber)?'is-active':'is-inactive'}">Học kỳ ${s}</button>`).join('');
+    if(sub)sub.textContent=`Học kỳ ${semesterNumber} · ${arr.length} bài theo SGK`;
+    const done=getBaiHocCompletedSetV10_();
+    grid.innerHTML=arr.map(l=>`<button onclick="openBaiHocByNumberV10_(${l.bai},1)" class="text-left min-h-[78px] rounded-2xl border-2 ${done.has(l.lesson_id)?'border-emerald-300 bg-emerald-50/60':'border-pink-200 bg-gradient-to-br from-white via-pink-50/40 to-purple-50/50'} p-3 hover:border-purple-400 hover:shadow-md transition-all"><div class="font-black text-purple-700 text-sm md:text-base">Bài ${l.bai}</div><div class="text-xs md:text-sm font-bold text-slate-700 mt-1 line-clamp-2">${escapeHtml(l.source_title||'')}</div></button>`).join('');
+}
+async function openBaiHocByNumberV10_(bai,pageNo=1){
+    stopSpeaking(); inBaiHocFlow=true; const data=await loadBaiHocDataV10_(); const l=(data.bai_hoc||[]).find(x=>Number(x.bai)===Number(bai)); if(!l)return showToast('Không tìm thấy bài học.', 'error', 4200);
+    const p=Math.max(1,Math.min(3,Number(pageNo)||1)); activeBaiHocContext={semester:Number(l.semester),bai:Number(bai),lessonId:l.lesson_id,pageNo:p};
+    updateNavTabs('Bài học','📖',`Bài ${bai}`,l.source_title||''); switchAppView('view-bai-hoc-lesson'); renderBaiHocLessonV10_(l,p);
+}
+function escapeJsBaiHocV11_(s){ return String(s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/\r?\n/g,' '); }
+function getBaiHocReadTextV11_(p,l){
+    const m=p?.material||{};
+    if(Array.isArray(m.paragraphs)) return m.paragraphs.join(' ');
+    if(Array.isArray(m.lines)) return m.lines.filter(Boolean).join(' ');
+    return m.text||l?.source_title||'';
+}
+function renderBaiHocReadingV11_(l,p){
+    const m=p.material||{};
+    let content='';
+    if(Array.isArray(m.lines)){
+        content=`<div class="space-y-1">${m.lines.map(line=>line?`<p class="text-[16px] md:text-[18px] leading-8 font-bold text-slate-800">${escapeHtml(line)}</p>`:'<div class="h-1.5"></div>').join('')}</div>`;
+    }else if(Array.isArray(m.paragraphs)){
+        content=`<div class="space-y-2.5">${m.paragraphs.map(x=>`<p class="text-[16px] md:text-[18px] leading-8 font-semibold text-slate-800">${escapeHtml(x)}</p>`).join('')}</div>`;
+    }else{
+        content=`<p class="text-[16px] md:text-[18px] leading-8 font-semibold text-slate-800">${escapeHtml(m.text||'Nội dung đang được cập nhật.')}</p>`;
+    }
+    const words=(p.words||[]).map(w=>`<button onclick="speakVietnamese('${escapeJsBaiHocV11_(w.word)}',0.9)" class="px-3 py-2 rounded-xl bg-purple-50 border border-purple-100 text-purple-700 font-black text-sm text-left">🔊 ${escapeHtml(w.word)}${w.meaning?` <span class="text-slate-500 font-semibold">· ${escapeHtml(w.meaning)}</span>`:''}</button>`).join('');
+    const readText=escapeJsBaiHocV11_(getBaiHocReadTextV11_(p,l));
+    const imgSrc=String(p.image||m.image||'').trim();
+    const imagePanel=imgSrc?`<div class="flex items-start justify-center"><div class="w-full overflow-hidden rounded-[22px] border-2 border-pink-100 bg-white shadow-sm"><img src="${escapeHtml(imgSrc)}" alt="Tranh minh họa ${escapeHtml(l.source_title||'bài học')}" class="block w-full h-auto max-h-[520px] object-contain bg-pink-50/20" onerror="this.parentElement.parentElement.style.display='none'"></div></div>`:'';
+    return `<div class="space-y-3">
+      <div class="flex items-center justify-between gap-3 rounded-2xl bg-gradient-to-r from-pink-50 to-purple-50 border border-pink-200 px-4 py-2.5"><p class="font-black text-slate-800 text-sm md:text-base">🐝 ${escapeHtml(p.intro||'Cùng Cô Ong Vàng đọc bài nhé!')}</p><button onclick="speakVietnamese('${readText}',0.94)" class="px-4 py-2 rounded-xl bg-purple-100 hover:bg-purple-200 border border-purple-200 text-purple-700 font-black text-sm shrink-0">🔊 Cô đọc</button></div>
+      <div class="grid grid-cols-1 ${imgSrc?'md:grid-cols-[48%_52%]':''} gap-3 md:gap-4 items-start">
+        ${imagePanel}
+        <div class="min-w-0 rounded-2xl border border-pink-100 bg-white p-4 md:p-5"><h3 class="font-black text-xl md:text-2xl text-purple-800 mb-3">${escapeHtml(m.title||l.source_title||'')}</h3>${content}${words?`<div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-pink-100">${words}</div>`:''}</div>
+      </div></div>`;
+}
+function renderBaiHocQuestionsV11_(l,p){
+    const items=(p.items||[]).map((x,i)=>{
+      if(x.type==='choice'){
+        return `<div class="rounded-2xl bg-pink-50/60 border border-pink-100 p-3"><div class="font-black text-slate-700 mb-2">${i+1}. ${escapeHtml(x.prompt||'')}</div>${(x.options||[]).map((op,j)=>`<button onclick="this.parentElement.querySelectorAll('button').forEach(b=>b.classList.remove('bg-emerald-100','border-emerald-300','bg-rose-50','border-rose-200')); if(${j}===${Number(x.answer||0)}){this.classList.add('bg-emerald-100','border-emerald-300'); showToast('Đúng rồi! Con đã nắm được ý chính của bài.', 'success', 2200);}else{this.classList.add('bg-rose-50','border-rose-200'); showToast('Con đọc lại chi tiết trong bài rồi thử lại nhé.', 'info', 2200);}" class="w-full text-left px-3 py-2.5 my-1 rounded-xl bg-white border border-pink-100 font-bold text-sm md:text-base">${String.fromCharCode(65+j)}. ${escapeHtml(op)}</button>`).join('')}</div>`;
+      }
+      const icon=x.type==='speak'?'🎙️':'🌱';
+      return `<div class="rounded-2xl ${x.type==='speak'?'bg-purple-50 border-purple-100':'bg-emerald-50 border-emerald-100'} border p-3"><div class="font-bold text-slate-700 leading-7">${i+1}. ${icon} ${escapeHtml(x.prompt||'')}</div></div>`;
+    }).join('');
+    const examples=(p.extra_examples||[]).map(x=>`<div class="rounded-xl bg-white border border-purple-100 px-3 py-2 text-sm font-semibold text-slate-600">✨ ${escapeHtml(x)}</div>`).join('');
+    return `<div class="space-y-3"><div class="rounded-2xl bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 p-3"><div class="font-black text-purple-700">🐝 Nhớ lại bài đọc</div><p class="font-semibold text-slate-700 mt-1 leading-7">${escapeHtml(p.recall||'Con đọc lại bài rồi trả lời nhé.')}</p></div>${items||'<p class="text-slate-500">Câu hỏi đang được cập nhật.</p>'}${examples?`<div class="grid gap-2">${examples}</div>`:''}</div>`;
+}
+function renderBaiHocSummaryV11_(l,p){
+    const points=(p.key_points||[]).map(x=>`<li>${escapeHtml(x)}</li>`).join('');
+    const words=(p.words||[]).map(w=>`<span class="inline-flex px-3 py-2 rounded-full bg-pink-50 border border-pink-100 text-pink-700 font-black text-sm">${escapeHtml(w.word)}${w.meaning?` · <span class="ml-1 text-slate-500 font-semibold">${escapeHtml(w.meaning)}</span>`:''}</span>`).join('');
+    const conn=(p.connections||[]).map(x=>`<div class="rounded-xl bg-white border border-purple-100 px-3 py-2 text-sm font-semibold text-slate-700">🔗 ${escapeHtml(x)}</div>`).join('');
+    return `<div class="space-y-3"><div class="rounded-3xl bg-gradient-to-br from-amber-50 via-pink-50 to-purple-50 border-2 border-amber-200 p-4"><div class="text-[11px] font-black text-amber-600">🌟 TỔNG KẾT</div><h3 class="font-black text-xl text-purple-800 mt-1">Con đã học được gì?</h3><ul class="list-disc pl-5 mt-3 space-y-2 text-sm md:text-base text-slate-700 font-semibold leading-7">${points}</ul></div>${words?`<div class="rounded-2xl bg-white border border-pink-100 p-4"><div class="font-black text-pink-700 mb-2">💬 Từ hay cần nhớ</div><div class="flex flex-wrap gap-2">${words}</div></div>`:''}${conn?`<div class="rounded-2xl bg-purple-50/60 border border-purple-100 p-4"><div class="font-black text-purple-700 mb-2">🌈 Liên hệ thêm</div>${conn}</div>`:''}<div class="rounded-2xl bg-emerald-50 border border-emerald-100 p-4"><div class="font-black text-emerald-700">🎙️ Trước khi xong bài</div><p class="text-sm md:text-base font-semibold text-slate-700 mt-1">${escapeHtml(p.finish_prompt||'Con nói một điều con nhớ nhất nhé!')}</p></div><button onclick="markBaiHocCompleteV10_()" class="w-full py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-2xl font-black shadow-sm">✅ Hoàn thành Bài ${l.bai}</button></div>`;
+}
+function renderBaiHocLessonV10_(l,pageNo){
+    const meta=document.getElementById('bai-hoc-lesson-meta'),title=document.getElementById('bai-hoc-lesson-title'),box=document.getElementById('bai-hoc-sections'); if(!box)return;
+    if(meta)meta.textContent=`Bài ${l.bai} · ${l.theme||''}`; if(title){title.textContent='';title.classList.add('hidden');}
+    const p=(l.pages||[]).find(x=>Number(x.page_no)===Number(pageNo))||{};
+    const tabs=['Bài đọc','Câu hỏi','Tổng kết'].map((label,i)=>{const n=i+1,a=n===Number(pageNo);return `<button onclick="openBaiHocByNumberV10_(${l.bai},${n})" class="py-2.5 rounded-xl border font-black text-xs md:text-sm ${a?'bg-gradient-to-r from-pink-500 to-purple-500 text-white border-purple-400 shadow-sm':'bg-pink-50/70 text-purple-700 border-pink-200 hover:bg-purple-50'}">${label}</button>`}).join('');
+    const body=p.page_type==='reading'?renderBaiHocReadingV11_(l,p):p.page_type==='questions'?renderBaiHocQuestionsV11_(l,p):renderBaiHocSummaryV11_(l,p);
+    const prev=pageNo>1?`<button onclick="openBaiHocByNumberV10_(${l.bai},${pageNo-1})" class="px-4 py-2 bg-white border border-purple-200 text-purple-700 rounded-xl font-black text-xs">← Trang trước</button>`:'<span></span>';
+    const next=pageNo<3?`<button onclick="openBaiHocByNumberV10_(${l.bai},${pageNo+1})" class="px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-xl font-black text-xs shadow-sm">Trang tiếp →</button>`:`<button onclick="openBaiHocByNumberV10_(${l.bai},1)" class="px-4 py-2 bg-purple-50 border border-purple-200 text-purple-700 rounded-xl font-black text-xs">↺ Xem lại</button>`;
+    box.innerHTML=`<div class="grid grid-cols-3 gap-2 mb-3">${tabs}</div>${body}<div class="flex items-center justify-between mt-3">${prev}<span class="text-xs font-black text-slate-400">${pageNo}/3</span>${next}</div>`;
+}
+function markBaiHocCompleteV10_(){const id=activeBaiHocContext?.lessonId;if(!id)return;const s=getBaiHocCompletedSetV10_();s.add(id);saveBaiHocCompletedSetV10_(s);if(event?.currentTarget)event.currentTarget.textContent='✅ Đã hoàn thành bài học';}
+
+async function openRoadmap(semesterNumber=1){
+    stopSpeaking(); setMainTabActive_('exercises'); if(!hasPremiumAccess()){showPremiumGate('Bài tập','✏️');return;} inMiniGameFlow=false;inBaiHocFlow=false;activeExamContext=null;activeTopicId=null;pendingTopicQuiz=null;
+    updateNavTabs('Bài tập','✏️',null);switchAppView('view-roadmap');showLoadingOverlay('Đang mở Bài tập...');
+    try{const data=await loadBaiHocDataV10_();renderBaiTapGridV10_(data,semesterNumber);}catch(err){showToast(`Không thể mở Bài tập: ${err.message}`, 'error', 5600);}finally{hideLoadingOverlay();}
+}
+function renderBaiTapGridV10_(data,semesterNumber){
+    const host=document.getElementById('roadmap-svg-container'),tabs=document.getElementById('roadmap-semester-tabs');if(!host)return;
+    const arr=(data.bai_tap||[]).filter(x=>Number(x.semester)===Number(semesterNumber)), unlocked=getUnlockedBaiTapV10_();
+    if(tabs)tabs.innerHTML=[1,2].map(s=>`<button onclick="openRoadmap(${s})" class="semester-switch-btn ${Number(s)===Number(semesterNumber)?'is-active':'is-inactive'}">Học kỳ ${s}</button>`).join('');
+    host.className='w-full bg-gradient-to-br from-pink-50/70 via-white to-purple-50/70 rounded-3xl border-2 border-pink-200 p-3 md:p-4 shadow-sm';
+    host.innerHTML=`<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 w-full">${arr.map(bt=>{const ok=Number(bt.bai)<=unlocked;return `<button onclick="${ok?`selectBaiTapV10_(${bt.bai})`:`showLockedBaiTapV10_(${bt.bai})`}" class="relative text-left min-h-[88px] rounded-2xl border-2 p-3 ${ok?'bg-gradient-to-br from-white via-pink-50/40 to-purple-50/50 border-pink-200 hover:border-purple-400':'bg-slate-50 border-slate-200 opacity-60'} hover:shadow-md transition-all"><div class="flex justify-between gap-2"><span class="font-black ${ok?'text-purple-700':'text-slate-500'}">Bài ${bt.bai}</span>${ok?'':'<span>🔒</span>'}</div><div class="text-xs md:text-sm font-bold text-slate-700 mt-1 line-clamp-2">${escapeHtml(bt.title||'')}</div><div class="text-[10px] font-black mt-1 ${ok?'text-pink-600':'text-slate-400'}">${ok?'20 câu':'Cần ≥80% bài trước'}</div></button>`}).join('')}</div>`;
+}
+function showLockedBaiTapV10_(bai){showToast(`Bài tập ${bai} chưa mở. Bé cần đạt từ 80% ở Bài tập trước để mở khóa nhé!`, 'warning', 5200);}
+function getQuestionsForBaiTapV10_(bt){
+    if(!bt||!allQuestionsFlatCache)return[];
+    const labels=(bt.sub_topics||[]).map(x=>String(x).trim()), topicIds=(bt.topic_ids||[]).map(Number);
+    const exact=allQuestionsFlatCache.filter(q=>labels.includes(String(q.sub_topic||'').trim()));
+    const broad=allQuestionsFlatCache.filter(q=>topicIds.includes(Number(q.source_topic_id)));
+    const merged=[];const seen=new Set();
+    [...shuffleArray(exact),...shuffleArray(broad)].forEach(q=>{const k=String(q.question_id);if(!seen.has(k)){seen.add(k);merged.push(q);}});
+    const candidate=merged.slice(0,Math.min(Number(bt.candidate_pool_target||30),merged.length));
+    return shuffleArray(candidate).slice(0,Math.min(Number(bt.question_count||20),candidate.length));
+}
+async function selectBaiTapV10_(bai){
+    stopSpeaking();showLoadingOverlay(`Đang chuẩn bị Bài tập ${bai}...`);
+    try{const data=await loadBaiHocDataV10_(),bt=(data.bai_tap||[]).find(x=>Number(x.bai)===Number(bai));if(!bt)throw new Error('Không tìm thấy Bài tập');if(Number(bai)>getUnlockedBaiTapV10_()){showLockedBaiTapV10_(bai);return;}await fetchAllTopicsData();const qs=getQuestionsForBaiTapV10_(bt);if(!qs.length)throw new Error('Kho câu hỏi phù hợp bài này chưa đủ dữ liệu');activeRoadmapContext={week:Number(bai),bai:Number(bai),semester:Number(bt.semester),topicId:`BT${bai}`,chuDe:`Bài tập ${bai} · ${bt.title||''}`};activeExamContext=null;pendingTopicQuiz=null;updateNavTabs('Bài tập','✏️',`Bài ${bai}`,bt.title||'');startTopicQuiz(bai,activeRoadmapContext.chuDe,qs,null);}catch(err){showToast(`Không thể mở Bài tập: ${err.message}`, 'error', 5600);}finally{hideLoadingOverlay();}
+}
+
+// Override view router de nhan 2 view Bai hoc moi.
+function switchAppView(viewId){
+    appViewEpoch++; stopAllAudio(); if(viewId!=='view-game-play')activeMiniGameId=null;
+    ['view-dashboard-grid','view-bai-hoc-hub','view-bai-hoc-lesson','view-lecture','view-quiz','view-roadmap','view-minigame-hub','view-game-play','view-exam-hub','view-result'].forEach(id=>{const el=document.getElementById(id);if(!el)return;el.classList.toggle('hidden',id!==viewId);});
+}
+function returnToTopicLecture(){
+    stopSpeaking();clearInterval(quizTimerInterval);
+    if(inBaiHocFlow){openBaiHocHub(activeBaiHocContext.semester||1);}else if(activeExamContext){openExamHub();}else if(activeRoadmapContext){openRoadmap(activeRoadmapContext.semester||1);}else if(pendingTopicQuiz){if(Number(pendingTopicQuiz.topicNum)===11)updateNavTabs('Ôn tập',null,null);else updateNavTabs('Khám phá',null,pendingTopicQuiz.topicName);switchAppView('view-lecture');}else if(currentMainTab==='discover'){goHome();}else if(inMiniGameFlow){openMiniGameHub();}
+}
+function clickProgressOrExam(type){
+    if(type==='progress'){if(!hasPremiumAccess()){showPremiumGate('Bài tập','✏️');return;}openRoadmap(1);return;}
+    if(!currentUser||currentUser.isGuest){showLoginRequiredGate('Tính năng này','🐝');return;}if(type==='exam')openExamHub();
+}
+
+// Ghi Bài tập vao sheet cu de tuong thich backend, nhung progression tren client theo Bài.
+async function saveWeeklyProgressToSheet(percent,starCount,scoreVal){
+    const ctx=activeRoadmapContext||{},bai=Number(ctx.bai||ctx.week||1),thoiGianLamBai=quizStartTime?formatDuration(Date.now()-quizStartTime):'',scoreThang10=(scoreVal??((score/activeQuestionsList.length)*10)).toFixed(1);
+    const skillCorrect={C1:0,C2:0,C3:0,C4:0,C5:0,C6:0},skillTotal={C1:0,C2:0,C3:0,C4:0,C5:0,C6:0};
+    quizAnsweredLog.forEach(item=>{const tag=skillCodeFromTag(item.skill_tag||'TV3_C1');skillTotal[tag]++;if(item.isCorrect)skillCorrect[tag]++;});
+    const payload={student_id:currentUser.maHS,maHS:currentUser.maHS,sessionToken:currentUser.sessionToken||localStorage.getItem('tvl3_session_token')||'',hoTen:currentUser.hoTen,lop:currentUser.lop,sheetName:'LichSuTienTrinhTuan',week_completed:bai,tuan:bai,chuDe:ctx.chuDe,topicId:ctx.topicId,score:scoreThang10,stars_earned:starCount,tongCauHoi:activeQuestionsList.length,soCauDung:quizAnsweredLog.filter(x=>x.isCorrect).length,percent,thoiGianLamBai,wrongQuestions:quizWrongAnswers};
+    Object.keys(SKILL_TAXONOMY).forEach(k=>{payload[SKILL_TAXONOMY[k].sheetCol]=skillCorrect[k];payload[SKILL_TAXONOMY[k].totalCol]=skillTotal[k];});
+    if(percent>=80){const next=bai+1;if(next>getUnlockedBaiTapV10_()&&next<=62){saveUnlockedBaiTapV10_(next);setTimeout(()=>showToast(`Chúc mừng bé đạt ${percent}%! Bài tập ${next} đã được mở khóa.`, 'success', 5200),500);}}
+    try{await callAppsScript('saveWeeklyProgress',payload);}catch(e){console.warn('[Bài tập] Chưa lưu được lịch sử lên máy chủ:',e);}
+}
+
+function goHome(){
+    stopSpeaking(); inMiniGameFlow=false; inBaiHocFlow=false; activeBaiHocContext={semester:1,bai:null,lessonId:null,pageNo:1}; clearInterval(quizTimerInterval); updateNavTabs(null,null,null); switchAppView('view-dashboard-grid');
+}
+
+document.addEventListener('DOMContentLoaded',()=>{
+    const h=document.querySelector('#view-roadmap h2');if(h)h.innerHTML='<span>✏️</span><span>Bài tập</span>';
+    const p=document.querySelector('#view-roadmap h2 + p');if(p)p.textContent='20 câu mỗi bài · đạt từ 80% để mở Bài tập tiếp theo.';
+});
+
+
+// ============================================================
+// TV3 V12 - 6 TAB CHÍNH + HOME = KHÁM PHÁ
+// ============================================================
+let currentMainTab = 'discover';
+function setMainTabActive_(tabName){
+    currentMainTab=tabName||'discover';
+    document.querySelectorAll('.main-module-tab').forEach(btn=>{
+        const active=btn.dataset.tab===currentMainTab;
+        btn.classList.toggle('is-active',active);
+        btn.setAttribute('aria-selected',active?'true':'false');
+    });
+}
+function refreshMainTabLocks_(){
+    const locked=!hasPremiumAccess();
+    ['bai-hoc-lock-icon','roadmap-lock-icon','review-lock-icon','exam-lock-icon','minigame-lock-icon'].forEach(id=>document.getElementById(id)?.classList.toggle('hidden',!locked));
+}
+function openReviewTab(){
+    if(!hasPremiumAccess()){showPremiumGate('Ôn tập','🧠');return;}
+    setMainTabActive_('review');
+    openTopic(11,'11. Ôn tập tổng hợp','🧠');
+}
+function openMainTab(tabName){
+    stopSpeaking(); clearInterval(quizTimerInterval);
+    switch(tabName){
+        case 'discover': goHome(); break;
+        case 'lessons': openBaiHocHub(1); break;
+        case 'exercises': openRoadmap(1); break;
+        case 'review': openReviewTab(); break;
+        case 'exams': setMainTabActive_('exams'); openExamHub(); break;
+        case 'games': setMainTabActive_('games'); openMiniGameHub(); break;
+        default: goHome();
+    }
+}
+
+function goHome(){
+    stopSpeaking(); clearInterval(quizTimerInterval);
+    inMiniGameFlow=false; inBaiHocFlow=false; activeExamContext=null; activeRoadmapContext=null; activeTopicId=null; pendingTopicQuiz=null;
+    activeBaiHocContext={semester:1,bai:null,lessonId:null,pageNo:1};
+    updateNavTabs('Khám phá','🧭',null); setMainTabActive_('discover'); switchAppView('view-dashboard-grid');
+}
+
+function applyPremiumLockUI(){
+    refreshMainTabLocks_();
+}
