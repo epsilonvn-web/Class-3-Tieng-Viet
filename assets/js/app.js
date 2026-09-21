@@ -423,6 +423,7 @@ async function renderDashboardGrid() {
 
 async function startRandomExam(categoryKey) {
     stopSpeaking();
+    setAppShellRootMode_(false);
     // Dữ liệu đề thi Tiếng Việt 3 mang sẵn "exam_category" dạng chữ (VD "Học kì 1") —
     // lọc khớp CHÍNH XÁC với examFileMap[categoryKey].category.
     const categoryLabel = examFileMap[categoryKey]?.category || '';
@@ -481,6 +482,7 @@ function updateExamTimerDisplay() {
 
 function openExamHub() {
     if (!ensurePremiumAccess('Đấu trường đề thi')) return;
+    setAppShellRootMode_(true);
     stopSpeaking();
     activeExamContext = null;
     activeRoadmapContext = null;
@@ -587,7 +589,7 @@ function returnToTopicLecture() {
         openRoadmap();
     } else if (pendingTopicQuiz) {
         if (Number(pendingTopicQuiz.topicNum) === 11) updateNavTabs('Ôn tập', null, null);
-        else updateNavTabs('Khám phá', null, pendingTopicQuiz.topicName);
+        else updateNavTabs(pendingTopicQuiz.topicName, TOPICS_CONFIG.find(t => Number(t.id) === Number(pendingTopicQuiz.topicNum))?.icon || '🐝', null);
         switchAppView('view-lecture');
     } else if (inMiniGameFlow) {
         openMiniGameHub();
@@ -805,13 +807,14 @@ function updateUserInfoBox() {
     const box = document.getElementById('user-info-box');
     if (!box) return;
     if (!currentUser || currentUser.isGuest) {
-        box.innerHTML = `<div class="flex items-center gap-1.5"><span class="text-amber-600 font-extrabold text-xs mr-1">Khách</span><button onclick="openAuthModal('login')" class="h-9 px-3 bg-amber-500 hover:bg-amber-600 text-white rounded-xl text-xs font-extrabold shadow-sm">Sign in</button><button onclick="openAuthModal('register')" class="h-9 px-3 bg-white hover:bg-fuchsia-50 text-fuchsia-600 border border-fuchsia-200 rounded-xl text-xs font-extrabold">Sign up</button></div>`;
+        box.innerHTML = `<div class="flex items-center gap-1.5"><span class="text-amber-600 font-extrabold text-[11px] mr-0.5">Khách</span><button onclick="openAuthModal('login')" class="h-9 px-3 rounded-xl bg-gradient-to-r from-pink-500 to-rose-500 text-white text-[11px] font-black shadow-sm pastel-btn">Sign in</button><button onclick="openAuthModal('register')" class="h-9 px-3 rounded-xl bg-purple-50 text-purple-700 border border-purple-200 text-[11px] font-black shadow-sm pastel-btn">Sign up</button></div>`;
     } else {
         const isPending = !!currentUser.sessionPending;
         const isAdmin = !isPending && currentUser.vaiTro === 'admin';
-        const tier = isPending ? 'Chờ xác thực' : (isAdmin ? 'Admin' : ({regular:'Regular', trial:'Trial', vip:'VIP'}[currentUser.loaiTaiKhoan] || 'Regular'));
+        const tier = isPending ? 'Chờ xác thực' : (isAdmin ? 'Admin' : ({regular:'REGULAR', trial:'TRIAL', vip:'VIP'}[currentUser.loaiTaiKhoan] || 'REGULAR'));
         const displayName = isPending ? `ID ${currentUser.maHS}` : currentUser.hoTen;
-        box.innerHTML = `<div class="flex items-center space-x-2"><div class="text-right"><div class="text-amber-600 font-extrabold text-xs md:text-sm leading-tight">${escapeHtml(displayName)}</div><div class="text-gray-500 font-semibold text-[10px]">${isPending ? tier : (isAdmin ? 'Admin' : `${tier} · ID ${escapeHtml(currentUser.maHS)}`)}</div></div>${isAdmin ? `<button onclick="openAccountManager()" class="h-9 px-3 bg-amber-100 hover:bg-amber-200 text-amber-700 border border-amber-300 rounded-xl text-xs font-extrabold"><i class="fa-solid fa-users-gear mr-1"></i>Quản lý</button>` : ''}<button onclick="logout()" title="Đăng xuất" class="w-9 h-9 flex items-center justify-center bg-orange-50 hover:bg-orange-100 text-orange-500 rounded-xl border border-orange-200 text-xs"><i class="fa-solid fa-right-from-bracket"></i></button></div>`;
+        const adminBtn = isAdmin ? `<button onclick="openAccountManager()" title="Quản lý tài khoản" class="relative h-9 px-3 flex items-center gap-1.5 bg-purple-50 hover:bg-purple-100 text-purple-700 rounded-xl border border-purple-200 text-[11px] font-black shadow-sm pastel-btn whitespace-nowrap"><i class="fa-solid fa-users-gear"></i><span class="admin-manage-label">Quản lý</span></button>` : '';
+        box.innerHTML = `<div class="flex items-center gap-1.5"><div class="text-right"><div class="text-pink-600 font-extrabold text-xs md:text-sm leading-tight">${escapeHtml(displayName)}</div><div class="text-gray-500 font-semibold text-[10px]">${isPending ? tier : (isAdmin ? `Admin · ID ${escapeHtml(currentUser.maHS)}` : `${tier} · ID ${escapeHtml(currentUser.maHS)}`)}</div></div>${adminBtn}<button onclick="logout()" title="Đăng xuất" class="w-8 h-8 flex items-center justify-center bg-rose-100 hover:bg-rose-200 text-rose-500 rounded-xl border border-rose-200 text-xs"><i class="fa-solid fa-right-from-bracket"></i></button></div>`;
     }
     applyPremiumLockUI();
 }
@@ -833,11 +836,12 @@ function clickProgressOrExam(type) {
 // CHỦ ĐỀ 1: BẢNG CHỮ CÁI TƯƠNG TÁC (1.1 ĐẾN 1.4)
 // ==========================================
 function openTopic(topicNum, topicName, icon) {
+    setAppShellRootMode_(false);
     if (Number(topicNum) === 11 && !ensurePremiumAccess('Góc Ôn tập củng cố')) return;
     stopSpeaking();
     activeTopicId = topicNum; activeExamContext = null; activeRoadmapContext = null;
     if (Number(topicNum) === 11) updateNavTabs('Ôn tập', null, null);
-    else updateNavTabs('Khám phá', null, topicName);
+    else updateNavTabs(topicName, TOPICS_CONFIG.find(t => Number(t.id) === Number(topicNum))?.icon || '🐝', null);
 
     if (Number(topicNum) === 12) {
         openThoNhacMenu();
@@ -917,7 +921,8 @@ function updateNavTabs(level2Title, level2Icon, level3Title, level4Title, level5
 }
 
 function updateDiscoverBreadcrumb_(topicTitle = null, topicIcon = '🌸', subTitle = null, leafTitle = null) {
-    updateNavTabs('Khám phá', '🧭', topicTitle || null, subTitle || null, leafTitle || null);
+    // Tab Khám phá đã thể hiện trạng thái ở header chính, nên breadcrumb chỉ bắt đầu từ chuyên mục.
+    updateNavTabs(topicTitle || null, topicIcon || '🌸', subTitle || null, leafTitle || null, null);
 }
 
 function setBreadcrumbActionTV3_(level, handler, tooltip = '') {
@@ -937,12 +942,13 @@ function setBreadcrumbActionTV3_(level, handler, tooltip = '') {
 }
 
 function setFairyBreadcrumbActions_(libraryKey = null, categoryId = null, storyId = null) {
-    setBreadcrumbActionTV3_(2, () => goHome(), 'Về Khám phá');
-    setBreadcrumbActionTV3_(3, () => openThoNhacMenu(), 'Về kho truyện');
-    if (libraryKey) setBreadcrumbActionTV3_(4, () => openFairyLibrary_(libraryKey), 'Về kho Việt Nam / Thế giới');
+    // Breadcrumb Khám phá đã bỏ vì tab Khám phá đang sáng trên header chính.
+    setBreadcrumbActionTV3_(2, () => openThoNhacMenu(), 'Về kho truyện');
+    if (libraryKey) setBreadcrumbActionTV3_(3, () => openFairyLibrary_(libraryKey), 'Về kho Việt Nam / Thế giới');
+    else setBreadcrumbActionTV3_(3, null);
+    if (libraryKey && categoryId) setBreadcrumbActionTV3_(4, () => { activeFairyLibraryKey_ = libraryKey; openFairyCategory_(categoryId); }, 'Về chủ đề / series');
     else setBreadcrumbActionTV3_(4, null);
-    if (libraryKey && categoryId) setBreadcrumbActionTV3_(5, () => { activeFairyLibraryKey_ = libraryKey; openFairyCategory_(categoryId); }, 'Về chủ đề / series');
-    else setBreadcrumbActionTV3_(5, null);
+    setBreadcrumbActionTV3_(5, null);
 }
 
 // ==========================================
@@ -1479,7 +1485,7 @@ function showLectureAndSubtopics(topicNum, topicName, topicObj) {
     document.getElementById('lecture-subtopics-list').innerHTML = subHtml;
 
     if (Number(topicNum) === 11) updateNavTabs('Ôn tập', null, null);
-    else updateNavTabs('Khám phá', null, topicName);
+    else updateNavTabs(topicName, TOPICS_CONFIG.find(t => Number(t.id) === Number(topicNum))?.icon || '🐝', null);
     switchAppView('view-lecture');
 }
 
@@ -1489,6 +1495,7 @@ function speakLecture() {
 
 function selectSubtopic(idx) {
     stopSpeaking();
+    setAppShellRootMode_(false);
     if (!pendingTopicQuiz) return;
     const { topicNum, topicName, questions, groups, groupMap, groupLabels } = pendingTopicQuiz;
     const subLabel = idx !== null ? groups[idx] : null;
@@ -1500,7 +1507,7 @@ function selectSubtopic(idx) {
     const firstCycleQuestions = shuffleArray([...pool]);
 
     if (Number(topicNum) === 11) updateNavTabs('Ôn tập', null, displayLabel || 'Tất cả các mục');
-    else updateNavTabs('Khám phá', null, topicName, displayLabel || 'Tất cả các mục');
+    else updateNavTabs(topicName, TOPICS_CONFIG.find(t => Number(t.id) === Number(topicNum))?.icon || '🐝', displayLabel || 'Tất cả các mục');
     startTopicQuiz(topicNum, finalTitle, firstCycleQuestions, subLabel);
 }
 
@@ -3118,6 +3125,7 @@ const MINIGAME_LIST = [
 
 function openMiniGameHub() {
     stopSpeaking();
+    setAppShellRootMode_(true);
     setMainTabActive_('games');
     if (!hasPremiumAccess()) {
         showPremiumModal('Mini Game');
@@ -3167,6 +3175,7 @@ function loadGameScript(src) {
 
 async function openGamePlay(gameId) {
     stopSpeaking();
+    setAppShellRootMode_(false);
     ensureMiniGameThemeStyles();
     inMiniGameFlow = true;
     const game = MINIGAME_LIST.find(g => g.id === gameId);
@@ -3298,6 +3307,7 @@ function saveUnlockedBaiTapV10_(n){ try{localStorage.setItem(getBaiTapUnlockKeyV
 
 async function openBaiHocHub(semesterNumber=1){
     stopSpeaking(); clearInterval(quizTimerInterval);
+    setAppShellRootMode_(true);
     if(!hasPremiumAccess()){ showPremiumGate('Bài học','📖'); return; }
     inBaiHocFlow=true; inMiniGameFlow=false; setMainTabActive_('lessons'); activeExamContext=null; activeRoadmapContext=null; activeTopicId=null; pendingTopicQuiz=null;
     activeBaiHocContext={semester:Number(semesterNumber)||1,bai:null,lessonId:null,pageNo:1};
@@ -3314,7 +3324,7 @@ function renderBaiHocHubV10_(data,semesterNumber){
     grid.innerHTML=arr.map(l=>`<button onclick="openBaiHocByNumberV10_(${l.bai},1)" class="text-left min-h-[78px] rounded-2xl border-2 ${done.has(l.lesson_id)?'border-emerald-300 bg-emerald-50/60':'border-pink-200 bg-gradient-to-br from-white via-pink-50/40 to-purple-50/50'} p-3 hover:border-purple-400 hover:shadow-md transition-all"><div class="font-black text-purple-700 text-sm md:text-base">Bài ${l.bai}</div><div class="text-xs md:text-sm font-bold text-slate-700 mt-1 line-clamp-2">${escapeHtml(l.source_title||'')}</div></button>`).join('');
 }
 async function openBaiHocByNumberV10_(bai,pageNo=1){
-    stopSpeaking(); inBaiHocFlow=true; const data=await loadBaiHocDataV10_(); const l=(data.bai_hoc||[]).find(x=>Number(x.bai)===Number(bai)); if(!l)return showToast('Không tìm thấy bài học.', 'error', 4200);
+    stopSpeaking(); setAppShellRootMode_(false); inBaiHocFlow=true; const data=await loadBaiHocDataV10_(); const l=(data.bai_hoc||[]).find(x=>Number(x.bai)===Number(bai)); if(!l)return showToast('Không tìm thấy bài học.', 'error', 4200);
     const p=Math.max(1,Math.min(3,Number(pageNo)||1)); activeBaiHocContext={semester:Number(l.semester),bai:Number(bai),lessonId:l.lesson_id,pageNo:p};
     updateNavTabs('Bài học','📖',`Bài ${bai}`,l.source_title||''); switchAppView('view-bai-hoc-lesson'); renderBaiHocLessonV10_(l,p);
 }
@@ -3376,7 +3386,7 @@ function renderBaiHocLessonV10_(l,pageNo){
 function markBaiHocCompleteV10_(){const id=activeBaiHocContext?.lessonId;if(!id)return;const s=getBaiHocCompletedSetV10_();s.add(id);saveBaiHocCompletedSetV10_(s);if(event?.currentTarget)event.currentTarget.textContent='✅ Đã hoàn thành bài học';}
 
 async function openRoadmap(semesterNumber=1){
-    stopSpeaking(); setMainTabActive_('exercises'); if(!hasPremiumAccess()){showPremiumGate('Bài tập','✏️');return;} inMiniGameFlow=false;inBaiHocFlow=false;activeExamContext=null;activeTopicId=null;pendingTopicQuiz=null;
+    stopSpeaking(); setAppShellRootMode_(true); setMainTabActive_('exercises'); if(!hasPremiumAccess()){showPremiumGate('Bài tập','✏️');return;} inMiniGameFlow=false;inBaiHocFlow=false;activeExamContext=null;activeTopicId=null;pendingTopicQuiz=null;
     updateNavTabs('Bài tập','✏️',null);switchAppView('view-roadmap');showLoadingOverlay('Đang mở Bài tập...');
     try{const data=await loadBaiHocDataV10_();renderBaiTapGridV10_(data,semesterNumber);}catch(err){showToast(`Không thể mở Bài tập: ${err.message}`, 'error', 5600);}finally{hideLoadingOverlay();}
 }
@@ -3399,7 +3409,7 @@ function getQuestionsForBaiTapV10_(bt){
     return shuffleArray(candidate).slice(0,Math.min(Number(bt.question_count||20),candidate.length));
 }
 async function selectBaiTapV10_(bai){
-    stopSpeaking();showLoadingOverlay(`Đang chuẩn bị Bài tập ${bai}...`);
+    stopSpeaking(); setAppShellRootMode_(false);showLoadingOverlay(`Đang chuẩn bị Bài tập ${bai}...`);
     try{const data=await loadBaiHocDataV10_(),bt=(data.bai_tap||[]).find(x=>Number(x.bai)===Number(bai));if(!bt)throw new Error('Không tìm thấy Bài tập');if(Number(bai)>getUnlockedBaiTapV10_()){showLockedBaiTapV10_(bai);return;}await fetchAllTopicsData();const qs=getQuestionsForBaiTapV10_(bt);if(!qs.length)throw new Error('Kho câu hỏi phù hợp bài này chưa đủ dữ liệu');activeRoadmapContext={week:Number(bai),bai:Number(bai),semester:Number(bt.semester),topicId:`BT${bai}`,chuDe:`Bài tập ${bai} · ${bt.title||''}`};activeExamContext=null;pendingTopicQuiz=null;updateNavTabs('Bài tập','✏️',`Bài ${bai}`,bt.title||'');startTopicQuiz(bai,activeRoadmapContext.chuDe,qs,null);}catch(err){showToast(`Không thể mở Bài tập: ${err.message}`, 'error', 5600);}finally{hideLoadingOverlay();}
 }
 
@@ -3439,6 +3449,19 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
 // ============================================================
+// TV3 APP SHELL 2026: banner chính ở root tab, banner phụ + breadcrumb khi vào nội dung.
+// Chỉ điều khiển presentation, không thay đổi nghiệp vụ/dữ liệu.
+// ============================================================
+let appShellRootMode_ = true;
+function setAppShellRootMode_(isRoot){
+    appShellRootMode_ = !!isRoot;
+    const mainBanner = document.getElementById('app-main-banner');
+    const contextBanner = document.getElementById('app-context-banner');
+    if(mainBanner) mainBanner.classList.toggle('hidden', !appShellRootMode_);
+    if(contextBanner) contextBanner.classList.toggle('hidden', appShellRootMode_);
+}
+
+// ============================================================
 // TV3 V12 - 6 TAB CHÍNH + HOME = KHÁM PHÁ
 // ============================================================
 let currentMainTab = 'discover';
@@ -3458,6 +3481,7 @@ function openReviewTab(){
     if(!hasPremiumAccess()){showPremiumGate('Ôn tập','🧠');return;}
     setMainTabActive_('review');
     openTopic(11,'11. Ôn tập tổng hợp','🧠');
+    setAppShellRootMode_(true);
 }
 function openMainTab(tabName){
     stopAllAudio(); clearInterval(quizTimerInterval);
@@ -3473,6 +3497,7 @@ function openMainTab(tabName){
 }
 
 function goHome(){
+    setAppShellRootMode_(true);
     stopSpeaking(); clearInterval(quizTimerInterval);
     inMiniGameFlow=false; inBaiHocFlow=false; activeExamContext=null; activeRoadmapContext=null; activeTopicId=null; pendingTopicQuiz=null;
     activeBaiHocContext={semester:1,bai:null,lessonId:null,pageNo:1};
