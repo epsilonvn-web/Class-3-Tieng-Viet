@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-    <meta name="theme-color" content="#f472b6">
+    <meta name="theme-color" content="#ffffff">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -25,9 +25,10 @@
     <!-- html2pdf.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <style>
+        html { background: #ffffff; }
         body {
             font-family: 'Quicksand', 'Nunito', sans-serif;
-            background: linear-gradient(135deg, #fdf2f8 0%, #fae8ff 50%, #f3e8ff 100%);
+            background: #ffffff;
             color: #4a4a4a;
             user-select: none;
             min-height: 100vh;
@@ -244,10 +245,11 @@
             min-height:0;
             overflow:hidden;
             border-radius:0;
-            border:2px solid rgba(251,207,232,.9);
-            box-shadow:0 6px 18px rgba(168,85,247,.12);
+            border:0;
+            box-shadow:none;
             background:#fff;
         }
+        #app-main-banner picture{display:block;width:100%;height:100%;}
         #app-main-banner img{width:100%;height:100%;object-fit:cover;display:block;}
         .app-main-banner-copy{
             position:absolute;
@@ -280,12 +282,11 @@
             content:'';
             position:absolute;
             inset:0;
-            background-image:url('footer-bg.jpg');
+            background-image:url('banner-sub.jpg');
             background-size:cover;
             background-position:center;
             background-repeat:no-repeat;
-            transform:rotate(180deg);
-            transform-origin:center;
+            transform:none;
             opacity:1;
             filter:none;
             pointer-events:none;
@@ -316,7 +317,7 @@
             min-width:0 !important;
             padding:0 12px !important;
             border-radius:13px !important;
-            background:rgba(255,255,255,.84) !important;
+            background:rgba(255,255,255,.50) !important;
             backdrop-filter:blur(4px);
             -webkit-backdrop-filter:blur(4px);
             box-shadow:0 2px 7px rgba(76,29,149,.08) !important;
@@ -344,12 +345,12 @@
             align-items:center;
             justify-content:center;
             text-align:center;
-            color:#9d174d;
-            border:1px solid rgba(251,207,232,.9);
-            box-shadow:0 -3px 12px rgba(236,72,153,.06);
+            color:#1827f2;
+            border:0;
+            box-shadow:none;
         }
-        #app-footer .footer-title{font-size:14px;font-weight:900;line-height:1.35;text-shadow:0 1px 0 #fff;}
-        #app-footer .footer-sub{font-size:11px;font-weight:800;line-height:1.35;color:#7e22ce;text-shadow:0 1px 0 #fff;}
+        #app-footer .footer-title{font-size:17px;font-weight:900;line-height:1.35;text-shadow:0 1px 0 #fff;}
+        #app-footer .footer-sub{font-size:13px;font-weight:800;line-height:1.35;color:#1827f2;text-shadow:0 1px 0 #fff;}
 
         @media (max-width:767px){
             .app-main-header{
@@ -390,7 +391,7 @@
             #user-info-box .admin-manage-label{display:none !important;}
             #user-info-box button[title="Quản lý tài khoản"]{width:34px !important;padding-left:0 !important;padding-right:0 !important;justify-content:center !important;}
 
-            #app-main-banner{aspect-ratio:6/1;border-radius:0;}
+            #app-main-banner{aspect-ratio:4/1;border-radius:0;}
             .app-main-banner-copy{width:39%;left:51%;top:49%;}
             .app-main-banner-title{font-size:clamp(13px,4.2vw,20px);}
             .app-main-banner-teacher{font-size:clamp(9px,2.8vw,13px);margin-top:2px;}
@@ -401,8 +402,8 @@
             #header-level2-title,#header-level3-title,#header-level4-title,#header-level5-title{font-size:11px !important;}
             #header-level2-icon{display:none !important;}
             #app-footer{min-height:64px;margin-top:8px;border-radius:0;}
-            #app-footer .footer-title{font-size:12px;}
-            #app-footer .footer-sub{font-size:10px;}
+            #app-footer .footer-title{font-size:14px;}
+            #app-footer .footer-sub{font-size:12px;}
         }
 
 
@@ -614,11 +615,44 @@
             }
             #header-level2-icon{display:none !important;}
         }
+
+        /* TV3 - Chuẩn banner/footer/nền mới theo TV1 */
+        #screen-dashboard,
+        #app-viewport,
+        #view-dashboard-grid { background:#ffffff !important; }
+        #view-dashboard-grid .pastel-card,
+        #view-dashboard-grid .pastel-card:hover { box-shadow:none !important; }
+        #view-dashboard-grid .pastel-card:has(h3.text-pink-700)    { background: rgba(253,242,248,.82) !important; }
+        #view-dashboard-grid .pastel-card:has(h3.text-purple-700)  { background: rgba(250,245,255,.84) !important; }
+        #view-dashboard-grid .pastel-card:has(h3.text-blue-700)    { background: rgba(239,246,255,.86) !important; }
+        #view-dashboard-grid .pastel-card:has(h3.text-fuchsia-700) { background: rgba(253,244,255,.84) !important; }
+        #view-dashboard-grid .pastel-card:has(h3.text-emerald-700) { background: rgba(236,253,245,.86) !important; }
+        #view-dashboard-grid .pastel-card:has(h3.text-indigo-700)  { background: rgba(238,242,255,.86) !important; }
+        #view-dashboard-grid .pastel-card:has(h3.text-amber-700)   { background: rgba(255,251,235,.88) !important; }
+        #view-dashboard-grid .pastel-card:has(h3.text-rose-700)    { background: rgba(255,241,242,.86) !important; }
+        #view-dashboard-grid .pastel-card:has(h3.text-teal-700)    { background: rgba(240,253,250,.88) !important; }
+        #view-dashboard-grid .pastel-card:has(h3.text-yellow-700)  { background: rgba(254,252,232,.90) !important; }
+        @media (min-width:768px){
+            .main-module-tab{font-size:16px !important;}
+            #header-level2-tab > button,
+            #header-level3-tab > div,
+            #header-level4-tab > div,
+            #header-level5-tab > div{
+                width:auto !important;min-width:0 !important;max-width:440px !important;
+                padding-left:18px !important;padding-right:18px !important;
+            }
+            #header-level2-title,#header-level3-title,#header-level4-title,#header-level5-title{
+                font-size:14px !important;max-width:400px !important;overflow:hidden !important;
+                text-overflow:ellipsis !important;white-space:nowrap !important;
+            }
+        }
+        @media (max-width:767px){.main-module-tab{font-size:14px !important;}}
+
 </style>
 </head>
-<body class="p-1 md:p-2 w-full" style="padding-top:max(0.25rem,env(safe-area-inset-top));padding-bottom:max(0.25rem,env(safe-area-inset-bottom));padding-left:max(0.25rem,env(safe-area-inset-left));padding-right:max(0.25rem,env(safe-area-inset-right));">
+<body class="p-1 md:p-2 w-full" style="padding-top:0;padding-bottom:max(0.25rem,env(safe-area-inset-bottom));padding-left:max(0.25rem,env(safe-area-inset-left));padding-right:max(0.25rem,env(safe-area-inset-right));">
 
-    <div class="w-full flex justify-center items-center mt-4 md:mt-6">
+    <div class="w-full flex justify-center items-center mt-0">
         <!-- 1. MÀN HÌNH ĐĂNG NHẬP / ĐĂNG KÝ -->
         <div id="screen-login" class="hidden fixed z-[70] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-1.5rem)] max-w-md max-h-[calc(100dvh-1rem)] overflow-y-auto pastel-card p-4 sm:p-6 md:p-8 flex-col items-center text-center">
             <button onclick="closeAuthModal()" title="Đóng" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-pink-50 border border-pink-200 text-pink-600 hover:bg-pink-100 flex items-center justify-center"><i class="fa-solid fa-xmark"></i></button>
@@ -725,11 +759,10 @@
 
             <section id="app-banner-slot" aria-label="Không gian nhận diện và điều hướng">
                 <div id="app-main-banner">
-                    <img src="banner-main.jpg" alt="Không gian học tập Tiếng Việt 3">
-                    <div class="app-main-banner-copy">
-                        <div class="app-main-banner-title">Tiếng Việt 3</div>
-                        <div class="app-main-banner-teacher">Cô Ong Vàng</div>
-                    </div>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="banner-main-mobile.jpg">
+                        <img src="banner-main.jpg" alt="Không gian học tập Tiếng Việt 3 - Cô Ong Vàng">
+                    </picture>
                 </div>
                 <div id="app-context-banner" class="hidden">
                     <div id="header-learning-tabs" class="flex items-center min-w-0">
@@ -1156,8 +1189,8 @@
     <!-- CHÂN TRANG DÙNG CHUNG - ảnh phong cảnh + chữ HTML -->
     <footer id="app-footer" class="select-text cursor-text" style="user-select:text;-webkit-user-select:text;">
         <div>
-            <div class="footer-title">Tiếng Việt 3 · Cô Ong Vàng</div>
-            <div class="footer-sub">Zalo 0865.749.402</div>
+            <div class="footer-title">Epsilon Edu - Tiến bộ từng ngày</div>
+            <div class="footer-sub"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> 0865.749.402</div>
         </div>
     </footer>
 
