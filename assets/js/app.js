@@ -920,9 +920,10 @@ function updateNavTabs(level2Title, level2Icon, level3Title, level4Title, level5
     apply(tab5, 'header-level5-title', level5Title);
 }
 
-function updateDiscoverBreadcrumb_(topicTitle = null, topicIcon = '🌸', subTitle = null, leafTitle = null) {
+function updateDiscoverBreadcrumb_(topicTitle = null, topicIcon = '🌸', subTitle = null, leafTitle = null, detailTitle = null) {
     // Tab Khám phá đã thể hiện trạng thái ở header chính, nên breadcrumb chỉ bắt đầu từ chuyên mục.
-    updateNavTabs(topicTitle || null, topicIcon || '🌸', subTitle || null, leafTitle || null, null);
+    // Level 5 dùng cho lớp sâu hơn, ví dụ: Kho truyện → Quốc gia → Chủ đề → Tên truyện.
+    updateNavTabs(topicTitle || null, topicIcon || '🌸', subTitle || null, leafTitle || null, detailTitle || null);
 }
 
 function setBreadcrumbActionTV3_(level, handler, tooltip = '') {
@@ -1324,7 +1325,13 @@ async function openThoNhacStory_(storyId) {
     const nextStory = groupItems[pos < groupItems.length - 1 ? pos + 1 : 0] || story;
     const meta = FAIRY_LIBRARY_META_[activeFairyLibraryKey_];
 
-    updateDiscoverBreadcrumb_('12. Truyện dân gian & cổ tích', '📚', meta.label.replace(/^[12]\.\s*/, ''), story.title || 'Câu chuyện');
+    updateDiscoverBreadcrumb_(
+        '12. Truyện dân gian & cổ tích',
+        '📚',
+        meta.label.replace(/^[12]\.\s*/, ''),
+        cat.name || 'Danh sách truyện',
+        story.title || 'Câu chuyện'
+    );
     setFairyBreadcrumbActions_(activeFairyLibraryKey_, cat.id, story.id);
     setLectureUtilityVisibility_(false, false);
     setFairyLectureLayout_('story');
