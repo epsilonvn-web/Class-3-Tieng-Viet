@@ -643,18 +643,138 @@ function hideAuthError() {
     if (el) el.classList.add('hidden'); 
 }
 
-async function callAppsScript(action, payload) {
-    const res = await fetch(APPS_SCRIPT_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-        body: JSON.stringify({ action, payload })
-    });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const rawText = await res.text();
+
+const TVL3_PROFILE_CACHE_KEY = 'tvl3_profile_cache';
+
+function normalizeAccountPayload_(result, fallbackMaHS = '') {
+    const src =
+        result?.student ||
+        result?.account ||
+        result?.user ||
+        result?.data?.student ||
+        result?.data?.account ||
+        result?.data?.user ||
+        null;
+
+    if (!src || typeof src !== 'object') return null;
+
+    const maHS = String(
+        src.maHS ?? src.MaHS ?? src.mahs ?? src.student_id ?? fallbackMaHS ?? ''
+    ).trim().toUpperCase();
+
+    const hoTen = String(
+        src.hoTen ?? src.HoTen ?? src.hoten ?? src.name ?? maHS ?? ''
+    ).trim();
+
+    const lop = String(
+        src.lop ?? src.Lop ?? src.className ?? ''
+    ).trim();
+
+    const vaiTro = String(
+        src.vaiTro ?? src.VaiTro ?? src.role ?? ''
+    ).trim().toLowerCase();
+
+    const loaiTaiKhoan = String(
+        src.loaiTaiKhoan ?? src.LoaiTaiKhoan ?? src.tier ?? src.accountTier ?? ''
+    ).trim().toLowerCase();
+
+    const tuanHienTaiRaw =
+        src.tuanHienTai ?? src.TuanHienTai ?? src.currentWeek ?? 1;
+
+    return {
+        ...src,
+        maHS,
+        hoTen,
+        lop,
+        ngaySinh: src.ngaySinh ?? src.NgaySinh ?? '',
+        tuanHienTai: Number(tuanHienTaiRaw) || 1,
+        vaiTro,
+        loaiTaiKhoan,
+        hanDungThu: src.hanDungThu ?? src.HanDungThu ?? '',
+        hanVIP: src.hanVIP ?? src.HanVIP ?? ''
+    };
+}
+
+function saveDisplayProfileCache_(user) {
+    if (!user || user.isGuest || !user.maHS) return;
     try {
-        return JSON.parse(rawText);
-    } catch (e) {
-        throw new Error('Google Apps Script trả về dữ liệu không hợp lệ (không phải JSON) — thường do link Apps Script chưa được Deploy đúng cách (cần đặt quyền truy cập là "Anyone"/"Bất kỳ ai") hoặc đã hết hạn uỷ quyền. Anh vui lòng kiểm tra lại bước Deploy > Manage deployments trên Apps Script nhé.');
+        localStorage.setItem(TVL3_PROFILE_CACHE_KEY, JSON.stringify({
+            maHS: String(user.maHS || '').trim().toUpperCase(),
+            hoTen: String(user.hoTen || user.maHS || '').trim(),
+            lop: String(user.lop || '').trim()
+        }));
+    } catch (_) {}
+}
+
+function loadDisplayProfileCache_(maHS) {
+    try {
+        const raw = localStorage.getItem(TVL3_PROFILE_CACHE_KEY);
+        if (!raw) return null;
+        const obj = JSON.parse(raw);
+        if (!obj || String(obj.maHS || '').trim().toUpperCase() !== String(maHS || '').trim().toUpperCase()) return null;
+        return {
+            maHS: String(obj.maHS || '').trim().toUpperCase(),
+            hoTen: String(obj.hoTen || obj.maHS || '').trim(),
+            lop: String(obj.lop || '').trim()
+        };
+    } catch (_) {
+        return null;
+    }
+}
+
+function clearDisplayProfileCache_() {
+    try { localStorage.removeItem(TVL3_PROFILE_CACHE_KEY); } catch (_) {}
+}
+
+function applyVerifiedSessionUser_(account, sessionToken) {
+    if (!account || !account.maHS) return false;
+
+    currentUser = {
+        ...account,
+        isGuest: false,
+        sessionToken: sessionToken || '',
+        sessionPending: false
+    };
+
+    saveDisplayProfileCache_(currentUser);
+    localStorage.setItem('tvl3_mahs', currentUser.maHS);
+    if (sessionToken) localStorage.setItem('tvl3_session_token', sessionToken);
+
+    updateUserInfoBox();
+    refreshMainTabLocks_();
+    applyPremiumLockUI();
+    return true;
+}
+
+async function callAppsScript(action, payload, options = {}) {
+    const timeoutMs = Number(options.timeoutMs || 20000);
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+
+    try {
+        const res = await fetch(APPS_SCRIPT_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ action, payload }),
+            signal: controller.signal,
+            cache: 'no-store'
+        });
+
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+        const rawText = await res.text();
+        try {
+            return JSON.parse(rawText);
+        } catch (e) {
+            throw new Error('Google Apps Script trả về dữ liệu không hợp lệ. Anh kiểm tra lại Deployment Web App và quyền truy cập "Anyone".');
+        }
+    } catch (err) {
+        if (err?.name === 'AbortError') {
+            throw new Error('Máy chủ phản hồi quá lâu.');
+        }
+        throw err;
+    } finally {
+        clearTimeout(timer);
     }
 }
 
@@ -662,18 +782,33 @@ async function doLogin() {
     hideAuthError();
     const maHS = (document.getElementById('login-mahs')?.value || '').trim().toUpperCase();
     const maPin = (document.getElementById('login-mapin')?.value || '').trim();
+
     if (!maHS || !maPin) return showAuthError('Bé nhập đủ mã ID và mã PIN nhé!');
     if (!/^(?:\d{4}|\d{6})$/.test(maPin)) return showAuthError('Mã PIN phải gồm 4 số (tài khoản cũ) hoặc 6 số (tài khoản mới).');
+
     const btn = document.getElementById('btn-do-login');
     btn.disabled = true;
     btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1"></i> Đang đăng nhập...';
+
     try {
-        const result = await callAppsScript('login', { maHS, maPin });
-        if (!result.ok) return showAuthError(result.error || 'Mã ID hoặc PIN không đúng!');
-        currentUser = { ...result.student, isGuest: false, sessionToken: result.sessionToken || '' };
-        localStorage.setItem('tvl3_mahs', currentUser.maHS || maHS);
-        if (result.sessionToken) localStorage.setItem('tvl3_session_token', result.sessionToken);
+        const result = await callAppsScript('login', { maHS, maPin }, { timeoutMs: 20000 });
+        if (!result?.ok) return showAuthError(result?.error || 'Mã ID hoặc PIN không đúng!');
+
+        const account = normalizeAccountPayload_(result, maHS);
+        if (!account || !account.maHS || !account.vaiTro) {
+            console.warn('[AUTH] Backend login response thiếu thông tin tài khoản:', result);
+            return showAuthError('Máy chủ đã phản hồi nhưng thiếu thông tin tài khoản. Anh kiểm tra lại phiên bản Apps Script đang Deploy.');
+        }
+
+        const token = String(result.sessionToken || result.token || '').trim();
+        if (!token) {
+            console.warn('[AUTH] Backend login response thiếu session token:', result);
+            return showAuthError('Máy chủ chưa trả session token. Anh kiểm tra lại phiên bản Apps Script đang Deploy.');
+        }
+
+        applyVerifiedSessionUser_(account, token);
         localStorage.removeItem('tvl3_mapin');
+
         closeAuthModal();
         enterDashboard();
     } catch (err) {
@@ -715,47 +850,69 @@ async function doRegister() {
 }
 
 async function tryAutoLogin() {
-    const maHS = localStorage.getItem('tvl3_mahs');
-    const sessionToken = localStorage.getItem('tvl3_session_token');
-    if (!maHS || !sessionToken) { handleGuestMode(true); return; }
+    const maHS = String(localStorage.getItem('tvl3_mahs') || '').trim().toUpperCase();
+    const sessionToken = String(localStorage.getItem('tvl3_session_token') || '').trim();
 
-    showLoadingOverlay('Đang khôi phục phiên đăng nhập...');
+    if (!maHS || !sessionToken) {
+        handleGuestMode(true);
+        return;
+    }
+
+    const cached = loadDisplayProfileCache_(maHS);
+    currentUser = {
+        maHS,
+        hoTen: cached?.hoTen || maHS,
+        lop: cached?.lop || '',
+        isGuest: false,
+        vaiTro: 'pending',
+        loaiTaiKhoan: 'pending',
+        tuanHienTai: 1,
+        sessionToken,
+        sessionPending: true
+    };
+
+    // Vào app ngay. Cache chỉ dùng để hiển thị tên/ID.
+    // Admin/Trial/VIP vẫn bị khóa cho tới khi backend xác thực.
+    enterDashboard(true);
+
     try {
-        const res = await callAppsScript('restoreSession', { maHS, sessionToken });
-        if (res.ok) {
-            const refreshedToken = res.sessionToken || sessionToken;
-            currentUser = { ...res.student, isGuest: false, sessionToken: refreshedToken, sessionPending: false };
-            localStorage.setItem('tvl3_mahs', currentUser.maHS || maHS);
-            localStorage.setItem('tvl3_session_token', refreshedToken);
-            enterDashboard(true);
+        const res = await callAppsScript(
+            'restoreSession',
+            { maHS, sessionToken },
+            { timeoutMs: 12000 }
+        );
+
+        if (res?.ok) {
+            const refreshedToken = String(res.sessionToken || res.token || sessionToken).trim();
+            const account = normalizeAccountPayload_(res, maHS);
+
+            if (!account || !account.maHS || !account.vaiTro) {
+                console.warn('[AUTH] Backend restore response thiếu thông tin tài khoản:', res);
+                showToast('Máy chủ phản hồi thiếu thông tin tài khoản. Quyền nâng cao vẫn đang khóa để đảm bảo an toàn.', 'info', 6000);
+                return;
+            }
+
+            applyVerifiedSessionUser_(account, refreshedToken);
             return;
         }
 
-        // Token bi backend xac nhan khong hop le/da bi thu hoi: day khong phai loi mang.
-        // Xoa token hong de nguoi dung co the dang nhap lai. Tuyet doi khong luu PIN tren client.
         localStorage.removeItem('tvl3_mahs');
         localStorage.removeItem('tvl3_session_token');
         localStorage.removeItem('tvl3_mapin');
+        clearDisplayProfileCache_();
+
         handleGuestMode(true);
-        showToast(res.error || 'Phiên đăng nhập không còn hợp lệ. Vui lòng đăng nhập lại.', 'info', 5200);
+        showToast(res?.error || 'Phiên đăng nhập không còn hợp lệ. Vui lòng đăng nhập lại.', 'info', 5200);
     } catch (e) {
-        // Loi mang tam thoi KHONG duoc xoa phien va KHONG ha user ve Khach.
-        // Giữ trạng thái "đang chờ xác thực"; mọi quyền Admin/Trial/VIP vẫn khóa cho tới khi backend xác thực lại.
-        currentUser = {
-            maHS,
-            hoTen: maHS,
-            lop: '',
-            isGuest: false,
-            vaiTro: 'pending',
-            loaiTaiKhoan: 'pending',
-            tuanHienTai: 1,
-            sessionToken,
-            sessionPending: true
-        };
-        enterDashboard(true);
-        showToast('Chưa kết nối được máy chủ. Phiên đăng nhập vẫn được giữ và sẽ xác thực lại khi có mạng.', 'info', 6000);
-    } finally {
-        hideLoadingOverlay();
+        currentUser.sessionPending = true;
+        currentUser.vaiTro = 'pending';
+        currentUser.loaiTaiKhoan = 'pending';
+
+        updateUserInfoBox();
+        refreshMainTabLocks_();
+        applyPremiumLockUI();
+
+        showToast('Máy chủ đang phản hồi chậm. Phiên đăng nhập vẫn được giữ; quyền nâng cao sẽ mở ngay khi xác thực xong.', 'info', 5200);
     }
 }
 
@@ -775,6 +932,7 @@ async function logout() {
     localStorage.removeItem('tvl3_mahs');
     localStorage.removeItem('tvl3_session_token');
     localStorage.removeItem('tvl3_mapin');
+    clearDisplayProfileCache_();
     handleGuestMode(true);
     showToast('Đã đăng xuất. Con vẫn có thể học các nội dung miễn phí ở chế độ Khách.', 'info');
 }
@@ -812,9 +970,11 @@ function updateUserInfoBox() {
         const isPending = !!currentUser.sessionPending;
         const isAdmin = !isPending && currentUser.vaiTro === 'admin';
         const tier = isPending ? 'Chờ xác thực' : (isAdmin ? 'Admin' : ({regular:'REGULAR', trial:'TRIAL', vip:'VIP'}[currentUser.loaiTaiKhoan] || 'REGULAR'));
-        const displayName = isPending ? `ID ${currentUser.maHS}` : currentUser.hoTen;
+        const safeMaHS = String(currentUser.maHS || '').trim() || '---';
+        const safeName = String(currentUser.hoTen || '').trim() || safeMaHS;
+        const displayName = isPending ? `ID ${safeMaHS}` : safeName;
         const adminBtn = isAdmin ? `<button onclick="openAccountManager()" title="Quản lý tài khoản" class="relative h-9 px-3 flex items-center gap-1.5 bg-purple-50 hover:bg-purple-100 text-purple-700 rounded-xl border border-purple-200 text-[11px] font-black shadow-sm pastel-btn whitespace-nowrap"><i class="fa-solid fa-users-gear"></i><span class="admin-manage-label">Quản lý</span></button>` : '';
-        box.innerHTML = `<div class="flex items-center gap-1.5"><div class="text-right"><div class="text-pink-600 font-extrabold text-xs md:text-sm leading-tight">${escapeHtml(displayName)}</div><div class="text-gray-500 font-semibold text-[10px]">${isPending ? tier : (isAdmin ? `Admin · ID ${escapeHtml(currentUser.maHS)}` : `${tier} · ID ${escapeHtml(currentUser.maHS)}`)}</div></div>${adminBtn}<button onclick="logout()" title="Đăng xuất" class="w-8 h-8 flex items-center justify-center bg-rose-100 hover:bg-rose-200 text-rose-500 rounded-xl border border-rose-200 text-xs"><i class="fa-solid fa-right-from-bracket"></i></button></div>`;
+        box.innerHTML = `<div class="flex items-center gap-1.5"><div class="text-right"><div class="text-pink-600 font-extrabold text-xs md:text-sm leading-tight">${escapeHtml(displayName)}</div><div class="text-gray-500 font-semibold text-[10px]">${isPending ? tier : (isAdmin ? `Admin · ID ${escapeHtml(safeMaHS)}` : `${tier} · ID ${escapeHtml(safeMaHS)}`)}</div></div>${adminBtn}<button onclick="logout()" title="Đăng xuất" class="w-8 h-8 flex items-center justify-center bg-rose-100 hover:bg-rose-200 text-rose-500 rounded-xl border border-rose-200 text-xs"><i class="fa-solid fa-right-from-bracket"></i></button></div>`;
     }
     applyPremiumLockUI();
 }
@@ -3287,7 +3447,11 @@ document.addEventListener('DOMContentLoaded', () => {
     updateAutoSpeechButtonUI();
 });
 
-tryAutoLogin();
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => { tryAutoLogin(); }, { once: true });
+} else {
+    tryAutoLogin();
+}
 
 // ============================================================
 // TV3 V10 STEP 1 - BAI HOC <-> BAI TAP THEO SGK
