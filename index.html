@@ -648,36 +648,57 @@
         }
         @media (max-width:767px){.main-module-tab{font-size:14px !important;}}
 
-        /* TV3 - Cum diem Dung/Sai dong bo kich thuoc TA3 */
-        @media (min-width: 768px) {
-            #header-star-box {
-                min-width: 92px !important;
-                min-height: 62px !important;
-                padding: 7px 9px !important;
-                border-radius: 15px !important;
-                justify-content: center !important;
-                gap: 5px !important;
+        /* TV3 - cum sao Dung/Sai dong bo dung kich thuoc Toan 3 */
+        #header-star-box{
+            min-width:92px !important;
+            padding:7px 9px !important;
+            row-gap:4px !important;
+            border-radius:14px !important;
+        }
+        #header-star-box > div{
+            min-height:21px;
+            gap:8px !important;
+        }
+        #header-star-box > div > span:first-child{
+            min-width:48px;
+            padding:3px 6px !important;
+            font-size:12px !important;
+            line-height:1.15 !important;
+            border-radius:7px !important;
+        }
+        #header-star-box > div > span:first-child i{
+            font-size:12px !important;
+        }
+        #star-green-count,
+        #star-red-count{
+            min-width:16px;
+            text-align:center;
+            font-size:15px !important;
+            line-height:1 !important;
+        }
+
+        @media (max-width:767px){
+            #header-star-box{
+                min-width:72px !important;
+                padding:5px 6px !important;
+                row-gap:3px !important;
+                border-radius:12px !important;
             }
-            #header-star-box > div {
-                min-height: 22px !important;
-                column-gap: 8px !important;
+            #header-star-box > div{
+                min-height:18px;
+                gap:5px !important;
             }
-            #header-star-box > div > span:first-child {
-                min-width: 50px !important;
-                padding: 3px 6px !important;
-                border-radius: 7px !important;
-                font-size: 13px !important;
-                line-height: 1.1 !important;
+            #header-star-box > div > span:first-child{
+                min-width:30px;
+                padding:3px 5px !important;
+                font-size:11px !important;
             }
-            #header-star-box > div > span:first-child i {
-                font-size: 12px !important;
+            #header-star-box > div > span:first-child i{
+                font-size:11px !important;
             }
             #star-green-count,
-            #star-red-count {
-                min-width: 15px !important;
-                text-align: center !important;
-                font-size: 16px !important;
-                line-height: 1 !important;
+            #star-red-count{
+                font-size:13px !important;
             }
         }
 
