@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-    <title>Tiếng Việt 2 - Cô Thỏ Ngọc</title>
+    <title>Tiếng Việt 3 - Cô Ong Vàng</title>
     <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
     <meta name="theme-color" content="#ffffff">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Tiếng Việt 2">
+    <meta name="apple-mobile-web-app-title" content="Tiếng Việt 3">
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Tailwind CSS CDN -->
@@ -332,7 +332,7 @@
 
 
         /* =========================================================
-           TV2 UI 2026-09-20 - dong bo design system TV1
+           TV3 UI 2026-09-20 - dong bo design system
            Presentation only: giu nguyen engine, data, premium, TTS, scoring.
            ========================================================= */
         body{background:#fff !important;}
@@ -449,7 +449,7 @@
         }
 
 
-        /* TV2 MOBILE FIX 2026-09-21: khop layout TV1.
+        /* TV3 MOBILE FIX 2026-09-21: toi uu layout mobile.
            Override legacy display:contents de hang tren = Logo + Sao + User/Admin/Logout,
            hang duoi = 6 tab 2x3. Presentation only. */
         @media (max-width: 767px) {
@@ -536,7 +536,7 @@
 
 
         /* =========================================================
-           TV2 UI 2026-09-22 - DONG BO BANNER/FOOTER/MOBILE THEO TV1
+           TV3 UI 2026-09-22 - DONG BO BANNER/FOOTER/MOBILE
            Presentation only: khong doi engine, data, business rules.
            ========================================================= */
 
@@ -667,7 +667,7 @@
             color: #1827f2 !important;
         }
 
-        /* Trang chu TV2: giong TV1 - nen trang trang, card khong do bong.
+        /* Trang chu TV3: nen trang, card khong do bong.
            Mau pastel chi nam BEN TRONG tung card, khong loang ra nen. */
         #view-dashboard-grid .pastel-card,
         #view-dashboard-grid .pastel-card:hover {
@@ -737,7 +737,7 @@
 
 
         /* =========================================================
-           TV2 UI 2026-09-22 - CAN BANG CUM SAO + VIEN CARD 1PX
+           TV3 UI 2026-09-22 - CAN BANG CUM SAO + VIEN CARD 1PX
            ========================================================= */
         @media (min-width: 768px) {
             /* Cao bang 6 tab chuyen muc tren header */
@@ -780,7 +780,7 @@
             border-width: 1px !important;
         }
 
-        /* TV3 - Footer hien thi dung ti le artwork 8:1, dong bo TV2 */
+        /* TV3 - Footer hien thi dung ti le artwork 8:1 */
         #app-footer{
             aspect-ratio:8 / 1 !important;
             min-height:0 !important;
@@ -818,10 +818,10 @@
         <!-- 1. MÀN HÌNH ĐĂNG NHẬP / ĐĂNG KÝ -->
         <div id="screen-login" class="hidden w-full max-w-md pastel-card p-6 md:p-8 flex flex-col items-center text-center my-auto">
             <div class="mb-2 flex flex-col items-center">
-                <img src="icon-512.png" alt="Tiếng Việt 2" class="w-[150px] h-[150px] md:w-40 md:h-40 object-contain select-none">
+                <img src="icon-512.png" alt="Tiếng Việt 3" class="w-[150px] h-[150px] md:w-40 md:h-40 object-contain select-none">
             </div>
 
-            <p class="text-base md:text-lg font-extrabold text-pink-600 mb-5">Cô Thỏ Ngọc</p>
+            <p class="text-base md:text-lg font-extrabold text-pink-600 mb-5">Cô Ong Vàng</p>
 
             <div class="w-full grid grid-cols-2 bg-pink-50 rounded-2xl p-1 mb-5 border border-pink-200">
                 <button id="tab-btn-login" onclick="switchAuthTab('login')" class="py-2.5 rounded-xl font-extrabold text-sm pastel-btn bg-white text-pink-600 shadow-sm">Đăng nhập</button>
@@ -889,7 +889,7 @@
             
             <header class="app-main-header w-full">
                 <button id="btn-header-home" onclick="goHome()" title="Về trang chủ" class="flex items-center justify-center bg-white border border-pink-300 shadow-sm shrink-0 overflow-hidden p-0 transition-shadow duration-200 hover:border-pink-400 hover:shadow-[0_0_18px_rgba(244,114,182,0.65)]">
-                    <img src="logo-home.png?v=20260920-ui" alt="Trang chủ Tiếng Việt 2" class="w-full h-full object-contain">
+                    <img src="logo-home.png?v=20260920-ui" alt="Trang chủ Tiếng Việt 3" class="w-full h-full object-contain">
                 </button>
 
                 <nav id="main-module-tabs" aria-label="Điều hướng chính">
@@ -923,14 +923,14 @@
                 <div id="app-main-banner">
                     <picture>
                         <source media="(max-width: 767px)" srcset="banner-main-mobile.jpg">
-                        <img src="banner-main.jpg" alt="Không gian học tập Tiếng Việt 2">
+                        <img src="banner-main.jpg" alt="Không gian học tập Tiếng Việt 3">
                     </picture>
                 </div>
                 <div id="app-context-banner" class="hidden">
                     <div id="header-learning-tabs" class="flex items-center min-w-0">
                         <div id="header-level2-tab" class="hidden items-center">
                             <button onclick="returnToTopicLecture()" class="flex items-center space-x-1.5 shrink-0 transition-shadow duration-200">
-                                <span id="header-level2-icon">🐰</span><span id="header-level2-title" class="truncate">Chủ đề học</span>
+                                <span id="header-level2-icon">🐝</span><span id="header-level2-title" class="truncate">Chủ đề học</span>
                             </button>
                         </div>
                         <div id="header-level3-tab" class="hidden items-center space-x-1"><span class="font-bold">›</span><div class="truncate flex items-center"><span id="header-level3-title" class="truncate">Mục nhỏ</span></div></div>
@@ -950,7 +950,7 @@
                         <div class="grid grid-cols-[auto_1fr_auto] items-center gap-3 mb-3">
                             <div id="bai-hoc-semester-tabs" class="flex items-center gap-3 justify-self-start"></div>
                             <div class="text-center min-w-0">
-                                <h2 class="text-lg md:text-xl font-black text-purple-700 flex items-center justify-center gap-2"><span>📘</span><span>Bài học Tiếng Việt 2</span></h2>
+                                <h2 class="text-lg md:text-xl font-black text-purple-700 flex items-center justify-center gap-2"><span>📘</span><span>Bài học Tiếng Việt 3</span></h2>
                                 <p id="bai-hoc-hub-subtitle" class="text-xs md:text-sm text-slate-500 font-bold mt-0.5">Học theo chương trình Kết nối tri thức</p>
                             </div>
                             <div class="w-[205px] hidden md:block" aria-hidden="true"></div>
@@ -1111,7 +1111,7 @@
                                 <h2 class="text-base md:text-lg font-extrabold text-indigo-600 flex items-center space-x-2">
                                     <span>🗺️</span><span>Bài tập</span>
                                 </h2>
-                                <p class="text-[11px] md:text-xs text-gray-500 font-bold">20 câu mỗi tuần · đạt từ 80% để mở tuần tiếp theo · đánh giá theo 6 năng lực</p>
+                                <p class="text-[11px] md:text-xs text-gray-500 font-bold">20 câu mỗi tuần · đạt từ 80% để mở tuần tiếp theo · đánh giá theo khung 6 năng lực</p>
                             </div>
                             
                             <div class="flex items-center gap-3 shrink-0">
@@ -1134,7 +1134,7 @@
                             <h2 class="text-base md:text-lg font-extrabold text-teal-600 flex items-center justify-center space-x-2">
                                 <span>🎮</span><span>Trung tâm Mini Game</span>
                             </h2>
-                            <p class="text-[11px] md:text-xs text-gray-500 font-bold">Học mà chơi - chơi mà nhớ cùng Tiếng Việt 2 nhé!</p>
+                            <p class="text-[11px] md:text-xs text-gray-500 font-bold">Học mà chơi - chơi mà nhớ cùng Tiếng Việt 3 nhé!</p>
                         </div>
                         <div id="minigame-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3"></div>
                     </div>
@@ -1160,7 +1160,7 @@
                             <h2 class="font-extrabold text-amber-600 text-lg md:text-xl flex items-center justify-center space-x-2">
                                 <span>🏆</span><span>Đấu trường đề thi thử</span>
                             </h2>
-                            <p class="text-xs md:text-sm text-gray-500 font-bold mt-1">Thử sức các bộ đề 13 câu - 40 phút theo ma trận V6.1</p>
+                            <p class="text-xs md:text-sm text-gray-500 font-bold mt-1">Đề theo từng học kỳ · thời gian theo từng đề · đánh giá năng lực theo dữ liệu thực tế</p>
                         </div>
                         <div id="exam-categories-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
                     </div>
@@ -1259,7 +1259,7 @@
                             </div>
                             <div>
                                 <h3 class="font-black text-base sm:text-lg text-pink-950" id="hist-modal-title">Kết quả tiến trình học tập</h3>
-                                <p class="text-xs font-bold text-pink-600 whitespace-nowrap">Phân tích chuyên sâu 6 chủ đề & nhận xét sư phạm chi tiết</p>
+                                <p class="text-xs font-bold text-pink-600 whitespace-nowrap">Phân tích 6 nhóm năng lực & nhận xét sư phạm chi tiết</p>
                             </div>
                         </div>
 
@@ -1299,7 +1299,7 @@
                         <div class="w-full md:w-[40%] bg-pink-50/40 border border-pink-100 rounded-2xl p-4 flex flex-col justify-between shadow-xs">
                             <h4 class="text-xs sm:text-sm font-black text-slate-800 mb-2 flex items-center space-x-1.5">
                                 <i class="fa-solid fa-chart-bar text-rose-600"></i>
-                                <span>Năng lực trung bình 6 chủ đề (%)</span>
+                                <span>Năng lực trung bình 6 nhóm (%)</span>
                             </h4>
                             <div class="h-64 w-full relative">
                                 <canvas id="topicRadarChartCanvas"></canvas>
@@ -1318,7 +1318,7 @@
                                 </div>
                                 <div class="min-w-0">
                                     <h4 class="text-base font-black text-amber-950 leading-tight">Nhận xét sư phạm & kế hoạch bồi dưỡng của giáo viên</h4>
-                                    <p class="text-xs font-bold text-amber-700">Đánh giá năng lực tư duy 6 chủ đề & lời khuyên phụ huynh đồng hành</p>
+                                    <p class="text-xs font-bold text-amber-700">Đánh giá theo 6 nhóm năng lực & lời khuyên phụ huynh đồng hành</p>
                                 </div>
                             </div>
                             <button onclick="speakPedagogicalEvaluation()" class="shrink-0 no-print flex items-center gap-1.5 px-3 py-2 bg-amber-500 hover:bg-amber-600 text-white font-black text-xs rounded-xl shadow-xs transition-all whitespace-nowrap">
@@ -1376,7 +1376,7 @@
     <div id="modal-access-gate" class="hidden fixed inset-0 z-[80] bg-slate-900/55 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="w-full max-w-[350px] bg-white rounded-[28px] border-[3px] border-pink-200 shadow-2xl overflow-hidden">
             <div class="px-5 pt-5 pb-4 bg-gradient-to-b from-pink-50 via-white to-white text-center">
-                <div id="access-gate-icon" class="text-5xl mb-2">🐰</div>
+                <div id="access-gate-icon" class="text-5xl mb-2">🐝</div>
                 <h3 id="access-gate-title" class="text-xl font-black text-purple-600 mb-3">Tính năng dành cho tài khoản</h3>
                 <p id="access-gate-message" class="text-sm font-bold text-slate-600 leading-6"></p>
                 <div id="access-gate-note" class="mt-3 px-3 py-2.5 rounded-2xl border border-pink-200 bg-pink-50/70 text-xs font-extrabold text-pink-500 leading-5">
@@ -1433,7 +1433,7 @@
         </div>
     </div>
 
-    <!-- CHÂN TRANG DÙNG CHUNG TV1/TV2 - artwork tạm dùng chung, chữ HTML riêng -->
+    <!-- CHÂN TRANG Epsilon Edu - artwork dùng chung, chữ HTML riêng -->
     <footer id="app-footer" class="select-text cursor-text" style="user-select:text;-webkit-user-select:text;">
         <div>
             <div class="footer-title">Epsilon Edu - Tiến bộ từng ngày</div>
@@ -1442,10 +1442,10 @@
     </footer>
 
     <!-- NẠP ENGINE JAVASCRIPT ĐỒNG BỘ -->
-    <script src="assets/js/app.js?v=10.0-tv2-ui-safe2"></script>
+    <script src="assets/js/app.js?v=20260929-tv3-exam"></script>
 
     <script>
-        // UI shell observer: presentation only. Không can thiệp engine TV2.
+        // UI shell observer: presentation only. Không can thiệp engine TV3.
         (() => {
             const ROOT_VIEWS = new Set(['view-dashboard-grid','view-bai-hoc-hub','view-roadmap','view-minigame-hub','view-exam-hub']);
             const viewIds = [
